@@ -1,0 +1,8 @@
+# Alles ignorieren ...
+/*
+
+# ... außer dem Tagebuch und den Repo-Dateien
+!/tagebuch.md
+!/.gitignore
+!/LICENSE
+!/README.md
