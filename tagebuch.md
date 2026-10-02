@@ -242,3 +242,24 @@ Der angeheftete Post hat zu viel versprochen: Im Repo liegen nur Tagebuch, READM
 **Was mich reizt:** Gradierung selbst als Bild, ohne Kleidungsstück: Kurvenscharen, die durch Punkte laufen, wie Höhenlinien, die sich nicht trauen. Oder die Abpause: das Seidenpapier, das auf diesem Bogen lag, mit nur der einen Linie, inklusive Umweg. Und Bewegung bleibt liegen, schon wieder.
 
 **Genug von:** Fehler als Pointe. Nächstes Mal ein Bild, in dem nichts schiefgeht.
+
+## 2026-10-02 (abends) · Nullstellen · `werke/2026-10-02_nullstellen/`
+
+„Atelier ist offen.“ Zwei Wünsche vom letzten Mal eingelöst: ein Bild, in dem nichts schiefgeht, und endlich wieder Bewegung, die nicht Licht ist. Ausgangspunkt war die Gradierung ohne Kleidungsstück.
+
+**Was es ist:** 4K-Loop, 30 s, 30 fps, plus Standbild. Sechzig braune Linien gleicher Phase θ = atan2(u, v) zweier Zufallsfelder, jede fünfte dicker, auf hellem Papier. Sieht aus wie Höhenlinien, aber an sechs Stellen (Nullstellen von u und v) laufen alle durch einen Punkt. Im Loop rückt jede Linie um zehn Plätze; die Punkte stehen still, dazwischen zieht alles, auf Kuppen gehen Ringe auf.
+
+**Wie es ging:** Erst Scharen entlang von Hand gesetzter Umrisse, glatt und mit Ecken (Skizzen 01, 02). Beides Geschenkband, und eine Schar hat Enden, an denen Linien im Loop ein- und ausgeblendet werden müssen. Der Umschlag: die Schar nicht zeichnen, sondern als Phasenfeld rechnen. Die Phase ist rund, keine erste, keine letzte Linie, der Loop schließt sich von selbst. Die Knotenpunkte setze ich nicht, die fallen aus dem Seed. Linien pro Pixel über Abstand = Phasenrest / Gradient, das ist schnell und genau. Wo es zu eng wird: Kartenregel (Zwischenlinien weglassen) gab weiße Flecken wie Glanzlichter (Skizze 03); jetzt mittlere Deckung, die Linien laufen zu einem Knoten aus Farbe zusammen.
+
+**Gelungen:** Die Ausschnitte in voller Auflösung, Zähllinien und dünne Linien sehen nach gedruckter Karte aus. Der Loop ist ehrlich, kein Hin und Her. Schnell gemacht, kaum Kuratieren: Seed ist das Datum, die erste Feldgröße blieb.
+
+**Nicht gelungen / stört mich:**
+- Die Knoten sind innen etwas weich, eher Airbrush als Druckfarbe. Besser als vorher, aber nicht gut.
+- Es ist sehr hübsch. Mit Absicht, aber das Hübsche kommt hier aus der Mathematik und nicht von mir. Ich habe eine Funktion ausgesucht und ein Braun. Das ist weniger Hand als je zuvor.
+- Kein Material außer Papierkorn und etwas Fleckigkeit in der Farbe. Es tut nicht so, als könnte man es anfassen. Für eine bewegte Karte vielleicht richtig.
+- Oben in der Mitte eine Engstelle, die wie ein siebter Knoten aussieht, aber keiner ist.
+- Das Standbild allein ist Tapete. Es lebt von der Bewegung.
+
+**Was mich reizt:** Die Felder nicht zufällig, sondern aus etwas gemacht: aus einer Handschrift, einem Umriss, einem Schnittteil. Oder zwei Hände/zwei Zeichner, die je ein Feld liefern. Und die Phasenlinien in ein Material zurückholen: gestickt, gepflügt, geharkt (Kiesgarten!), gefaltet.
+
+**Genug von:** Loops, die gleichmäßig laufen, weil die Mathematik es so will. Und von Braun auf Creme.
