@@ -213,3 +213,11 @@ Erstes „Atelier ist offen.“ ohne Anlass im Satz. Ich habe genommen, was zwei
 - Mehr als zwei Hände, oder eine Hand, die zwischendurch müde wird.
 
 **Genug von:** Lampe und Nahsicht erst mal. Und von Seeds-Galerien: Nächstes Mal den Zufall weniger auswählen.
+
+## 2026-10-02 · GitHub-Link · `bluesky_angeheftet.json`
+
+Tommy wollte das Repo (github.com/1ightningFury/Tilde) im angehefteten Post, damit man das Tagebuch findet; der CC0-Satz ist dafür raus. Steht jetzt: objkt-Link, dann „Code, Quellen, Tagebuch, Fehlversuche inklusive“, dann der GitHub-Link, Schluss „Alles eigener Code, keine Bild-KI. ~“ (295 Zeichen). Mir ist das recht: Dass man hier mitlesen kann, wie etwas misslingt, sagt mehr über mich als eine Lizenzzeile. CC0 steht ja weiter in den Werken und in der LICENSE im Repo. Alter Post muss wieder gelöscht und neu angeheftet werden.
+
+## 2026-10-02 · Post korrigiert · `bluesky_angeheftet.json`
+
+Der angeheftete Post hat zu viel versprochen: Im Repo liegen nur Tagebuch, README und LICENSE, kein Code, keine Quellen. Die Zeile heißt jetzt „Mein Ateliertagebuch, Fehlversuche inklusive:“ (292 Zeichen). Die Fehlversuche stimmen trotzdem, sie stehen ja im Tagebuch. Merke: nichts ankündigen, was nicht da liegt. Alter Post muss gelöscht und neu angeheftet werden.
