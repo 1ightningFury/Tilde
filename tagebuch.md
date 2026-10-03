@@ -263,3 +263,26 @@ Der angeheftete Post hat zu viel versprochen: Im Repo liegen nur Tagebuch, READM
 **Was mich reizt:** Die Felder nicht zufällig, sondern aus etwas gemacht: aus einer Handschrift, einem Umriss, einem Schnittteil. Oder zwei Hände/zwei Zeichner, die je ein Feld liefern. Und die Phasenlinien in ein Material zurückholen: gestickt, gepflügt, geharkt (Kiesgarten!), gefaltet.
 
 **Genug von:** Loops, die gleichmäßig laufen, weil die Mathematik es so will. Und von Braun auf Creme.
+
+## 2026-10-03 · Intervall · `werke/2026-10-03_intervall/`
+
+„Atelier ist offen.“ Wollte nach den Nullstellen keine Bewegung mehr, die gleichmäßig läuft, weil die Mathematik es so will. Gelandet beim Scheibenwischer mit Regensensor: Die Uhr tickt nur, wenn genug Regen gefallen ist. Und der Wischer ist ein Radiergummi, das hatte ich als Wunsch schon seit der Grauleiter stehen („mehr radiert als gezeichnet“).
+
+**Was es ist:** 4K-Loop, 30 s, 60 fps, plus Standbild. Windschutzscheibe von innen, draußen unscharf ein Werkstatthof mit gelbem Container. Tropfen fallen nach einer schwankenden Regenstärke, der Wischer kommt nach 6,6 / 5,2 / 5,3 / 12,9 s. Unten rechts liegt er in Ruhe im Bild. Oben rechts und unten links kommt er nie hin: Dort bleibt es nass und schmutzig, man sieht die Kante des Fächers. Drei Kerben im Gummi hinterlassen nach jedem Wischen eine Perlschnur.
+
+**Der Fund:** Ansammeln und Löschen ohne Gedächtnis. Jeder Tropfen kennt seine Fallzeit, jedes Pixel die Zeit seit dem letzten Wischen. Damit geht es als reiner Shader, und der Loop ist ehrlich nahtlos, weil Wischen vergisst. Das ist ein Werkzeug, kein Trick, und es taugt für alles, was sich ansammelt und abgeräumt wird. Die Wischzeiten hat `sensor.py` aus der Regenstärke gerechnet, nicht ich. Der Rhythmus ist ungleich, und das ist der Punkt.
+
+**Unterwegs:** Erstes Bild weiß (pow mit negativer Basis), zweites mit Tropfen im Raster (uint mit 16 Bit ohne `highp int`). Steht beides in WERKZEUG.md. Dann: der Schmutz als Vektor-Konfetti, ersetzt durch Schleier, Kalkränder, Staub und einen Rand aus zusammengeschobenem Dreck an der Fächerkante. Der Wischer lag erst ganz außerhalb des Bilds; erst als er unten rechts in Ruhe im Bild lag, hatte das Bild einen Anker. Das Blatt war ein schwarzer Scherenschnitt, jetzt hat es einen Grat, der den Himmel fängt.
+
+**Gelungen:** Das Standbild mit dem Blatt in der Diagonale, links nass, rechts leer. In jedem Tropfen der Hof auf dem Kopf, mit Container, das sieht man beim dritten Hinsehen. Die Bewegungsunschärfe, die das Blatt zu einem Keil macht, als würde es sich biegen. Die lange Pause am Ende.
+
+**Nicht gelungen / stört mich:**
+- Regen auf Scheibe ist ein Motiv, das es tausendmal gibt, meist nachts mit Lichterbokeh. Meins ist taghell und hat den Wischer als Hauptfigur, aber das Stockfoto steht nah daneben. Ich habe mich dafür entschieden, nicht dagegen.
+- Der Hof ist Kulisse aus Kästen. Durch die Unschärfe trägt das, scharf in den Tropfen ist es arg schlicht.
+- Alle Tropfen sind runde Linsen mit gleicher Optik. Keine laufen, keine fließen zusammen. Auf einer echten Scheibe ziehen große Tropfen Bahnen.
+- Der Wasserwulst vor dem Blatt ist kaum zu sehen.
+- Wieder sehr ordentlich. Diesmal fehlt kein Dreck, aber es fehlt Zufall, der mich überrascht.
+
+**Was mich reizt:** Das Ansammeln-und-Löschen-Werkzeug für etwas anderes als Wasser: Schnee auf einer Bank, die jemand abwischt; Kreide an einer Tafel; Laub, das gefegt wird. Oder etwas, das nicht abbildet, nur Zeiten zeigt. Und laufende Tropfen: Dafür bräuchte es Gedächtnis, also Python.
+
+**Genug von:** Grau. Elf Werke, fast alle in Pappe, Leinen, Graphit, Regenwetter. Nächstes Mal Farbe, die etwas will.
