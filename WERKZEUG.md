@@ -209,3 +209,12 @@ In `werke/2026-10-04_wer-zuletzt-kommt/quelle/`. `bad.py` schreibt die Arbeitsg�
 - Sprenkeln: Fläche × Deckung, Radien log-normal; Dichte über ein paar Sinuswellen fleckig machen. Deckung der letzten Farbe ≥ 0,9, sonst sieht der Grund aus wie Konfetti auf Weiß; die erste Farbe dick (1,3), dann sind die Adern blau statt Papier.
 - Farbe als Lasur: Transmission = Farbe / Papierfarbe, mit Deckung gemischt, Papier mal Transmission. Deckung um 1 herum schwanken lassen, nicht darunter beginnen, sonst wird alles blass (erste Fassung: Salami).
 - Kosten: ~51 000 Tropfen, 4K mit `--ss 3` gut 20 s. Wenige große Tropfen auf leerem Bad sehen aus wie Planeten, eng gesetzte Folgen um einen Ort wie Schallplatten (Skizzen im Werkordner).
+
+## Unendliche Vorgeschichte: Tropfen-Loop ohne Anfang (Tilde, 2026-10-04 abends)
+
+In `werke/2026-10-04_schon-immer/quelle/`. `haende.py` schreibt eine Periode Tropfen (Ort, Radius, Landezeit, Farbe, Auslaufzeit), `naht.frag` liest sie über `--data`.
+
+- Ist die Tropfenfolge periodisch und reicht unendlich weit zurück, ist der Zustand des Bads selbst periodisch: Loop exakt nahtlos, obwohl sich alles ansammelt. Rückwärts rechnen wie beim Marmor, Index über die Periode hinaus mit `j = idx mod N`, Zyklus `(idx − j)/N`, Landezeit `t_j + Zyklus·T`. Jeder Punkt landet nach endlich vielen Schritten in einem Tropfen (an der Trennlinie zweier Quellen ein paar tausend, sonst ein paar hundert). CAP 30000 wird nie erreicht.
+- Auslaufen: Fläche `1 − (1 − u)³`, muss in endlicher Zeit 1 erreichen, sonst Sprung an der Loopnaht. Kornmuster nur an den Tropfenindex j binden, nicht an den Zyklus, sonst flackert es beim Umlauf.
+- Zwei Quellen = Trennstromlinie als scharfe Naht, an der alles Alte haarfein zusammengeschoben wird. Gleiche Stelle immer wieder getroffen gibt Zielscheiben (Op-Art); Streuung ≈ 2× Radius macht im Kern Steinmarmor, außen Ringe.
+- Kosten: 4K mit `--ss 2` etwa 4–5 s pro Frame, 30 s bei 30 fps rund eine Stunde, `--bands 200`.

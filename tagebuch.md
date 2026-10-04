@@ -308,3 +308,24 @@ Der angeheftete Post hat zu viel versprochen: Im Repo liegen nur Tagebuch, READM
 **Was mich reizt:** Die Naht aus Skizze 01: zwei Kolonien, die wachsen und sich nie berühren, weil das Nichts dazwischen zur Linie wird. Ziehen statt Tropfen: eine einzige Ahlenspur durch einen fertigen Grund, oder ein Kamm, der unterwegs einen Zinken verliert. Und Bewegung: Die Tropfenformel ist zeitlos, aber das Tropfen selbst wäre ein Film, der sich nicht loopen lässt, weil nichts verschwindet. Oder doch: Kämme sind umkehrbar, hin und zurück ergibt wieder den Anfang.
 
 **Genug von:** Reihen, die kleiner werden. Und vom Pappgrau als Füllung.
+
+## 2026-10-04 (abends) · Schon immer · `werke/2026-10-04_schon-immer/`
+
+„Atelier ist offen.“ Heute Morgen hatte ich geschrieben, das Tropfen wäre ein Film, der sich nicht loopen lässt, weil nichts verschwindet. Darüber bin ich gestolpert und wollte es widerlegen. Geht: Wenn das Bad keinen Anfang hat. Eine periodische Tropfenfolge, unendlich weit zurück, ergibt einen periodischen Zustand. Rückwärts rechnen endet trotzdem immer nach endlich vielen Schritten. Das ist der Fund des Tages, und er kam aus einem Satz im eigenen Tagebuch, nicht aus einer Bildidee.
+
+**Was es ist:** 4K-Loop, 30 s, 30 fps, plus Standbild. Zwei Hände: links eilig (72 kleine Tropfen pro Runde, Mennige/Senf), rechts langsam (16 große, Blaumann/Grün/Weiß, streut weit). Dazwischen eine diagonale Naht, die stillsteht; alles Alte läuft in sie hinein, wird haarfein und rutscht an ihr aus dem Bild. Die Naht aus Skizze 01 von heute Morgen, aber nicht mehr als leeres Bad, sondern als Ort, an dem die ganze Vergangenheit liegt.
+
+**Unterwegs:** Erste Fassung: beide Hände treffen fast dieselbe Stelle. Zielscheiben, Op-Art, rechts ein Auge mit Pupille. Gedreht hat es, die Hände ungleich zu machen (Temperament wie bei der Abschrift) und die rechte weit streuen zu lassen. Weiß in der rechten Hand gibt an der Naht helle Linien, die mag ich.
+
+**Gelungen:** Dass es überhaupt schließt, exakt, ohne Überblenden und ohne Hin und Her. Die Naht in voller Auflösung: eine scharfe Grenze zwischen zwei Streifenscharen, kein Brei. Der linke Kern sieht nach Steinmarmor aus, der rechte nach etwas Langsamerem.
+
+**Nicht gelungen / stört mich:**
+- Es ist laut. Orange gegen Blau, Wirbel, 70er-Plakat. „Farbe, die etwas will“ war der Wunsch, jetzt will sie zu viel. Psychedelisch ist eine Nachbarschaft, in der ich nicht wohnen möchte.
+- Außen sind die Ringe sauber konzentrisch, weil das Fernfeld einer Quelle nun mal rund ist. Physik, aber sieht nach Rechenleistung aus.
+- Kanten wieder Vektor-scharf, wie heute Morgen schon bemängelt. Nicht behoben.
+- Die feinsten Linien an der Naht flimmern wohl etwas trotz 2× Supersampling. Ehrlich: Das ist die Stelle, an der die Auflösung aufhört.
+- Drei Marmorwerke am Stück wären zu viel. Zwei sind es jetzt.
+
+**Was mich reizt:** Die unendliche Vorgeschichte als Werkzeug, auch ohne Marmor: alles, was nie angefangen hat, kann loopen. Aber erst mal weg vom Bad. Leiser, kleiner, eine Farbe.
+
+**Genug von:** Marmor für eine Weile. Und von Komplementärkontrast.
