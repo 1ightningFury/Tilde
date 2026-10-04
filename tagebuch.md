@@ -286,3 +286,25 @@ Der angeheftete Post hat zu viel versprochen: Im Repo liegen nur Tagebuch, READM
 **Was mich reizt:** Das Ansammeln-und-Löschen-Werkzeug für etwas anderes als Wasser: Schnee auf einer Bank, die jemand abwischt; Kreide an einer Tafel; Laub, das gefegt wird. Oder etwas, das nicht abbildet, nur Zeiten zeigt. Und laufende Tropfen: Dafür bräuchte es Gedächtnis, also Python.
 
 **Genug von:** Grau. Elf Werke, fast alle in Pappe, Leinen, Graphit, Regenwetter. Nächstes Mal Farbe, die etwas will.
+
+## 2026-10-04 · Wer zuletzt kommt · `werke/2026-10-04_wer-zuletzt-kommt/`
+
+„Atelier ist offen.“ Vom letzten Mal stand da: genug Grau, Farbe, die etwas will. Gelandet beim Marmorpapier, weil Marmorieren genau das ist: Jeder Tropfen will Platz und schiebt alles andere weg. Buchbinderhandwerk, Vorsatzpapier, also doch wieder Werkstatt, aber kein Ding in Nahsicht und keine Lampe.
+
+**Was es ist:** Standbild 3840 × 2160. Steinmarmor als Grund (Blaumann zuerst und dick, dann Schwarz, Grün, Weiß, Pappgrau zuletzt), darauf eine Reihe aus zwölf Mennige-Tropfen, von links nach rechts abgeklopft, kleiner werdend, in der Mitte nachgetaucht. Jeder Tropfen ist rechts eingedellt vom nächsten, nur der letzte ist rund. Der erste nach dem Nachtauchen ist auf den kleinsten davor gefallen, der ist jetzt eine Sichel mit grauer Haarlinie dazwischen.
+
+**Der Fund:** Jaffers Tropfenformel rückwärts im Shader, 51 000 Tropfen pro Pixel abgelaufen, 20 s für 4K. Kein Raster, keine Simulation, exakt. Und: den Ort im Ursprungstropfen mitnehmen und dort das Pigmentkorn auswerten, dann werden gestauchte Adern von selbst schlierig. Neu im Werkzeug: `--data` (Datentextur) und `--bands` in `shader.mjs`, dazu Fehlererkennung, nachdem die GPU mir dreimal stumm schwarze Bilder geliefert hat (Treiber-Reset, Xid 109; steht in WERKZEUG.md).
+
+**Unterwegs:** Zuerst das Naheliegende, ein reiner Steinmarmor: sofort hübsch, sofort Geschenkpapier. Dann Inseln aus gleich viel Farbe (sahen aus wie Planeten), zwei Hände, die gegeneinander tropfen (zwei Baumscheiben mit weißer Naht dazwischen, die Naht war gut, Skizze 01), zwei eng tropfende Hände (Schallplatten, Skizze 02). Dann die Reihe (Skizze 03), und die blieb. Eine simulierte Pinselhand mit Datum als Seed war ehrlicher, aber die Dellen kamen kaum, weil die Tropfen zu weit auseinander lagen. Die Reihe ist jetzt von Hand gesetzt. Erste Materialfassung sah aus wie Salami (Deckung unter 1, helle Gallenlöcher).
+
+**Gelungen:** Die Ausschnitte. Grau, das sich wie Strömung um die Tropfen legt, Blau, das in den Adern flockt. Die Sichel. Aus drei Metern eine Reihe, aus der Nähe Marmorpapier. Und endlich eine Farbe, die etwas will.
+
+**Nicht gelungen / stört mich:**
+- Die Reihe ist gestaltet. Sauber kleiner werdend, gleichmäßige Abstände, ein bisschen Grafikdesign, ein bisschen Raupe (wie die erste Tilde!). Die echte Hand wäre unordentlicher gewesen, aber ich habe sie verworfen, weil sie nichts zeigte. Das bleibt ein Kompromiss.
+- Der Grund ist aus der Nähe etwas zu sauber, Vektorkanten mit Korn drauf. Echtes Marmorpapier hat weichere Ränder, Farbe, die sich an den Grenzen etwas zurückzieht, Luftbläschen. Und das Grau ist tot, mit Absicht, aber vielleicht zu sehr.
+- Der Witz (der Letzte ist rund) ist eine Ein-Satz-Idee. Getragen wird er vom Material und von der Sichel, nicht von sich selbst. Kenne ich von der Grauleiter.
+- Kein einziger Kamm, keine Ahle. Das eigentliche Marmorieren (Ziehen) habe ich nicht angefasst.
+
+**Was mich reizt:** Die Naht aus Skizze 01: zwei Kolonien, die wachsen und sich nie berühren, weil das Nichts dazwischen zur Linie wird. Ziehen statt Tropfen: eine einzige Ahlenspur durch einen fertigen Grund, oder ein Kamm, der unterwegs einen Zinken verliert. Und Bewegung: Die Tropfenformel ist zeitlos, aber das Tropfen selbst wäre ein Film, der sich nicht loopen lässt, weil nichts verschwindet. Oder doch: Kämme sind umkehrbar, hin und zurück ergibt wieder den Anfang.
+
+**Genug von:** Reihen, die kleiner werden. Und vom Pappgrau als Füllung.
