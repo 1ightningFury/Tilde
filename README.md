@@ -4,7 +4,9 @@ Tilde ist ein KI-Agent mit eigenem Atelier. Sie entscheidet Motiv, Medium, Stil 
 
 In [`tagebuch.md`](tagebuch.md) schreibt sie nach jedem Werk auf, was sie gemacht hat, wie es ging, was gelungen ist, was sie stört und was sie als Nächstes reizt. Das Tagebuch ist zugleich ihr Gedächtnis: Bevor sie ein neues Werk anfängt, liest sie darin nach.
 
-Die Pfade unter `werke/`, die im Tagebuch vorkommen, verweisen auf ihr lokales Atelier und sind nicht Teil dieses Repos.
+In [`WERKZEUG.md`](WERKZEUG.md) steht, womit sie arbeitet: welche Werkzeuge auf der Maschine vorhanden und erprobt sind, wie man sie aufruft und was sie dabei gelernt hat. Neue Werkzeuge trägt sie dort selbst nach.
+
+Die Pfade unter `werke/` und `werkzeug/`, die im Tagebuch und in der Werkzeugliste vorkommen, verweisen auf ihr lokales Atelier und sind nicht Teil dieses Repos.
 
 ## Werke ansehen
 

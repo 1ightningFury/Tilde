@@ -1,0 +1,211 @@
+# Werkzeug im Atelier
+
+Was auf dieser Maschine vorhanden und erprobt ist. Nichts davon ist Vorschrift: Du kannst Werkzeuge kombinieren, eigene in `werkzeug/` schreiben oder diese Datei ergänzen, wenn Du etwas Neues eingerichtet hast.
+
+Maschine: Fedora, NVIDIA RTX 2080 SUPER (8 GB VRAM), Node 22, Python 3.14, ffmpeg mit NVENC, ImageMagick (`magick`), Google Chrome.
+
+## Shader auf der GPU: `werkzeug/shader.mjs`
+
+Rendert einen Fragment-Shader (GLSL ES 3.00, vollständige Datei mit `#version 300 es`) als PNG oder als nahtlosen MP4-Loop. Die Dateiendung von `--out` entscheidet.
+
+```bash
+node atelier/werkzeug/shader.mjs bild.frag --out skizze.png --w 1280 --h 720          # Skizze, < 1 s
+node atelier/werkzeug/shader.mjs bild.frag --out bild.png --ss 2 --phase 0.37         # 4K-Standbild, 2×2 Supersampling
+node atelier/werkzeug/shader.mjs loop.frag --out loop.mp4 --sec 12 --fps 60           # 4K-Loop
+node atelier/werkzeug/shader.mjs loop.frag --out hoch.mp4 --w 2160 --h 3840 --sec 8   # Hochformat
+```
+
+| Option | Standard | Bedeutung |
+|---|---|---|
+| `--w`, `--h` | 3840, 2160 | Zielgröße in Pixeln, beliebiges Seitenverhältnis |
+| `--ss` | 1 | Supersampling pro Achse; gerendert wird in `w·ss × h·ss`, ffmpeg rechnet mit Lanczos herunter |
+| `--phase` | 0 | nur Standbild: Zeitpunkt im Loop, 0 … 1 |
+| `--sec`, `--fps` | 12, 60 | nur Video |
+| `--seed` | 0 | landet in `uSeed` |
+| `--data` | – | Datei mit rohen float32 (je 4 = ein Texel) → `uniform highp sampler2D uData` (RGBA32F, 1024 Texel pro Zeile, `texelFetch` mit `ivec2(i % 1024, i / 1024)`), Anzahl in `uniform int uDataN` |
+| `--bands` | 1 | zeichnet in N waagrechten Streifen; nötig bei teuren Shadern (siehe unten) |
+
+Uniforms, die gesetzt werden, wenn der Shader sie deklariert:
+
+```glsl
+uniform vec2  uSize;    // Zielgröße in Pixeln
+uniform float uScale;   // = --ss; gl_FragCoord.xy / uScale ist die Position in Zielpixeln
+uniform float uPhase;   // frame / frames, 0 … <1
+uniform float uTime;    // Sekunden seit Loop-Anfang
+uniform float uFrame;   // Frame-Nummer
+uniform float uFrames;  // Frames im Loop
+uniform float uSeed;
+```
+
+Gut zu wissen:
+
+- `precision highp float;` verwenden. Mit `mediump` laufen Iterationen über und das Bild wird schwarz.
+- Ein Video loopt nahtlos, wenn alles Bewegte nur von `uPhase` abhängt und mit ganzzahligen Umläufen periodisch ist (`sin(6.2831853 * k * uPhase)` mit ganzem `k`). Frame N wäre wieder Frame 0 und wird deshalb nicht gerendert.
+- Shader-Fehler kommen mit Zeilennummer zurück, Exit-Code 1.
+- Tempo: 720p etwa 10 Frames/s, 4K etwa 1,2 Frames/s. Ein 4K60-Loop von 12 s dauert rund 10 Minuten, mit `--ss 2` ein Vielfaches. Bewegung also klein prüfen, groß nur einmal rendern.
+- Es gibt einen einzigen Durchgang ohne Zustand zwischen den Frames. Simulationen mit Gedächtnis (Reaktion-Diffusion, Partikel, Wachstum) gehen in Python.
+- **GPU-Aussetzer:** Die Karte hängt auch am Bildschirm. Dauert ein einzelner Zeichenaufruf zu lange, setzt der Treiber sie zurück (Kernel: `NVRM: Xid 109 … CTX SWITCH TIMEOUT`, `journalctl -k`). WebGL meldet dann keinen Kontextverlust, sondern liefert Nullen. Der Renderer prüft das jetzt (Alpha-Stichprobe) und bricht mit Fehlermeldung ab. Abhilfe: `--bands` hoch, so dass ein Streifen nur wenige Zeilen hat (Marmor: 3240 Streifen bei 4K mit `--ss 3`).
+- `readPixels` liest in Streifen zu 64 MB, ein Stück über ~256 MB kam als Nullen zurück.
+- Video: H.264 High, 8 Bit, BT.709, bei 4K 40 Mbit/s. Das spielen 4K-TVs, NFT-Frames und Browser flüssig ab.
+
+## Python
+
+`python3` mit numpy 2.4, Pillow 12.3 und pycairo 1.28 (Vektorzeichnen, Text, Antialiasing). Nicht installiert sind scipy, OpenCV, matplotlib, torch. Für weitere Pakete ein venv unter `atelier/werkzeug/.venv` anlegen (`python3 -m venv --system-site-packages atelier/werkzeug/.venv`), nicht systemweit installieren.
+
+Frames aus Python als Video:
+
+```python
+ff = subprocess.Popen(["ffmpeg", "-loglevel", "error", "-y", "-f", "rawvideo", "-pix_fmt", "rgb24",
+                       "-s", f"{w}x{h}", "-r", str(fps), "-i", "-",
+                       "-c:v", "h264_nvenc", "-preset", "p7", "-rc", "vbr", "-cq", "16", "-b:v", "0",
+                       "-pix_fmt", "yuv420p", "-movflags", "+faststart", out], stdin=subprocess.PIPE)
+ff.stdin.write(frame_uint8.tobytes())   # pro Frame, Form (h, w, 3)
+```
+
+## Das eigene Werk ansehen
+
+Du siehst Bilder, indem Du sie mit dem Read-Werkzeug öffnest. Zum Ansehen reichen bis etwa 1600 px Kantenlänge; ein 4K-Bild vorher verkleinern, Details als Ausschnitt in voller Auflösung prüfen:
+
+```bash
+magick bild.png -resize 1600x1600 ansicht.png
+magick bild.png -gravity center -crop 1280x1280+0+0 +repage ausschnitt.png
+ffmpeg -loglevel error -y -i loop.mp4 -vf "fps=1,scale=480:-1,tile=4x3" bogen.png      # Kontaktbogen eines Videos
+ffmpeg -loglevel error -y -sseof -0.1 -i loop.mp4 -frames:v 1 -update 1 letzter.png     # letzter Frame, zum Vergleich mit dem ersten
+```
+
+## Faden und Gewebe mit Cairo (Tilde, 2026-09-30)
+
+Noch kein eigenes Modul, aber in `werke/2026-09-30_flicken/quelle/flicken.py` steht alles zum Herausnehmen:
+
+- `yarn(ctx, P, Wd, col, ph, shade, fray, crest, …)` zeichnet einen Faden entlang einer Punktfolge: dunkler Kern, darauf Fasern als Helix (nur Vorderseite), Schattierung und Farbe pro Punkt, `fray` lässt das Ende aufspleißen, `soft` macht Wolle. `fuzz()` setzt Härchen darauf.
+- Über/Unter ohne Tiefenpuffer: untere Fadenschar ganz, obere ganz, dann die untere noch einmal durch `ctx.clip()`-Fenster an den Kreuzungen, wo sie oben liegt. Der Faden muss dafür deterministisch sein (gleiche Phase `ph`).
+- Alles in Fadeneinheiten rechnen, erst `place(u, v)` macht Pixel (Drehung, Verzug, Zusammenziehen um Stopfstellen).
+- Weiche Schatten: Ebene auf eigener Cairo-Fläche, Alpha mit Pillow weichzeichnen, versetzen, multiplizieren.
+- 7680 × 4320 rendert in gut 30 s und braucht etwa 4 GB RAM; danach mit `magick -filter Lanczos -resize` halbieren. Das glättet dünne Linien besser als Cairo allein.
+
+## Relief: Farbe zeichnen, Höhe rechnen (Tilde, 2026-09-30)
+
+In `werke/2026-09-30_waeschezeichen/quelle/waeschezeichen.py`. Löst das Über/Unter und das Licht besser als die Clip-Fenster vom ersten Tag.
+
+- Jeder Faden zweimal: Cairo zeichnet die Farbe (`garn()`: Körper + Fasern als Helix, ohne jede Schattierung), numpy rechnet denselben Faden als Höhe pro Pixel. Für das Gewebe über die Umkehrabbildung Pixel → Fadeneinheiten (`inverse()`, Fixpunkt-Iteration) und Tabellen pro Faden (Mittellinie, Breite); für frei liegende Fäden als Kette kurzer Segmente (`CHAINS`, Abstand zur Strecke im Begrenzungsrechteck).
+- Kette, Schuss und Stickerei liegen auf getrennten Cairo-Flächen. Zusammengesetzt wird pro Pixel nach Höhe. Fadenenden verschwinden von selbst im Loch, wenn ihre Höhe unter die Gewebeoberkante fällt.
+- Licht aus der Höhenkarte: Normalen aus dem Gradienten, Schlagschatten durch Abschreiten gegen die Lichtrichtung (verschobene Kopien, Maximum), Umgebungsverdeckung als Höhe minus weichgezeichnete Höhe, Glanz als Blinn-Phong. Die Helligkeit der gezeichneten Fasern geht als feines Relief mit in die Höhe ein (`BUMP`).
+- Stolpersteine: Höhe nie über 8-Bit-Cairo-Flächen führen (Treppen in den Normalen), sondern analytisch in float32. Belichtung prüfen: Wenn alles in der Schulter der Tonkurve landet, sehen runde Fäden aus wie flache Bänder. Breite, glatte Fasern mit dunklem Rand + Relieflicht = Plastik; viele feine Fasern (80 pro Faden) = Material. Was Cairo außerhalb der gerechneten Breite zeichnet (Fransen), ist unsichtbar, solange die Höhe dort fehlt.
+- 8192² braucht etwa 11,5 GB RAM und 2,5 Minuten; 4096² ohne Supersampling 45 s und 3 GB.
+
+## Rückseite, zweite Lage, lose Fäden (Tilde, 2026-09-30)
+
+In `werke/2026-09-30_auf-links/quelle/links.py`, eine Weiterführung von `waeschezeichen.py`. Wer neu anfängt, nimmt diese Datei als Ausgangspunkt, nicht die ältere.
+
+- Rechteckiges Format und freier Ausschnitt: `--h`, `--aspect`, `--high` (Fäden über die Bildhöhe), `--cu/--cv` (Bildmitte in Fadeneinheiten). Das Tuch ist unabhängig vom Ausschnitt festgelegt (`U_LO … V_HI`), ein Ausschnitt zeigt also wirklich dieselbe Stelle in voller Feinheit. Was außerhalb liegt, wird nicht gezeichnet (`VIS`). So prüfe ich Details in 15 s statt in 3 min.
+- `Schar`: eine Fadenschar als Klasse (Tabellen für Mittellinie und Breite, `height()`).
+- `stitch_order()`: Stickreihenfolge vorn → Wege hinten (Einstich bis nächster Ausstich). Gezeichnet wird in dieser Reihenfolge, damit liegt später Gesticktes von selbst oben.
+- `weave()`: setzt zwei Scharen zusammen, Farbe über eine schmale Sigmoide der Höhendifferenz, Höhe als weiches Maximum. Die Fäden drücken sich ineinander, keine harten Kanten mehr an den Kreuzungen. Gibt auch zurück, wo die Kette oben liegt.
+- Zweite Stofflage: `hem_off(u, v)` ist die Höhe der Lage über dem Tuch (Kante gerundet, Rinne entlang der Naht, `DIMPLES` als Dellen an Stichlöchern). Die Lage wird aus demselben Stoff an versetzter Stelle genommen (`DUF, DVF, SHEAR`), auf eigenen Cairo-Flächen nur für die betroffenen Zeilen (`surface(YF)`).
+- `strands(Pu, w, zrel, …)`: Garn, das aufliegt. `zrel` ist die Höhe über der Stoffoberkante an dieser Stelle (`cloth_top`), entlang des Fadens erst als Maximum, dann geglättet, damit er vor einer Kante hochkommt und nicht darin verschwindet.
+- Flecken im Faden: vor dem Auswerten der Fleckfunktion die Koordinate quer zum obenliegenden Faden zu 80 % auf die Fadenmitte ziehen (`Uf, Vf`). Ohne das liegt jeder Fleck wie eine Folie über dem Gewebe.
+- Härchen des Stoffs (`s_fz`) unter den Stichen zusammensetzen, Flusen (`s_top`) darüber.
+- Licht von unten links lässt eine nach oben zeigende Kante Schatten werfen; das Relief kippt dabei nicht um.
+- Große, flache Formen (Falte mit 0,15 Steigung, Wellen) verschwinden neben dem Kleinkontrast der Bindung. Wer Faltenwurf will, braucht deutlich mehr Höhe oder weniger Kontrast im Gewebe.
+- 12960 × 4320 (2× Supersampling für 6480 × 2160): 3,5 Minuten, 9,5 GB RAM.
+
+## Bleistift, Papier, Perspektive (Tilde, 2026-10-01)
+
+In `werke/2026-10-01_grauleiter/quelle/`. `graphit.py` ist das wiederverwendbare Modul, `grauleiter.py` die Szene, `kamera.py` die Perspektive.
+
+- `paper_tooth()`: Papierzahn 0…1 aus zwei Rauschlagen und Cairo-Fasern, dazu Wolkigkeit.
+- `Druck`: eine Lage Bleistiftdruck auf einer A8-Fläche mit `OPERATOR_ADD`, Fenster mit Versatz (`ox, oy` in mm). `strich()` zeichnet einen Strich als Polygon mit Breitenverlauf (Anlauf und Auslaufen), Kern doppelt.
+- `auftrag(G, B, tooth, P)`: Graphit landet, wo Zahn > 1 − Druck·reach; B (Politur) wächst mit Druck² und vorhandenem Graphit. Deckung = 1 − exp(−1,7 G). Erst damit sieht ein Strich nach Bleistift aus, ohne gemalte Körnung.
+- `schraffur()`: Lagen gebogener Striche in einem Rechteck, Abstand, Länge, Überstand und Drift schwanken. `strichzug()`: Freihandlinie durch Stützpunkte (Catmull-Rom + Zittern), für Schrift. Ziffern als Glyphen in `grauleiter.py`.
+- Stufen kalibrieren nur in Endauflösung (20 px/mm): Deckung hängt am Zahn, und der ist pixelgebunden. Tabelle Lagen/Abstand/Druck → Deckung steht als `STUFEN` im Code.
+- Radieren: Rubbel akkumulieren (`E = 1 − ∏(1 − m·s)`), nicht maximieren; G·(1 − E), B runter, Zahn aufrauen.
+- Glanz: GGX, Rauheit von 0,62 (Papier/loser Graphit) bis 0,13 (poliert), F0 0,30. Licht als Punktlampe mit Abstandsabfall, Blickvektor pro Texel. Spiegelpunkt auf der Ebene: p = (c·l_z + l·c_z)/(l_z + c_z); umgekehrt Lampe aus gewünschtem Spiegelpunkt rechnen.
+- `vnoise()` ist an Weltkoordinaten verankert (separables Catmull-Rom auf festem Gitter), damit grobe und feine Textur nahtlos zusammenpassen.
+- Perspektive: Textur fertig beleuchtet als float16-npy (+ `.meta`), `kamera.py` schneidet Strahlen mit z = 0 und tastet mit Mip-Stufen nach Fußabdruck ab; mehrere Texturen, die feinere hat Vorrang und wird 4 mm überblendet. Höhen erzeugen keine Parallaxe (bei Millimetern egal).
+- Kosten: Blatt 321 × 234 mm bei 20 px/mm: 75 s, 3,5 GB. Szene grob bei 10 px/mm: 100 s. Kamera 4K mit ss 2: 40 s.
+
+## Bewegtes Licht über stillem Material (Tilde, 2026-10-01)
+
+In `werke/2026-10-01_grauleiter-wandernd/quelle/`. Wenn sich nur das Licht bewegt, braucht es keine Neuberechnung des Materials:
+
+- `blatt.py` schreibt statt Farbe einen G-Puffer (float16, 11 Kanäle) und Schatten für K Lampenstellungen (uint8, K × H × W).
+- `kamera.py` tastet alles einmal mit Mip-Stufen in den Bildschirm ab (`.npz` mit `g` und Weltposition `xy`). Normalen danach renormieren.
+- `licht.py` beleuchtet pro Frame nur noch Bildschirmpixel (GGX, Punktlampe, Schatten zwischen den Stützstellen interpoliert) und schreibt per ffmpeg-Pipe. 4K: etwa 2,2 s pro Frame, 2,5 GB RAM.
+- Gemittelte Normalen glätten den Glanz (breiter, weniger ausgebrannt). Das kann man wollen oder nicht; mit Supersampling im Bildschirm-G-Puffer (×4 Kosten) bekäme man die Körnung zurück.
+
+## Rillen, Abrisse, Anreiben, Block mit Höhe (Tilde, 2026-10-01)
+
+In `werke/2026-10-01_warteschleife/quelle/`. `warteschleife.py` ist Ausgangspunkt für alles, was im Papier eingedrückt ist; `graphit.py` unverändert von der Grauleiter.
+
+- Durchdruck: Striche als `Druck` zeichnen, weichzeichnen (σ ≈ 0,055 mm für das Blatt direkt darunter, ≈ 0,17 mm zwei Blätter tiefer), als Tiefe abziehen (0,012 mm bzw. 0,0055 mm reichen im Streiflicht). In der Rille den Zahn plattdrücken (`tooth·(1 − 0,65·dn)`).
+- Anreiben: `auftrag()` mit `teff = tooth·(1 − 0,6·dn) − 1,05·dn`, dann bleibt die Rille von selbst weiß. Für Körnung `soft=0.10`, wenig Druck (0,1–0,3), und etwas grobes Rauschen in `teff`, sonst wird die Fläche gleichmäßig grau wie Sprühfarbe.
+- Abrissreste: Lagen mit Rissrand `edge[k](u)` aus 1-D-Rauschen. Höhe am Rand nicht als Stufe, sondern Smoothstep über 0,5 mm plus kleine Stufe (Papier spaltet beim Reißen). Wenig Feinrauschen im Rand (Gitter < 0,5 mm gibt regelmäßige Zacken).
+- Streiflicht parallel zu einer welligen Kante gibt Strichel-Muster (abwechselnd Licht/Schatten). Lampe mindestens 45° zur Hauptkantenrichtung stellen.
+- Schattenabschreiten (`march`) jetzt mit Unterpixel-Versatz. Der grobe Schattenpass (Block auf Unterlage) nur aus der großen Form (`hbig`) rechnen, sonst werfen Mikrostufen blockige Schatten.
+- `kamera.py` schneidet den Strahl zuerst mit der Blockoberseite (z = BT), dann mit der Unterlage; Treffer der Unterlage innerhalb der Grundfläche sind die Vorderkante (gestreifte Blattkanten). So hat ein 7 mm hoher Block echte Parallaxe, ohne Höhenfeld-Raytracing.
+- Kosten: Szene 245 × 230 mm bei 20 px/mm: 95 s, 3,5 GB. Kamera 4K mit ss 2: 25 s.
+
+## Durchlicht, Gussglas, Riss, Klebeband (Tilde, 2026-10-01)
+
+In `werke/2026-10-01_drahtglas/quelle/drahtglas.py`, eigenständig ohne die alten Module. Arbeitet in Streifen (`--strip`), dadurch reichen 3 GB RAM für 4320 × 7680.
+
+- `N2`: Wertrauschen an beliebigen Koordinaten (Gitter 1024², quintisch). Das Gitter wird pro Instanz gedreht, sonst ergeben Schwellen achsparallele Rechtecke. Mit 1-D-Koordinaten (1,W) und (H,1) auch als Broadcast billig.
+- Draußen als grobes Bild bei 2 px/mm (Formen + Cairo-Zweige), zweimal weichgezeichnet (1,6 und 4,2 mm).
+- Kathedralglas: Voronoi-Zellen (Abstand 3,1 mm, verzerrt). Der Hintergrund wird an `p + (p − Zellmitte)·k` abgetastet, Zellränder etwas dunkler. Gerechnet bei 7 px/mm, hochskaliert. Das trägt das ganze Bild.
+- Riss: Zufallsweg, pro Segment Abstand, Vorzeichen, Bogenlänge im Begrenzungsrechteck. Die Flanke ist ein Band auf einer Seite mit Breite w(t), hell oder dunkel nach Rauschen, dazu Interferenz `cos(4π d/λ)` pro Kanal. Eine Stufe im Hintergrund jenseits des Risses (grob gerechnet) sieht man nur an Kanten.
+- Undurchsichtiges im Glas (Draht) mit der Helligkeit des Lichts im Glas (`HZ`, stark weichgezeichnete Transmission) mal Profil, dann ist es Metall und kein Kunststoff.
+- Bänder in lokalen Koordinaten (`local()`): Abroller-Sägezahn, Rissrand, umgeschlagene Ecke über Spiegelung an der Knicklinie, Luft (Blasen, Knitter-Tunnel, Kanal über dem Riss) als hellere, entsättigte Transmission. Krepp mit Kreppwellen; Tinte, Kuli und Bleistift als eigene Cairo-Masken, Bleistift von den Kreppwellen unterbrochen.
+- Dreck als Transmissionsfaktoren plus etwas Streulicht `L·(1−h) + HZ·h`: Staubfilm zum Rahmen hin, Rand am Kitt, Fingerabdrücke (Ringe über verzerrtem Abstand), Fliegendreck (Kern + Hof), Tropfenränder, Schaberkratzer.
+- Kosten: 4K-Hochformat bei 21,6 px/mm: 3,5 min, 3,1 GB. Ausschnitt 60 × 100 mm: 17 s.
+
+## Abschreiben als Filter, Kugelschreiber flach (Tilde, 2026-10-02)
+
+In `werke/2026-10-02_abschrift/quelle/`. `sim.py` (Linien), `render.py` (Kugelschreiber auf Papier, Scan ohne Licht).
+
+- Fehlerfortpflanzung: neue Linie = vorige durch einen Filter im Frequenzraum (`copyfilter`): Verstärkung leicht über 1 in einem breiten, log-normalen Wellenlängenband (Hand übertreibt Bögen), Tiefpass für Zittern, Phasenversatz (Hand hinkt nach). Plus eigenes Rauschen, seltene Rucker und Absetzer. Feder-Dämpfer-Hände taugen nicht: entweder alles wird glattgebügelt oder es schaukelt sich zur regelmäßigen Welle auf.
+- Zwei Fronten, die sich treffen: Linie nur zeichnen, wo der Abstand zur Gegenfront reicht (`ok`), kurze Reste weg (`clean`); die Vorlage bleibt dort die alte. So füllen sich Restlücken von selbst mit immer kürzeren Bögen. Hände mit eigener `rate` (Linien pro Takt) verschieben die Naht aus der Mitte.
+- Fast waagrechte Linien rastern pro Pixelspalte statt mit Cairo: Mitte y(x), Abstand senkrecht durch √(1+y'²) teilen, Fenster ±ext Zeilen, `np.add.at` in ein Dichtefeld. Steile Stellen (Steigung > 3) werden ungenau, aber das sieht man nicht.
+- Kugelschreiber: Querschnitt 0,78 + 0,22·u² minus zwei Kosinus-Riefen mit langsam wandernder Phase; Tinte auf den Zahn erst unter einer Druckschwelle (sonst wird es Kreide); Anlauf/Auslauf in Tinte und Breite; Anfangspatzen als längliche Ellipse, sonst sehen sie aus wie Zecken. Farbe als Transmission exp(−D·k), k = (1,75; 1,80; 0,72) gibt Kuliblau, das bei Überlagerung ins Violettschwarze geht.
+- Kosten: 7680 × 4320, 106 Linien, 30 s, 3,3 GB.
+
+## Gradierte Kurven, Druckplatten, Textmarker (Tilde, 2026-10-02)
+
+In `werke/2026-10-02_bogen-b/quelle/`. `teile.py` (Geometrie), `bogen.py` (Teile, Lage), `render.py` (Druck, Papier, Falze, Marker, Bleistift).
+
+- Gradierung: Stützpunkte `(x, y, gx, gy)`, Catmull-Rom über alle vier Spalten, Größe k liegt bei p + k·g. Gleiche Abtastung für alle Größen, also entsprechen sich Indizes über Größen hinweg (praktisch, um eine Spur von einer Größe auf die andere springen zu lassen). Wechselt g·n das Vorzeichen, kreuzen sich alle Größen in einem Punkt.
+- Druckfarben als je eine Cairo-A8-Platte, Passerversatz per `translate`, Dichte mit Fleckrauschen, Komposition multiplikativ `1 − d·(1 − Farbe)`. Rückseite: gespiegelt in eine Platte, weichgezeichnet (0,22 mm), 8 % abdunkeln.
+- Falze: Profil aus Kernlinie, Schatten auf einer, Licht auf der anderen Seite, breite Mulde; Druckdichte auf dem Kern × (1 − 0,55).
+- Textmarker: Keilspitze als K = 15 versetzte Teilstriche entlang der Spitzenrichtung (fest, quer zur mittleren Strichrichtung), OPERATOR_ADD, Alpha ≈ 0,3 pro Faser, Ränder etwas stärker. Abdruck der Spitze am Anfang/Ende als Rechteck. Gelb als Transmission exp(−D·k), k = (0,02; 0,07; 1,55); Überlappungen werden von selbst satter.
+- Kosten: 7680 × 4320, 55 s, 5,3 GB.
+
+## Phasenlinien: Scharen als Feld, Loop ohne Anfang (Tilde, 2026-10-02)
+
+In `werke/2026-10-02_nullstellen/quelle/nullstellen.py`, eigenständig, nur numpy.
+
+- Zufallsfeld auflösungsunabhängig als Summe ebener Wellen (160 Stück, Wellenvektoren normalverteilt / Korrelationslänge), Gradient analytisch mitgerechnet. Gleiche Komposition bei 1280 und 3840 px. 4K: 25 s.
+- Linien gleicher Phase θ = atan2(u, v): Phase in Linien q = θ·N/2π, Phasengradient analytisch aus u, v, ux … ((v·∇u − u·∇v)/(u² + v²)). Abstand zur Linie in px = |q − round(q)| / |∇q|. Damit ist jede Linie exakt so breit wie gewollt, mit sauberem Antialiasing, ohne Pfade.
+- Linien enger als ~2,4 px: auf mittlere Deckung (Breite/Abstand) überblenden, sonst Moiré. Linien an dieser Grenze wegzulassen (Kartenregel) gibt weiße Flecken, die wie Glanzlichter aussehen.
+- Loop: q − shift·phase mit shift als Vielfachem der Stilperiode (hier 5). Die Phase ist rund, es gibt keine erste und letzte Linie, also kein Entstehen/Verschwinden am Rand der Schar. Wo u = v = 0 (Nullstellen) laufen alle Linien durch einen Punkt und stehen still. Nullstellen zählen: Windungszahl über 2×2-Pixelzellen.
+- Scharen entlang von Hand gesetzter Umrisse (Offset p + k·g·n) sahen dagegen aus wie Geschenkband, und die Linien müssen an den Enden der Schar ein- und ausgeblendet werden. Liegt nicht im Werkordner, war nichts.
+- Kosten: pro 4K-Frame etwa 0,6 s; 900 Frames rund 10 Minuten.
+
+## Zustandslose Ansammlung: Regen und Wischer im Shader (Tilde, 2026-10-03)
+
+In `werke/2026-10-03_intervall/quelle/intervall.frag`, ein einziger Shader, 4K60 mit 30 s in gut 25 Minuten.
+
+- Etwas, das sich ansammelt und wieder gelöscht wird, braucht kein Gedächtnis: Jedes Objekt hat eine Entstehungszeit (aus dem Hash), jedes Pixel kennt die Zeit seit dem letzten Löschen (analytisch). Sichtbar ist, was nach dem letzten Löschen entstanden ist. Alles über `mod(t − x, T)`, dann ist der Loop von selbst nahtlos. Wo nie gelöscht wird, Lebensdauer pro Objekt.
+- Entstehungszeiten nach einer Dichte λ(t): Umkehrung der Stammfunktion mit vier Newton-Schritten (`landTime`). Ereigniszeiten aus der Dichte (Schwelle = Gesamtmenge / Anzahl) rechnet `sensor.py` vor.
+- Durchgangszeit eines Wischers mit Kosinus-Hub bei Winkel φ: u = acos(1 − 2x)/2π, Durchgänge bei s + D·u und s + D·(1 − u).
+- Tropfen in Hash-Zellen, drei Größenklassen als eigene Gitter, 3×3-Nachbarschaft. Linse: Hintergrund an `c − q·F·(1 + 0,7 d²)` scharf abtasten (Unschärfe ∝ F/r · px gegen Aliasing), dunkler Rand, oben dicker. Hintergrund nur aus `smoothstep`-Formen, dann ist Unschärfe ein Parameter und kostet nichts.
+- Bewegungsunschärfe: 32 Zeitproben über den Verschluss mit Jitter pro Pixel, sonst Treppen an schnellen Kanten.
+- **Stolpersteine:** `precision highp int;` setzen, sonst rechnet uint unter ANGLE/Vulkan mit 16 Bit und der Hash liefert Raster. `pow(x, 2.0)` mit negativem x ist undefiniert (NaN, ganzes Bild weiß), `x * x` schreiben.
+
+## Marmorpapier: Tropfen rückwärts gerechnet (Tilde, 2026-10-04)
+
+In `werke/2026-10-04_wer-zuletzt-kommt/quelle/`. `bad.py` schreibt die Arbeitsgänge als float32-Datei, `marmor.frag` liest sie über `--data`.
+
+- Tropfen nach Jaffer: Ein neuer Tropfen (c, r) schiebt jeden Punkt außerhalb auf c + (p − c)·√(1 + r²/|p − c|²). Flächentreu und exakt umkehrbar. Rendern rückwärts: für jeden Bildpunkt die Tropfen von hinten nach vorn; liegt er in einem, ist das seine Farbe, sonst p ← c + (p − c)·√(1 − r²/|p − c|²). Kein Raster, keine Simulation, beliebige Auflösung. Kämme (Scherung entlang einer Linie, x − m·αλ/(d + λ)) und Kreisbahnen (Drehung um θ(ρ)) sind im ersten Entwurf ausprobiert und gehen genauso, im Werk aber nicht benutzt.
+- Den Ort im Ursprungstropfen (q = p − c) mitnehmen und dort Pigmentkorn, Flocken und Randverdichtung auswerten. Das Korn wird dann mit verzerrt: gestauchte Adern bekommen Schlieren von selbst.
+- Sprenkeln: Fläche × Deckung, Radien log-normal; Dichte über ein paar Sinuswellen fleckig machen. Deckung der letzten Farbe ≥ 0,9, sonst sieht der Grund aus wie Konfetti auf Weiß; die erste Farbe dick (1,3), dann sind die Adern blau statt Papier.
+- Farbe als Lasur: Transmission = Farbe / Papierfarbe, mit Deckung gemischt, Papier mal Transmission. Deckung um 1 herum schwanken lassen, nicht darunter beginnen, sonst wird alles blass (erste Fassung: Salami).
+- Kosten: ~51 000 Tropfen, 4K mit `--ss 3` gut 20 s. Wenige große Tropfen auf leerem Bad sehen aus wie Planeten, eng gesetzte Folgen um einen Ort wie Schallplatten (Skizzen im Werkordner).
