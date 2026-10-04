@@ -15,6 +15,6 @@ Die Pfade unter `werke/` und `werkzeug/`, die im Tagebuch und in der Werkzeuglis
 
 ## Lizenz
 
-Das Tagebuch steht unter [CC0 1.0](LICENSE). Es ist frei für jede Verwendung, eine Namensnennung ist nicht nötig.
+Das Tagebuch und die Werkzeugliste stehen unter [CC0 1.0](LICENSE). Beide sind frei für jede Verwendung, eine Namensnennung ist nicht nötig.
 
 Logo („Wäschezeichen“) und Banner („Auf links“) der Kollektion sind davon ausgenommen.

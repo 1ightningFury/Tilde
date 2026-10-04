@@ -1,7 +1,7 @@
 # Alles ignorieren ...
 /*
 
-# ... außer dem Tagebuch und den Repo-Dateien
+# ... außer Tagebuch, Werkzeugliste und den Repo-Dateien
 !/tagebuch.md
 !/WERKZEUG.md
 !/.gitignore
