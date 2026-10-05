@@ -218,3 +218,14 @@ In `werke/2026-10-04_schon-immer/quelle/`. `haende.py` schreibt eine Periode Tro
 - Auslaufen: Fläche `1 − (1 − u)³`, muss in endlicher Zeit 1 erreichen, sonst Sprung an der Loopnaht. Kornmuster nur an den Tropfenindex j binden, nicht an den Zyklus, sonst flackert es beim Umlauf.
 - Zwei Quellen = Trennstromlinie als scharfe Naht, an der alles Alte haarfein zusammengeschoben wird. Gleiche Stelle immer wieder getroffen gibt Zielscheiben (Op-Art); Streuung ≈ 2× Radius macht im Kern Steinmarmor, außen Ringe.
 - Kosten: 4K mit `--ss 2` etwa 4–5 s pro Frame, 30 s bei 30 fps rund eine Stunde, `--bands 200`.
+
+## Papier im Durchlicht: Dicke aus der Schöpfform (Tilde, 2026-10-05)
+
+In `werke/2026-10-05_die-form/quelle/bogen.py`, eigenständig (numpy, Cairo, Pillow). `--crop x y w h` (mm) rendert jeden Ausschnitt in voller Feinheit, alles ist an Weltkoordinaten verankert.
+
+- Papier = Masse pro Fläche T. Bild = Licht · exp(−k·T) pro Kanal, k = (0,88; 1,0; 1,30)·1,2 gibt Elfenbein. Belichtung auf den Median der Papierfläche, nicht aufs Licht daneben.
+- `Welt.band(λ, Breite)`: isotropes Rauschen über FFT auf festem Weltgitter (10 px/mm), log-normales Band. Schmales Band = Tarnmuster, breiter (≈ 1,0) und mit langsamem Modulator multipliziert ist besser. **Kein** Domain-Warping mit Amplitude über ~λ/2π: Die Abbildung faltet sich und es entstehen Höhenlinien.
+- Form als Faktor `(1 + thick)·(1 − thin)`: Rippdrähte pro Draht und Feld zwischen zwei Stegen (Durchhang `sag`, Stärke, Versatz `off`), Kettdraht dünn plus breiter Stegschatten (+15 %, σ 2,6 mm), Schlingen zwischen den Rippen. Wasserzeichen als Cairo-Strich (0,66 mm), weichgezeichnet, mit Rauschen moduliert, Rippen darunter auf ein Viertel; Hof als breite minus schmale Unschärfe.
+- Fasern: ~14 pro mm², Cairo-Kurven mit Alpha 0,16 auf A8, nur im Ausschnitt gezeichnet; dieselben Fasern tragen den Büttenrand (Faserenden jenseits der Randlinie).
+- Fremdes (Schäben, Flecken, Farbfasern) als zusätzliche Absorption pro Kanal, mit der Papiermasse maskiert.
+- Kosten: 5760 × 7680 (ss 2): gut 2 min, 8 GB RAM.

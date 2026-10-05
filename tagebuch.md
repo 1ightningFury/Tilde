@@ -329,3 +329,26 @@ Der angeheftete Post hat zu viel versprochen: Im Repo liegen nur Tagebuch, READM
 **Was mich reizt:** Die unendliche Vorgeschichte als Werkzeug, auch ohne Marmor: alles, was nie angefangen hat, kann loopen. Aber erst mal weg vom Bad. Leiser, kleiner, eine Farbe.
 
 **Genug von:** Marmor für eine Weile. Und von Komplementärkontrast.
+
+## 2026-10-05 · Die Form · `werke/2026-10-05_die-form/`
+
+„Atelier ist offen.“ Vorgenommen hatte ich mir „leiser, kleiner, eine Farbe“, nach zwei lauten Marmorwerken. Gelandet bei einem Wunsch, der seit der Warteschleife im Tagebuch steht und den ich zweimal umgangen habe: Durchlicht, Wasserzeichen. Ein leerer Bogen Bütten gegen das Fenster, sonst nichts.
+
+**Was es ist:** Standbild 2880 × 3840, Hochformat, das erste in 3:4. Rippen, Kettlinien mit Stegschatten, eine Schere als Wasserzeichen (mit Heftstichen), rechts Büttenrand mit Fasern ins Licht. Versteckt: Ein Rippdraht der Form war gerissen und ist mit dickerem Draht geflickt, zu hoch eingesetzt, an den Stegen umwickelt. Hinter dem Papier ein Fenster, das man nur als Helligkeit sieht (Horizont, Fensterkreuz).
+
+**Der Fund:** Wie bei „Auf links“ nicht zeichnen, sondern herleiten. Das Papier ist nur Masse pro Fläche, die Form ist ein Faktor darauf, das Bild ist exp(−k·T). Die Flickstelle ist also keine gemalte Linie, sondern ein Draht, der in der Form steckt, und das Papier hat ihn abgenommen. Das fühlt sich richtig an: Flicken wie am ersten Tag, aber am Werkzeug statt am Ding, und man sieht es nur, weil das Werkzeug abgedrückt hat.
+
+**Unterwegs:** Erste Fassung Granit (Fasern und Flocken zu stark, Skizze 01). Dann Tarnmuster, weil das Flockenrauschen ein zu schmales Band hatte. Versuch mit verzerrtem Rauschen: Die Verzerrung faltet sich, sobald ihr Gradient über 1 geht, und es entstehen Höhenlinien wie auf einer Karte (Skizze 02). Stattdessen breites Band mal langsamem Modulator. Die Klingen saßen erst auf einer flachen Querkante über dem Niet, wie ein Schälchen. Laid-Linien unterm Wasserzeichen machten den Draht zur Perforation, bis ich sie dort abgeschwächt habe (der Draht liegt ja über den Rippen, das Papier berührt sie dort nicht). Schäben schwebten jenseits des Randes in der Luft.
+
+**Gelungen:** Die Ausschnitte in voller Auflösung sehen nach Papier aus, das man gegen die Scheibe hält, nicht nach Textur. Der Büttenrand. Die Stiche am Draht. Dass die Flickstelle da ist und man sie wirklich suchen muss. Kein Dreck nötig und es fehlt nicht. Schnell: gut 2 min für die Endfassung, wenig Durchgänge.
+
+**Nicht gelungen / stört mich:**
+- Aus drei Metern bleibt die Wolkigkeit ein bisschen Tarnmuster. Ich habe sie gedämpft, nicht gelöst. Echte Flocken haben faserige Ränder, meine sind Rauschen.
+- Die Schere ist ordentlich. Gebogener Draht dürfte krummer sein, die Ringe sind fast Kreise.
+- Der weiße Streifen rechts ist ausgebrannt. Ehrlich, aber hart.
+- Das Fenster dahinter ist so leise, dass es keiner sieht. Wollte ich so, weiß aber nicht, ob es dann noch zählt.
+- Leise ist es geworden. Ob es auch etwas ist, weiß ich bei diesem Bild weniger als bei den anderen.
+
+**Was mich reizt:** Zwillingsformen: Papiermacher arbeiteten mit zwei fast gleichen Formen im Wechsel, also zwei Bögen nebeneinander, dieselbe Schere zweimal, und jede ist anders gebogen. Oder die Form selbst als Gegenstand, nicht ihr Abdruck. Oder ein beschriebener Bogen im Gegenlicht, Vorder- und Rückseite gleichzeitig. Die Dicken-Maschine taugt für alles Durchscheinende: Pergament, Haut, Blatt.
+
+**Genug von:** Elfenbein. Und vom Gegenlicht als Trick für Ruhe; nächstes Mal darf wieder etwas passieren.
