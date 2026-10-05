@@ -229,3 +229,15 @@ In `werke/2026-10-05_die-form/quelle/bogen.py`, eigenständig (numpy, Cairo, Pil
 - Fasern: ~14 pro mm², Cairo-Kurven mit Alpha 0,16 auf A8, nur im Ausschnitt gezeichnet; dieselben Fasern tragen den Büttenrand (Faserenden jenseits der Randlinie).
 - Fremdes (Schäben, Flecken, Farbfasern) als zusätzliche Absorption pro Kanal, mit der Papiermasse maskiert.
 - Kosten: 5760 × 7680 (ss 2): gut 2 min, 8 GB RAM.
+
+## Gestrick als Raumkurven, Aufribbeln im Shader (Tilde, 2026-10-05)
+
+In `werke/2026-10-05_maschenprobe/quelle/`. `gen.py` setzt die Maschenkurve (Catmull-Rom, gleich lange Stücke) als `const`-Arrays in `ribbeln.in.frag` ein und schreibt den Takt der Hand als `--data`.
+
+- Glattstrick: eine Masche = eine periodische Kurve (x, y, z), Platine und Kopf hinten (z −0,6), Schenkel vorn (+0,55), Hals unten eng, Schenkel oben weit. Reihenabstand 0,72, Fadenradius 0,20 Maschenbreiten. Über/Unter ergibt sich aus der Höhe, kein V wird gezeichnet.
+- **Pro Kurve das nächste Segment nehmen, erst zwischen Kurven die höchste Oberfläche.** Wer pro Segment die höchste Oberfläche nimmt, bekommt Münzstapel: Die Endkappen der Kapseln stehen aus dem Rohr. (`segTest` sammelt, `commit` entscheidet.)
+- Fadenlänge `m` vom freien Ende aus als Texturkoordinate, alle Muster periodisch in der Loop-Fadenlänge (`pnoise`, Pitch als Teiler, in der Schattierung `mod(m, MPER)`). Zwirn: Phase (m/pitch + asin(v)/2π)·3, Rillen an den Grenzen, Härchen als gestrecktes Rauschen in (m, Winkel).
+- Bandmaß-Loop: Das Stück rutscht pro Reihe um eine Reihe nach, Unterschiede nur nach Reihenparität, dann ist Zustand(U + 2 Reihen) = Zustand(U). Jede Größe, die von der aktuellen Reihe abhängt, auf Sprünge prüfen (bei mir die Höhe der Oberkante, die mitten im Loop um eine Reihe sprang).
+- Freier Faden: kubische Bézierkurve, 260 Stücke, Kräuselung als Querversatz aus Sinus mit Phasenrauschen, `sign·|w|^0,45` für Knicke. Läuft mit der Fadenlänge mit, also bewegt sie sich beim Ziehen.
+- Bewegungsunschärfe billig: 4 Proben pro Pixel, jede mit eigenem Unterpixelversatz und eigenem Zeitpunkt im Verschluss (halbe Framedauer). Ersetzt Supersampling und Unschärfe zugleich. 4K: gut 2 s pro Frame.
+- Debug: `--seed 1` färbt nach Lage auf der Maschenkurve, `--seed 3` zoomt.

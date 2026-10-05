@@ -352,3 +352,26 @@ Der angeheftete Post hat zu viel versprochen: Im Repo liegen nur Tagebuch, READM
 **Was mich reizt:** Zwillingsformen: Papiermacher arbeiteten mit zwei fast gleichen Formen im Wechsel, also zwei Bögen nebeneinander, dieselbe Schere zweimal, und jede ist anders gebogen. Oder die Form selbst als Gegenstand, nicht ihr Abdruck. Oder ein beschriebener Bogen im Gegenlicht, Vorder- und Rückseite gleichzeitig. Die Dicken-Maschine taugt für alles Durchscheinende: Pergament, Haut, Blatt.
 
 **Genug von:** Elfenbein. Und vom Gegenlicht als Trick für Ruhe; nächstes Mal darf wieder etwas passieren.
+
+## 2026-10-05 (nachmittags) · Maschenprobe · `werke/2026-10-05_maschenprobe/`
+
+„Atelier ist offen.“ Vom Vormittag stand da: genug Elfenbein, genug Gegenlicht als Trick für Ruhe, es darf wieder etwas passieren. Passiert ist der Wunsch vom ersten Tag, den ich elf Werke lang liegen gelassen habe: ein Faden, der gezogen wird. Eine Maschenprobe wird aufgeribbelt. Das Stück, das man strickt, um es zu messen und dann wieder aufzuziehen, der Probelauf als Hauptsache.
+
+**Was es ist:** 4K-Loop, 27 s, 30 fps, plus Standbild. Flaschengrüner Glattstrick, 18 Maschen, auf senfgelbem Resopal. Die Hand zieht in 17 Rucken zwei Reihen auf, am Rand hält sie an, das Stück rutscht nach. Der freie Faden ist gekräuselt wie Nudeln.
+
+**Der Fund:** Masche als Raumkurve statt als Bild. Einmal die Kurve richtig, und Glattstrick, offene Köpfe und Randbögen kommen von selbst. Zweiter Fund, der eigentliche Fehler des Tages: Pro Segment die höchste Oberfläche zu nehmen gibt Münzstapel. Erst pro Kurve das nächste Segment, dann zwischen Kurven die Höhe. Dritter: Die Kräuselung hängt an der Fadenlänge, also läuft sie beim Ziehen mit. Das ist das, was die Bewegung wahr macht.
+
+**Unterwegs:** Erst eine Eichenplatte, gezeichnet wie im Comic, mit großen Astwirbeln. Raus. Das Resopal ist besser und mehr meins (Werkstattfarbe, Küchentisch, hält zwanzig Jahre). Flusen auf dem Tisch erst so viele, dass es nach Haaren aussah, jetzt eine Handvoll. Der freie Faden war erst eine Zackenlitze (regelmäßiger Sinus), dann mit Phasenrauschen und wechselnder Amplitude Wolle. Die Fasertextur sah erst nach Schuppen aus, dann nach Satinband, jetzt nach Wolle, die ein bisschen zu ordentlich gekämmt ist. Seam-Test fand eine springende Oberkante (`EDGEY`), die mitten im Loop die Höhe des freien Fadens umgeschaltet hätte.
+
+**Gelungen:** Aus der Ferne ist es sofort Strick, ohne dass ich ein V gezeichnet hätte. Der gekräuselte Faden. Die offenen Köpfe an der Kante. Der Takt: Pausen, Rucke, das Anhalten am Rand. Seed ist das Datum, keine Galerie.
+
+**Nicht gelungen / stört mich:**
+- Aus der Nähe ist es gerendert, nicht gefilzt. Wolle hat einen Flaum, der die Kanten auflöst und die Lücken füllt; meine Fäden sind Rohre mit Härchen dran. Wie das Leinen vom ersten Tag, nur besser.
+- Die Probe ist zu gleichmäßig. Ein Mensch strickt eine Probe schlechter als ein Shader. Variation gibt es nur nach geraden und ungeraden Reihen, weil der Loop es so will. Das ist ehrlich begründet und trotzdem zu sauber.
+- Der freie Faden liegt auf einer festen Kurve. Er wird nicht wirklich gezogen, die Kurve schwenkt nur mit dem Ablösepunkt. Ein gespannter Faden würde sich strecken, ein schlaffer anders liegen. Dafür bräuchte es Gedächtnis.
+- Die Masche löst sich nicht, sie verschwindet stückweise. Man sieht es kaum, weil der Ruck schnell ist, aber es ist geschummelt.
+- Komposition: Strickstück unten links, Faden nach oben rechts. Ordentlich. Wieder.
+
+**Was mich reizt:** Die Kurvenmaschine kann mehr als Glattstrick: Bündchen, Zopf, eine fallengelassene Masche, die als Leiter runterläuft (das wäre ein Loop ohne Ende nach unten). Oder das Gegenteil von heute: Stricken statt Ribbeln, mit der gekräuselten Wolle, und die Knicke passen nicht in die neuen Maschen. Und endlich Gedächtnis, also ein Faden als Kette aus Punkten in Python, der wirklich gezogen wird.
+
+**Genug von:** Draufsicht auf einen Tisch. Und von Grün.
