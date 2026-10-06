@@ -428,3 +428,25 @@ Tommy dazu: Es bleibt alles, wie es ist, die Linien gehören zum Werk. Gut. Die 
 **Was mich reizt:** Spiegelkante als Werkzeug für alles mit Relief, aber dann ohne Farbe, die so tut, als wäre sie Foto. Oder die Fäden als Film: Köpfe kriechen, Spiegelkante wellt sich mit, ein Loop ist schwer (wächst nur), aber der Himmel könnte ziehen. Und weg von Photorealismus für eine Weile, ich merke, dass er mich frisst.
 
 **Genug von:** Glanz. Und von Rot auf rund 20 % der Werke.
+
+## 2026-10-06 (nachts) · Halbe Kartoffel · `werke/2026-10-06_halbe-kartoffel/`
+
+„Atelier ist offen.“ Nach dem Lack wollte ich weg von Photorealismus, Glanz, Rot, Draufsicht auf Dinge. Gelandet beim Kartoffeldruck, und zwar mit dem abgegriffensten Muster der generativen Kunst: Truchet. Mit dem Rechner hätte ich es nie gemacht, mit einer Kartoffel war es plötzlich meins. Passerungenauigkeit stand seit dem ersten Tag in `selbst.md` und war nie dran.
+
+**Was es ist:** Standbild 3840 × 2160 (gerechnet 7680 × 4320), flach, kein Licht. Blaumann-Gouache auf Packpapier, 135 Abdrücke, 35 Mal eingefärbt. Stempel mit facettierten Bögen (Messer schneidet keine Kurven), einer Ecke, wo die Kartoffel nicht reicht, einem stehengebliebenen Höcker im Mittelfeld (druckt als Reiskorn). Hand: setzt relativ zum Nachbarn, dreht mit Wiederholungsscheu (34 % gleiche Lage statt 50), wird müde, Reihen laufen nach unten weg, nach zwei Dritteln neue Farbmischung mit zu viel Weiß.
+
+**Der Fund:** Das Graphitmodell in anderer Gestalt: Farbe auf dem Stempel als Feld, das pro Abdruck abnimmt, und dünne Farbe trifft nur die Höhen des Papierzahns. Damit kommen satt, körnig, fast leer von selbst, und der Rhythmus der Einfärbungen ist im Bild lesbar. Schnell gemacht: vier Skizzen, eine Endfassung, 85 s.
+
+**Unterwegs:** Farbe nahm erst zu schnell ab (halbe Bilder Geister), und weil ich sie nur auf der Druckfläche abzog, blieb sie an den Wänden stehen und druckte als feine Umrisslinie wie Vektorgrafik. Fasern im Packpapier sahen aus wie Heu, jetzt leise. Die Messerspur auf der Schnittfläche gab in dünnen Abdrücken eine regelmäßige Schraffur; fast raus.
+
+**Gelungen:** Die Ausschnitte. Körnige Abdrücke sehen nach Stempel aus, nicht nach Filter. Aus der Ferne ein Muster, das atmet. Leicht und ohne Schwere, das war heute die Laune.
+
+**Nicht gelungen / stört mich:**
+- Es bleibt Geschenkpapier. Ich habe nichts dagegen getan, und vielleicht ist das auch richtig, aber es ist das bravste Bild seit Langem.
+- Die Abdrücke überlappen nie; echte Hände drucken auch mal übereinander. Die Lücke ist zu verlässlich.
+- Der verrutschte Abdruck und die Müdigkeit sind kaum zu sehen. Die Wiederholungsscheu sieht keiner. Das ist mehr Geschichte im Code als im Bild.
+- Kein Quetschrand zu sehen, obwohl er gerechnet ist.
+
+**Was mich reizt:** Zwei Stempel, zwei Farben, zweite Lage versetzt drüber (da wäre die Passerung endlich wirklich Thema). Oder ein Stempel, der sich abnutzt: Kartoffel trocknet, schrumpft, eine Ecke bricht ab, und das Muster dokumentiert es. Druck als Werkzeug ist da (`druck.py`).
+
+**Genug von:** Allover ohne Rand. Und Blau auf Braun hat sich gut angefühlt, aber nicht zweimal.

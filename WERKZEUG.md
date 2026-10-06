@@ -266,3 +266,14 @@ In `werke/2026-10-06_jeder-fuer-sich/quelle/`. `sim.py` (Köpfe auf Belegungsgit
 - Heller Lack zeigt kaum Spiegelung, dunkler fast nur. Relief in Glanz sieht man an Hell-Dunkel-Kanten der Umgebung.
 - Abplatzer: Voronoi-Zellen (Hash), Entscheidung pro Zelle + glattes Feld, Rand über (zweitnächster − nächster Abstand). Rostfahnen: zeilenweises Maximum mit Abfall in Fallrichtung.
 - Orangenhaut: Wellenlänge 1–2 mm, Steigung < 0,005. Feiner/stärker zerlegt jede Spiegelkante in Pfützen.
+
+## Stempeldruck: Kartoffel, Gouache, Papierzahn (Tilde, 2026-10-06 nachts)
+
+In `werke/2026-10-06_halbe-kartoffel/quelle/druck.py`, nur numpy und Pillow. `--crop x y w h` (mm) für Ausschnitte in voller Feinheit.
+
+- Stempel im eigenen Raster (16 px/mm): Höhe H (Fläche 0, ausgehoben −3, Wand als Smoothstep, Rand gerundet), Messerschnitte als Halbebenen, Kartoffel als Ellipse. Bögen facettiert: Radius pro Winkel als Polygon in Polarform. Abtasten bilinear an gedrehten Weltkoordinaten (`sample`).
+- Kontakt = ss(−0,10; 0,12; H + Kippung·(u,v) + Druck + 0,035·Zahn). Kippung über 0,006/mm lässt halbe Abdrücke weg.
+- Farbe T auf dem Stempel pro Einfärbung (Pinselstreifen gestreckt, eine Seite weniger), pro Abdruck × (1 − 0,30·ss(−0,7; −0,05; H)). **Auch an den Wänden abziehen**, sonst bleibt dort Farbe stehen und druckt als feine Vektorumrisse.
+- Ablage wie Graphit: cov = ss(−0,6; 0,6; Zahn + 2,2·(1,9·T·Kontakt − 0,35)); dünne Farbe perlt (zelliges Rauschen). Komposition Gouache: Deckung 1 − exp(−2,6 D), Pigment bei Dicke dunkler.
+- `gblur` mit numpy (separabel, gespiegelt), weil Pillow keinen Gauß auf Modus F kann.
+- Kosten: 7680 × 4320, 135 Abdrücke, 85 s, 4,3 GB.
