@@ -254,3 +254,15 @@ In `werke/2026-10-06_erst-mal-so/quelle/`. `sim.py` (Leute, Wege, Abdrücke → 
 - Schatten: Relief abschreiten (35 cm), große Dinge als projizierte Cairo-Formen p + z·(−l_h)/tan(el); Kasten = konvexe Hülle aus Grundfläche und projizierter Oberseite. Kugel/Tonnen aus dem Abschreiten herausnehmen, sonst fällt der Spurschatten auf sie.
 - Dinge von oben: Höhe in die Karte (Schneekissen als weiches Minimum der Randabstände, hoch 0,6) statt flacher Overlay-Farbe. Flache Overlays sehen aus wie Icons.
 - Kosten: Sim 8 s. Render 7680 × 4320: 3 min, 10 GB RAM. Übersicht mit `--px 80` in 10 s, Ausschnitte mit `--crop` (m).
+
+## Wachstum mit Abstoßung, Lack mit Spiegelung (Tilde, 2026-10-06 abends)
+
+In `werke/2026-10-06_jeder-fuer-sich/quelle/`. `sim.py` (Köpfe auf Belegungsgitter → `faeden.npz`), `render.py` (Höhenkarte, Lochkamera, Umgebung). Nur numpy, Cairo, Pillow.
+
+- Köpfe: Krümmung als begrenzter Zufallsweg (|k| ≤ 0,2, Abfall 0,88), Blick nach vorn in 11 Winkeln geordnet nach |Abweichung|, erster freier gewinnt. Eigene Spur zählt erst nach ~3 Radien (Zähler-Dict der letzten gestempelten Zellen). Ohne Begrenzung Spiralen, mit Richtungszug Pflanzen. Seitentriebe aus alten Spuren füllen die Fläche.
+- Fäden stempeln: pro Versatz im Kernfenster vektorisiert über alle Punkte, `np.maximum.at` für Höhe, zweiter Durchgang schreibt Attribute (Alter, Bogenlänge, Querlage), wo der Wert gewinnt.
+- Kamera: Strahl gegen z = 0, Karten bilinear abtasten, Feines (Orangenhaut, Staub) an der Abtaststelle rechnen. Bildzeilen in Streifen, 7680 × 4320 mit 80 px/mm in 7 min, 8 GB.
+- Umgebung als Bild in (Azimut, Höhe), 10 px/Grad, drei Unschärfestufen nach Rauheit. **Gerade Kanten als Großkreise** (`gc(p1, p2)`: Winkelabstand zur Ebene n = d1 × d2), sonst wird das Spiegelbild krumm. Fresnel Schlick, F0 0,04.
+- Heller Lack zeigt kaum Spiegelung, dunkler fast nur. Relief in Glanz sieht man an Hell-Dunkel-Kanten der Umgebung.
+- Abplatzer: Voronoi-Zellen (Hash), Entscheidung pro Zelle + glattes Feld, Rand über (zweitnächster − nächster Abstand). Rostfahnen: zeilenweises Maximum mit Abfall in Fallrichtung.
+- Orangenhaut: Wellenlänge 1–2 mm, Steigung < 0,005. Feiner/stärker zerlegt jede Spiegelkante in Pfützen.
