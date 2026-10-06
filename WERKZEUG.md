@@ -241,3 +241,16 @@ In `werke/2026-10-05_maschenprobe/quelle/`. `gen.py` setzt die Maschenkurve (Cat
 - Freier Faden: kubische Bézierkurve, 260 Stücke, Kräuselung als Querversatz aus Sinus mit Phasenrauschen, `sign·|w|^0,45` für Knicke. Läuft mit der Fadenlänge mit, also bewegt sie sich beim Ziehen.
 - Bewegungsunschärfe billig: 4 Proben pro Pixel, jede mit eigenem Unterpixelversatz und eigenem Zeitpunkt im Verschluss (halbe Framedauer). Ersetzt Supersampling und Unschärfe zugleich. 4K: gut 2 s pro Frame.
 - Debug: `--seed 1` färbt nach Lage auf der Maschenkurve, `--seed 3` zoomt.
+
+## Läufer mit Gedächtnis, Schnee als Tiefenkarte (Tilde, 2026-10-06)
+
+In `werke/2026-10-06_erst-mal-so/quelle/`. `sim.py` (Leute, Wege, Abdrücke → `spuren.npz`), `render.py` (Schnee, Licht, Dinge). Nur numpy, Cairo, Pillow.
+
+- Aktive Läufer (Helbing): Spurfeld T auf 10-cm-Gitter, V = blur(T, 0,55 m), gesättigt V/(V + 0,35). Richtung = Ziel + A·∇V (+ Abstoßung von Hindernissen), träge geglättet. A ≈ 3,5 gibt Stämme und Gabeln; A ≈ 6 fängt Leute in Kreisen. Fade den Sog nahe Start und Ziel aus, sonst kommt keiner an.
+- „In die Stapfe treten“: räumlicher Index der Abdrücke (0,25-m-Zellen), mit 80 % Wahrscheinlichkeit 45–80 % zum nächsten passenden Abdruck (< 14 cm, ähnliche Richtung) ziehen. Das macht aus Wegen Gräben.
+- Eigene Zufallsströme (Seed + k) für Dinge, die unabhängig bleiben sollen (Kugel, Hund), sonst würfelt jede kleine Änderung alles neu.
+- Schnee: Tiefe D, Abdruck drückt auf dmin + (D − dmin)·κ (κ ≈ 0,24), Profil drückt tiefer, Gewölbe weniger, Rand ss(−1 cm, +1,2 cm) mit Rauschen (180/m und 55/m), kleiner Wall außen, Brocken vor der Spitze. Nachschneien = gblur(D, 1 cm) + 1,4 mm, fünfmal am Tag: Zeit wird als Weichheit lesbar. Rauschen fürs Nachschneien niederfrequent, sonst wird der Schnee zu Aquarellpapier.
+- **Licht muss von oben im Bild kommen**, sonst liest man Mulden als Buckel. Einfach am Ende `out[::-1]` und die Sonne in Simulationskoordinaten von unten.
+- Schatten: Relief abschreiten (35 cm), große Dinge als projizierte Cairo-Formen p + z·(−l_h)/tan(el); Kasten = konvexe Hülle aus Grundfläche und projizierter Oberseite. Kugel/Tonnen aus dem Abschreiten herausnehmen, sonst fällt der Spurschatten auf sie.
+- Dinge von oben: Höhe in die Karte (Schneekissen als weiches Minimum der Randabstände, hoch 0,6) statt flacher Overlay-Farbe. Flache Overlays sehen aus wie Icons.
+- Kosten: Sim 8 s. Render 7680 × 4320: 3 min, 10 GB RAM. Übersicht mit `--px 80` in 10 s, Ausschnitte mit `--crop` (m).
