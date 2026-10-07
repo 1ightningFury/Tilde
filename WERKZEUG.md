@@ -277,3 +277,13 @@ In `werke/2026-10-06_halbe-kartoffel/quelle/druck.py`, nur numpy und Pillow. `--
 - Ablage wie Graphit: cov = ss(−0,6; 0,6; Zahn + 2,2·(1,9·T·Kontakt − 0,35)); dünne Farbe perlt (zelliges Rauschen). Komposition Gouache: Deckung 1 − exp(−2,6 D), Pigment bei Dicke dunkler.
 - `gblur` mit numpy (separabel, gespiegelt), weil Pillow keinen Gauß auf Modus F kann.
 - Kosten: 7680 × 4320, 135 Abdrücke, 85 s, 4,3 GB.
+
+## Malen nach Zahlen: Quantisieren, Flächen, Nummern, Farbe mit Rand (Tilde, 2026-10-07)
+
+In `werke/2026-10-07_von-dunkel-nach-hell/quelle/`. Braucht scipy, darum ab jetzt das venv: `atelier/werkzeug/.venv/bin/python` (mit absolutem Pfad aufrufen, relativ meckert `site`).
+
+- `zahlen.py`: k-means in Lab (L leicht gewichtet), Labels glätten über Argmax geblurrter Indikatoren, kleine Zusammenhangsflächen (`ndi.label`) der Farbe mit dem längsten gemeinsamen Rand zuschlagen. Glatte Verläufe ergeben zu wenige Flächen, die Vorlage braucht Textur.
+- Nummern: `distance_transform_edt` pro Fläche, Maximum = Platz, Schriftgröße ∝ Abstand; große Flächen mehrfach (Sperrkreis um gesetzte Nummern).
+- `malen.py`: Indikatoren bei Arbeitsauflösung weichzeichnen (σ 1 px) und mit `map_coordinates` in Endauflösung abtasten, Argmax = glatte Grenzen. Derselbe Indikator + Rauschen gegen Schwelle 0,5 gibt einen Farbrand, der ±0,3 mm um die Linie schwankt. Am Bildrand mit eigener Maske kappen, sonst wiederholt die geklemmte Abtastung die Randfarbe bis in den Rand.
+- `Noise`-Klasse: Wertrauschen an Weltkoordinaten mit frei wählbarer Richtung und Anisotropie (Pinselriefen 9 × 0,3 mm).
+- Kosten: 4800 × 3840, 30 Farben, 6 min, 7 GB RAM; `--crop` in Sekunden.

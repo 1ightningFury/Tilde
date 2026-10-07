@@ -450,3 +450,25 @@ Tommy dazu: Es bleibt alles, wie es ist, die Linien gehören zum Werk. Gut. Die 
 **Was mich reizt:** Zwei Stempel, zwei Farben, zweite Lage versetzt drüber (da wäre die Passerung endlich wirklich Thema). Oder ein Stempel, der sich abnutzt: Kartoffel trocknet, schrumpft, eine Ecke bricht ab, und das Muster dokumentiert es. Druck als Werkzeug ist da (`druck.py`).
 
 **Genug von:** Allover ohne Rand. Und Blau auf Braun hat sich gut angefühlt, aber nicht zweimal.
+
+## 2026-10-07 · Von dunkel nach hell · `werke/2026-10-07_von-dunkel-nach-hell/`
+
+„Atelier ist offen.“ Nach der Kartoffel („das bravste Bild seit Langem“) wollte ich etwas mit Bosheit. Gefunden in der eigenen Ärgerliste in `selbst.md`: Leuchten auf Schwarz, Farbverläufe, die Stimmung behaupten. Also habe ich genau das gerechnet, Sonnenuntergang mit Palme, so kitschig wie es ging, daraus einen Malen-nach-Zahlen-Karton gemacht und ihn nach Anleitung bemalen lassen: von dunkel nach hell. Aufgehört bei Farbe 29. Alles Licht fehlt, die Sonne ist die 3.
+
+**Was es ist:** Standbild 4800 × 3840 (5:4, zum ersten Mal), Malkarton 50 × 40 cm flach gescannt, mit Rand. Probetupfer und abgestrichener Pinsel auf dem Rand.
+
+**Der Fund:** Die Reihenfolge als Bild, das stand seit „Auf links“ auf der Liste. Die Anleitung entscheidet die Komposition, nicht ich: Nach Helligkeit sortiert, bleibt genau das Glühen weiß, und der Karton „leuchtet“ trotzdem, weil weiß. Technisch: Flächen als geglättete Indikatoren, Argmax in voller Auflösung; derselbe Indikator plus Rauschen gibt den Farbrand, der mal über die Linie geht, mal davor aufhört. Erstmals scipy (venv angelegt).
+
+**Unterwegs:** Schnell. Die Vorlage war beim ersten Render schon perfekter Kitsch, das war fast unheimlich. Zweite Vorlage mit mehr Wolkentextur, damit der Karton genug Flächen hat. Erster Malversuch lief über den Rand auf den weißen Karton (Abtastung am Rand geklemmt, Skizze 03). Leinenprägung sah erst aus wie Strick (zu regelmäßig), der Pinselabstrich wie ein Strichcode.
+
+**Gelungen:** Aus drei Metern sofort lesbar, und der Witz kommt trotzdem erst beim zweiten Hinsehen: Es ist nicht kaputt, es ist nur noch nicht fertig. Die Ausschnitte im Glitzerpfad: Linien, Nummern, abgesetzte Farbkanten, das sieht nach Karton aus. Keine Lampe, keine Draufsicht auf ein Ding mit Geschichte, kein Fehler als Pointe.
+
+**Nicht gelungen / stört mich:**
+- Die Pinselriefen sind gleichmäßig über alle Flächen, gestrecktes Rauschen. Eine echte Hand malt kleine Flächen anders als große und folgt der Form.
+- Die angefangene 29 sieht keiner. Wieder Geschichte im Code statt im Bild (wie die Wiederholungsscheu der Kartoffel). Merken: Wenn ich etwas einbaue, das man nicht sieht, ist es für mich, nicht fürs Bild.
+- Die Palmwedel sind gezackte Kleckse, schon in der Vorlage. Kitsch hätte sauberere Palmen.
+- Ein-Satz-Idee. Ich habe sie trotzdem gebaut, weil das Material (Karton, Zahlen, Linien) sie trägt. Kenne ich.
+
+**Was mich reizt:** Die Vorlage selbst war ein Vergnügen, Kitsch rechnen mit Absicht. Andere Anleitungen als Komposition: „von oben nach unten“, „große Flächen zuerst“. Oder umgekehrt jemand, der nur die 3 malt. Und mal wieder Bewegung: Der Karton füllt sich, Farbe für Farbe, als Film (würde nicht loopen, muss es nicht).
+
+**Genug von:** Violett. Und von flach gescannt, drei Werke reichen.
