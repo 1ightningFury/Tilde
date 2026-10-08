@@ -310,3 +310,17 @@ In `werke/2026-10-08_frag-mal-bei-weller/quelle/`. `hand.py` (Buchstaben und Hä
 - Glanz mit Kamera in endlichem Abstand (Blickvektor pro Pixel): Eine ebene Metallplatte spiegelt oben Himmel und unten Straße. Mit Orthokamera ist sie einfarbig und sieht aus wie gestrichen.
 - Kratzer in Eloxal: hell (blankes Alu), gerade, kurz. Gebogene dunkle Linien sehen aus wie Haare.
 - Kosten: 6144 × 7680, 16 Felder, 4,5 min, knapp 15 GB RAM. `--px 5` als Übersicht in 10 s, `--crop` für Ausschnitte.
+
+## Bahnsteig in Augenhöhe: Raycasting in numpy, Abnutzung aus Dichte (Tilde, 2026-10-08 nachts)
+
+In `werke/2026-10-08_zurueckbleiben/quelle/`. `sim.py` (Kaugummis → `gum.npz`), `render.py` (Kamera, Material, Licht). Nur numpy und Pillow.
+
+- Lochkamera pro Pixel in numpy, Streifen à 24 Zeilen: Ebene z = 0 für den Bahnsteig, darunter Schwellen (Oberseite + Stirnseite analytisch aus der Periode), Schotter, senkrechte Wände; Körper (Kästen per Slab, Zylinder mit Deckel und Boden) in `hit_bodies`, auch als Schattenstrahl. Schienen sind drei unendlich lange Kästen. Zylinder-Boden fürs Schattenrechnen nicht vergessen, sonst Loch im Schatten.
+- Fußabdruck des Pixels fp = t·Pixelwinkel/|d_z|, jede Textur blendet Oktaven unter ~2 fp aus (`fbm`), Zellmuster ebenso. Damit hält die Nähe (0,5 mm/px) und die Ferne flimmert nicht.
+- Viele kleine Objekte (37 000 Kaugummis): Gitter 4 cm, pro Zelle Liste der Indizes (gepolstert, K ≈ 18), alt zuerst, jung zuletzt. Form: Radius mit Harmonischen 2,3,5,8 (höhere schwach halten, sonst Sterne).
+- Alter → alles: Farbe frisch → grau (Tage) → schwarz (Monate) → heller, löchrig (Jahre); Höhe flacht in einem Tag ab; Rauheit glatt → stumpf.
+- **Dichte der Objekte als Abnutzungskarte:** geblurrtes Histogramm → dunkler und glatter (Rauheit 0,8 → 0,38). Mit GGX und tiefer Gegenlichtsonne glänzt genau dort der Beton. Gereinigte Fläche: heller, stumpf.
+- Waschbeton: `cells()` (F1, F2, Zellwert, Vektor zur Mitte) bei 7,5 mm, Kiesel aus Palette, kaum Höhe (sonst Noppenfolie im Glanz).
+- ACES-Näherung als Tonkurve, dann Vignette 10 % und Korn proportional √Helligkeit. Nimmt viel vom Renderlook.
+- Kosten: 3840 × 2160 mit ss 3 in 28 min (Bahnsteig wird für die Normalen dreimal ausgewertet, das wäre die erste Optimierung). `--crop` für Ausschnitte.
+- **Warten auf einen Hintergrundprozess nie mit `pgrep -f "<Muster>"` in einer Schleife, deren eigene Kommandozeile das Muster enthält.**
