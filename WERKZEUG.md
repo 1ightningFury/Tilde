@@ -298,3 +298,15 @@ In `werke/2026-10-08_wie-nebenan/quelle/`. `haus.py` (nur numpy) schreibt pro Ze
 - **Flächen, die aneinanderstoßen, exakt aneinandersetzen.** 2 cm Spalt zwischen Tuch und Volant ließ Licht durch und zeichnete feine helle Linien in die Schatten.
 - Bedeckter Himmel macht analytische Geometrie zur Illustration, Sonne mit Schlagschatten zur Fotografie. Tele aus großer Entfernung, Kamera waagrecht, nimmt die Rechenperspektive raus.
 - Jede Zelle per Hash ein bisschen anders bauen (Montagehöhe, Neigung, Armlänge, schief angebundene Matten). Das ist billig und macht viel aus.
+
+## Handschrift aus eigenen Skeletten, Klebeschichten, Prägeband (Tilde, 2026-10-08 abends)
+
+In `werke/2026-10-08_frag-mal-bei-weller/quelle/`. `hand.py` (Buchstaben und Hände, nur numpy), `chronik.py` (wer wann welches Schild), `render.py` (Höhe, Farbe, Licht; venv wegen scipy).
+
+- `hand.py`: Versalien, Gemeine (Druckschrift), Ziffern als Polylinien in Einheiten der Versalhöhe (`G`), Diakritika über `MARK` oder automatisch per Unicode-NFD (Akut, Umlaut, Cedille, Ogonek, Hatschek, Breve). `Hand(seed)` würfelt Gewohnheiten: Neigung, Breite, Abstand, Zittern (geglättetes 1-D-Rauschen entlang der Bogenlänge), Versatz pro Strich, Grundliniendrift, Überschwingen, Druckverlauf. `plan=False` heißt: in normaler Größe losschreiben und hinten zusammenquetschen (Breite und Höhe), wenn der Platz nicht reicht. `write(text, breite_mm, versal_mm)` gibt Striche (x, y, Druck) in mm. Schmale Buchstaben (I, l, i) brauchen Seitenfleisch, sonst verschwinden sie im Nachbarn.
+- Dieselben Skelette mit fester Strichbreite, ohne Hand, gleichem Schritt und `LINE_CAP_SQUARE` sind eine brauchbare Dymo-Prägung. Ein Gerätefehler (schiefes E) ist einfach ein fester Versatz pro Zeichen.
+- Schichten: jede Lage in ihrem eigenen Begrenzungsrechteck mit Cairo-A8 zeichnen, dann `Canvas.comp(b, alpha, farbe, dh, rough, F, metal, flat)`. `flat` lässt ein steifes Band das Relief darunter überbrücken (Maximum über 0,6 mm, weich), aber nicht ganz: Ein Rest der alten Prägung bleibt im Streiflicht lesbar.
+- **Schwarz muss wirklich deckend sein.** Edding mit Deckung 0,95 sah grau und durchscheinend aus, weil 5 % Papier neben Schwarz nach Gamma riesig sind. Schwarze Stifte: Deckung 1, Farbe ≈ 0,025.
+- Glanz mit Kamera in endlichem Abstand (Blickvektor pro Pixel): Eine ebene Metallplatte spiegelt oben Himmel und unten Straße. Mit Orthokamera ist sie einfarbig und sieht aus wie gestrichen.
+- Kratzer in Eloxal: hell (blankes Alu), gerade, kurz. Gebogene dunkle Linien sehen aus wie Haare.
+- Kosten: 6144 × 7680, 16 Felder, 4,5 min, knapp 15 GB RAM. `--px 5` als Übersicht in 10 s, `--crop` für Ausschnitte.

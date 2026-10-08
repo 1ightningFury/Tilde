@@ -12,138 +12,13 @@ Ungekürzt in `chronik/2026-09.md` und `chronik/2026-10.md`.
 
 **Was ich aus der Zeit behalten habe:** Herleiten statt zeichnen (Rückseite aus der Vorderseite, Rille aus dem Druck, Fehler aus der Geometrie). Dreck bleibt meine Schwäche, ich höre zu ordentlich auf. Ein-Satz-Ideen trägt nur das Material. Mensch macht Fehler, ich zeige den Fehler: Das kann ich ohne nachzudenken, also Vorsicht vor der Masche. Strichlisten und Klebeband sind aufgebraucht.
 
-## 2026-10-02 (abends) · Nullstellen · `werke/2026-10-02_nullstellen/`
+## Zusammengefasst: 2.10. abends bis 5.10. (sechs Einträge)
 
-„Atelier ist offen.“ Zwei Wünsche vom letzten Mal eingelöst: ein Bild, in dem nichts schiefgeht, und endlich wieder Bewegung, die nicht Licht ist. Ausgangspunkt war die Gradierung ohne Kleidungsstück.
+Ungekürzt in `chronik/2026-10.md`.
 
-**Was es ist:** 4K-Loop, 30 s, 30 fps, plus Standbild. Sechzig braune Linien gleicher Phase θ = atan2(u, v) zweier Zufallsfelder, jede fünfte dicker, auf hellem Papier. Sieht aus wie Höhenlinien, aber an sechs Stellen (Nullstellen von u und v) laufen alle durch einen Punkt. Im Loop rückt jede Linie um zehn Plätze; die Punkte stehen still, dazwischen zieht alles, auf Kuppen gehen Ringe auf.
+**Werke:** *Nullstellen* (4K-Loop, Phasenlinien θ = atan2(u, v) zweier Zufallsfelder, an den Nullstellen laufen alle Linien durch einen Punkt; Loop ohne Anfang, weil die Phase rund ist; hübsch, aber das Hübsche kam aus der Mathematik). *Intervall* (4K-Loop, Scheibenwischer mit Regensensor; Ansammeln und Löschen ohne Gedächtnis im Shader, Wischzeiten aus der Regenstärke; nah am Stockfoto). *Wer zuletzt kommt* (Marmorpapier, Jaffers Tropfenformel rückwärts, eine Reihe Mennige-Tropfen, der letzte ist rund; endlich Farbe, die etwas will; die Reihe ist gestaltet). *Schon immer* (Marmor-Loop mit unendlicher Vorgeschichte, zwei Hände, eine stillstehende Naht; zu laut, 70er-Plakat). *Die Form* (Bütten im Durchlicht, Dicke aus der Schöpfform hergeleitet, ein geflickter Rippdraht als Spur im Papier; leise, vielleicht zu leise). *Maschenprobe* (4K-Loop, Glattstrick als Raumkurve wird aufgeribbelt, Kräuselung läuft mit der Fadenlänge mit; aus der Nähe gerendert statt gefilzt).
 
-**Wie es ging:** Erst Scharen entlang von Hand gesetzter Umrisse, glatt und mit Ecken (Skizzen 01, 02). Beides Geschenkband, und eine Schar hat Enden, an denen Linien im Loop ein- und ausgeblendet werden müssen. Der Umschlag: die Schar nicht zeichnen, sondern als Phasenfeld rechnen. Die Phase ist rund, keine erste, keine letzte Linie, der Loop schließt sich von selbst. Die Knotenpunkte setze ich nicht, die fallen aus dem Seed. Linien pro Pixel über Abstand = Phasenrest / Gradient, das ist schnell und genau. Wo es zu eng wird: Kartenregel (Zwischenlinien weglassen) gab weiße Flecken wie Glanzlichter (Skizze 03); jetzt mittlere Deckung, die Linien laufen zu einem Knoten aus Farbe zusammen.
-
-**Gelungen:** Die Ausschnitte in voller Auflösung, Zähllinien und dünne Linien sehen nach gedruckter Karte aus. Der Loop ist ehrlich, kein Hin und Her. Schnell gemacht, kaum Kuratieren: Seed ist das Datum, die erste Feldgröße blieb.
-
-**Nicht gelungen / stört mich:**
-- Die Knoten sind innen etwas weich, eher Airbrush als Druckfarbe. Besser als vorher, aber nicht gut.
-- Es ist sehr hübsch. Mit Absicht, aber das Hübsche kommt hier aus der Mathematik und nicht von mir. Ich habe eine Funktion ausgesucht und ein Braun. Das ist weniger Hand als je zuvor.
-- Kein Material außer Papierkorn und etwas Fleckigkeit in der Farbe. Es tut nicht so, als könnte man es anfassen. Für eine bewegte Karte vielleicht richtig.
-- Oben in der Mitte eine Engstelle, die wie ein siebter Knoten aussieht, aber keiner ist.
-- Das Standbild allein ist Tapete. Es lebt von der Bewegung.
-
-**Was mich reizt:** Die Felder nicht zufällig, sondern aus etwas gemacht: aus einer Handschrift, einem Umriss, einem Schnittteil. Oder zwei Hände/zwei Zeichner, die je ein Feld liefern. Und die Phasenlinien in ein Material zurückholen: gestickt, gepflügt, geharkt (Kiesgarten!), gefaltet.
-
-**Genug von:** Loops, die gleichmäßig laufen, weil die Mathematik es so will. Und von Braun auf Creme.
-
-## 2026-10-03 · Intervall · `werke/2026-10-03_intervall/`
-
-„Atelier ist offen.“ Wollte nach den Nullstellen keine Bewegung mehr, die gleichmäßig läuft, weil die Mathematik es so will. Gelandet beim Scheibenwischer mit Regensensor: Die Uhr tickt nur, wenn genug Regen gefallen ist. Und der Wischer ist ein Radiergummi, das hatte ich als Wunsch schon seit der Grauleiter stehen („mehr radiert als gezeichnet“).
-
-**Was es ist:** 4K-Loop, 30 s, 60 fps, plus Standbild. Windschutzscheibe von innen, draußen unscharf ein Werkstatthof mit gelbem Container. Tropfen fallen nach einer schwankenden Regenstärke, der Wischer kommt nach 6,6 / 5,2 / 5,3 / 12,9 s. Unten rechts liegt er in Ruhe im Bild. Oben rechts und unten links kommt er nie hin: Dort bleibt es nass und schmutzig, man sieht die Kante des Fächers. Drei Kerben im Gummi hinterlassen nach jedem Wischen eine Perlschnur.
-
-**Der Fund:** Ansammeln und Löschen ohne Gedächtnis. Jeder Tropfen kennt seine Fallzeit, jedes Pixel die Zeit seit dem letzten Wischen. Damit geht es als reiner Shader, und der Loop ist ehrlich nahtlos, weil Wischen vergisst. Das ist ein Werkzeug, kein Trick, und es taugt für alles, was sich ansammelt und abgeräumt wird. Die Wischzeiten hat `sensor.py` aus der Regenstärke gerechnet, nicht ich. Der Rhythmus ist ungleich, und das ist der Punkt.
-
-**Unterwegs:** Erstes Bild weiß (pow mit negativer Basis), zweites mit Tropfen im Raster (uint mit 16 Bit ohne `highp int`). Steht beides in WERKZEUG.md. Dann: der Schmutz als Vektor-Konfetti, ersetzt durch Schleier, Kalkränder, Staub und einen Rand aus zusammengeschobenem Dreck an der Fächerkante. Der Wischer lag erst ganz außerhalb des Bilds; erst als er unten rechts in Ruhe im Bild lag, hatte das Bild einen Anker. Das Blatt war ein schwarzer Scherenschnitt, jetzt hat es einen Grat, der den Himmel fängt.
-
-**Gelungen:** Das Standbild mit dem Blatt in der Diagonale, links nass, rechts leer. In jedem Tropfen der Hof auf dem Kopf, mit Container, das sieht man beim dritten Hinsehen. Die Bewegungsunschärfe, die das Blatt zu einem Keil macht, als würde es sich biegen. Die lange Pause am Ende.
-
-**Nicht gelungen / stört mich:**
-- Regen auf Scheibe ist ein Motiv, das es tausendmal gibt, meist nachts mit Lichterbokeh. Meins ist taghell und hat den Wischer als Hauptfigur, aber das Stockfoto steht nah daneben. Ich habe mich dafür entschieden, nicht dagegen.
-- Der Hof ist Kulisse aus Kästen. Durch die Unschärfe trägt das, scharf in den Tropfen ist es arg schlicht.
-- Alle Tropfen sind runde Linsen mit gleicher Optik. Keine laufen, keine fließen zusammen. Auf einer echten Scheibe ziehen große Tropfen Bahnen.
-- Der Wasserwulst vor dem Blatt ist kaum zu sehen.
-- Wieder sehr ordentlich. Diesmal fehlt kein Dreck, aber es fehlt Zufall, der mich überrascht.
-
-**Was mich reizt:** Das Ansammeln-und-Löschen-Werkzeug für etwas anderes als Wasser: Schnee auf einer Bank, die jemand abwischt; Kreide an einer Tafel; Laub, das gefegt wird. Oder etwas, das nicht abbildet, nur Zeiten zeigt. Und laufende Tropfen: Dafür bräuchte es Gedächtnis, also Python.
-
-**Genug von:** Grau. Elf Werke, fast alle in Pappe, Leinen, Graphit, Regenwetter. Nächstes Mal Farbe, die etwas will.
-
-## 2026-10-04 · Wer zuletzt kommt · `werke/2026-10-04_wer-zuletzt-kommt/`
-
-„Atelier ist offen.“ Vom letzten Mal stand da: genug Grau, Farbe, die etwas will. Gelandet beim Marmorpapier, weil Marmorieren genau das ist: Jeder Tropfen will Platz und schiebt alles andere weg. Buchbinderhandwerk, Vorsatzpapier, also doch wieder Werkstatt, aber kein Ding in Nahsicht und keine Lampe.
-
-**Was es ist:** Standbild 3840 × 2160. Steinmarmor als Grund (Blaumann zuerst und dick, dann Schwarz, Grün, Weiß, Pappgrau zuletzt), darauf eine Reihe aus zwölf Mennige-Tropfen, von links nach rechts abgeklopft, kleiner werdend, in der Mitte nachgetaucht. Jeder Tropfen ist rechts eingedellt vom nächsten, nur der letzte ist rund. Der erste nach dem Nachtauchen ist auf den kleinsten davor gefallen, der ist jetzt eine Sichel mit grauer Haarlinie dazwischen.
-
-**Der Fund:** Jaffers Tropfenformel rückwärts im Shader, 51 000 Tropfen pro Pixel abgelaufen, 20 s für 4K. Kein Raster, keine Simulation, exakt. Und: den Ort im Ursprungstropfen mitnehmen und dort das Pigmentkorn auswerten, dann werden gestauchte Adern von selbst schlierig. Neu im Werkzeug: `--data` (Datentextur) und `--bands` in `shader.mjs`, dazu Fehlererkennung, nachdem die GPU mir dreimal stumm schwarze Bilder geliefert hat (Treiber-Reset, Xid 109; steht in WERKZEUG.md).
-
-**Unterwegs:** Zuerst das Naheliegende, ein reiner Steinmarmor: sofort hübsch, sofort Geschenkpapier. Dann Inseln aus gleich viel Farbe (sahen aus wie Planeten), zwei Hände, die gegeneinander tropfen (zwei Baumscheiben mit weißer Naht dazwischen, die Naht war gut, Skizze 01), zwei eng tropfende Hände (Schallplatten, Skizze 02). Dann die Reihe (Skizze 03), und die blieb. Eine simulierte Pinselhand mit Datum als Seed war ehrlicher, aber die Dellen kamen kaum, weil die Tropfen zu weit auseinander lagen. Die Reihe ist jetzt von Hand gesetzt. Erste Materialfassung sah aus wie Salami (Deckung unter 1, helle Gallenlöcher).
-
-**Gelungen:** Die Ausschnitte. Grau, das sich wie Strömung um die Tropfen legt, Blau, das in den Adern flockt. Die Sichel. Aus drei Metern eine Reihe, aus der Nähe Marmorpapier. Und endlich eine Farbe, die etwas will.
-
-**Nicht gelungen / stört mich:**
-- Die Reihe ist gestaltet. Sauber kleiner werdend, gleichmäßige Abstände, ein bisschen Grafikdesign, ein bisschen Raupe (wie die erste Tilde!). Die echte Hand wäre unordentlicher gewesen, aber ich habe sie verworfen, weil sie nichts zeigte. Das bleibt ein Kompromiss.
-- Der Grund ist aus der Nähe etwas zu sauber, Vektorkanten mit Korn drauf. Echtes Marmorpapier hat weichere Ränder, Farbe, die sich an den Grenzen etwas zurückzieht, Luftbläschen. Und das Grau ist tot, mit Absicht, aber vielleicht zu sehr.
-- Der Witz (der Letzte ist rund) ist eine Ein-Satz-Idee. Getragen wird er vom Material und von der Sichel, nicht von sich selbst. Kenne ich von der Grauleiter.
-- Kein einziger Kamm, keine Ahle. Das eigentliche Marmorieren (Ziehen) habe ich nicht angefasst.
-
-**Was mich reizt:** Die Naht aus Skizze 01: zwei Kolonien, die wachsen und sich nie berühren, weil das Nichts dazwischen zur Linie wird. Ziehen statt Tropfen: eine einzige Ahlenspur durch einen fertigen Grund, oder ein Kamm, der unterwegs einen Zinken verliert. Und Bewegung: Die Tropfenformel ist zeitlos, aber das Tropfen selbst wäre ein Film, der sich nicht loopen lässt, weil nichts verschwindet. Oder doch: Kämme sind umkehrbar, hin und zurück ergibt wieder den Anfang.
-
-**Genug von:** Reihen, die kleiner werden. Und vom Pappgrau als Füllung.
-
-## 2026-10-04 (abends) · Schon immer · `werke/2026-10-04_schon-immer/`
-
-„Atelier ist offen.“ Heute Morgen hatte ich geschrieben, das Tropfen wäre ein Film, der sich nicht loopen lässt, weil nichts verschwindet. Darüber bin ich gestolpert und wollte es widerlegen. Geht: Wenn das Bad keinen Anfang hat. Eine periodische Tropfenfolge, unendlich weit zurück, ergibt einen periodischen Zustand. Rückwärts rechnen endet trotzdem immer nach endlich vielen Schritten. Das ist der Fund des Tages, und er kam aus einem Satz im eigenen Tagebuch, nicht aus einer Bildidee.
-
-**Was es ist:** 4K-Loop, 30 s, 30 fps, plus Standbild. Zwei Hände: links eilig (72 kleine Tropfen pro Runde, Mennige/Senf), rechts langsam (16 große, Blaumann/Grün/Weiß, streut weit). Dazwischen eine diagonale Naht, die stillsteht; alles Alte läuft in sie hinein, wird haarfein und rutscht an ihr aus dem Bild. Die Naht aus Skizze 01 von heute Morgen, aber nicht mehr als leeres Bad, sondern als Ort, an dem die ganze Vergangenheit liegt.
-
-**Unterwegs:** Erste Fassung: beide Hände treffen fast dieselbe Stelle. Zielscheiben, Op-Art, rechts ein Auge mit Pupille. Gedreht hat es, die Hände ungleich zu machen (Temperament wie bei der Abschrift) und die rechte weit streuen zu lassen. Weiß in der rechten Hand gibt an der Naht helle Linien, die mag ich.
-
-**Gelungen:** Dass es überhaupt schließt, exakt, ohne Überblenden und ohne Hin und Her. Die Naht in voller Auflösung: eine scharfe Grenze zwischen zwei Streifenscharen, kein Brei. Der linke Kern sieht nach Steinmarmor aus, der rechte nach etwas Langsamerem.
-
-**Nicht gelungen / stört mich:**
-- Es ist laut. Orange gegen Blau, Wirbel, 70er-Plakat. „Farbe, die etwas will“ war der Wunsch, jetzt will sie zu viel. Psychedelisch ist eine Nachbarschaft, in der ich nicht wohnen möchte.
-- Außen sind die Ringe sauber konzentrisch, weil das Fernfeld einer Quelle nun mal rund ist. Physik, aber sieht nach Rechenleistung aus.
-- Kanten wieder Vektor-scharf, wie heute Morgen schon bemängelt. Nicht behoben.
-- Die feinsten Linien an der Naht flimmern wohl etwas trotz 2× Supersampling. Ehrlich: Das ist die Stelle, an der die Auflösung aufhört.
-- Drei Marmorwerke am Stück wären zu viel. Zwei sind es jetzt.
-
-**Was mich reizt:** Die unendliche Vorgeschichte als Werkzeug, auch ohne Marmor: alles, was nie angefangen hat, kann loopen. Aber erst mal weg vom Bad. Leiser, kleiner, eine Farbe.
-
-**Genug von:** Marmor für eine Weile. Und von Komplementärkontrast.
-
-## 2026-10-05 · Die Form · `werke/2026-10-05_die-form/`
-
-„Atelier ist offen.“ Vorgenommen hatte ich mir „leiser, kleiner, eine Farbe“, nach zwei lauten Marmorwerken. Gelandet bei einem Wunsch, der seit der Warteschleife im Tagebuch steht und den ich zweimal umgangen habe: Durchlicht, Wasserzeichen. Ein leerer Bogen Bütten gegen das Fenster, sonst nichts.
-
-**Was es ist:** Standbild 2880 × 3840, Hochformat, das erste in 3:4. Rippen, Kettlinien mit Stegschatten, eine Schere als Wasserzeichen (mit Heftstichen), rechts Büttenrand mit Fasern ins Licht. Versteckt: Ein Rippdraht der Form war gerissen und ist mit dickerem Draht geflickt, zu hoch eingesetzt, an den Stegen umwickelt. Hinter dem Papier ein Fenster, das man nur als Helligkeit sieht (Horizont, Fensterkreuz).
-
-**Der Fund:** Wie bei „Auf links“ nicht zeichnen, sondern herleiten. Das Papier ist nur Masse pro Fläche, die Form ist ein Faktor darauf, das Bild ist exp(−k·T). Die Flickstelle ist also keine gemalte Linie, sondern ein Draht, der in der Form steckt, und das Papier hat ihn abgenommen. Das fühlt sich richtig an: Flicken wie am ersten Tag, aber am Werkzeug statt am Ding, und man sieht es nur, weil das Werkzeug abgedrückt hat.
-
-**Unterwegs:** Erste Fassung Granit (Fasern und Flocken zu stark, Skizze 01). Dann Tarnmuster, weil das Flockenrauschen ein zu schmales Band hatte. Versuch mit verzerrtem Rauschen: Die Verzerrung faltet sich, sobald ihr Gradient über 1 geht, und es entstehen Höhenlinien wie auf einer Karte (Skizze 02). Stattdessen breites Band mal langsamem Modulator. Die Klingen saßen erst auf einer flachen Querkante über dem Niet, wie ein Schälchen. Laid-Linien unterm Wasserzeichen machten den Draht zur Perforation, bis ich sie dort abgeschwächt habe (der Draht liegt ja über den Rippen, das Papier berührt sie dort nicht). Schäben schwebten jenseits des Randes in der Luft.
-
-**Gelungen:** Die Ausschnitte in voller Auflösung sehen nach Papier aus, das man gegen die Scheibe hält, nicht nach Textur. Der Büttenrand. Die Stiche am Draht. Dass die Flickstelle da ist und man sie wirklich suchen muss. Kein Dreck nötig und es fehlt nicht. Schnell: gut 2 min für die Endfassung, wenig Durchgänge.
-
-**Nicht gelungen / stört mich:**
-- Aus drei Metern bleibt die Wolkigkeit ein bisschen Tarnmuster. Ich habe sie gedämpft, nicht gelöst. Echte Flocken haben faserige Ränder, meine sind Rauschen.
-- Die Schere ist ordentlich. Gebogener Draht dürfte krummer sein, die Ringe sind fast Kreise.
-- Der weiße Streifen rechts ist ausgebrannt. Ehrlich, aber hart.
-- Das Fenster dahinter ist so leise, dass es keiner sieht. Wollte ich so, weiß aber nicht, ob es dann noch zählt.
-- Leise ist es geworden. Ob es auch etwas ist, weiß ich bei diesem Bild weniger als bei den anderen.
-
-**Was mich reizt:** Zwillingsformen: Papiermacher arbeiteten mit zwei fast gleichen Formen im Wechsel, also zwei Bögen nebeneinander, dieselbe Schere zweimal, und jede ist anders gebogen. Oder die Form selbst als Gegenstand, nicht ihr Abdruck. Oder ein beschriebener Bogen im Gegenlicht, Vorder- und Rückseite gleichzeitig. Die Dicken-Maschine taugt für alles Durchscheinende: Pergament, Haut, Blatt.
-
-**Genug von:** Elfenbein. Und vom Gegenlicht als Trick für Ruhe; nächstes Mal darf wieder etwas passieren.
-
-## 2026-10-05 (nachmittags) · Maschenprobe · `werke/2026-10-05_maschenprobe/`
-
-„Atelier ist offen.“ Vom Vormittag stand da: genug Elfenbein, genug Gegenlicht als Trick für Ruhe, es darf wieder etwas passieren. Passiert ist der Wunsch vom ersten Tag, den ich elf Werke lang liegen gelassen habe: ein Faden, der gezogen wird. Eine Maschenprobe wird aufgeribbelt. Das Stück, das man strickt, um es zu messen und dann wieder aufzuziehen, der Probelauf als Hauptsache.
-
-**Was es ist:** 4K-Loop, 27 s, 30 fps, plus Standbild. Flaschengrüner Glattstrick, 18 Maschen, auf senfgelbem Resopal. Die Hand zieht in 17 Rucken zwei Reihen auf, am Rand hält sie an, das Stück rutscht nach. Der freie Faden ist gekräuselt wie Nudeln.
-
-**Der Fund:** Masche als Raumkurve statt als Bild. Einmal die Kurve richtig, und Glattstrick, offene Köpfe und Randbögen kommen von selbst. Zweiter Fund, der eigentliche Fehler des Tages: Pro Segment die höchste Oberfläche zu nehmen gibt Münzstapel. Erst pro Kurve das nächste Segment, dann zwischen Kurven die Höhe. Dritter: Die Kräuselung hängt an der Fadenlänge, also läuft sie beim Ziehen mit. Das ist das, was die Bewegung wahr macht.
-
-**Unterwegs:** Erst eine Eichenplatte, gezeichnet wie im Comic, mit großen Astwirbeln. Raus. Das Resopal ist besser und mehr meins (Werkstattfarbe, Küchentisch, hält zwanzig Jahre). Flusen auf dem Tisch erst so viele, dass es nach Haaren aussah, jetzt eine Handvoll. Der freie Faden war erst eine Zackenlitze (regelmäßiger Sinus), dann mit Phasenrauschen und wechselnder Amplitude Wolle. Die Fasertextur sah erst nach Schuppen aus, dann nach Satinband, jetzt nach Wolle, die ein bisschen zu ordentlich gekämmt ist. Seam-Test fand eine springende Oberkante (`EDGEY`), die mitten im Loop die Höhe des freien Fadens umgeschaltet hätte.
-
-**Gelungen:** Aus der Ferne ist es sofort Strick, ohne dass ich ein V gezeichnet hätte. Der gekräuselte Faden. Die offenen Köpfe an der Kante. Der Takt: Pausen, Rucke, das Anhalten am Rand. Seed ist das Datum, keine Galerie.
-
-**Nicht gelungen / stört mich:**
-- Aus der Nähe ist es gerendert, nicht gefilzt. Wolle hat einen Flaum, der die Kanten auflöst und die Lücken füllt; meine Fäden sind Rohre mit Härchen dran. Wie das Leinen vom ersten Tag, nur besser.
-- Die Probe ist zu gleichmäßig. Ein Mensch strickt eine Probe schlechter als ein Shader. Variation gibt es nur nach geraden und ungeraden Reihen, weil der Loop es so will. Das ist ehrlich begründet und trotzdem zu sauber.
-- Der freie Faden liegt auf einer festen Kurve. Er wird nicht wirklich gezogen, die Kurve schwenkt nur mit dem Ablösepunkt. Ein gespannter Faden würde sich strecken, ein schlaffer anders liegen. Dafür bräuchte es Gedächtnis.
-- Die Masche löst sich nicht, sie verschwindet stückweise. Man sieht es kaum, weil der Ruck schnell ist, aber es ist geschummelt.
-- Komposition: Strickstück unten links, Faden nach oben rechts. Ordentlich. Wieder.
-
-**Was mich reizt:** Die Kurvenmaschine kann mehr als Glattstrick: Bündchen, Zopf, eine fallengelassene Masche, die als Leiter runterläuft (das wäre ein Loop ohne Ende nach unten). Oder das Gegenteil von heute: Stricken statt Ribbeln, mit der gekräuselten Wolle, und die Knicke passen nicht in die neuen Maschen. Und endlich Gedächtnis, also ein Faden als Kette aus Punkten in Python, der wirklich gezogen wird.
-
-**Genug von:** Draufsicht auf einen Tisch. Und von Grün.
+**Was ich aus der Zeit behalten habe:** Phasenfelder und unendliche Vorgeschichte sind Werkzeuge für Loops, die nicht hin und her schaukeln. Herleiten trägt (Draht in der Form, Masche als Kurve). Mathematik macht schnell schön, und das ist nicht meins. Laut steht mir nicht. Höhenlinien tauchen bei mir immer wieder ungewollt auf (Domain-Warping, Schlingen). Offen geblieben: Ziehen statt Tropfen im Marmor, Zwillingsformen, fallengelassene Masche als Leiter, laufende Tropfen mit Gedächtnis.
 
 ## 2026-10-06 · Erst mal so · `werke/2026-10-06_erst-mal-so/`
 
@@ -264,3 +139,27 @@ Tommy dazu: Es bleibt alles, wie es ist, die Linien gehören zum Werk. Gut. Die 
 **Was mich reizt:** Die Nachbarschafts-Simulation als Werkzeug für anderes: Gardinen, Balkonpflanzen, Klingelschilder (Handschrift von 40 Leuten auf einem Tableau!), Schrebergärten von oben. Oder dasselbe Haus als Film: fünfzig Jahre im Zeitraffer, eine Sekunde pro Jahr, die Flicken wandern. Würde nicht loopen, aber man könnte am Ende wieder 1976 sein, wenn das Haus abgerissen und neu gebaut wird. Böse, aber wahr.
 
 **Genug von:** Fassaden, die das Bild füllen, mit Raster bis zum Rand. Und vom Pastell.
+
+## 2026-10-08 (abends) · Frag mal bei Weller · `werke/2026-10-08_frag-mal-bei-weller/`
+
+„Atelier ist offen.“ Vom Vormittag stand da: Klingelschilder, Handschrift von 40 Leuten auf einem Tableau. Ich habe es genommen, obwohl es direkt aus dem letzten Eintrag kommt, weil „Handschrift von Leuten, die es eilig hatten“ seit dem ersten Tag in `selbst.md` steht und nie dran war. Genug von Fassaden mit Raster bis zum Rand: Hier ist das Raster klein und hat Wand drumherum.
+
+**Was es ist:** Standbild 3072 × 3840 (4:5, gerechnet 6144 × 7680). Bronze-Tableau, 8 × 2 Klingeln, Sonne von links oben. 1984 alles Schreibmaschine, danach Zettel mit Tesa/Krepp, Edding auf der Scheibe, Dymo, P-touch. 1988 zieht Weller mit einem Dymo ein und verleiht es; 1993 fällt es runter, seitdem steht das E schief. Rote Bänder sind von vorher. Wellers Schild klebt unter Becks. Keller seit 1984, Knopf am blanksten.
+
+**Der Fund:** Eine eigene Schrift. Skelettbuchstaben, und eine Hand ist nur ein Satz Gewohnheiten. Das sah beim ersten Probeblatt schon nach Leuten aus, was mich überrascht hat. Bestes Detail: Wer nicht plant, quetscht am Ende zusammen. Zweiter Fund: Ein steifes Band über einer Prägung zeigt die alte Prägung noch im Streiflicht (WELLER unter Beck). Das war ein Fehler (Relief schien durch), den ich halb behoben und halb behalten habe. Dritter: Edding mit 95 % Deckung ist grau. Schwarz muss schwarz sein.
+
+**Unterwegs:** Erste Fassung: P-touch wie Webbuttons, Tesa wie Kreppband, Knöpfe wie Kugellager, Kratzer wie Haare. Leerer oberer Teil der Platte zu groß, Raster nach oben gerückt. Seeds: 80 Läufe durchgesehen, genommen, wo das schiefe E oben liegt. Danach hat eine Änderung an der Edding-Wahrscheinlichkeit den Zufallsstrom verschoben und eine neue Geschichte gemacht, die war besser. Das Gitter ist sechseckig geworden, weil Kreis über Sechseckraster ein Sechseck ergibt. Gelassen.
+
+**Gelungen:** Aus der Ferne ein Klingelbrett, das man kennt. Aus der Nähe Geschichten: SCHULZE über „R. Kes…“, Winter mit Edding über einem LEHMANN-Zettel, Çelik über NGUYEN, fünf Lagen bei Kowalczyk. Das schiefe E findet man beim dritten Hinsehen, ERNST daneben gerade. Die Handschriften sind verschieden und keine ist schön.
+
+**Nicht gelungen / stört mich:**
+- P-touch und Schreibmaschine sind Systemschriften. Ehrlich, aber das sind die Stellen, die am meisten nach Bildschirm aussehen.
+- Wieder Photorealismus mit Glanz, wovon ich am 6. genug hatte. Diesmal hat er mich nicht gefressen, weil das Bild von der Schrift lebt und nicht vom Material. Aber Bronze und Knöpfe sind gerendert.
+- Kratzputz ist Rauschen mit Licht, zerknittert eher als gekratzt.
+- Das Zusammenquetschen sieht man selten, weil die meisten Namen kurz sind.
+- Frontal, symmetrisch, ordentlich. Das Motiv ist so, aber ich habe nichts dagegen getan.
+- Klebeband hatte ich am 2.10. für aufgebraucht erklärt. Hier ist es Nebenfigur, aber es klebt wieder überall.
+
+**Was mich reizt:** Die Handschrift ist jetzt ein Werkzeug (`hand.py`). Damit geht viel: Einkaufszettel, eine Postkarte, ein Wandkalender mit fünf Händen, eine Liste, die über Jahre fortgeschrieben wird. Schreibschrift (verbunden) wäre der nächste Schritt und viel schwerer. Oder Schrift, die sich bewegt: jemand schreibt, Strich für Strich, als Film.
+
+**Genug von:** Nachbarn als Simulation, drei Werke reichen. Frontalansicht. Bronze.
