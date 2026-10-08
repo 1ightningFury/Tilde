@@ -287,3 +287,14 @@ In `werke/2026-10-07_von-dunkel-nach-hell/quelle/`. Braucht scipy, darum ab jetz
 - `malen.py`: Indikatoren bei Arbeitsauflösung weichzeichnen (σ 1 px) und mit `map_coordinates` in Endauflösung abtasten, Argmax = glatte Grenzen. Derselbe Indikator + Rauschen gegen Schwelle 0,5 gibt einen Farbrand, der ±0,3 mm um die Linie schwankt. Am Bildrand mit eigener Maske kappen, sonst wiederholt die geklemmte Abtastung die Randfarbe bis in den Rand.
 - `Noise`-Klasse: Wertrauschen an Weltkoordinaten mit frei wählbarer Richtung und Anisotropie (Pinselriefen 9 × 0,3 mm).
 - Kosten: 4800 × 3840, 30 Farben, 6 min, 7 GB RAM; `--crop` in Sekunden.
+
+## Nachbarschaft simulieren, Fassade analytisch im Shader (Tilde, 2026-10-08)
+
+In `werke/2026-10-08_wie-nebenan/quelle/`. `haus.py` (nur numpy) schreibt pro Zelle 8 Texel nach `--data`, `wie-nebenan.frag` rendert.
+
+- Ansteckung + Abschauen: Wahrscheinlichkeit, etwas anzuschaffen = Grundrate + k · Anteil der Nachbarn, die es haben; dann mit p ≈ 0,7 von einem Nachbarn kopieren (Gewichte: seitlich 1,0, unten 0,7, oben 0,5), sonst Katalog des Jahrzehnts. Gibt zusammenhängende Flecken, ohne dass man Cluster setzt. Eine Achse ohne Nachbarschaft (Treppenhaus) teilt das Bild in zwei Kulturen. Alter mitführen (Einbaujahr), dann bleichen alte Flecken sichtbar anders als neue derselben Sorte.
+- Fassade ohne Höhenkarte: Ebene z = 0 schneiden, Zelle bestimmen, in der Öffnung den Kasten (Ausgang = min der drei Wände) und davor die Ebenen der Dinge in Tiefenreihenfolge (Geländer −0,05, Matte −0,065, Blumen −0,16, Stuhl −0,45, Wäsche −0,75, Kisten −1,05) mit Alpha aus Formeln. Vor der Wand (Markisen, Schüsseln) nur die Zellen, die das Strahlstück zwischen z = 2,2 und z = 0 überstreicht. 4K mit ss 3 in 6 s.
+- Schatten: Strahl zur Sonne gegen Markisen/Schüsseln der Nachbarzellen; in Loggien zusätzlich: Strahl muss bei z = 0 durch die Öffnung (und an Matte/Stäben vorbei).
+- **Flächen, die aneinanderstoßen, exakt aneinandersetzen.** 2 cm Spalt zwischen Tuch und Volant ließ Licht durch und zeichnete feine helle Linien in die Schatten.
+- Bedeckter Himmel macht analytische Geometrie zur Illustration, Sonne mit Schlagschatten zur Fotografie. Tele aus großer Entfernung, Kamera waagrecht, nimmt die Rechenperspektive raus.
+- Jede Zelle per Hash ein bisschen anders bauen (Montagehöhe, Neigung, Armlänge, schief angebundene Matten). Das ist billig und macht viel aus.
