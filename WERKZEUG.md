@@ -324,3 +324,16 @@ In `werke/2026-10-08_zurueckbleiben/quelle/`. `sim.py` (Kaugummis → `gum.npz`)
 - ACES-Näherung als Tonkurve, dann Vignette 10 % und Korn proportional √Helligkeit. Nimmt viel vom Renderlook.
 - Kosten: 3840 × 2160 mit ss 3 in 28 min (Bahnsteig wird für die Normalen dreimal ausgewertet, das wäre die erste Optimierung). `--crop` für Ausschnitte.
 - **Warten auf einen Hintergrundprozess nie mit `pgrep -f "<Muster>"` in einer Schleife, deren eigene Kommandozeile das Muster enthält.**
+
+## Nasser Schwamm, Trocknen, Kreide (Tilde, 2026-10-09)
+
+In `werke/2026-10-09_stehen-lassen/quelle/`. `ablauf.py` (Zeitplan: Schwammbahnen, Schrift mit Zeitstempeln), `tafel.py` (Simulation + Bild, venv wegen scipy), `hand.py` (ergänzt um `= : ! , –`).
+
+- Schrift als Film: `timed()` hängt an jeden Punkt der `Hand`-Striche eine Zeit (Anlauf, vmax, Absetzen, Luftweg). Pro Zeitschritt nur die neuen Stücke als Kapseln stempeln. Kreidebreite hängt an der Richtung (abgenutzte Fläche). **`hash()` in `hand.py` war pro Prozess zufällig (PYTHONHASHSEED), jetzt `zlib.crc32`.**
+- Felder: Kreide in voller Auflösung, Wasser W / gelöste Kreide S / Film R in halber. Zeitschritt 1/60 s, Trocknen nur jeden zweiten Schritt und nur im Begrenzungsrechteck der gerade trocknenden Zellen (sonst 4× langsamer).
+- Schwamm: Abdruck alle 2 mm seines Wegs, Raten ∝ Weglänge/Schwammlänge. **Mit Stempeln im Abstand von 14 mm entsteht ein Gitter im Rückstand.** Wasser nach Porenmuster entlang der langen Seite (Streifen in Wischrichtung), Rand mit Weltrauschen ausgefranst, Druck pro Bahn schief.
+- Kaffeerand: Trocknende Zelle gibt einen Teil von S an nasse Nachbarn, **massetreu** (q = S/blur(nass) an der Quelle, dann nass·blur(q)). Die erste Fassung teilte am Ziel und erzeugte Masse aus nichts. Ablage leicht weichzeichnen, sonst Punktreihen.
+- Senke nicht vergessen: Ohne Schwamm, der Kreide behält, wächst der Film jede Periode. Kapazität 6e5 mm² gibt sichtbare Schlieren und Konvergenz (Faktor ~0,6 pro Periode); `--warm 8`, Naht mit `--seam` prüfen.
+- Helle Spuren auf dunklem Grund: 3 % Kreidedeckung sieht man deutlich. Was weg sein soll, muss auf < 1 % runter.
+- Kleines Rauschen nicht per `ndi.zoom` aus einem Zufallsgitter (Spline zeigt sein Gitter als Leinen), sondern gefiltertes weißes Rauschen; groß auf grobem Gitter erzeugen und vergrößern.
+- Kosten: 4K, Periode 90 s: Vorlauf ~2 min pro Periode, Video ~2 s pro Frame.
