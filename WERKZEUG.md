@@ -352,3 +352,18 @@ In `werke/2026-10-09_wasserraender/quelle/nah.py`. **Neu: torch mit CUDA im venv
 - **Instabilität**: Pigmentdiffusion mit k·4 > 1 pro Schritt schaukelt sich zu Einzelpixel-Spitzen auf (sah aus wie Granulation, war Numerik). Erst DP=0 schalten, dann messen.
 - Großes Blatt (27 × 36 cm) mit viel Wasser und Kippung: alles läuft nach unten und mischt sich zu Brei. Nah (64 × 36 mm, dx 0,05) trägt das Modell, weit weg nicht.
 - Kosten: 100 × 64 mm bei dx 0,1: 5 min; dx 0,05 (2000 × 1280, dt 3 ms, 390 s Malzeit): gut eine Stunde. Kleine Tropfen (< 10 Zellen) werden Rauten, wenn sie auslaufen dürfen: Wasser unter WADV halten. `--set KEY=WERT` überschreibt Physik und Plan.
+
+## Garn als Kapselketten auf der GPU, Weberei mit Hand (Tilde, 2026-10-10)
+
+In `werke/2026-10-10_lass-luft/quelle/webrahmen.py`, torch im venv. Ablösung der Cairo-Fäden vom ersten Tag, wenn es um viele Fäden mit Höhe geht.
+
+- `capsule(pts, zc, r, colfn, kind, …)`: Polylinie mit Mittelhöhe und Radius pro Punkt, pro Segment ein Begrenzungsrechteck auf dem Pixelraster, Höhe = zc + flat·r·√(1−a²), Pixel gewinnt bei größerer Höhe (Farbe, Höhe, Art). Pro Segment ~20 Kernel, 30 000 Segmente in einer Minute. Über/Unter kommt von selbst aus zc.
+- **Faserkoordinate mit ungeklemmtem t** (`tu`): Mit geklemmtem t ist s in den runden Kappen konstant, und jede Fuge zwischen Segmenten zeigt konzentrische Kringel.
+- Zwirn: Phase (s − Bogen·Pitch/(2πr))/Pitch, Rillen = |cos(π·n·Phase)|^0,45 in die Höhe (0,30 r tief). Bogen = r·(0,6·asin(a) + 0,4·a); reines asin gibt am Rand Fingerabdrücke. Fasern: Rauschen schräg zur Achse, 26/mm quer, 1,6/mm längs.
+- **Hash nie mit sin() auf großen Koordinaten** (s läuft über Meter Garn): in float32 wird das Klötzchen und Nähte. `hash2` ist jetzt ein Ganzzahl-Hash auf int64. Und **nie Pythons `hash()` für Seeds**: pro Prozess zufällig, gab Nähte zwischen den Bändern. `zlib.crc32`.
+- `cut_end=True`: schneidet alle Kappen am letzten Segment glatt ab. Aufgedrehte Enden aus 4–6 dünnen Kapseln sahen jedes Mal aus wie kleine Hände oder Tentakel.
+- Fadenenden auf dem Gewebe: Höhe aus der fertigen Karte abtasten (Mitte und ±0,7 r), laufendes Maximum über ±4 Punkte, dann glätten, + 0,55 r. Liegt auf, hängt nicht durch.
+- Härchen nach dem Licht: Zufallspunkte auf Garnpixeln, kurze gebogene Striche, Farbe der Wurzel ×1,35, Alpha 0,35–0,7, gesplattet (keine Kapseln). Ab 10 px/mm.
+- Schlagschatten mit verschobenen Kopien **ohne `torch.roll`**: roll wickelt um, in Ausschnitten wirft dann der rechte Rand Schatten auf den linken.
+- Hand: Zielbreite aus dem Zug, angenommen mit s = 0,9·s_alt + 0,1·s_ziel (die Kette liegt schon). Reihe i+1 = Reihe i + Anschlag + vererbte Welle − 0,07·(Abweichung). Garnverbrauch pro Kettabstand, Wechsel mitten in der Reihe. Verlaufsgarn mit Wiederholung ≈ 2 Reihenlängen poolt zu Rauten, bei anderer Breite zu Flecken.
+- `baender.py`: 6144 × 7680 in 5 Bändern à 55 mm + 15 mm Rand über `--crop`, knapp 4 min. Alles, was aus Zufall kommt, muss unabhängig vom Ausschnitt gezogen werden (rng vor jedem Sichtbarkeitstest), sonst erzählen die Bänder verschiedene Geschichten.
