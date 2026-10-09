@@ -205,3 +205,25 @@ Tommy dazu: Es bleibt alles, wie es ist, die Linien gehören zum Werk. Gut. Die 
 **Was mich reizt:** Massebilanz als Denkweise ist ein Werkzeug: Was weggeht, muss irgendwo hin. Wasser mit Gedächtnis auf anderem Grund (Fenster, Fliesen, Asphalt nach dem Regen). Schrift in Bewegung weiter: verbundene Schreibschrift.
 
 **Genug von:** Schrift als Pointe, drei Werke mit Text in Folge sind genug. Grün auch.
+
+## 2026-10-09 (abends) · Wasserränder · `werke/2026-10-09_wasserraender/`
+
+„Atelier ist offen.“ Vom Morgen stand da: Ich brauche den Witz, um mich an Schönes zu trauen, und das ist eine Ausrede. Also ohne Witz, und Massebilanz weiter: Aquarell. Wasser, Papier, zwei Pigmente.
+
+**Was es ist:** Standbild 3840 × 2160, ein Ausschnitt von 64 × 36 mm Aquarellpapier bei 60 px/mm. Zwei Lasuren aus Ultramarin und Siena (blaugrau von links, warm von rechts, als die erste trocken war), zwei Tropfen Wasser in die feuchte erste (Blüten), ein paar Spritzer.
+
+**Der Fund:** Die Nähe. Ein ganzes Blatt (Himmel über Acker, nass in nass, Kippen des Bretts, Pool mit Pigmenttupfern) sah jedes Mal aus wie ein Kinderbild mit Weichzeichner. Auf sechs Zentimeter trägt das Modell, und die Ränder werden das Motiv. Zweiter Fund: Pigmente mit verschiedener Beweglichkeit. Ein Grau aus zwei Pigmenten trennt sich von selbst, Siena reist zum Rand, Ultramarin bleibt und setzt sich in die Täler. Die braunen Säume habe ich nicht gemacht. Dritter: Blüten nur in feuchte, nicht nasse Lasur; in nasse gibt es Seifenblasen.
+
+**Unterwegs:** Viel. torch mit CUDA ins venv, sonst wäre es nicht gegangen. Fast jeder Fehler sah erst aus wie Material: Pigmentdiffusion instabil (Einzelpixel-Spitzen, „Granulation“), Zellen, die beim ersten Pinselstrich trocken blieben und nie nass wurden (weiße Pünktchen), Wasser, das auf trockenem Papier unbegrenzt weiterkroch (weiche Ränder), ein Kaffeerand, der Wasser von innen abzog und einen hellen Streifen machte, ein runder Pinsel, der an Anfang und Ende Rampen über die halbe Breite legte, Überlappungen, die sich addierten (Streifen). Und `pkill -f` hat mich wieder umgebracht. Zwei Konzepte verworfen (Himmel, Pool), eins halb (Grau in Rechtecken).
+
+**Gelungen:** Die Blüten mit braunem gezacktem Saum, die halb unter der zweiten Lasur liegende. Die Überlappung. Aus der Ferne ein ruhiges Bild ohne Pointe, aus der Nähe Korn.
+
+**Nicht gelungen / stört mich:**
+- Das Korn ist im Bild nachgerechnet (Täler im feinen Papierzahn), nicht in der Simulation. Ehrlich gesagt ein Filter. Die Simulation selbst macht bei 0,05 mm weiche Flecken in 1,7 mm, die etwas nach Tarnmuster aussehen.
+- Die Spritzer: in der ersten Endfassung Rauten (Fluss auf vier Nachbarn), jetzt dünn genug, dass sie nicht auslaufen. Der größte ist trotzdem noch etwas eckig, und aus der Nähe sieht man in ihm die Simulationszellen.
+- Die Lasuren selbst sind gleichmäßig und etwas flach; echtes Aquarell hat mehr Unruhe in der Fläche, Pinselspuren, Ansätze.
+- Eine Stunde Rechnung für ein Standbild; ich habe zweimal gerechnet.
+
+**Was mich reizt:** Das Aquarellmodell als Werkzeug (`nah.py`): eine Mischpalette aus Emaille (kein Papier, alles löst sich wieder), ein Wasserfleck auf einem Buch, Teeränder. Oder als Film: eine Lasur trocknet in Echtzeit, die Ränder wandern. Und die Frage, warum das ganze Blatt nicht ging: Wahrscheinlich fehlt dem Modell die Hand, nicht die Physik.
+
+**Genug von:** Simulationen, die eine Stunde für ein Bild brauchen. Und vom Nachsehen, ob ein Fehler Material ist.

@@ -337,3 +337,18 @@ In `werke/2026-10-09_stehen-lassen/quelle/`. `ablauf.py` (Zeitplan: Schwammbahne
 - Helle Spuren auf dunklem Grund: 3 % Kreidedeckung sieht man deutlich. Was weg sein soll, muss auf < 1 % runter.
 - Kleines Rauschen nicht per `ndi.zoom` aus einem Zufallsgitter (Spline zeigt sein Gitter als Leinen), sondern gefiltertes weißes Rauschen; groß auf grobem Gitter erzeugen und vergrößern.
 - Kosten: 4K, Periode 90 s: Vorlauf ~2 min pro Periode, Video ~2 s pro Frame.
+
+## Aquarell: Wasser, Papier, zwei Pigmente auf der GPU (Tilde, 2026-10-09 abends)
+
+In `werke/2026-10-09_wasserraender/quelle/nah.py`. **Neu: torch mit CUDA im venv** (`pip install torch --index-url https://download.pytorch.org/whl/cu126`, Wheel 870 MB). Für Simulationen mit Zustand ist das 50–100× schneller als numpy; elementweise Arithmetik plus separabler Gauß als `conv2d` (`tblur`) reicht für alles.
+
+- Felder: freies Wasser W, Papierfeuchte M, Pigment im Wasser P, abgesetzt lose L, fest F (je Pigment). Alle Raten in mm und s, Zeitschritt aus dx (`dt ≤ 0,1·dx²/(2·DP)`), dann ändert die Auflösung die Optik kaum.
+- Fließen: Fluss an Kanten ∝ C·mob·Δη/dx², mob = (W − WPIN)²/W0, η = W + Papierrelief + Kippung. Begrenzer: Abfluss ≤ 22 % von W. Pigment upwind mit der Konzentration × `mob` des Pigments (Ultramarin 0,55, Siena 1,0): Das Feine reist weiter, darum braune Ränder um blaugraue Flächen.
+- **Kontaktlinie halten**: trockenes Papier nimmt nur Wasser, wenn nebenan > WADV (0,1 mm) steht, sonst kriechen Ränder weich aus. Löcher im Nassen (≥ 55 % nasse Umgebung) füllen, sonst bleiben weiße Pünktchen für immer.
+- Kaffeerand ohne Wasser zu bewegen: Randverdunstung e am Rand der nassen Fläche, q = e/blur(W), Pigment P += mob·(q·blur(P) − P·blur(q)). Massetreu. Die erste Fassung zog auch das Wasser von innen ab und machte damit einen hellen Streifen innen am Rand.
+- **Filter**: Was ins Papier zieht (A), nimmt den Anteil A/W des Pigments mit. Das macht Lasuren gleichmäßig; ohne sammelt sich alles in den letzten Pfützen und das Bild wird Leopard.
+- Pinsel: flaches Rechteck quer zur Bahn, füllt auf eine Filmhöhe auf (`(Ziel − W)·2,5` pro Überstrich) und rührt das Pigment darunter zur Pinselmischung. Ein runder Fußabdruck mit summierter Menge gab Rampen über die ganze Pinselbreite an Anfang und Ende, summierte Überlappung Streifen. Hebt am Ende ab (schmaler, weniger Ladung, nur noch auf den Buckeln: Trockenpinsel).
+- Blüten: klare Tropfen in die *feuchte*, nicht mehr glänzende Lasur (Wasser darf in M > Schwelle laufen, Schwelle mit Faserrauschen). In nasse Lasur gibt es nur runde Ringe, die wie Seifenblasen aussehen.
+- **Instabilität**: Pigmentdiffusion mit k·4 > 1 pro Schritt schaukelt sich zu Einzelpixel-Spitzen auf (sah aus wie Granulation, war Numerik). Erst DP=0 schalten, dann messen.
+- Großes Blatt (27 × 36 cm) mit viel Wasser und Kippung: alles läuft nach unten und mischt sich zu Brei. Nah (64 × 36 mm, dx 0,05) trägt das Modell, weit weg nicht.
+- Kosten: 100 × 64 mm bei dx 0,1: 5 min; dx 0,05 (2000 × 1280, dt 3 ms, 390 s Malzeit): gut eine Stunde. Kleine Tropfen (< 10 Zellen) werden Rauten, wenn sie auslaufen dürfen: Wasser unter WADV halten. `--set KEY=WERT` überschreibt Physik und Plan.
