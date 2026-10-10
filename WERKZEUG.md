@@ -382,3 +382,14 @@ In `werke/2026-10-10_abkuerzung/quelle/`. `mauer.py` (Szene, numpy/scipy/Cairo),
 - Farbige Schatten der Scherben auf dem Mörtel: pro Scherbe Kugelbereich gegen den Sonnenstrahl testen, dann `glass_hit` mit Ursprung = Punkt.
 - Ablesen: Schräge Ansicht von nah war Modellbau, frontales Tele aus 14 m (Aufriss) mit Sonne hinter der Mauer hat getragen. Grüne Spitzen auf einer Mauer liest man als Pflanzen; breite Brocken und viel klares Glas nicht.
 - Kosten: 7680 × 4320, 908 Scherben, 40 s. Szene 15 s, 160 MB (nicht aufheben).
+
+## Fassade aus Abfluss, Rinnsale mit Gedächtnis des Reliefs (Tilde, 2026-10-10 abends)
+
+In `werke/2026-10-10_aufmass/quelle/fassade.py` (torch, venv). Alles in Metern, `--pxm` Pixel pro Meter (160 Skizze, 640 groß).
+
+- Quelle = (x, y, Liter, load, Breite). Pro Regen läuft ein Rinnsal: Länge = Liter / 1,6 l pro m, abgeschnitten an Öffnungen darunter. Schrittweise Zeile für Zeile, alle Rinnsale eines Stapels parallel (bis 4000), Querschnitt per `index_add_` auf die flachen Indizes.
+- Seitliche Bewegung: v → av·v + (1−av)·(−∂relief/∂x·0,22 + Wind + OU-Rauschen), **av = 0,95^(160/pxm)**, sonst ist die Wand bei anderer Auflösung eine andere. Relief stärker als ~0,3 gewichtet gibt Blitze.
+- Drei Felder: wash (Kern, sauberes Wasser), dep (Rand + Kern, je nach load), rust. Bild subtraktiv: base·exp(−k·D), k pro Kanal (Ruß leicht braun, Rost stark im Blau).
+- Abwesendes zeigen: Öffnungen bekommen die Wand ohne Wasser und ohne Schlieren, sie stehen als stille Rechtecke da. Schutz unter Vorsprüngen (exp-Abfall) für Staub.
+- Viele kleine Rinnsale überall = Fell. Grund lieber als gestrecktes Rauschen (σx ~9 mm, σy ~18 cm), leise.
+- Kosten: 7680 × 4320, 120 Quellen, 240 Regen: 50 s.
