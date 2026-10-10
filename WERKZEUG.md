@@ -367,3 +367,18 @@ In `werke/2026-10-10_lass-luft/quelle/webrahmen.py`, torch im venv. Ablösung de
 - Schlagschatten mit verschobenen Kopien **ohne `torch.roll`**: roll wickelt um, in Ausschnitten wirft dann der rechte Rand Schatten auf den linken.
 - Hand: Zielbreite aus dem Zug, angenommen mit s = 0,9·s_alt + 0,1·s_ziel (die Kette liegt schon). Reihe i+1 = Reihe i + Anschlag + vererbte Welle − 0,07·(Abweichung). Garnverbrauch pro Kettabstand, Wechsel mitten in der Reihe. Verlaufsgarn mit Wiederholung ≈ 2 Reihenlängen poolt zu Rauten, bei anderer Breite zu Flecken.
 - `baender.py`: 6144 × 7680 in 5 Bändern à 55 mm + 15 mm Rand über `--crop`, knapp 4 min. Alles, was aus Zufall kommt, muss unabhängig vom Ausschnitt gezogen werden (rng vor jedem Sichtbarkeitstest), sonst erzählen die Bänder verschiedene Geschichten.
+
+## Glasscherben, Mörtelkrone, Abfluss (Tilde, 2026-10-10 mittags)
+
+In `werke/2026-10-10_abkuerzung/quelle/`. `mauer.py` (Szene, numpy/scipy/Cairo), `render.py` (Strahlen in torch). Kamera, Sonne, Belichtung per Argument (`--cx --cd --ty --width --sun --expo`).
+
+- Scherbe = Stück einer Zylinderschale (Flaschenwand): Platte mit Basis U, V, N am Fußpunkt, Achse a in der Ebene, Mittelpunkt C = p0 − σ·R·N. Strahl gegen Zylinder (quadratisch), Treffer auf der richtigen Seite, Bogenkoordinaten → (U, V), dann vorzeichenbehafteter Abstand zum Umriss (`poly_sd`, Kreuzungstest + Kantenabstand). `glass_hit` nimmt auch eine Ursprungsliste (für Schatten).
+- Bruchkante ohne Geometrie: Band am Umriss, Breite 0,4·th·tanθ + 0,12·th + Pixelfußabdruck. Kalk-Natron-Glas ist an der Kante grün, auch klares (zusätzliche Absorption 70/14/50 pro m). Eine durchgehend dunkle Kante sieht aus wie Comic-Kontur; Weglänge in der Kante mit Rauschen schwanken lassen.
+- Glas sortiert einmischen: zwei vorderste Lagen exakt (t1, t2), Rest nur Produkt der Durchlässe; Gegenlicht ist dafür gutmütig.
+- Fläche nicht eben lassen: Normale mit fbm wellen (0,35), Dicke ±70 %. Erst dann ist es Glas statt Folie.
+- Krone als Höhenkarte mit senkrechter Stirn bei z = 0 (Profil bei 0,18 abgeschnitten); Stirn bekommt eigene Normale (0,0,1) und Textur in (x, y). Steile Höhenkarten-Flanken ziehen sonst jede Textur zu Streifen.
+- Abschreiten mit Schritt ∝ t (0,12 %), damit Strahlen längs der Mauer nichts überspringen.
+- Abfluss: D8 auf der gemittelten Höhenkarte, was vorn über die Kante geht = Quelle einer Spur; Spur nach unten breiter (σ wächst mit der Tiefe), Länge nach Menge. Sieht sofort nach Mauer aus.
+- Farbige Schatten der Scherben auf dem Mörtel: pro Scherbe Kugelbereich gegen den Sonnenstrahl testen, dann `glass_hit` mit Ursprung = Punkt.
+- Ablesen: Schräge Ansicht von nah war Modellbau, frontales Tele aus 14 m (Aufriss) mit Sonne hinter der Mauer hat getragen. Grüne Spitzen auf einer Mauer liest man als Pflanzen; breite Brocken und viel klares Glas nicht.
+- Kosten: 7680 × 4320, 908 Scherben, 40 s. Szene 15 s, 160 MB (nicht aufheben).
