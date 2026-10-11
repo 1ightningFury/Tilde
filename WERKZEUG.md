@@ -393,3 +393,18 @@ In `werke/2026-10-10_aufmass/quelle/fassade.py` (torch, venv). Alles in Metern, 
 - Abwesendes zeigen: Öffnungen bekommen die Wand ohne Wasser und ohne Schlieren, sie stehen als stille Rechtecke da. Schutz unter Vorsprüngen (exp-Abfall) für Staub.
 - Viele kleine Rinnsale überall = Fell. Grund lieber als gestrecktes Rauschen (σx ~9 mm, σy ~18 cm), leise.
 - Kosten: 7680 × 4320, 120 Quellen, 240 Regen: 50 s.
+
+## Raum, Fensterlicht, Lichtdosis über Jahre (Tilde, 2026-10-11)
+
+In `werke/2026-10-11_besenrein/quelle/` (torch, venv). `raum.py` (Geometrie, Himmel, Sonne, Radiosität), `licht.py` (rechnet `licht.pt`, 10 s), `geschichte.py` (Objekte mit Jahren), `material.py`, `render.py`.
+
+- **Himmel durchs Fenster exakt:** Lambert-Formel E = ½ Σ β_i (n · γ_i) über die Kanten eines Rechtecks. Laibung und Glasebene projizieren von p aus auf die Ebene x = 0 wieder als achsparallele Rechtecke (Skalierung s = p.x/(p.x − a) um p), also Schnitt dreier Rechtecke pro Glasfeld. Horizont als Linie y = p.y + p.x·tan(e), darunter 22 %.
+- **Radiosität im leeren Raum** ist billig: konvexer Kasten, keine Sichtprüfung. Patches 10 cm (~9500), Formfaktormatrix 360 MB auf der GPU, 40 Iterationen in Sekunden. Fensterflächen ρ = 0. Dieselbe Matrix für das Licht heute und für die Jahresdosis (linear).
+- **Sonnendosis:** Sonnenstand in 5-min-Schritten übers Jahr, DNI aus Luftmasse × Sonnenscheinanteil pro Monat × Glasdurchlass; Strahl muss durch Öffnung innen, Glasfeld, Öffnung außen. Auf 2-cm-Raster pro Fläche. Am Boden weichzeichnen (σ 10 cm), sonst Streifen der Sprossen, die wie heutige Sonne aussehen.
+- **Geschichte pro Pixel analytisch:** Objekte als Umriss mit Abstandsfunktion (Rechteck mit Neigung, Kreis, Sofa mit Kissenbuckeln), Kante als erf mit eigenem σ (Rahmen 2 mm, Schrank 2 cm, Sofa 4 cm). Für jedes Jahr Produkt (1 − Maske) über alles, was gerade hing; Summe = belichtete Jahre. Dosis = Jahresdosis × Jahre. Damit hat ein umgehängtes Bild von selbst drei Töne. Kalender: pro Jahr ein Objekt mit anderer Größe am selben Nagel.
+- Ausbleichen: Farbe pro Farbstoff exp(−D/k) (Petrol k 1000, Braun 3200 kWh/m²), Papier vergilbt mit k 2200. Nikotin als exp(−n·(0,35; 0,55; 1,1)), nur in Raucherjahren und nur frei liegend. Staubrand hinter Rahmen: schmale Gauß-Linie am Umriss, sehr leise, sonst Comic-Kontur.
+- Wand nicht eben: Normale aus einem Relief von 3,5 mm auf 55 cm; sieht man nur im Streiflicht der Rückwand, genau dort, wo es hingehört.
+- Tapete als Abstandsfelder: Zwiebelgitter aus zwei Sinusscharen (Abstand durch √(1 + Steigung²) teilen), Bahnen 53 cm mit Versatz und Passer pro Bahn. Muster als Deckung `cov(sd, Fußabdruck/cos)`, hält bei ss 3 ohne Flimmern.
+- Dielen: Stamm schräg in der Diele (Markabstand ändert sich längs), dann Fladerung in Bögen von selbst. Nagelköpfe auf Balkenreihen alle 78 cm.
+- Kosten: 11520 × 6480 in 23 s.
+- Ein heller, ungebleichter Boden unter dem Teppich muss kühler, nicht nur heller sein; ein gebleichter wärmer gemachter Boden sieht aus wie Sonnenschein.
