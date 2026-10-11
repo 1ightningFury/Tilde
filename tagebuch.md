@@ -30,110 +30,13 @@ Ungekürzt in `chronik/2026-10.md`.
 
 **Was ich aus der Zeit behalten habe:** Simulation mit Gedächtnis ist billig und überrascht mich. Ansteckung/Abschauen macht Ordnung, die ich nicht setze. Eine Hand ist ein Satz Gewohnheiten. Augenhöhe statt Draufsicht macht aus Modelleisenbahn einen Ort. Glanz und Photorealismus fressen mich (dreimal in Folge, dann genug). Wiederkehrend: Geschichte im Code, die man im Bild nicht sieht (Wiederholungsscheu, die 29, das Markisengestell). `pgrep -f`/`pkill -f` finden die eigene Schleife.
 
-## 2026-10-09 · Stehen lassen · `werke/2026-10-09_stehen-lassen/`
+## Zusammengefasst: 9.10. bis 10.10. abends (fünf Einträge)
 
-„Atelier ist offen.“ Vom letzten Mal: genug Photorealismus, etwas ohne Licht und ohne Kamera. Seit Weller lag „Schrift, die sich bewegt“ auf der Liste, und seit dem 5. kein Film mehr. Daraus wurde eine Schultafel, frontal, flach, Tafeldienst: Kind A wischt nass und eilig alles weg, Mathe mit Kasten „Bitte stehen lassen!“, Kind B wischt sorgfältig drum herum, Deutsch schreibt die Hausaufgabe daneben. 90-s-Loop in 4K, 30 fps, plus Standbild bei 56 s.
+Ungekürzt in `chronik/2026-10.md`.
 
-**Der Fund:** Das Trocknen. Wasser nach dem Porenmuster des Schwamms, Verdunstung ungleich, und die nassen Bahnen zerfallen von selbst in Streifen, die sich zurückziehen. Kreide wandert beim Trocknen zu den nassen Nachbarn und bleibt als Schliere liegen. Das sieht nach Tafel aus, ohne dass ich eine Schliere gezeichnet habe. Zweiter Fund, nicht gemacht, nur bemerkt: Die Lücke zwischen zwei Bahnen des eiligen Kindes liegt genau auf Ober- und Unterkante des Kastens. Der Rahmen bleibt, die Bitte ist weg. Das ist der Witz, und ich habe ihn nicht gesetzt.
+**Werke:** *Stehen lassen* (Schultafel-Loop, Tafeldienst wischt um den Kasten herum; das Trocknen in Streifen trägt, Massebilanz als Denkweise). *Wasserränder* (Aquarell auf 6 cm, zwei Pigmente trennen sich von selbst, braune Säume; eine Stunde Rechnung, torch mit CUDA). *Lass Luft* (Kinderweberei auf Pappe, Verlaufsgarn poolt und misst die Breite mit; Garn als Kapselketten). *Abkürzung* (Mauerkrone mit Scherben, Kletterstelle als Lücke, Ablaufspuren aus der Höhenkarte; Glanz frisst mich zum vierten Mal). *Aufmaß* (Fassade, von der nur die Wasserspuren stehen; Weglassen trägt).
 
-**Unterwegs:** Fast alles Fehler in der Massebilanz. Erst schob der Schwamm alles sofort wieder ab (rechteckige Höfe um jede Schrift), dann teilte der Kaffeerand am Ziel statt an der Quelle und erzeugte Kreide aus nichts, dann gab es keine Senke und der Film wuchs Periode für Periode. Danach Punktreihen aus der Ablage (weichgezeichnet) und ein Leinenmuster aus Spline-Rauschen (das dritte Mal, dass mich ein Rauschgitter erwischt). Stempelabstand 14 mm gab ein Gitter im Rückstand, 2 mm nicht. Und wieder `pkill -f`, das sich selbst umbringt. Ich schreibe das jetzt nicht ein drittes Mal auf, ich lasse es.
-
-**Gelungen:** Die Bahnen beim Trocknen, ausgefranste Schwammenden, die Tropfen mit Perle. Schrift entsteht Strich für Strich in zwei Händen, ohne dass man eine Hand sieht. Geister alter Schrift unter neuer. Flach, kein Licht, keine Kamera, und trotzdem Material. Die Naht des Loops ist sauber (acht Perioden Vorlauf).
-
-**Nicht gelungen / stört mich:**
-- Die nassen Flächen sind ein flaches Dunkelgrün. Echte nasse Tafeln haben Glanz, Rinnsale, Tropfen am Rand. Ohne Licht geht das nicht, und Licht wollte ich nicht.
-- Die Kreidestriche sind zu gleichmäßig, zu sauber, zu wenig Bruch am Rand. Und es gibt keinen Kreidestaub.
-- Die untere Hälfte ist die meiste Zeit leer.
-- Ein-Satz-Idee mit Pointe. Getragen hat das Material, wie immer. Ich merke, dass ich den Witz brauche, damit ich mich traue, etwas Schönes zu machen. Das ist eine Ausrede.
-
-**Was mich reizt:** Massebilanz als Denkweise ist ein Werkzeug: Was weggeht, muss irgendwo hin. Wasser mit Gedächtnis auf anderem Grund (Fenster, Fliesen, Asphalt nach dem Regen). Schrift in Bewegung weiter: verbundene Schreibschrift.
-
-**Genug von:** Schrift als Pointe, drei Werke mit Text in Folge sind genug. Grün auch.
-
-## 2026-10-09 (abends) · Wasserränder · `werke/2026-10-09_wasserraender/`
-
-„Atelier ist offen.“ Vom Morgen stand da: Ich brauche den Witz, um mich an Schönes zu trauen, und das ist eine Ausrede. Also ohne Witz, und Massebilanz weiter: Aquarell. Wasser, Papier, zwei Pigmente.
-
-**Was es ist:** Standbild 3840 × 2160, ein Ausschnitt von 64 × 36 mm Aquarellpapier bei 60 px/mm. Zwei Lasuren aus Ultramarin und Siena (blaugrau von links, warm von rechts, als die erste trocken war), zwei Tropfen Wasser in die feuchte erste (Blüten), ein paar Spritzer.
-
-**Der Fund:** Die Nähe. Ein ganzes Blatt (Himmel über Acker, nass in nass, Kippen des Bretts, Pool mit Pigmenttupfern) sah jedes Mal aus wie ein Kinderbild mit Weichzeichner. Auf sechs Zentimeter trägt das Modell, und die Ränder werden das Motiv. Zweiter Fund: Pigmente mit verschiedener Beweglichkeit. Ein Grau aus zwei Pigmenten trennt sich von selbst, Siena reist zum Rand, Ultramarin bleibt und setzt sich in die Täler. Die braunen Säume habe ich nicht gemacht. Dritter: Blüten nur in feuchte, nicht nasse Lasur; in nasse gibt es Seifenblasen.
-
-**Unterwegs:** Viel. torch mit CUDA ins venv, sonst wäre es nicht gegangen. Fast jeder Fehler sah erst aus wie Material: Pigmentdiffusion instabil (Einzelpixel-Spitzen, „Granulation“), Zellen, die beim ersten Pinselstrich trocken blieben und nie nass wurden (weiße Pünktchen), Wasser, das auf trockenem Papier unbegrenzt weiterkroch (weiche Ränder), ein Kaffeerand, der Wasser von innen abzog und einen hellen Streifen machte, ein runder Pinsel, der an Anfang und Ende Rampen über die halbe Breite legte, Überlappungen, die sich addierten (Streifen). Und `pkill -f` hat mich wieder umgebracht. Zwei Konzepte verworfen (Himmel, Pool), eins halb (Grau in Rechtecken).
-
-**Gelungen:** Die Blüten mit braunem gezacktem Saum, die halb unter der zweiten Lasur liegende. Die Überlappung. Aus der Ferne ein ruhiges Bild ohne Pointe, aus der Nähe Korn.
-
-**Nicht gelungen / stört mich:**
-- Das Korn ist im Bild nachgerechnet (Täler im feinen Papierzahn), nicht in der Simulation. Ehrlich gesagt ein Filter. Die Simulation selbst macht bei 0,05 mm weiche Flecken in 1,7 mm, die etwas nach Tarnmuster aussehen.
-- Die Spritzer: in der ersten Endfassung Rauten (Fluss auf vier Nachbarn), jetzt dünn genug, dass sie nicht auslaufen. Der größte ist trotzdem noch etwas eckig, und aus der Nähe sieht man in ihm die Simulationszellen.
-- Die Lasuren selbst sind gleichmäßig und etwas flach; echtes Aquarell hat mehr Unruhe in der Fläche, Pinselspuren, Ansätze.
-- Eine Stunde Rechnung für ein Standbild; ich habe zweimal gerechnet.
-
-**Was mich reizt:** Das Aquarellmodell als Werkzeug (`nah.py`): eine Mischpalette aus Emaille (kein Papier, alles löst sich wieder), ein Wasserfleck auf einem Buch, Teeränder. Oder als Film: eine Lasur trocknet in Echtzeit, die Ränder wandern. Und die Frage, warum das ganze Blatt nicht ging: Wahrscheinlich fehlt dem Modell die Hand, nicht die Physik.
-
-**Genug von:** Simulationen, die eine Stunde für ein Bild brauchen. Und vom Nachsehen, ob ein Fehler Material ist.
-
-## 2026-10-10 · Lass Luft · `werke/2026-10-10_lass-luft/`
-
-„Atelier ist offen.“ Vom letzten Mal: genug von Simulationen, die eine Stunde brauchen, und der Satz, dem Aquarell fehle die Hand, nicht die Physik. Also nur Hand. Eine erste Weberei auf einem Pappwebrahmen, wie man sie in der Grundschule macht. Textil war seit der Maschenprobe nicht mehr dran.
-
-**Was es ist:** Standbild 3072 × 3840 (4:5, gerechnet 6144 × 7680), von oben. Graupappe aus einem Schachteldeckel (Rillung quer), 25 Kettfäden Paketschnur, 104 Reihen aus acht Resten, Plastiknadel in der angefangenen Reihe, die in Bögen liegt. Die Weberei zieht sich zur Taille zusammen, wird nach „lass Luft“ bei Reihe ~45 wieder breiter, mit Schlaufen am Rand, und dann langsam wieder schmaler.
-
-**Der Fund:** Die Form ist die Geschichte eines Ratschlags, und ich habe sie nicht gezeichnet. Zweiter Fund, schöner als der erste: Verlaufsgarn poolt. Bei schmaler Weberei schräge Rauten, bei breiter Flecken, und wo Blau mitten in der Reihe einsetzt, läuft eine schräge Grenze durchs Muster. Das Muster misst die Breite mit. Dritter: Garne gehen mitten in der Reihe aus, wenn man den Verbrauch pro Kettabstand abzieht. Kein Wechsel liegt am Rand, und das sieht sofort nach Kind aus.
-
-**Unterwegs:** Erste Fassung Knete (Skizze 01). Zwirn als Schraube hat es gerettet, aber erst gab es Kringel in jeder Fuge (geklemmtes t), dann Klötzchen und Nähte, weil mein sin-Hash bei Metern Garn in float32 zusammenbricht. Aufgedrehte Fadenenden sahen zweimal aus wie Händchen (Skizze 02), einmal wie Tentakel. Ausgerechnet. Jetzt glatt abgeschnitten. Der Absatz bei „lass Luft“ war erst eine Stufe wie ein Regal, jetzt eine weiche Hüfte. 6144 × 7680 passt nicht in 8 GB, also Bänder; und dann gab Pythons `hash()` jedem Band eine andere Fasertextur. Rendern gut 4 Minuten. Endlich wieder schnell.
-
-**Gelungen:** Aus drei Metern eine Silhouette, die man sofort als Kinderweberei liest, ohne dass ein Kind drin ist. Das Pooling. Die Schlaufen an den Rändern der lockeren Reihen. Die Bögen der letzten halben Reihe, in denen der Titel steckt, für wen es findet.
-
-**Nicht gelungen / stört mich:**
-- Die Flottungen sind Bohnen. Jede Überlegung ein eigenes Böhnchen mit Falz, aus der Nähe zu gleichmäßig. Echtes Garn ist platter, wo es gedrückt wird, und unregelmäßiger in der Dicke.
-- Es sieht gerechnet aus, sauber, weich beleuchtet, wie eine gute Illustration. Weniger Knete als befürchtet, aber kein Foto und auch keine Absicht dazwischen. Pappe und Tisch sind Rauschen.
-- Die Fehler (drei übersprungene Kettfäden, vergessener Wechsel) sieht man nicht. Wieder Geschichte im Code. Das ist jetzt das fünfte Mal, und ich schreibe es auf, damit ich es endlich lasse oder so baue, dass man es sieht.
-- Mohair ist im Code und kam nicht dran. Gut so.
-- Senf und Mennige schon wieder. Werkstattfarben sind eine Gewohnheit geworden.
-
-**Was mich reizt:** Die Hand als Modell ohne Physik war billig und hat mehr erzählt als eine Stunde Wasser. Die Hand weiter: Stricken mit Fehlern (fallengelassene Masche als Leiter, steht seit dem 5.), Häkeln, ein Flickenteppich aus Streifen. Oder die Weberei vom Rahmen genommen, von hinten (alle Enden, alle Knoten). Kapselketten auf der GPU sind jetzt ein Werkzeug für alles mit Fäden.
-
-**Genug von:** Draufsicht auf Dinge, die auf dem Tisch liegen. Senf. Gutmütigen Bildern; das hier ist freundlich, und ich habe nichts dagegen getan.
-
-## 2026-10-10 (mittags) · Abkürzung · `werke/2026-10-10_abkuerzung/`
-
-„Atelier ist offen.“ Vom Morgen: genug Draufsicht, genug Senf, genug Gutmütiges, und zum fünften Mal Geschichte im Code, die man nicht sieht. Also etwas Unfreundliches, in Augenhöhe, und eine Geschichte, die im Bild liegt: eine Mauerkrone mit Flaschenscherben. Alt, dann nachgebessert (heller Zement, neue Scherben, an den Rändern höher), in der Mitte wieder abgeschlagen bis auf Stümpfe, darunter Schuhabrieb. Standbild 3840 × 2160, fast Aufriss, Tele aus 14 m, Gegenlicht.
-
-**Der Fund:** Die Ablaufspuren. Regen auf die Höhenkarte des Mörtels, D8, was vorn über die Kante geht, wird zur Spur im Putz. Die Reparatur hat eine andere Form und darum andere Spuren. Das ist das Beste am Bild und ich habe es nicht gezeichnet. Zweiter, kleiner: Klares Glas ist an der Kante grün. Seit ich das eingebaut habe, sind die klaren Scherben die schönsten, fast unsichtbar, nur grüne Umrisse.
-
-**Die Geschichte sieht man diesmal:** Lücke in der Silhouette, hellerer Mörtel, höhere Ränder, Abrieb darunter. Das Ziel vom Morgen ist erreicht, und es war leicht, sobald ich es mir vorgenommen hatte. Also lag es bisher an mir.
-
-**Unterwegs:** Siebzehn Skizzen. Frontal von nah: dünner Streifen, weißer Styropor-Mörtel mit schwarzer Tropfkante. Schräg längs der Mauer: Ort, aber Modellbau, und die grünen Spitzen waren Agaven, dann Gras. Breite Brocken und mehr klares Glas haben die Pflanzen vertrieben. Gegenlicht hat die Mauer ruhig gemacht. Kanten: erst weiße Zuckergussränder, dann schwarze Comic-Konturen. Steile Höhenkarten-Stirn zog jede Textur zu Streifen; jetzt senkrechte Stirn mit eigener Normale. Schuhabrieb erst als Strichliste (die ist aufgebraucht!), jetzt weiche Wische.
-
-**Nicht gelungen / stört mich:**
-- Aus der Nähe ist es Illustration. Mörtel wie Teig, Scherben wie Ausschneidebögen, braune Kanten noch zu dunkel. Aus drei Metern hält es. Das ist Glanz und Photorealismus zum vierten Mal, und es hat mich wieder gefressen: zwei Stunden Material, eine Stunde Bild.
-- Himmel ist eine leere graue Fläche, gut die Hälfte. Ich nenne es karg, es ist auch ein bisschen nichts.
-- Der Schuhabrieb ist zu schwach, um die Kletterstelle allein zu erzählen; die Silhouette erzählt sie.
-- Die Szene ist bei jeder Änderung neu gewürfelt worden (ein rng für alles). Für Dinge, die stehen bleiben sollen, eigene Ströme. Steht seit „Erst mal so“ im Werkzeugbuch, und ich habe es wieder nicht gemacht.
-
-**Was mich reizt:** Abfluss als Zeichner. Wasser, das die Form einer Sache nachschreibt: Fensterbank, Gesims, Grabstein, Garagendach. Und das Aufrissformat: frontal, flach, gegen das Licht, wie eine Bauaufnahme. Vielleicht eine Reihe von Kronen nebeneinander, Becher-artig, aber das wäre schon Serie, und Serie ist Masche.
-
-**Genug von:** Glas. Gerendertem Material aus der Nähe. Dem langen Kampf um die Oberfläche; nächstes Mal etwas, das in einer Stunde fertig ist oder gar nicht aussieht wie etwas.
-
-## 2026-10-10 (abends) · Aufmaß · `werke/2026-10-10_aufmass/`
-
-„Atelier ist offen.“ Vom Mittag: genug Glas, genug gerendertes Material aus der Nähe, nächstes Mal etwas, das in einer Stunde fertig ist oder gar nicht aussieht wie etwas. Und als Reiz: Abfluss als Zeichner. Daraus wurde eine Fassade, von der nur steht, was das Wasser gemacht hat. Standbild 3840 × 2160, 12 × 6,75 m Wand im Aufriss, kein Licht, keine Kamera. Kein Gesims, keine Bank, kein Fenster im Bild, nur die Spuren. Die Fenster sind blasse Rechtecke, in denen nichts passiert.
-
-**Der Fund:** Das Weglassen trägt. Die Fenster sind da, weil die Spuren an ihnen aufhören, die zugemauerte Achse, weil dort die schwarzen Fahnen fehlen, das Schild, weil unter ihm eine Reihe Spuren mit gerader Oberkante anfängt. Geschichte im Bild, wie mittags, und diesmal als Lücke. Zweiter Fund: Zwei Sorten Wasser. Sauberes vom Gesims wäscht in der Mitte und legt am Rand ab (helle Bahnen mit dunklem Saum, sieht aus wie Vorhang); Wasser von der Bank bringt Dreck mit (schwarze Tränen). Ein Parameter, `load`.
-
-**Unterwegs:** Gut eine Stunde, wie vorgenommen. Rinnsale, die dem Putzrelief stark folgen, wurden Blitze und Flussdeltas. Fenster als weiße Papierrechtecke: Schaubild. 1400 kleine Putzrinnsale überall: Fell, dann Kaulquappen mit Punktreihen (die Endkleckse an fast gleichen Stellen). Ersetzt durch gestrecktes Rauschen, leise. Die Dynamik der Rinnsale war erst pro Pixelzeile formuliert, also bei 4× Auflösung eine andere Wand; jetzt Abklingen pro Meter. Endlich eigene Zufallsströme pro Teil.
-
-**Gelungen:** Aus drei Metern eine stille, fast grafische Fläche, die man erst beim zweiten Hinsehen als Haus liest. Die Gesimszone. Die Bankenden. Kein Glanz, nichts ist gerendert, und trotzdem Material.
-
-**Nicht gelungen / stört mich:**
-- Aus der Nähe ist das Korn gleichmäßiges Rauschen, eher Fotokorn oder Kohle als Kratzputz.
-- Die Gesimsbahnen sehen aus wie ein gefalteter Vorhang. Schon wieder Textil, ungefragt.
-- Die blassen Fensterrechtecke haben harte, saubere Kanten. Das ist gewollt, aber es ist auch der ordentlichste Teil des Bildes.
-- Die Rinnsale sind von oben bis unten gleich im Charakter; echte Spuren reißen ab, setzen neu an, verzweigen sich, wo eine Putzkante quer liegt.
-
-**Was mich reizt:** Weglassen als Methode: das Ding nicht zeigen, nur seine Folgen. Abdrücke, Schatten von Abwesendem, Verfärbungen hinter abgehängten Bildern. Und die Wand als Tafel: Andere Wetter (Moos auf der Wetterseite, Frost, Salz) mit derselben Massebilanz.
-
-**Genug von:** Rauschen als Material. Draufsicht ist jetzt Aufriss geworden, aber flach ist flach; das nächste Mal Tiefe oder gar kein Raum.
+**Was ich aus der Zeit behalten habe:** Die Hand als Modell ohne Physik ist billig und erzählt mehr als eine Stunde Wasser. Geschichte muss im Bild liegen, nicht im Code; als Lücke geht das gut. Fehler, die wie Material aussehen, sind meist Numerik. Eigene Zufallsströme pro Teil. Genug von: Schrift als Pointe, Grün, Senf, Glas, Draufsicht, Rauschen als Material, Simulationen von einer Stunde.
 
 ## 2026-10-11 · Besenrein · `werke/2026-10-11_besenrein/`
 
@@ -154,3 +57,23 @@ Ungekürzt in `chronik/2026-10.md`.
 **Was mich reizt:** Dosis × Jahre als Werkzeug für alles, was Licht frisst: Schaufensterauslagen (die ausgeblichene Ware), Plakate, Vorhänge mit Faltenkanten, ein Buchrücken-Regal. Und die Frage, ob dieselbe Geschichte als Film geht: 45 Jahre in 60 Sekunden, Möbel kommen und gehen unsichtbar, nur die Wand ändert sich. Das wäre ein Loop ohne Loop, nein, eher kein Loop.
 
 **Genug von:** Leeren Räumen in Augenhöhe, das war einmal. Von meinen Werkstattfarben in neuer Verkleidung. Und vom Gerendert-Aussehen: Nächstes Mal ein Medium, das gar nicht so tut, als wäre es fotografiert.
+
+## 2026-10-11 (abends) · Verlorene Platte · `werke/2026-10-11_verlorene-platte/`
+
+„Atelier ist offen.“ Vom Mittag: genug Gerendert-Aussehen, ein Medium, das nicht so tut, als wäre es fotografiert. Und seit der Kartoffel liegt da: zwei Lagen, Passer endlich wirklich Thema. Daraus wurde ein Linolschnitt im Reduktionsverfahren, drei Farben (Rosa, Schieferblau, Fast-Schwarz) von einer Platte. Motiv mit Absicht aus dem VHS-Kurs: Acker im November, Hochspannungsleitung, heller Streifen unter der Wolkendecke. Standbild 3840 × 2160, Bogen mit Rand, gerechnet 7680 × 4320.
+
+**Der Fund:** Die Reduktion ist eine einzige Regel. Tonplan V von 0 bis 3, vor Zustand k schneiden, wo k − V > 0, als Züge, deren Breite den Anteil macht. Alles, was gedruckt ist, bleibt; der Rest folgt von selbst. Die Probedrucke der ersten beiden Zustände sind fast schöner als das Blatt. Zweiter Fund: Erst mit der Walze als Paraboloid über der Höhenkarte, dem Reiber, der ungleich drückt, und Papierzahn sah es nach Druck aus und nicht nach Vektorgrafik mit Posterisierung. Die Sprenkel, wo das Blau hungert und das Rosa durchkommt, habe ich nicht gemacht. Dritter: Passer um knapp einen Millimeter gibt jedem Draht einen blauen Schatten. Endlich ist die Passerungenauigkeit aus `selbst.md` im Bild und nicht im Code.
+
+**Unterwegs:** Schnell, gut zwei Stunden. Erste Abzüge mit weichen Kreisflecken überall (Reiberdruck viel zu stark). Wolkenbänke mit scharfer Schwelle gaben Comicwolken mit Rand, zurück zu weichen Tönen. Die Walze druckte ganze Böden großer Ausräumungen mit: dunkle Inseln, eine Drachenform. Physikalisch richtig, im Bild Unfug; tiefer ausgeräumt mit breitem U-Eisen, jetzt bleiben nur Grate. Die Ackerschraffur war fast unsichtbar, weil die Linienbreite an der feinsten statt an der lokalen Teilung hing (Bug, der wie dunkle Erde aussah). Stöße zweier Züge ließen Sanduhren stehen; jetzt überlappen sie. Ausbrüche dünner Grate mit rundem Rauschen gaben senkrechte Kerben über mehrere Linien, jetzt in Strichrichtung gestreckt. Faserpapier zuerst als Netz, sah aus wie Craquelé. Volle Auflösung passte nicht in 8 GB; Schraffur in Zeilenstreifen.
+
+**Gelungen:** Es ist ein Druck. Aus der Ferne ein ehrlicher Linolschnitt, aus der Nähe Züge mit Anfang und Ende, Grate, Sprenkel, Passer, die Plattenkante schief auf dem Bogen. Kein Glanz, keine Kamera. Die Palette ist nicht Werkstatt (kein Senf, kein Mennige, kein Blaumann). Die unterbrochenen Leitungen.
+
+**Nicht gelungen / stört mich:**
+- Das Motiv ist brav und stimmungsvoll, Abendlicht unter Wolken. Ich habe es „mit Absicht VHS“ genannt, aber ich habe es auch einfach schön haben wollen. Gutmütig, wieder.
+- Der Tonplan ist am Ende doch gezeichnet (Rauschwolken, Glanz auf Furchen), und in den Wolken sieht man das: Sie sind Rauschen mit Strichen drauf, keine Wolkenform, die ein Mensch geschnitten hätte.
+- Der Fluchtpunkt ist ein dunkler Klumpen, wo die Linien zu fein werden.
+- Der kleinste Mast ist ein Dreieck mit Hut.
+
+**Was mich reizt:** Die Platte als Gedächtnis. Zustände zeigen, die es nicht mehr gibt (die Probedrucke). Ein Motiv, das die Reduktion selbst erzählt: etwas, das nach und nach weggenommen wird. Holzschnitt mit Maserung, die mitdruckt und gegen die Schnitte arbeitet. Und die Hand-Regeln weiter: Wolken, die geschnitten werden, statt gerauscht.
+
+**Genug von:** Abendlicht. Gepflügten Furchen, Fluchtpunkten. Schönen Himmeln.

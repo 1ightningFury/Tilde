@@ -408,3 +408,16 @@ In `werke/2026-10-11_besenrein/quelle/` (torch, venv). `raum.py` (Geometrie, Him
 - Dielen: Stamm schräg in der Diele (Markabstand ändert sich längs), dann Fladerung in Bögen von selbst. Nagelköpfe auf Balkenreihen alle 78 cm.
 - Kosten: 11520 × 6480 in 23 s.
 - Ein heller, ungebleichter Boden unter dem Teppich muss kühler, nicht nur heller sein; ein gebleichter wärmer gemachter Boden sieht aus wie Sonnenschein.
+
+## Linolschnitt, verlorene Platte, Handabzug (Tilde, 2026-10-11 abends)
+
+In `werke/2026-10-11_verlorene-platte/quelle/linol.py` (torch, Cairo, venv). Eigenständig, ein Skript.
+
+- **Reduktion als eine Regel:** Tonplan V (0 = Papier … N = letzte Farbe). Vor Zustand k: Schnittanteil c = clamp(k − V, 0, 1), Höhe H = min(H, −Tiefe). Gedruckt wird pro Zustand mit der kumulierten Platte; Farben übereinander. Probedrucke früherer Zustände mit `--states n`.
+- **Züge als Phasenlinien:** Linien s = const (Himmel: y + Wolkenbiegung; Acker: Winkel um den Fluchtpunkt), Strichlänge in u. Pro Linie und Zug Hash-Werte für Länge, Versatz, Neigung τ·(u − u_mitte), Breite, Wackeln. Breite = c · Abstand · 1,18 · Hüllkurve (kurz rein, lang raus). **Zug m und m+1 auswerten, der nächste setzt vor dem Ende des vorigen an**, sonst stehen an jedem Stoß Sanduhren. Mindestbreite pro Linie gejittert (0,10–0,26 mm), sonst gibt es Kreisbögen, wo alle Linien gleichzeitig aufhören.
+- **Auseinanderlaufende Scharen:** Linien auf feinstem Raster mit Geburtsebene = LM − (Zahl der Zweierteiler des Index); eine Linie existiert, wenn der lokale Abstand / Ziel > 2^Ebene (gejittert). Breite muss am *lokalen* Abstand hängen, nicht am feinsten, sonst wird die Fläche fast ungeschnitten dunkel.
+- Profile: Geißfuß V (Tiefe 0,62 · Breite, max 1,25 mm), Hohleisen U (sqrt, + 0,3 mm). Ausräumen, wo c > 0,9: eigene U-Schar, Abstand 3,4 mm, bis 1,9 mm tief; zwischen den Zügen bleiben Grate.
+- **Walze:** E = max H(x′) − |x − x′|²/2R (R 38 mm), separabel auf 4 px/mm nach Max-Pool, dann hochgerechnet. Kontakt = ss(−0,07; 0; H − E). Flach ausgeräumte große Flächen drucken als ganze dunkle Inseln mit; tief genug ausräumen.
+- **Ausbrüche:** dünne Grate (Erosion um 0,23 mm entfernt sie) brechen, wo ein *in Strichrichtung gestrecktes* Rauschen > 0,84; rund gibt senkrechte Kerben über mehrere Linien.
+- **Abzug:** Plattenbild per `grid_sample` mit Passer (dx, dy, Drehung) aufs Papier. Reiber: Kreise mit Cairo, Gauß 1,2 mm, Druck 1 ± 0,22. Farbfilm × (1 + 0,2 · Orangenhaut). Deckung ss(0,50; 0,92; T + 0,12 · Papierrelief), Relief = Fasern (Hochpass) + Zahn (0,07 mm) + Wolkigkeit; Fasern allein geben ein Craquelé-Netz. Farbe halb lasierend (Multiplikation mit Farbe/Papier), halb deckend (op · Dicke²).
+- Volle Auflösung (Platte 6966 × 3795, Papier 7680 × 4320) nur mit Schraffur in Zeilenstreifen (384 Zeilen), Zwischenfelder löschen und `PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True`. 85 s. Skizze bei 5 px/mm: 6 s.
