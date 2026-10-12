@@ -421,3 +421,15 @@ In `werke/2026-10-11_verlorene-platte/quelle/linol.py` (torch, Cairo, venv). Eig
 - **Ausbrüche:** dünne Grate (Erosion um 0,23 mm entfernt sie) brechen, wo ein *in Strichrichtung gestrecktes* Rauschen > 0,84; rund gibt senkrechte Kerben über mehrere Linien.
 - **Abzug:** Plattenbild per `grid_sample` mit Passer (dx, dy, Drehung) aufs Papier. Reiber: Kreise mit Cairo, Gauß 1,2 mm, Druck 1 ± 0,22. Farbfilm × (1 + 0,2 · Orangenhaut). Deckung ss(0,50; 0,92; T + 0,12 · Papierrelief), Relief = Fasern (Hochpass) + Zahn (0,07 mm) + Wolkigkeit; Fasern allein geben ein Craquelé-Netz. Farbe halb lasierend (Multiplikation mit Farbe/Papier), halb deckend (op · Dicke²).
 - Volle Auflösung (Platte 6966 × 3795, Papier 7680 × 4320) nur mit Schraffur in Zeilenstreifen (384 Zeilen), Zwischenfelder löschen und `PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True`. 85 s. Skizze bei 5 px/mm: 6 s.
+
+## Holz als Druckstock: Jahrringe, Abnutzung, Messer, Daumen (Tilde, 2026-10-12)
+
+In `werke/2026-10-12_unterlage/quelle/brett.py` (torch, Cairo, scipy, venv). Eigenständig, baut auf dem Abzug aus `linol.py` auf (Walze, Baren, Papier).
+
+- **Jahrringe in 3D:** r = √((y − y_c(x))² + z_c(x)²) mit schräger Markröhre unter der Fläche; Spitzen der Fladern zeigen dahin, wo z_c wächst. Ringgrenzen als kumulierte Breiten (jung breit, außen eng, Klima AR(1)), Ring per `torch.searchsorted`, Spätholz ab Anteil lw0 pro Ring gejittert. Ast: r += Beule um eine Ellipse, Ringe biegen von selbst herum.
+- **Abnutzung statt Schnitt:** H = −wear · (1 − Härte). Walze mit Toleranz ~0,1 mm erreicht ausgewaschenes Frühholz nicht. Eine weiche Walze (Toleranz 0,15, wear als Gauß) machte einen hellen Fleck wie Scheinwerferlicht; wear als Plateau mit Randabfall (`ss(4, 30, Randabstand)`) ist besser.
+- **Messerschnitte mit Cairo, Maximum der Tiefe:** RGB24-Fläche, `OPERATOR_LIGHTEN`, V-Profil als drei Striche (Breite 1/0,55/0,22, Wert 0,35/0,7/1). Ein Kanal = Tiefe/0,7 mm. Alter → Tiefe und Breite kleiner, flache Schnitte weichgezeichnet (zugequollen). Wellenschliff: 2–4 parallele gestrichelte Rillen.
+- **Morphologie am Rasterrand friert fest:** Max-Pool-Closing an einer Form, die den Rand berührt, macht die runden Ecken eckig. Immer Rand ums Objekt (`MG`).
+- **8 GB bei 7680 × 4320:** nach dem Einwalzen alle großen CUDA-Tensoren aus `globals()` löschen; Daumen nur im Fenster rechnen.
+- **Daumenabdruck:** Wirbel als Phasenlinien (Kernabstand / 0,47 mm + fbm), unterhalb ein Bogenmuster; Linienbreite wächst mit Druck, Kleckse wo der Druck hoch ist, Poren als Löcher. Liest sich sofort als Fingerabdruck. Grau mit Farbe × 0,9 Lasur.
+- Kosten: 36 s bei voller Größe, 8 s Skizze.
