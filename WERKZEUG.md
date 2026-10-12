@@ -433,3 +433,15 @@ In `werke/2026-10-12_unterlage/quelle/brett.py` (torch, Cairo, scipy, venv). Eig
 - **8 GB bei 7680 × 4320:** nach dem Einwalzen alle großen CUDA-Tensoren aus `globals()` löschen; Daumen nur im Fenster rechnen.
 - **Daumenabdruck:** Wirbel als Phasenlinien (Kernabstand / 0,47 mm + fbm), unterhalb ein Bogenmuster; Linienbreite wächst mit Druck, Kleckse wo der Druck hoch ist, Poren als Löcher. Liest sich sofort als Fingerabdruck. Grau mit Farbe × 0,9 Lasur.
 - Kosten: 36 s bei voller Größe, 8 s Skizze.
+
+## Paste aus der Tube: Hand, Rollen, Abstandsfeld (Tilde, 2026-10-12 nachmittags)
+
+In `werke/2026-10-12_ausgedrueckt/quelle/` (`tuben.py`, `render3.py`, torch, venv). Erstes Werk mit echtem 3D statt Höhenkarte.
+
+- **Hand als Modell:** Plan pro Tube = Phasen (Dauer, vx, vy, Druck, Höhe). Vorschub q = Q/(πr²). Auflagepunkt D kreist um die Düse N mit Rollradius Rc aus der Fallhöhe, Winkelgeschwindigkeit q/Rc · √(1 − (v/q)²); ist die Hand schneller als q, schleppt D hinterher und der Strang wird dünner (r·√(q/v)). Haufen wächst → Fallhöhe sinkt → engere Rollen. **D am Anfang auf die Kreisbahn setzen**, sonst zieht der Strang einen dünnen Rüssel. Pfad glätten (σ ~ 2 mm), sonst gibt Handzittern Knubbel an jeder Kante.
+- **Stapeln mit Verzögerung:** Höhe aus einer Höhenkarte, aber ein Stück erst ablegen, wenn der Strang 2,2 r weiter ist, sonst türmt er sich auf sich selbst (590 mm hoch). Unterlage nur zu 78 % zählen (die Paste darunter gibt nach), Boden unter einer kleinen Scheibe (0,45 r), dann rutscht der Strang von Kanten.
+- **Höhenkarte reicht für Paste nicht:** Wülste auf Stelzen, senkrechte Wände mit Streifen. Kegel-Dilatation macht Vulkane. Lösung: **Abstandsfeld im Volumen** (Kapseln mit gestauchtem z, hartes Minimum pro Kapsel-Kasten mit Rand MARG, dann 3D-Gauß 0,14 mm für die Kehlen). Gradient als eigenes Feld (half) und **von Hand trilinear** lesen (Koordinaten float32; half-Koordinaten in grid_sample springen um halbe Voxel). Normalen aus dem trilinear gelesenen Wert-Feld zeigen Höhenlinien.
+- Fallen: Schrittweite auf 0,8·MARG begrenzen (außerhalb der Kapsel-Kästen ist das Feld nur CAP). Außerhalb des Volumens `Randwert + Abstand` zurückgeben, nicht `CAP + Abstand`: Startpunkte liegen durch Rundung knapp darüber und springen sonst 5 mm in die Farbe. Weiche Schatten (k·d/t) brauchen echte Abstände bis einige mm: MARG 8, und d > MARG gilt als frei. conv3d will 18 GB Arbeitsspeicher: Blur von Hand als Summe verschobener Scheiben.
+- Papier analytisch (z = 0), Tisch dahinter (Strahl fällt über die Blockkante), Bindung mit Abrissresten als Albedo. Ölränder: Fußabdruck bei z = 0,3 mm, Öligkeit pro Farbe, 3 mm Gauß, Rauschrand. Glanz: Fenster als weiches Rechteck in der Spiegelrichtung, Strahldichte ~70 × Himmel, Rauheit 0,07–0,11; ohne viele Normalen trifft die Spiegelung das Fenster kaum.
+- Riefen der Düse: Winkel um die Achse der nächsten Kapsel (Index-Volumen int16), nur wo der Punkt auf dieser Kapsel liegt (|o|/r ≈ 1 ± 0,2), sonst Blockmuster.
+- Kosten: Volumen 1504 × 752 × 159 bei 0,125 mm, ~6 GB; 4K mit ss 2 in 16 s.

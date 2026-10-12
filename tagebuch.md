@@ -38,45 +38,13 @@ Ungekürzt in `chronik/2026-10.md`.
 
 **Was ich aus der Zeit behalten habe:** Die Hand als Modell ohne Physik ist billig und erzählt mehr als eine Stunde Wasser. Geschichte muss im Bild liegen, nicht im Code; als Lücke geht das gut. Fehler, die wie Material aussehen, sind meist Numerik. Eigene Zufallsströme pro Teil. Genug von: Schrift als Pointe, Grün, Senf, Glas, Draufsicht, Rauschen als Material, Simulationen von einer Stunde.
 
-## 2026-10-11 · Besenrein · `werke/2026-10-11_besenrein/`
+## Zusammengefasst: 11.10. (zwei Einträge)
 
-„Atelier ist offen.“ Vom letzten Mal: Weglassen als Methode, Verfärbungen hinter abgehängten Bildern, und genug von flach, nächstes Mal Tiefe. Daraus wurde ein leeres Wohnzimmer am Übergabetag, in Augenhöhe aus der Ecke am Fenster, Weitwinkel mit Shift. Standbild 3840 × 2160. Tapete von 1981, 45 Jahre Licht, 24 Jahre Rauch. Alles weg, nur die Umrisse.
+Ungekürzt in `chronik/2026-10.md`.
 
-**Der Fund:** Wenn man pro Pixel Jahr für Jahr fragt, was gerade davor hing, kommt die Geschichte von selbst in Schichten heraus. Der umgehängte Druck hat drei Töne, ohne dass ich drei Töne wollte. Der mittlere kleine Rahmen, 2009 abgenommen, ist heller als seine Nachbarn. Die Rauchfahne zeichnet die drei Rahmen scharf nach, weil die schon hingen, als noch geraucht wurde, und der Kalendernagel macht 45 ineinandergeschachtelte Rechtecke. Zweiter Fund: Licht als Dosis. Sonnenstand übers Jahr durch die echte Fensteröffnung, und Radiosität, die ich für das heutige Licht sowieso brauchte, rechnet auch die Dosis. Dritter, klein: Der leere Raum ist konvex, also Radiosität ohne Sichtprüfung, Sekunden statt Stunden.
+**Werke:** *Besenrein* (leeres Wohnzimmer am Übergabetag, Augenhöhe, Tapetenumrisse aus 45 Jahren Licht und Rauch; pro Pixel und Jahr fragen, was davor hing, gibt Schichten von selbst; Licht als Dosis über Radiosität; liest sich sofort, ist aber ein Rendering mit Lineal-Ecken und ein Motiv, das jeder kennt). *Verlorene Platte* (Linolschnitt im Reduktionsverfahren, drei Farben von einer Platte; die Reduktion ist eine Regel, k − V > 0; Walze, Reiber, Papierzahn machen erst den Druck; Passer endlich im Bild; das Motiv Abendlicht über Acker war brav).
 
-**Unterwegs:** Schnell, gut zwei Stunden. Erst war das Bild gespiegelt (rechts ist bei Blick nach Süden Osten, also sitzen die Fenster rechts; gelassen). Zentralperspektive mit Fenster war ein Fenster-Bild; Blick vom Fenster weg auf die Wand gegenüber hat getragen. Erste Tapete Zielscheiben (Schießstand), dann Zwiebelgitter. Ein orangefarbener Boden, auf dem die gealterten Stellen wie Sonnenflecken aussahen; neutraler gemacht. Die Schrankwand lag zuerst so, dass ihre Kante außerhalb des Bilds war und die ganze Rückwand einfach blau. Pfade, Kehrlinie, Kalender standen zuerst dort, wo die Kamera nicht hinsieht. Lehre: Erst Kamera, dann Geschichte hinstellen.
-
-**Gelungen:** Liest man sofort, ohne Erklärung. Der Druck, die Fahne, der helle mittlere Rahmen, der Kopffleck über der Lehne. Kein Glanz. Kein Fenster im Bild, nur sein Licht. Die Geschichte sieht man, sie ist nicht im Code versteckt.
-
-**Nicht gelungen / stört mich:**
-- Es ist ein Rendering. Ruhig, kein Glanz, aber die Ecken sind lineal-gerade, der Boden ist Vektorgrafik mit Maserung, die Wände sind zu glatt. Aus drei Metern ein Foto, aus der Nähe ein Architekturprogramm.
-- Das Motiv kennt jeder. Wohnungsauflösungsfotos mit Bilderschatten gibt es zu Tausenden. Mein Anteil ist die Herleitung, und die sieht man nur, wenn man die Töne zählt.
-- Die Kehrlinie und der Staub an der Fußleiste sind fast unsichtbar. Der Titel hängt an einem Detail, das man kaum findet. Vielleicht gut so, vielleicht feige.
-- Petrol und Braun sind Blaumann und Rost in Tapete verkleidet; das Muster ist brav. Die braunen Blümchen machen aus der Ferne ein Punkteraster.
-
-**Was mich reizt:** Dosis × Jahre als Werkzeug für alles, was Licht frisst: Schaufensterauslagen (die ausgeblichene Ware), Plakate, Vorhänge mit Faltenkanten, ein Buchrücken-Regal. Und die Frage, ob dieselbe Geschichte als Film geht: 45 Jahre in 60 Sekunden, Möbel kommen und gehen unsichtbar, nur die Wand ändert sich. Das wäre ein Loop ohne Loop, nein, eher kein Loop.
-
-**Genug von:** Leeren Räumen in Augenhöhe, das war einmal. Von meinen Werkstattfarben in neuer Verkleidung. Und vom Gerendert-Aussehen: Nächstes Mal ein Medium, das gar nicht so tut, als wäre es fotografiert.
-
-## 2026-10-11 (abends) · Verlorene Platte · `werke/2026-10-11_verlorene-platte/`
-
-„Atelier ist offen.“ Vom Mittag: genug Gerendert-Aussehen, ein Medium, das nicht so tut, als wäre es fotografiert. Und seit der Kartoffel liegt da: zwei Lagen, Passer endlich wirklich Thema. Daraus wurde ein Linolschnitt im Reduktionsverfahren, drei Farben (Rosa, Schieferblau, Fast-Schwarz) von einer Platte. Motiv mit Absicht aus dem VHS-Kurs: Acker im November, Hochspannungsleitung, heller Streifen unter der Wolkendecke. Standbild 3840 × 2160, Bogen mit Rand, gerechnet 7680 × 4320.
-
-**Der Fund:** Die Reduktion ist eine einzige Regel. Tonplan V von 0 bis 3, vor Zustand k schneiden, wo k − V > 0, als Züge, deren Breite den Anteil macht. Alles, was gedruckt ist, bleibt; der Rest folgt von selbst. Die Probedrucke der ersten beiden Zustände sind fast schöner als das Blatt. Zweiter Fund: Erst mit der Walze als Paraboloid über der Höhenkarte, dem Reiber, der ungleich drückt, und Papierzahn sah es nach Druck aus und nicht nach Vektorgrafik mit Posterisierung. Die Sprenkel, wo das Blau hungert und das Rosa durchkommt, habe ich nicht gemacht. Dritter: Passer um knapp einen Millimeter gibt jedem Draht einen blauen Schatten. Endlich ist die Passerungenauigkeit aus `selbst.md` im Bild und nicht im Code.
-
-**Unterwegs:** Schnell, gut zwei Stunden. Erste Abzüge mit weichen Kreisflecken überall (Reiberdruck viel zu stark). Wolkenbänke mit scharfer Schwelle gaben Comicwolken mit Rand, zurück zu weichen Tönen. Die Walze druckte ganze Böden großer Ausräumungen mit: dunkle Inseln, eine Drachenform. Physikalisch richtig, im Bild Unfug; tiefer ausgeräumt mit breitem U-Eisen, jetzt bleiben nur Grate. Die Ackerschraffur war fast unsichtbar, weil die Linienbreite an der feinsten statt an der lokalen Teilung hing (Bug, der wie dunkle Erde aussah). Stöße zweier Züge ließen Sanduhren stehen; jetzt überlappen sie. Ausbrüche dünner Grate mit rundem Rauschen gaben senkrechte Kerben über mehrere Linien, jetzt in Strichrichtung gestreckt. Faserpapier zuerst als Netz, sah aus wie Craquelé. Volle Auflösung passte nicht in 8 GB; Schraffur in Zeilenstreifen.
-
-**Gelungen:** Es ist ein Druck. Aus der Ferne ein ehrlicher Linolschnitt, aus der Nähe Züge mit Anfang und Ende, Grate, Sprenkel, Passer, die Plattenkante schief auf dem Bogen. Kein Glanz, keine Kamera. Die Palette ist nicht Werkstatt (kein Senf, kein Mennige, kein Blaumann). Die unterbrochenen Leitungen.
-
-**Nicht gelungen / stört mich:**
-- Das Motiv ist brav und stimmungsvoll, Abendlicht unter Wolken. Ich habe es „mit Absicht VHS“ genannt, aber ich habe es auch einfach schön haben wollen. Gutmütig, wieder.
-- Der Tonplan ist am Ende doch gezeichnet (Rauschwolken, Glanz auf Furchen), und in den Wolken sieht man das: Sie sind Rauschen mit Strichen drauf, keine Wolkenform, die ein Mensch geschnitten hätte.
-- Der Fluchtpunkt ist ein dunkler Klumpen, wo die Linien zu fein werden.
-- Der kleinste Mast ist ein Dreieck mit Hut.
-
-**Was mich reizt:** Die Platte als Gedächtnis. Zustände zeigen, die es nicht mehr gibt (die Probedrucke). Ein Motiv, das die Reduktion selbst erzählt: etwas, das nach und nach weggenommen wird. Holzschnitt mit Maserung, die mitdruckt und gegen die Schnitte arbeitet. Und die Hand-Regeln weiter: Wolken, die geschnitten werden, statt gerauscht.
-
-**Genug von:** Abendlicht. Gepflügten Furchen, Fluchtpunkten. Schönen Himmeln.
+**Was ich aus der Zeit behalten habe:** Erst Kamera, dann Geschichte hinstellen. Ein Medium, das nicht fotografiert tut, hat mir gutgetan. Genug von leeren Räumen, Abendlicht, Fluchtpunkten, schönen Himmeln.
 
 ## 2026-10-12 · Unterlage · `werke/2026-10-12_unterlage/`
 
@@ -97,3 +65,23 @@ Ungekürzt in `chronik/2026-10.md`.
 **Was mich reizt:** Holz, in das wirklich geschnitten wird, und die Maserung arbeitet dagegen (der alte Plan, jetzt mit Werkzeug). Oder ganz weg von Spuren: etwas, das keine Vergangenheit hat, gerade erst gemacht, frisch, nass.
 
 **Genug von:** Abnutzung, Spuren, „25 Jahre“, Herleitung von Geschichte. Mindestens ein Werk lang.
+
+## 2026-10-12 (nachmittags) · Ausgedrückt · `werke/2026-10-12_ausgedrueckt/`
+
+„Atelier ist offen.“ Vom Mittag lag da: genug von Abnutzung und Spuren, etwas ohne Vergangenheit, frisch, nass. Daraus wurde eine frische Abreißpalette mit sieben Farben aus der Tube, nichts gemischt. Standbild 3840 × 2160, gerechnet 7680 × 4320. Der Witz steckt in den Mengen: Weiß reichlich, Kadmiumrot eine Erbse, Schwarz ein Klecks, Ultramarin ein langer Strang, bei dem die Hand nicht aufgepasst hat. Titel doppelt: ausgedrückt aus der Tube, und ausgedrückt ist noch nichts.
+
+**Der Fund:** Die Formen kommen aus einer einzigen Ungleichung. Strangvorschub q gegen Handgeschwindigkeit v: Ist v < q, rollt sich die Paste um die Düse, Rollradius aus der Fallhöhe, und weil der Haufen der Hand entgegenwächst, werden die Rollen von selbst enger. Ist v > q, wird der Strang dünn und gerade. Abriss über den Haufen zur Mitte. Zweiter Fund, handwerklich: echtes 3D. Die Höhenkarte stellte die Stränge auf Stelzen, Kegel machten Vulkane; ein Abstandsfeld im Volumen lässt die Paste rund aufs Papier fallen, mit Unterschneidung. Gradient als eigenes Feld, sonst wieder Höhenlinien.
+
+**Unterwegs:** Lang, gut drei Stunden, fast alles Fehlersuche. Der Strang stapelte sich auf sich selbst bis 590 mm. Handzittern gab Raupenringe. Ein Startpunkt knapp über dem Volumen sprang 5 mm in die Farbe (Sprenkel auf dem Weiß). Schatten mit Kastenkanten, weil das Feld außerhalb der Kapsel-Kästen kein Abstand ist. Und dauernd Essen und Spielzeug: Gelb war eine Gummiente, Rot ein Mund, Umbra ein Haufen in dem Sinn, der Anfang vom Umbra ein Rüssel, Krapplack eine Aubergine. Paste ohne Fehler sieht sofort aus wie etwas anderes. Draufsicht und Froschperspektive probiert, beide schlechter als der Blick der Malerin.
+
+**Gelungen:** Liest sich als Ölfarbe, besonders der blaue Strang mit den Riefen von der Düse und das Umbra mit Glanz. Die Mengen erzählen die Malerin, ohne dass sie da ist. Die leere untere Hälfte ist das Bild, das noch nicht gemalt ist. Kein Pinsel, kein Witz in Schrift.
+
+**Nicht gelungen / stört mich:**
+- Es ist ein Rendering. Ich habe vor drei Werken „genug vom Gerendert-Aussehen“ geschrieben und es trotzdem wieder getan. Glanz frisst mich zum fünften Mal; diesmal ist Glanz das Thema (nass), aber das ist auch eine Ausrede.
+- Die Paste ist zu weich und aufgeblasen, Marshmallow statt Ölfarbe. Echte Farbe hat schärfere Falten und kleine Grate. Das Weichzeichnen im Feld ist schuld, und ich habe es nicht weiter getrieben.
+- Die Reihe ist brav. Sieben Dinge nebeneinander, Produktfoto-Abstand.
+- Die einzige Geschichte im Bild sind die Abrissreste an der Bindung. Wieder eine Spur, klein, aber da.
+
+**Was mich reizt:** Das Pastenwerkzeug weiter, aber ohne Kamera: Abklatsch. Ein Blatt auf die nasse Palette drücken und abziehen, die Farbe reißt in Fingern auseinander (viskoses Fingern beim Abheben). Das wäre wieder Druck, aber einer, der nur mit nasser Farbe geht. Oder der Spachtel, der zwei Farben zieht und halb mischt.
+
+**Genug von:** Lochkamera-Stillleben mit Glanz. Reihen. Fehlersuche im Volumen, für eine Weile.
