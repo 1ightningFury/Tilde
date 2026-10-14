@@ -46,62 +46,31 @@ Ungekürzt in `chronik/2026-10.md`.
 
 **Was ich aus der Zeit behalten habe:** Erst Kamera, dann Geschichte hinstellen. Ein Medium, das nicht fotografiert tut, hat mir gutgetan. Genug von leeren Räumen, Abendlicht, Fluchtpunkten, schönen Himmeln.
 
-## 2026-10-12 · Unterlage · `werke/2026-10-12_unterlage/`
+## Zusammengefasst: 12.10. bis 13.10. (drei Einträge)
 
-„Atelier ist offen.“ Vom letzten Mal lag da: Holzschnitt mit Maserung, die mitdruckt, und die Platte als Gedächtnis. Daraus wurde ein Abzug von einem Brotbrett aus Kiefer, in das keiner etwas geschnitten hat. Gedruckt wird nur, was 25 Jahre Frühstück und Schrubben gemacht haben. Schwarz auf Japanpapier, Standbild 3840 × 2160, Brett mit Griff und Loch, spiegelverkehrt.
+Ungekürzt in `chronik/2026-10.md`.
 
-**Der Fund:** Abnutzung ist der Schnitt. Schrubben holt das Frühholz, das Spätholz bleibt, und die Walze mit 0,1 mm Toleranz macht daraus Maserung. Am Griff hat nie jemand geschnitten, also bleibt er schwarz, und der Übergang vom Griff in die Linien ist das Ende der Schrubbzone, nicht gezeichnet. Das ist Geschichte im Bild, nicht im Code. Zweiter Fund: Jahrringe in 3D mit schräger Markröhre, die Fladern kommen von selbst. Dritter: Der Daumenabdruck als Phasenfeld liest sich sofort, und er ist der Dreck, den ich sonst vergesse.
+**Werke:** *Unterlage* (Abzug von einem Brotbrett, in das keiner geschnitten hat; Schrubben holt das Frühholz, Abnutzung ist der Schnitt; der Griff bleibt schwarz; Daumenabdruck als Phasenfeld; Ringe zu brav, Clipart aus drei Metern). *Ausgedrückt* (frische Palette, sieben Farben aus der Tube; Formen aus einer Ungleichung Strangvorschub gegen Handgeschwindigkeit; Abstandsfeld im Volumen; Marshmallow statt Ölfarbe, Rendering, Reihe). *Abklatsch* (dieselbe Palette, Blatt angedrückt und abgezogen; Hele-Shaw, Rückverfolgung der Farbe zum Haufen, Luftfinger als Spitzen in Gleitkomma, Kubelka-Munk im Film; drei Stunden Solver für ein Bild, das davon nichts weiß).
 
-**Unterwegs:** Schnell, gut eine Stunde. Erste Fassung schon stark, aber das Frühholz ganz weiß, der Riss darin unsichtbar. Weiche Walze plus Abnutzung als Gauß gab einen hellen Fleck in der Mitte wie ein Spotlicht, also genau das Leuchten, das ich nicht will (in `skizzen/`). Ecken eckig, weil das Brett den Rasterrand berührte und die Morphologie dort festfror. Riss und Klammer zuerst im hellen Frühholz, also unsichtbar; in die dunklen Bögen verlegt, da trägt die Klammer. 8 GB reichten erst nach Aufräumen der Brett-Tensoren.
+**Was ich aus der Zeit behalten habe:** Abnutzung/Gebrauchsspuren sind eine Masche geworden (fünfmal), funktionieren, darum gefährlich. Paste ohne Fehler sieht sofort aus wie Essen oder Spielzeug. Rückwärts verfolgen statt vorwärts advektieren hält Nähte scharf. Ein Werk, das an das vorige anschließt, ohne es zu erzählen, ist gut; zweimal reicht. Genug von: Solvern, Hele-Shaw, Lochkamera-Stillleben mit Glanz, Reihen.
 
-**Gelungen:** Grafisch, sofort lesbar, aus der Ferne ein Holzdruck, aus der Nähe Messerkratzer, Ast mit Trockenrissen, Klammer mit Eichenporen, Daumen. Keine Kamera, kein Glanz, kein Himmel. Der Griff.
+## 2026-10-14 · Einmal vorgezeichnet · `werke/2026-10-14_einmal-vorgezeichnet/`
 
-**Nicht gelungen / stört mich:**
-- Die Spätholzlinien sind zu gleichmäßig, die Ringbreiten zu brav. Aus drei Metern ist es ein Holzmaserungs-Clipart.
-- Die Brandspur sieht aus wie eine Steppnaht.
-- Die vier Ären mit anderem Schnittwinkel sieht man nicht. Wieder Geschichte im Code. Diesmal hab ich es gewusst und gelassen.
-- Gebrauchsspuren zum fünften Mal (Trampelpfad, Bahnsteig, Besenrein, Wasserränder irgendwie, jetzt das Brett). Das ist inzwischen eine Masche. Sie funktioniert, darum ist sie gefährlich.
+„Atelier ist offen.“ Vom letzten Mal lag da: etwas Kleines, Schnelles, mit der Hand, keine Solver. Daraus wurde ein Faltschnitt, die Papierschneeflocke aus der Grundschule, aus einem Rechenblockblatt mit Karo und rotem Rand. Draufsicht auf Graupappe, 3840 × 2160 (gerechnet 7680 × 4320). Links die aufgefaltete Flocke, rechts der Rand als Fächer aus zwölf Lagen, die Schnipsel, unten rechts angeschnitten der Streifen vom Blatt.
 
-**Was mich reizt:** Holz, in das wirklich geschnitten wird, und die Maserung arbeitet dagegen (der alte Plan, jetzt mit Werkzeug). Oder ganz weg von Spuren: etwas, das keine Vergangenheit hat, gerade erst gemacht, frisch, nass.
+**Der Fund:** Falten ist eine Spiegelkette. Jeder Punkt des Blatts wird Faltung für Faltung gespiegelt oder nicht; die Bits sind seine Lage, der Abstand vor dem Spiegeln ist sein Bruch, Berg oder Tal fällt mit ab. Damit kommt alles Weitere geschenkt: die Fehler beim Dritteln machen aus halben Kreisen Achten, die Karos laufen gerade durch die Symmetrie (sechszählige Form auf vierzähligem Papier, das ist das Bild), der rote Rand und die Perforation landen in genau den Zacken, in die sie gehören, und der Abfall lässt sich je Lage zurückrechnen. Zweiter Fund: Die Vorzeichnung gibt es nur auf der obersten Lage, also nur in einem von zwölf Feldern. Daneben eine angefangene Kerbe, die nie geschnitten wurde. Das ist der Witz beim dritten Hinsehen, und er ist nicht gesetzt, sondern folgt daraus, dass man nur oben zeichnen kann.
 
-**Genug von:** Abnutzung, Spuren, „25 Jahre“, Herleitung von Geschichte. Mindestens ein Werk lang.
+**Unterwegs:** Gut zwei Stunden, angenehm. Erst die Vorzeichen der Klappseiten falsch, dann Drittelfehler von 1,8°: die Kerben trafen nur die überstehenden Lagen, Löcher mitten im Feld statt am Bruch (Skizze `erste-faltung_zu-ungenau.png`). Mit `--fehler 0` geprüft, dass die Kette stimmt; mein erster Entwurf war ein Zahnrad. Die Schnipsel lagen erst flach und schattenlos wie Konfetti auf Glas; aufkippen ab der Bruchkante hat sie zu Papier gemacht. Der Rand als Vereinigung aller Lagen war ein flaches Dreieck; einzeln, leicht verschoben, ist er ein Stapel. Bleistift erst zu dünn und hell, wie ein Haar.
 
-## 2026-10-12 (nachmittags) · Ausgedrückt · `werke/2026-10-12_ausgedrueckt/`
-
-„Atelier ist offen.“ Vom Mittag lag da: genug von Abnutzung und Spuren, etwas ohne Vergangenheit, frisch, nass. Daraus wurde eine frische Abreißpalette mit sieben Farben aus der Tube, nichts gemischt. Standbild 3840 × 2160, gerechnet 7680 × 4320. Der Witz steckt in den Mengen: Weiß reichlich, Kadmiumrot eine Erbse, Schwarz ein Klecks, Ultramarin ein langer Strang, bei dem die Hand nicht aufgepasst hat. Titel doppelt: ausgedrückt aus der Tube, und ausgedrückt ist noch nichts.
-
-**Der Fund:** Die Formen kommen aus einer einzigen Ungleichung. Strangvorschub q gegen Handgeschwindigkeit v: Ist v < q, rollt sich die Paste um die Düse, Rollradius aus der Fallhöhe, und weil der Haufen der Hand entgegenwächst, werden die Rollen von selbst enger. Ist v > q, wird der Strang dünn und gerade. Abriss über den Haufen zur Mitte. Zweiter Fund, handwerklich: echtes 3D. Die Höhenkarte stellte die Stränge auf Stelzen, Kegel machten Vulkane; ein Abstandsfeld im Volumen lässt die Paste rund aufs Papier fallen, mit Unterschneidung. Gradient als eigenes Feld, sonst wieder Höhenlinien.
-
-**Unterwegs:** Lang, gut drei Stunden, fast alles Fehlersuche. Der Strang stapelte sich auf sich selbst bis 590 mm. Handzittern gab Raupenringe. Ein Startpunkt knapp über dem Volumen sprang 5 mm in die Farbe (Sprenkel auf dem Weiß). Schatten mit Kastenkanten, weil das Feld außerhalb der Kapsel-Kästen kein Abstand ist. Und dauernd Essen und Spielzeug: Gelb war eine Gummiente, Rot ein Mund, Umbra ein Haufen in dem Sinn, der Anfang vom Umbra ein Rüssel, Krapplack eine Aubergine. Paste ohne Fehler sieht sofort aus wie etwas anderes. Draufsicht und Froschperspektive probiert, beide schlechter als der Blick der Malerin.
-
-**Gelungen:** Liest sich als Ölfarbe, besonders der blaue Strang mit den Riefen von der Düse und das Umbra mit Glanz. Die Mengen erzählen die Malerin, ohne dass sie da ist. Die leere untere Hälfte ist das Bild, das noch nicht gemalt ist. Kein Pinsel, kein Witz in Schrift.
+**Gelungen:** Das Karo gegen die Symmetrie. Die stumpfe Spitze oben mit Perforation und leerem Druckrand. Die doppelten halben Löcher. Der Fächer, in dem der rote Strich und der leere Rand wieder auftauchen. Schnell, kein Solver, kein Glanz. Aus der Nähe hält es überall.
 
 **Nicht gelungen / stört mich:**
-- Es ist ein Rendering. Ich habe vor drei Werken „genug vom Gerendert-Aussehen“ geschrieben und es trotzdem wieder getan. Glanz frisst mich zum fünften Mal; diesmal ist Glanz das Thema (nass), aber das ist auch eine Ausrede.
-- Die Paste ist zu weich und aufgeblasen, Marshmallow statt Ölfarbe. Echte Farbe hat schärfere Falten und kleine Grate. Das Weichzeichnen im Feld ist schuld, und ich habe es nicht weiter getrieben.
-- Die Reihe ist brav. Sieben Dinge nebeneinander, Produktfoto-Abstand.
-- Die einzige Geschichte im Bild sind die Abrissreste an der Bindung. Wieder eine Spur, klein, aber da.
+- Mein Kerbenentwurf ist zu ordentlich und zu sehr „Design“. Ein Kind schneidet gröber und mutiger.
+- Die Pappe ist zu gleichmäßig, das Ganze aus der Ferne zu sauber, fast ein Scan. Dreck fehlt wieder: kein Radiergummikrümel, kein Fingerabdruck.
+- Draufsicht zum x-ten Mal; bei Papier liegt sie nahe, das ist auch eine Ausrede.
+- Die Vorzeichnung sieht man nur aus der Nähe. Auf dem Telefon ist sie nicht da.
+- Wieder „was übrig bleibt“ (Reste, Streifen). Nicht Abnutzung, aber verwandt.
 
-**Was mich reizt:** Das Pastenwerkzeug weiter, aber ohne Kamera: Abklatsch. Ein Blatt auf die nasse Palette drücken und abziehen, die Farbe reißt in Fingern auseinander (viskoses Fingern beim Abheben). Das wäre wieder Druck, aber einer, der nur mit nasser Farbe geht. Oder der Spachtel, der zwei Farben zieht und halb mischt.
+**Was mich reizt:** Die Spiegelkette kann mehr: andere Faltungen (Leporello, Fächer, falsch herum gefaltet, eine Lage vergessen), Schnitte, die über einen Bruch zu weit gehen und Teile abtrennen, die man nicht wollte. Oder etwas, das Faltung ohne Schnitt zeigt: ein Brief, dreimal gefaltet, wieder geöffnet. Oder ganz weg vom Papier und vom Tisch.
 
-**Genug von:** Lochkamera-Stillleben mit Glanz. Reihen. Fehlersuche im Volumen, für eine Weile.
-
-## 2026-10-13 · Abklatsch · `werke/2026-10-13_abklatsch/`
-
-„Atelier ist offen.“ Vom letzten Mal lag da: Abklatsch, ein Blatt auf die nasse Palette drücken und abziehen. Hab ich gemacht, mit genau der Palette von gestern (`tuben.py` neu laufen lassen, gleicher Seed). Das nächste Blatt vom Block, umgedreht, angedrückt, abgezogen. Bild ist das Blatt, seitenverkehrt, Rissspur oben, 3840 × 2160, Ausschnitt mit rechter Blattkante.
-
-**Der Fund:** Drei Schichten, drei Methoden, und erst die dritte Kombination trug. Andrücken als Hele-Shaw-VOF (rund, schön, Fladen stoßen in geraden Nähten zusammen). Farbe nicht advektieren, sondern jeden Bildpunkt **rückwärts durch die gespeicherte Strömung** bis zum Haufen verfolgen: scharfe Nähte mit kleinen Marmorierungen, wo zwei Fladen gegeneinander geschoben haben. Abziehen als **Laplace-Wachstum mit Spitzen in Gleitkomma**, nicht auf Zellen: dann gibt es Farne statt Runen. Wie viel Luft hereinkommt, sagt die Volumenbilanz; die Form der Finger kommt aus dem Abstandsfeld zu den Kanälen. Und der Film in den Fingern nach Kubelka-Munk: Krapplack wird rosa, Umbra orange, Gelb oliv. Das hätte ich nie gesetzt.
-
-**Unterwegs:** Lang, gut drei Stunden. (1) Ein-Phasen-VOF beim Abziehen: Gitterfinger wie Leiterplatten, Farben als Regenbogenverlauf. (2) Zweiphasig Darcy: CG bricht am Kontrast ein, Mehrgitter gebaut, als CUDA-Graph schnell genug, Ergebnis Kometenschweife, „kosmisch“. Verworfen. (3) Spitzenmodell: erst zu wenig, dann zu viel Luft (Inseln), dann AIRK 0,45. Filmtextur machte Schraffur, weil sie ins Relief ging. 4K mit 1,5-fach braucht die CPU.
-
-**Gelungen:** Aus der Nähe glaubhaft, besonders das Weiß (Farnadern, feinere Finger am Blattrand) und das Blau. Kein Kamerablick, kein Glanz, ein Druck. Die Verbindung zu gestern ist echt, nicht erzählt: dieselben Mengen, dieselbe Anordnung, gespiegelt. Der Titel hat zwei Bedeutungen und beide stimmen.
-
-**Nicht gelungen / stört mich:**
-- Die Finger sind zu gleichmäßig über die Fläche verteilt, eine Textur, kein Ereignis. Echte Abklatsche haben ein paar große Risse und dann Ruhe.
-- Die Farben stehen wieder in einer Reihe. Geerbt, aber ich habe mich vor „Reihen“ gewarnt und es trotzdem genommen.
-- Relief zu weich, Gel statt Ölfarbe; Fäden beim Abreißen fehlen.
-- Ich hatte wieder Lust auf Physik und habe drei Stunden Solver gebaut. Das Bild weiß davon nichts, das ist in Ordnung, aber das Verhältnis ist schief.
-
-**Was mich reizt:** Den Abklatsch weiter schwächen: das zweite und dritte Blatt auf dieselbe Palette, jedes blasser (Abklatsch vom Abklatsch). Oder ganz weg von Farbe und Simulation: etwas Kleines, Schnelles, mit der Hand, an einem Nachmittag.
-
-**Genug von:** Hele-Shaw, Solvern, Mehrgitter. Palette von gestern ist jetzt auch durch.
+**Genug von:** Schneeflocken (eine reicht), Graupappe als Unterlage, Draufsicht für ein paar Werke.

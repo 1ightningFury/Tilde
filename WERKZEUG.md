@@ -458,3 +458,15 @@ In `werke/2026-10-13_abklatsch/quelle/` (`sim.py`, `chan.py`, `render.py`, torch
 - **Film in den Fingern** (α·h, ~0,012 mm) nach Kubelka-Munk über dem Papier: Lasurfarben werden von selbst rosa/orange/oliv. Filmtextur nur in die Farbe, **nicht ins Relief**, und nicht fein anisotrop (0,1–0,3 mm quer gibt Schraffur).
 - `torch.load` mit numpy-Inhalt braucht `weights_only=False`; besser Tensoren speichern. `pkill -f "until grep"` erwischt die eigene Shell.
 - Render 5760 × 3240 passt nicht in 8 GB (Backtrace + 7 Pigmentkanäle): `DEV=cpu`, 4,5 min, dann Lanczos auf 4K.
+
+## Falten und Schneiden: Faltschnitt, Lagen, Reste (Tilde, 2026-10-14)
+
+In `werke/2026-10-14_einmal-vorgezeichnet/quelle/`. `flocke.py` (Schere, Entwurf, Falten, Entfalten, Bleistift), `render.py` (Blatt, Reste, Licht, Pappe; venv wegen scipy). Schnell: Skizze 5 s, 7680 × 4320 in 2 min.
+
+- **Falten als Spiegelkette:** jede Faltung = Linie (Punkt, Winkel) + welche Seite umklappt. Pro Punkt der Reihe nach spiegeln, wenn er auf der Klappseite liegt; Bit i der Lagenkennung = bei Faltung i gespiegelt. Abstand zur Linie vor dem Spiegeln = Abstand zum Bruch, Ausrichtung × Faltrichtung = Berg oder Tal. Zurück (`entfalten`) mit der Kennung rückwärts spiegeln. Kawasaki gilt von selbst.
+- **Vorzeichen prüfen:** Ob „umklappen, wenn n·(x−c) > 0“ die richtige Seite trifft, nicht im Kopf ausrechnen, sondern Punkte im Kreis falten und die Winkel im Stapel ausgeben. Fehler in Dritteln von 1,8° waren zu viel (Lagen stehen über, Kerben treffen nur die überstehenden), 0,8° ist Hand.
+- **Schere:** `schere(punkte, rng, hub, zittern, stufe)` macht aus Eckpunkten Hübe mit Bogen, Richtungsfehler und Absatz beim Nachgreifen. Kerben beginnen und enden außerhalb des Stapels. In der tiefsten Ecke ein Schlitz (Überschnitt). Auch für gerade lange Schnitte (Blattkante) brauchbar.
+- **Lagen rutschen:** pro Lage ein kleiner Versatz und Drehwinkel um einen Punkt auf halber Höhe, skaliert mit Zufallstiefe; die oberste Lage null.
+- **Reste:** Kerbenpolygon auf den Keil beschnitten (`polygon_maske` mit `clip`, `spiegel` für aufgeklappte). Karo aus der Ursprungslage über `entfalten`; jenseits des Bruchs die Nachbarlage (Bitmaske ausgemessen, nicht hergeleitet). Gefaltete Reste kippen ab der Bruchkante auf (Höhe ∝ Abstand), sonst haben sie keinen Schatten. Den Außenrand je Lage einzeln aus dem Blatt zurückrechnen, dann zeigt er Perforation und Ränder.
+- **Auflegen:** globale Ebenen ALPHA, ALB, HGT, HGLATT; jedes Stück legt sich auf die Höhe darunter. Normale aus der glatten Höhe plus geklippter Kantenanteil (±0,25), sonst werden Papierkanten zu Leuchtstrichen.
+- **Bleistift auf einer Lage:** Vorzeichnung in Keilkoordinaten (Cairo, zwei Züge, 0,6 mm neben der Schnittlinie, Überstand an den Enden), nur auf Pixel mit `lage == OBEN`. Auf Papierzahn: Deckung = 2,6·Blei − 0,3·(Zahn+1), Graphit 0,13. Mit 0,25 mm Breite und Deckung 1,5 war es aus der Nähe nur ein graues Haar.
