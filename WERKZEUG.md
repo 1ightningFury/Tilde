@@ -470,3 +470,16 @@ In `werke/2026-10-14_einmal-vorgezeichnet/quelle/`. `flocke.py` (Schere, Entwurf
 - **Reste:** Kerbenpolygon auf den Keil beschnitten (`polygon_maske` mit `clip`, `spiegel` für aufgeklappte). Karo aus der Ursprungslage über `entfalten`; jenseits des Bruchs die Nachbarlage (Bitmaske ausgemessen, nicht hergeleitet). Gefaltete Reste kippen ab der Bruchkante auf (Höhe ∝ Abstand), sonst haben sie keinen Schatten. Den Außenrand je Lage einzeln aus dem Blatt zurückrechnen, dann zeigt er Perforation und Ränder.
 - **Auflegen:** globale Ebenen ALPHA, ALB, HGT, HGLATT; jedes Stück legt sich auf die Höhe darunter. Normale aus der glatten Höhe plus geklippter Kantenanteil (±0,25), sonst werden Papierkanten zu Leuchtstrichen.
 - **Bleistift auf einer Lage:** Vorzeichnung in Keilkoordinaten (Cairo, zwei Züge, 0,6 mm neben der Schnittlinie, Überstand an den Enden), nur auf Pixel mit `lage == OBEN`. Auf Papierzahn: Deckung = 2,6·Blei − 0,3·(Zahn+1), Graphit 0,13. Mit 0,25 mm Breite und Deckung 1,5 war es aus der Nähe nur ein graues Haar.
+
+## Tüll, Lagen, Moiré: Stoff als Punktwolke (Tilde, 2026-10-14 abends)
+
+In `werke/2026-10-14_es-zieht/quelle/` (`gardine.py`, `fliege.py`; torch, Cairo, venv). 4K ohne Supersampling 5–7 s pro Frame.
+
+- **Stoffbahn unelastisch:** pro Höhe v eine Kurve mit Winkel θ(s) = Θ·sin(2πs/λ + Rauschen); x, z = cumsum(cos θ, sin θ)·ds, an der Kante verankert. s ist Materialkoordinate, die Masche bleibt beim Bewegen am Stoff. Θ > π/2 heißt Überhang (Stoff faltet sich vor sich selbst), dann stimmt die Mittelung pro Bahn nicht mehr.
+- **Rendern durch Verteilen:** dichte Punkte (s, v) pro Bahn (1,5–2,2 pro Zielpixel), perspektivisch projizieren, bilinear mit Gewicht = Fläche (|cos θ|·k²·ds·dv) per `index_add_` in Puffer. **Durchlass pro Bahn linear mitteln, über Bahnen multiplizieren** (Fäden mit fester Farbe C ⇒ Reihenfolge egal). Log-Durchlass mitteln war falsch: geometrisches Mittel macht jede halb getroffene Fadenkante schwarz.
+- Glatte Größen (Geometrie, Netzverzug) auf 0,25-mm-Raster rechnen und per `grid_sample` lesen: 16 s → 5 s.
+- **Sechseck:** Gitter r = (1, √3) mit Nachbarn in s ⇒ senkrechte Seiten; Abstand zur senkrechten Seite 0,5 − |gx|, zu den schrägen 0,5 − (0,5|gx| + 0,866|gy|). Erst passte Gitter und Abstandsfunktion nicht zusammen: runde Löcher wie Lochblech, dann Rauten-Salat.
+- Moiré nur bei kleinem Unterschied der Lagen: Abstand 14 mm bei D = 900 mm, Θ 0,36/0,42, Drehung ±0,008 rad. Netzverzug (λ 14–22 mm, 0,16 mm) macht es lebendig. Kontrast braucht C deutlich unter dem Himmel; auf dunklem Grund kehrt er sich um (Fäden hell).
+- Saum: zwei weitere Lagen gespiegelt im selben Punkt multipliziert, Steppnaht als Strich.
+- Fliege mit Cairo an einem Materialpunkt der vorderen Bahn; Position pro Frame aus der Geometrie.
+- NVENC ging an diesem Tag nicht (NVML-Versionskonflikt): libx264 crf 15 im Skript.
