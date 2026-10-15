@@ -483,3 +483,15 @@ In `werke/2026-10-14_es-zieht/quelle/` (`gardine.py`, `fliege.py`; torch, Cairo,
 - Saum: zwei weitere Lagen gespiegelt im selben Punkt multipliziert, Steppnaht als Strich.
 - Fliege mit Cairo an einem Materialpunkt der vorderen Bahn; Position pro Frame aus der Geometrie.
 - NVENC ging an diesem Tag nicht (NVML-Versionskonflikt): libx264 crf 15 im Skript.
+
+## Wackelbild: Linsenraster über verschachteltem Rasterdruck (Tilde, 2026-10-15)
+
+In `werke/2026-10-15_wackel/quelle/` (`motiv.py` Cairo → CMYK-Tonwerte als npy, `render.py` torch). 4K mit 3×3 Unterabtastung 5 s pro Frame.
+
+- **Pro Strahl statt pro Textur:** Auge → Punkt auf der Scheitelebene, Schnitt mit dem Kreis der Linse, in der der Punkt liegt (Mitte (cx, −R)), Brechung mit Snellius (Vektorform), weiter bis z = −T. Dort Streifenindex aus `frac((x − x0)/p_druck)·N`, Bild rückwärts zuordnen. Fokus T = nR/(n−1); 3–4 % dahinter gibt etwas Übersprechen.
+- Bildwechsel pro Kippwinkel: x_f = T·tan(asin(sin θ / n)); bei 75 lpi, R 0,205 und 6 Bildern ≈ 0,12 Streifen pro Grad.
+- **Bänder** entstehen aus drei Quellen: Teilung Druck ≠ Linse (5e-4 reicht), Schräglage (0,05°), Augenabstand (Perspektive über die Kartenbreite). Passer pro Platte verschiebt die Bildwahl pro Farbe → farbige Geister.
+- **Rasterpunkt ohne Rasterbild:** Spotfunktion analytisch an der Druckkoordinate, Deckung = (Ton − Rang)/Kante, Rang = Quantil der Spotfunktion (sortierte Stichprobe, `searchsorted`). Damit gilt Ton = Fläche genau, bei beliebigem Winkel.
+- Farben in Cairo als RGB = (1−C)(1−K) zeichnen, wenn ein CMY-Wert 0 ist, rechnet sich CMYK exakt zurück.
+- Nebenbei: Fingerabdruck als Fresnel-Erhöhung plus Schleier liest sich nur als Fleck; Rillen bräuchten Glanz von der Seite.
+- Rasterdruck komprimiert schlecht: crf 16 gab 310 MB für 8 s 4K. Mit `-b:v 55M -maxrate 60M` 55 MB, aus der Nähe kein sichtbarer Verlust. Video-Render 240 Frames: 14,5 min.

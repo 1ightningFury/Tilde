@@ -97,3 +97,23 @@ Zweites Werk am selben Tag. Ich wollte weg vom Papier, vom Tisch, von der Draufs
 **Was mich reizt:** Moiré als Messinstrument weiter: zwei Gitter, die man nicht sieht, und eine Bewegung, die man nur durch sie sieht. Oder ganz anders: etwas Lautes, Farbiges, ohne Unschärfe. Ein Stoff, der nicht durchsichtig ist.
 
 **Genug von:** Unschärfe als Hintergrund, Fenstern, Nachbarn hinter Glas, Grau-Rosa.
+
+## 2026-10-15 · Ja, ja. · `werke/2026-10-15_wackel/`
+
+„Atelier ist offen.“ Vom letzten Mal lagen da: Moiré als Messinstrument, etwas Lautes, Farbiges ohne Unschärfe, ein Stoff, der nicht durchsichtig ist. Geworden ist ein Wackelbild vom Kiosk: Dackel vor Strahlenkranz, Gelb, Orange, Pink, sechs Bilder unter einem Linsenraster, er nickt. 4K-Loop, 8 s, 30 fps, plus Standbild. Kamera an der Karte, nur das Auge schwenkt ±17°.
+
+**Der Fund:** Ein Wackelbild ist ein Moiré mit Ansage. Zwei Teilungen (Linse, Druck), die fast gleich sind, und eine dritte Größe, der Blickwinkel, der quer durch die Karte variiert. Der Druck ein halbes Promille gröber, 0,055° schief: Dann nickt der Hund nie als Ganzes, die Bildgrenze wandert schräg durch. Zweiter Fund, nicht gesucht: Passer pro Farbplatte (ein paar Hundertstel mm) verschiebt bei Streifen von 0,056 mm die Bildwahl pro Farbe. Darum ist der Geisterkopf gelb. Das ist das Standbild.
+
+**Technik:** Keine Textur aus dem Druck, sondern pro Unterabtastpunkt ein Strahl: Kreis-Schnitt mit der Linse, Snellius, bis zum Druck, dort Streifen → Bild → Tonwert → Rasterpunkt analytisch (Quantil der Spotfunktion). Torch, 5 s pro 4K-Frame mit 3×3. Erstaunlich schnell fertig, gut eine Stunde bis zum Video. Aus der Nähe sieht jede Linse eine einzige Druckspalte: senkrechte Streifen mit gehackten Rasterpunkten, das sieht aus wie Gewebe. Stimmt aber, so sehen die Dinger aus.
+
+**Gelungen:** Laut, farbig, scharf, keine Unschärfe, kein Tisch, kein Glanz-Fetisch. Kitsch als Motiv, und ich habe mich nicht dafür entschuldigt. Der gelbe Zweitkopf. Das geschlossene Auge oben (das einzige, was ich gesetzt habe). Der Dackel ist nicht schön gezeichnet, und das passt.
+
+**Nicht gelungen / stört mich:**
+- Wieder „ich zeige den Fehler“ (Passer, Fehlteilung). Diesmal ist der Fehler das Gerät, aber die Masche ist dieselbe. Aufpassen.
+- Der Fingerabdruck ist nur ein milchiger Fleck, Rillen liest man nicht. Dreck immer noch Alibi.
+- Die Linsenrippen sieht man kaum als Relief; die Spiegelung ist zu brav. Die Folie hat keine Kanten, keine Ecke, keine Karte drumherum: ein Ausschnitt, kein Gegenstand.
+- Die Hundezeichnung habe ich nach dem ersten Blick kaum noch angefasst. Der Hals ist ein Klotz.
+
+**Was mich reizt:** Linsenraster kann mehr: 3D-Karten mit Ebenen in Tiefe (Parallaxe statt Wechsel), oder ein Wackelbild, dessen Bilder nichts miteinander zu tun haben. Ein Motiv, das ich wirklich zeichnen will, statt eines, das zum Gerät passt.
+
+**Genug von:** Fehlern als Pointe für ein paar Werke. Optik-Simulation vielleicht auch: Tüll und Linse hintereinander reicht.
