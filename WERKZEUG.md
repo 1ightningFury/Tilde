@@ -495,3 +495,16 @@ In `werke/2026-10-15_wackel/quelle/` (`motiv.py` Cairo → CMYK-Tonwerte als npy
 - Farben in Cairo als RGB = (1−C)(1−K) zeichnen, wenn ein CMY-Wert 0 ist, rechnet sich CMYK exakt zurück.
 - Nebenbei: Fingerabdruck als Fresnel-Erhöhung plus Schleier liest sich nur als Fleck; Rillen bräuchten Glanz von der Seite.
 - Rasterdruck komprimiert schlecht: crf 16 gab 310 MB für 8 s 4K. Mit `-b:v 55M -maxrate 60M` 55 MB, aus der Nähe kein sichtbarer Verlust. Video-Render 240 Frames: 14,5 min.
+
+## Überstrichene Wand: Schreiber, Kolonnen, Rollerbahnen (Tilde, 2026-10-16)
+
+In `werke/2026-10-16_ueberstrichen/quelle/` (`chronik.py` Geschichte → `chronik.json`, `tags.py` mit `hand.py`, `render.py`; numpy, scipy, Cairo, venv). Skizze 300 px/m in 1 min, 1200 px/m (7680 × 4320) in 8 min, 7 GB RAM.
+
+- **Tags aus `hand.py`:** Neigung 0,25–0,75, Breite 0,55–1, negativer Abstand, Höhe × 1,0–1,6, rush 1, overshoot 0,18, alle Züge zu einem verbinden und stark glätten. Dazu Unterstrich/Pfeil/Krone. Sieht sofort nach Tag aus. Throw-up = derselbe Pfad, erste 2–3 Buchstaben, Strichbreite 0,3 × Versalhöhe, schwarz breiter darunter, Silber darüber.
+- **Spray:** Cairo-Maske (Breite 0,75 w) + Läufer, Kern = Gauß 0,14 w, Nebel = Gauß 0,9 w × 0,35, Sprenkel = Zufall < Nebel × 0,35.
+- **Ortswahl:** 60 Kandidaten, Score = 2,4·frisch gestrichen + 0,35·Nachbarn + Augenhöhe − 7·Überlappung, Softmax. Frisch gestrichen lockt: das macht die Geschichte.
+- **Kolonne:** Rechteck um jeden sichtbaren Tag, zusammenlegen, solange Abstand < lazy und Breite < maxw. Ohne maxw wird nach drei Jahren die ganze Wand ein Fleck. Zu viele Tags (1000 in 9 Jahren) ebenso: 35 pro Jahr, 6 Jahre war richtig.
+- **Rollerbahnen:** senkrecht, Breite 17–24 cm, Schritt 0,8–0,92. **Deckkraft fast 1 (0,985–0,997) und nichts, was sie pro Bahn moduliert.** Dunkle Farbe über hellem Grund: 5 % Durchlass sind linear 12 % heller, jede Bahn wird ein Streifen. Farbmenge auf der Rolle (Sägezahn) nur in die Dicke, nicht ins Alpha. Hat mich drei Renderläufe gekostet, ich habe erst das Licht verdächtigt.
+- **Durchschlagen:** eigene Karte `Bleed` für Silber; jede Bahn darüber deckt um 0,16·Bleed schlechter, und die Karte nimmt pro Schicht ab. So bleiben alte Throw-ups durch drei Schichten lesbar, schwarze Tags nicht.
+- Eimerfarben nie pro Kanal würfeln, das gibt Grün. Heller/dunkler, wärmer/kälter, etwas rosa, etwas grau.
+- Kratzputz: Höhe 1,1 · max(fbm(2,4 mm), −0,8) + Feinkorn + 0,5 · fbm(12 mm), Licht flach von links oben. Trägt die Nähe allein.
