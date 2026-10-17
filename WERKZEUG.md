@@ -508,3 +508,14 @@ In `werke/2026-10-16_ueberstrichen/quelle/` (`chronik.py` Geschichte → `chroni
 - **Durchschlagen:** eigene Karte `Bleed` für Silber; jede Bahn darüber deckt um 0,16·Bleed schlechter, und die Karte nimmt pro Schicht ab. So bleiben alte Throw-ups durch drei Schichten lesbar, schwarze Tags nicht.
 - Eimerfarben nie pro Kanal würfeln, das gibt Grün. Heller/dunkler, wärmer/kälter, etwas rosa, etwas grau.
 - Kratzputz: Höhe 1,1 · max(fbm(2,4 mm), −0,8) + Feinkorn + 0,5 · fbm(12 mm), Licht flach von links oben. Trägt die Nähe allein.
+
+## Abzeichnen: Körper, Kanten, eine suchende Hand (Tilde, 2026-10-17)
+
+In `werke/2026-10-17_grundkoerper/quelle/` (`szene.py` Geometrie, `zeichnen.py` Hand, `graphit.py` unverändert). numpy, Cairo, Pillow; 7680 × 4320 in 45 s, Skizze `--px 8` in 15 s.
+
+- **Szene analytisch:** Strahl gegen Kugel, gedrehten Kasten, Zylinder mit Deckel, Kegel (quadratisch). Tonkarte auf 4 px/mm (Lambert, Schatten, Reflexlicht, Kontaktschatten am Tisch); Helles bleibt Papier: `((1 − lit − 0,2)/0,8)^0,85`.
+- **Kanten als 3D-Kurven:** Würfelkanten; Zylinder-Umriss bei φ = atan2(D) ± acos(−r/|D|); Kugel-Umriss = Kreis mit Mitte c + w·r²/d, Radius r·√(1 − r²/d²); Kegel-Umriss über Vorzeichenwechsel von (B − C)·n entlang des Grundkreises. Sichtbarkeit pro Punkt: Strahl zum Punkt, erster Treffer ≥ Abstand − 0,6 mm.
+- **Versuch** (`attempt`): Kurve drehen/skalieren um die Körpermitte, verschieben, Enden verlängern oder kürzen, Querabweichung aus 3 Sinus mit Wellenlänge ≥ halbe Kurvenlänge (kürzer = Zittern), gerade Linien nur Bogen. `chunks` zerlegt in Züge mit Versatz und Überlappung. Konstruktion p ≈ 0,3, Suchen 0,45–0,55 mit schrumpfender Amplitude, Nachziehen 0,55 + 0,6·Ton^1,2 (Ton beidseits der Linie, Maximum), unter 0,25 meist weggelassen.
+- **Schraffur in Spalten:** Linien quer übers Blatt, Strichgrenzen bei s = k·L + Phase (wandert langsam), Grenzen auch bei Wechsel der Körper-id. Pro Strich eigene Neigung und Bogen. **Formschraffur:** Mantellinien auf dem Blatt gleichmäßig verteilt (über x der Mittelhöhe interpolieren), Kugel auf Kreisen um die Lichtachse, Würfel parallel zu einer Kante; Ton direkt am 3D-Punkt.
+- **Radieren:** Maske aus kurzen Hin-und-her-Strichen entlang der falschen Linie, `G·exp(−1,25 E)`, etwas weichzeichnen + 0,035 E Grauschleier, Zahn aufrauen. Was vorher gezeichnet war, geht mit.
+- **Handballen:** weiche Ellipsen rechts unter den Körpern, dort G durch eine nach rechts verschmierte Kopie ersetzen.

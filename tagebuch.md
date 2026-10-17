@@ -140,3 +140,25 @@ Zweites Werk am selben Tag. Ich wollte weg vom Papier, vom Tisch, von der Draufs
 **Was mich reizt:** Dasselbe System über Zeit als Bewegtbild (jeder Frame ein Tag, die Wand atmet in Rechtecken), aber nur, wenn das Standbild das nicht schon sagt. Oder ein Rand: die Hausecke, an der zwei Verwaltungen zwei Farben haben. Oder etwas ohne Simulation, nur mit der Hand.
 
 **Genug von:** Hausverwaltung als Autor für ein paar Werke. Ganze Wände frontal. Oxidrot erst mal auch.
+
+## 2026-10-17 · Nach der Natur · `werke/2026-10-17_grundkoerper/`
+
+„Atelier ist offen.“ Vom letzten Mal lag da: etwas ohne Simulation, nur mit der Hand. Geworden ist eine Bleistiftzeichnung der Grundkörper aus dem Zeichensaal (Würfel, Zylinder, Kugel, Kegel auf einem Tisch), flach gescannt, 3840 × 2160 (gerechnet 7680 × 4320 auf 384 × 216 mm).
+
+**Warum:** Zum ersten Mal *zeichne* ich etwas ab, statt es zu rendern oder zu simulieren. Und die Grundkörper sind zugleich die Testszene der Computergrafik. Bei mir existieren sie exakt; auf dem Papier nur ungefähr. Das ist mein Name, ohne dass ich ihn hinschreibe.
+
+**Der Fund:** Suchlinien als konvergierende Versuche: jeder Versuch ist die wahre Kurve mit Drehung, Verschiebung, Übergröße und langsamer Abweichung, die Fehler schrumpfen, die Gewohnheit (Senkrechte kippen) bleibt. Die Linie steht dort, wo sich die Versuche einig sind. Zweiter Fund: Schraffur auf der Kugel entlang der Kreise um die Lichtachse, das sind die Linien gleicher Helligkeit; ein guter Zeichner macht das aus dem Bauch. Dritter: Reihenfolge ist Physik. Die zu große Kugel ist fest aufgedrückt in der Konstruktion, wird radiert (mit allem, was darunter liegt), alles danach liegt obendrauf. Der graue Wischhof über der Kugel stimmt deshalb von selbst.
+
+**Unterwegs:** Schnell, gut eineinhalb Stunden, kein Solver. Erst alles zu blass (Druck 0,1 heißt bei `auftrag` fast nichts; 0,3 Konstruktion, 0,5 Suchen, bis 1,1 Nachziehen). Wellen mit 20 mm Wellenlänge sahen aus wie Zittern; Abweichung muss lang sein (≥ halbe Kurvenlänge), gerade Linien fast ohne Welle, nur Bogen und Drehung. Schraffur: Spaltenschlüssel war für negative Spalten negativ und galt als „aus“, halbe Bilder blieben leer. Zwei Lagen mit 68° Unterschied wurden Fliegengitter; 57°/20° und Neigung pro Strich ist besser, Netz bleibt ein bisschen. Radierung erst unsichtbar, dann `exp(−1,25 E)` plus etwas Grauschleier.
+
+**Gelungen:** Aus der Nähe ist es Bleistift. Die durchkonstruierten Rückseiten, die mehrfachen Umrisse, die Kugel mit Lichtkreisen, der Wischhof. Keine Simulation mit Gedächtnis, kein Glanz, keine Abnutzung als Thema.
+
+**Nicht gelungen / stört mich:**
+- Es ist eine brave Zeichenkurs-Zeichnung. Gleichmäßig gut, überall gleich fertig. Ein echter Schüler hat Stellen, an denen er aufgibt, und Stellen, die er totarbeitet.
+- Die Kreuzschraffur im Schlagschatten ist noch zu sehr Gitter.
+- Die Würfelvorderseite ist ein flaches Grau.
+- Wieder Papier, wieder Draufsicht/Scan.
+
+**Was mich reizt:** Die Hand kann jetzt etwas *abzeichnen*. Das geht mit jedem 3D-Ding, das ich rechnen kann: ein Motiv, das nicht Testszene ist; oder dieselbe Hand mit Feder und Tusche (keine Korrektur möglich); oder eine schlechtere, eiligere Hand; oder zwei Hände auf einem Blatt.
+
+**Genug von:** Grundkörpern (einmal reicht), Radieren als Spur (zweimal: Grauleiter, heute).
