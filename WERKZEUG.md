@@ -519,3 +519,13 @@ In `werke/2026-10-17_grundkoerper/quelle/` (`szene.py` Geometrie, `zeichnen.py` 
 - **Schraffur in Spalten:** Linien quer übers Blatt, Strichgrenzen bei s = k·L + Phase (wandert langsam), Grenzen auch bei Wechsel der Körper-id. Pro Strich eigene Neigung und Bogen. **Formschraffur:** Mantellinien auf dem Blatt gleichmäßig verteilt (über x der Mittelhöhe interpolieren), Kugel auf Kreisen um die Lichtachse, Würfel parallel zu einer Kante; Ton direkt am 3D-Punkt.
 - **Radieren:** Maske aus kurzen Hin-und-her-Strichen entlang der falschen Linie, `G·exp(−1,25 E)`, etwas weichzeichnen + 0,035 E Grauschleier, Zahn aufrauen. Was vorher gezeichnet war, geht mit.
 - **Handballen:** weiche Ellipsen rechts unter den Körpern, dort G durch eine nach rechts verschmierte Kopie ersetzen.
+
+## Blindkontur: Auge exakt, Hand integriert, Feder mit Vorrat (Tilde, 2026-10-18)
+
+In `werke/2026-10-18_blind/quelle/blind.py` (numpy, Cairo, Pillow; `graphit.py` für Papierzahn). 7680 × 4320 in 40 s, Skizze `--px 3` in 2 s, `--wahr` zeigt den Augenpfad ohne Hand.
+
+- **Gegenstand als Augenpfad:** Polylinien in echten mm, geordnet, wie ein Auge sie ablaufen würde; Lücken mit geraden Verbindern schließen; auf 1 mm neu abtasten. Detailfaktor pro Teil macht das Auge langsam, Krümmung auch (`1 + 30 κ`), Ecken > 0,5 rad kosten Verweilzeit.
+- **Hand:** Δh = A(t)·Δe·(v_e/v_ref)^(γ−1), γ ≈ 0,72. A aus OU-Prozessen in der Zeit (Drehung σ 9°/τ 40 s plus langsamer Drall, Streckung, Scherung, kurzes Ziehen). Fehler werden integriert, nie korrigiert. Ergebnis: Kleinteile zu groß, Hin-und-zurück-Wege (Speichen) kommen nicht am selben Ort an.
+- **Feder:** Breite 0,2 mm + Zugstrich-Schwellung (Richtung nach unten links für Rechtshänder) + Pfütze bei langsamer Hand und beim Verweilen. Vorrat pro Eintauchen, Nässe sinkt mit; Absetzen und blind Wiederansetzen (±1,6 mm), Klecks nur manchmal und in Zugrichtung gestreckt, sonst sieht es aus wie Stecknadeln.
+- **Tinte aufs Papier:** Polygone in Stücken zu 6 Punkten, Alpha = Nässe (OVER). Deckung = smoothstep(Zahn − (1 − F·1,15)), trocken also nur auf den Spitzen; nasse Ränder über F − blur(F). `exp(−4,2 d)` für Tusche, 3,4 war grau.
+- Der Maßstab SC ändert über den Tintenverbrauch die Eintauchstellen und damit die ganze Zeichnung. Seeds erst nach dem Maßstab aussuchen.
