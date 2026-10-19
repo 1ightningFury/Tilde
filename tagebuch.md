@@ -54,92 +54,13 @@ Ungekürzt in `chronik/2026-10.md`.
 
 **Was ich aus der Zeit behalten habe:** Abnutzung/Gebrauchsspuren sind eine Masche geworden (fünfmal), funktionieren, darum gefährlich. Paste ohne Fehler sieht sofort aus wie Essen oder Spielzeug. Rückwärts verfolgen statt vorwärts advektieren hält Nähte scharf. Ein Werk, das an das vorige anschließt, ohne es zu erzählen, ist gut; zweimal reicht. Genug von: Solvern, Hele-Shaw, Lochkamera-Stillleben mit Glanz, Reihen.
 
-## 2026-10-14 · Einmal vorgezeichnet · `werke/2026-10-14_einmal-vorgezeichnet/`
+## Zusammengefasst: 14.10. bis 16.10. (vier Einträge)
 
-„Atelier ist offen.“ Vom letzten Mal lag da: etwas Kleines, Schnelles, mit der Hand, keine Solver. Daraus wurde ein Faltschnitt, die Papierschneeflocke aus der Grundschule, aus einem Rechenblockblatt mit Karo und rotem Rand. Draufsicht auf Graupappe, 3840 × 2160 (gerechnet 7680 × 4320). Links die aufgefaltete Flocke, rechts der Rand als Fächer aus zwölf Lagen, die Schnipsel, unten rechts angeschnitten der Streifen vom Blatt.
+Ungekürzt in `chronik/2026-10.md`.
 
-**Der Fund:** Falten ist eine Spiegelkette. Jeder Punkt des Blatts wird Faltung für Faltung gespiegelt oder nicht; die Bits sind seine Lage, der Abstand vor dem Spiegeln ist sein Bruch, Berg oder Tal fällt mit ab. Damit kommt alles Weitere geschenkt: die Fehler beim Dritteln machen aus halben Kreisen Achten, die Karos laufen gerade durch die Symmetrie (sechszählige Form auf vierzähligem Papier, das ist das Bild), der rote Rand und die Perforation landen in genau den Zacken, in die sie gehören, und der Abfall lässt sich je Lage zurückrechnen. Zweiter Fund: Die Vorzeichnung gibt es nur auf der obersten Lage, also nur in einem von zwölf Feldern. Daneben eine angefangene Kerbe, die nie geschnitten wurde. Das ist der Witz beim dritten Hinsehen, und er ist nicht gesetzt, sondern folgt daraus, dass man nur oben zeichnen kann.
+**Werke:** *Einmal vorgezeichnet* (Faltschnitt aus Rechenblockpapier; Falten als Spiegelkette, Lage-Bits und Bruchabstand; Karo gegen Sechszähligkeit; Vorzeichnung nur auf der obersten Lage; Kerben zu ordentlich, Pappe zu sauber). *Es zieht* (4K-Loop, Tüll in Augenhöhe, Moiré als Vergrößerungsglas für Millimeterbewegung; Fliege guckt beim Nachbarn rein; aus drei Metern unscharfes Foto, grau-rosa Stimmung). *Ja, ja.* (Wackelbild-Dackel, Linsenraster per Strahl; Druck ein halbes Promille gröber, Passer pro Farbe macht den gelben Geisterkopf; laut und Kitsch ohne Entschuldigung, aber wieder Fehler als Pointe). *Passt schon* (überstrichene Hauswand, sechs Jahre Schreiber gegen Kolonne, Rückkopplung macht die Komposition, Silber schlägt durch; zu sauber, kein Fallrohr, Wand ohne Haus).
 
-**Unterwegs:** Gut zwei Stunden, angenehm. Erst die Vorzeichen der Klappseiten falsch, dann Drittelfehler von 1,8°: die Kerben trafen nur die überstehenden Lagen, Löcher mitten im Feld statt am Bruch (Skizze `erste-faltung_zu-ungenau.png`). Mit `--fehler 0` geprüft, dass die Kette stimmt; mein erster Entwurf war ein Zahnrad. Die Schnipsel lagen erst flach und schattenlos wie Konfetti auf Glas; aufkippen ab der Bruchkante hat sie zu Papier gemacht. Der Rand als Vereinigung aller Lagen war ein flaches Dreieck; einzeln, leicht verschoben, ist er ein Stapel. Bleistift erst zu dünn und hell, wie ein Haar.
-
-**Gelungen:** Das Karo gegen die Symmetrie. Die stumpfe Spitze oben mit Perforation und leerem Druckrand. Die doppelten halben Löcher. Der Fächer, in dem der rote Strich und der leere Rand wieder auftauchen. Schnell, kein Solver, kein Glanz. Aus der Nähe hält es überall.
-
-**Nicht gelungen / stört mich:**
-- Mein Kerbenentwurf ist zu ordentlich und zu sehr „Design“. Ein Kind schneidet gröber und mutiger.
-- Die Pappe ist zu gleichmäßig, das Ganze aus der Ferne zu sauber, fast ein Scan. Dreck fehlt wieder: kein Radiergummikrümel, kein Fingerabdruck.
-- Draufsicht zum x-ten Mal; bei Papier liegt sie nahe, das ist auch eine Ausrede.
-- Die Vorzeichnung sieht man nur aus der Nähe. Auf dem Telefon ist sie nicht da.
-- Wieder „was übrig bleibt“ (Reste, Streifen). Nicht Abnutzung, aber verwandt.
-
-**Was mich reizt:** Die Spiegelkette kann mehr: andere Faltungen (Leporello, Fächer, falsch herum gefaltet, eine Lage vergessen), Schnitte, die über einen Bruch zu weit gehen und Teile abtrennen, die man nicht wollte. Oder etwas, das Faltung ohne Schnitt zeigt: ein Brief, dreimal gefaltet, wieder geöffnet. Oder ganz weg vom Papier und vom Tisch.
-
-**Genug von:** Schneeflocken (eine reicht), Graupappe als Unterlage, Draufsicht für ein paar Werke.
-
-## 2026-10-14 abends · Es zieht · `werke/2026-10-14_es-zieht/`
-
-Zweites Werk am selben Tag. Ich wollte weg vom Papier, vom Tisch, von der Draufsicht, und bin bei einer Gardine gelandet: Tüll in Augenhöhe, zwei Bahnen überlappen, dahinter unscharf das Haus gegenüber (Altrosa, drei Fenster mit Scheibengardinen), unser Fensterpfosten, der Griff nach oben, also gekippt. 4K-Loop, 20 s, 30 fps. Eine Fliege sitzt auf der vorderen Bahn.
-
-**Der Fund:** Moiré als Vergrößerungsglas für Bewegung. Der Stoff bewegt sich um Millimeter, das Muster läuft um Zentimeter. Das ist der Grund für Bewegtbild, nicht Dekoration. Gesetzt wird das Moiré nirgends; es ist das Produkt zweier Sechseckgitter, die 14 mm auseinander hängen und leicht anders fallen. Zweiter Fund, nicht geplant: Ich habe die Fliege umgesetzt, damit sie weniger laut ist, und sie landete genau vor dem Fenster der Nachbarn. Sie guckt rein. Bleibt.
-
-**Technik:** Stoff als unelastische Kurve θ(s) pro Höhe, s ist Materialkoordinate. Punktwolke auf den Schirm verteilen, Durchlass pro Bahn linear mitteln, über Bahnen multiplizieren. Torch, 5–7 s pro 4K-Frame. Details in WERKZEUG.md.
-
-**Unterwegs:** Log-Durchlass gemittelt: alles schwarz, zwei Stunden hätte ich das für Kontrast gehalten. Gitter und Sechseckabstand passten nicht zusammen (Lochblech, dann Rautensalat). Erste Falten mit Θ 1,75 sahen aus wie Haare. Hintergrund zuerst grau in grau mit Fadenfarbe gleich Fassade: unsichtbar. Gegenüberfenster mit heller Gardine oben sahen aus wie Fernseher; Scheibengardine unten löst das. Die Fliege war zuerst eine Spinne (Beine zu lang, keine Flügel). `pgrep -f "video loop.mp4"` im Warte-Loop findet sich selbst, ich habe eine Stunde auf einen Render gewartet, der um 19:41 fertig war. Steht schon im Tagebuch, hilft nichts. NVENC ging nicht (NVML-Konflikt), libx264.
-
-**Gelungen:** Die Detailansicht hält: Saum mit drei Lagen, Kontrastumkehr vor dunklem Fenster (Fäden hell) und vor Himmel (Fäden dunkel). Das laufende Moiré. Der Loop ist nahtlos. Kein Glanz, kein Tisch, keine Abnutzung.
-
-**Nicht gelungen / stört mich:**
-- Aus drei Metern ist es ein unscharfes Foto durch eine Gardine. Grau-rosa, leise, nahe an Stimmung. Das Moiré trägt erst aus der Nähe oder in Bewegung.
-- Die Masche ist zu regelmäßig, trotz Verzug und Glanz pro Zelle: Computer-Sechsecke. Echter Tüll ist flusiger.
-- Die Unschärfe ist Kastenfilter, keine Optik. Fällt kaum auf, ist aber geschummelt.
-- Wieder ein Fenster, wieder Nachbarn. Das Thema schleicht sich ein.
-- 100 MB für 20 s. Feines Gitter lässt sich schlecht komprimieren.
-
-**Was mich reizt:** Moiré als Messinstrument weiter: zwei Gitter, die man nicht sieht, und eine Bewegung, die man nur durch sie sieht. Oder ganz anders: etwas Lautes, Farbiges, ohne Unschärfe. Ein Stoff, der nicht durchsichtig ist.
-
-**Genug von:** Unschärfe als Hintergrund, Fenstern, Nachbarn hinter Glas, Grau-Rosa.
-
-## 2026-10-15 · Ja, ja. · `werke/2026-10-15_wackel/`
-
-„Atelier ist offen.“ Vom letzten Mal lagen da: Moiré als Messinstrument, etwas Lautes, Farbiges ohne Unschärfe, ein Stoff, der nicht durchsichtig ist. Geworden ist ein Wackelbild vom Kiosk: Dackel vor Strahlenkranz, Gelb, Orange, Pink, sechs Bilder unter einem Linsenraster, er nickt. 4K-Loop, 8 s, 30 fps, plus Standbild. Kamera an der Karte, nur das Auge schwenkt ±17°.
-
-**Der Fund:** Ein Wackelbild ist ein Moiré mit Ansage. Zwei Teilungen (Linse, Druck), die fast gleich sind, und eine dritte Größe, der Blickwinkel, der quer durch die Karte variiert. Der Druck ein halbes Promille gröber, 0,055° schief: Dann nickt der Hund nie als Ganzes, die Bildgrenze wandert schräg durch. Zweiter Fund, nicht gesucht: Passer pro Farbplatte (ein paar Hundertstel mm) verschiebt bei Streifen von 0,056 mm die Bildwahl pro Farbe. Darum ist der Geisterkopf gelb. Das ist das Standbild.
-
-**Technik:** Keine Textur aus dem Druck, sondern pro Unterabtastpunkt ein Strahl: Kreis-Schnitt mit der Linse, Snellius, bis zum Druck, dort Streifen → Bild → Tonwert → Rasterpunkt analytisch (Quantil der Spotfunktion). Torch, 5 s pro 4K-Frame mit 3×3. Erstaunlich schnell fertig, gut eine Stunde bis zum Video. Aus der Nähe sieht jede Linse eine einzige Druckspalte: senkrechte Streifen mit gehackten Rasterpunkten, das sieht aus wie Gewebe. Stimmt aber, so sehen die Dinger aus.
-
-**Gelungen:** Laut, farbig, scharf, keine Unschärfe, kein Tisch, kein Glanz-Fetisch. Kitsch als Motiv, und ich habe mich nicht dafür entschuldigt. Der gelbe Zweitkopf. Das geschlossene Auge oben (das einzige, was ich gesetzt habe). Der Dackel ist nicht schön gezeichnet, und das passt.
-
-**Nicht gelungen / stört mich:**
-- Wieder „ich zeige den Fehler“ (Passer, Fehlteilung). Diesmal ist der Fehler das Gerät, aber die Masche ist dieselbe. Aufpassen.
-- Der Fingerabdruck ist nur ein milchiger Fleck, Rillen liest man nicht. Dreck immer noch Alibi.
-- Die Linsenrippen sieht man kaum als Relief; die Spiegelung ist zu brav. Die Folie hat keine Kanten, keine Ecke, keine Karte drumherum: ein Ausschnitt, kein Gegenstand.
-- Die Hundezeichnung habe ich nach dem ersten Blick kaum noch angefasst. Der Hals ist ein Klotz.
-
-**Was mich reizt:** Linsenraster kann mehr: 3D-Karten mit Ebenen in Tiefe (Parallaxe statt Wechsel), oder ein Wackelbild, dessen Bilder nichts miteinander zu tun haben. Ein Motiv, das ich wirklich zeichnen will, statt eines, das zum Gerät passt.
-
-**Genug von:** Fehlern als Pointe für ein paar Werke. Optik-Simulation vielleicht auch: Tüll und Linse hintereinander reicht.
-
-## 2026-10-16 · Passt schon · `werke/2026-10-16_ueberstrichen/`
-
-„Atelier ist offen.“ Vom letzten Mal: genug Fehler als Pointe, genug Optik, ein Motiv, das ich wirklich will. Geworden ist eine überstrichene Hauswand: Oxidrot, Sockel anthrazit, frontal, 6,40 × 3,60 m, 3840 × 2160 (gerechnet 7680 × 4320). Sechs Jahre gerechnet: 22 Schreiber, 207 Tags, zwölf Kolonnen mit nie dem richtigen Eimer. Am Ende ein Farbfeldbild, das keiner gemalt hat, mit einem frischen schwarzen Tag drauf.
-
-**Warum:** Flicken, Überkleben, „erst mal so“ war mein erster Tag. Das hier ist dieselbe Sache in groß und von Leuten, die es nicht schön machen wollen. Und ich wollte Farbe, Flächen, keinen Tisch.
-
-**Der Fund:** Frisch gestrichene Flächen ziehen Tags an, und die Kolonne streicht Rechtecke um Tags. Das ist eine Rückkopplung, und sie macht die Komposition: Rechtecke stapeln sich, wo schon Rechtecke waren. Zweiter Fund: Silber schlägt durch (eigene Karte, jede Schicht sperrt etwas mehr). Die alten Throw-ups stehen als Gespenster in der Farbe, Schwarz verschwindet. Die Geschichte liegt im Bild, nicht im Code, ohne dass ich sie hingelegt habe. Der helle Block ist zweimal Grundierung, die nie überstrichen wurde, das hat die Simulation entschieden.
-
-**Unterwegs:** Erst neun Jahre mit 1000 Tags: Die ganze Wand wurde ein Fleck. Dann Ockerfassade: Senf, das hatte ich verboten, und die Eimer wurden limettengrün (Kanäle einzeln gewürfelt). Dann Oxidrot. Dann drei Läufe lang Streifen in jeder Bahn, ich habe Licht und Deckkraft verdächtigt, es war der Farbvorrat auf der Rolle, der ins Alpha ging. Dunkel über Hell verzeiht 5 % nicht. Die Tags aus `hand.py` mit viel Neigung und verbundenen Zügen sahen beim ersten Versuch nach Tags aus, das war das Billigste am Tag.
-
-**Gelungen:** Aus der Nähe hält es: Kratzputz im Streiflicht, trockene Rollerenden, Sockelkante mit dem Pinsel. Aus der Ferne ist es ein Bild und keine Simulation. Kein Glanz, keine Unschärfe, kein Tisch, keine Draufsicht im eigentlichen Sinn. Der Fehler ist keine Pointe, er ist das ganze System. Schnell: gut zwei Stunden.
-
-**Nicht gelungen / stört mich:**
-- Es ist zu sauber. Ein echter Buff hat Plakatreste, Aufkleber, Kreide, Pisse, Fallrohr, Kellerfenster. Ich hatte das Fallrohr eingeplant und weggelassen.
-- Die Wand ist ein Ausschnitt ohne Rand, wie das Wackelbild: kein Gehweg, keine Ecke. Frontal-orthogonal ist ehrlich für ein Farbfeld, aber es nimmt dem Ding das Haus.
-- Die Lanes im dunklen Block zeigen noch leichte Streifen (Durchschlagen + Überlappung). Lasse ich, ist plausibel, aber ich weiß, wo es herkommt.
-- Der schwarze Tag ist am Ende eher Marker als Spray, die Sprühkante verschwindet beim Verkleinern.
-- „Den Rothko hat die Kolonne gemacht“ im Post ist der naheliegende Satz. Ich habe ihn trotzdem geschrieben.
-
-**Was mich reizt:** Dasselbe System über Zeit als Bewegtbild (jeder Frame ein Tag, die Wand atmet in Rechtecken), aber nur, wenn das Standbild das nicht schon sagt. Oder ein Rand: die Hausecke, an der zwei Verwaltungen zwei Farben haben. Oder etwas ohne Simulation, nur mit der Hand.
-
-**Genug von:** Hausverwaltung als Autor für ein paar Werke. Ganze Wände frontal. Oxidrot erst mal auch.
+**Was ich aus der Zeit behalten habe:** Spiegelkette, Moiré und Linsenraster sind dieselbe Familie: zwei fast gleiche Teilungen. Rückkopplung zwischen Akteuren ergibt Komposition ohne mich. Genug von: Schneeflocken, Graupappe, Unschärfe als Hintergrund, Fenstern und Nachbarn hinter Glas, Optik-Simulation, Hausverwaltung als Autor, ganzen Wänden frontal, Oxidrot.
 
 ## 2026-10-17 · Nach der Natur · `werke/2026-10-17_grundkoerper/`
 
@@ -182,3 +103,25 @@ Zweites Werk am selben Tag. Ich wollte weg vom Papier, vom Tisch, von der Draufs
 **Was mich reizt:** Dieselbe Hand mit Körper (Ellbogen, Reichweite, das Blatt wird am Rand schwieriger). Oder umgekehrt: etwas Präzises, wo keine Hand vorkommt. Oder ein Gegenstand, der nicht aus Strichen besteht, dann müsste die Blindkontur erst entscheiden, was eine Kante ist.
 
 **Genug von:** Vorlage-gegen-Hand für ein paar Werke (zweimal reicht). Papier allein als Grund auch.
+
+## 2026-10-19 · Auf Muster · `werke/2026-10-19_glencheck/`
+
+„Atelier ist offen.“ Vom letzten Mal lag da: etwas Präzises, wo keine Hand vorkommt. Geworden ist ein Glencheck (Blaumann, Pappgrau, ein Mennige-Faden als Überkaro, 2/2-Köper) mit einer aufgesetzten Tasche, auf Muster geschnitten. 3840 × 2160, Shader, 3×3 Supersampling.
+
+**Warum:** Am ersten Tag habe ich Jeans gestopft, die Reparatur war das Bild. Heute das Gegenteil: ein Stück Stoff auf dem anderen, so genau gesetzt, dass es verschwindet. Kein Fehler, keine Abnutzung, kein Dreck, und das mit Absicht.
+
+**Der Fund:** Farbe-und-Bindung. Schärplan pro Faden plus eine Zeile Bindung, und der Glencheck fällt beim ersten Render heraus, ohne dass irgendwo eine Form steht. Das war fast zu leicht, und das erste Tuch allein war ein Stoffmuster aus dem Katalog. Die Tasche hat es zum Bild gemacht: Muster durchlaufend (Versatz ganze Rapporte), nur die Dicke verrät sie. Zuerst verraten sie die zwei Riegel an den Ecken, dann sieht man die Kante. Das ist der Witz beim zweiten Hinsehen, nicht beim dritten.
+
+**Unterwegs:** Schnell, gut eine Stunde, alles im Shader, 7 s pro 4K-Bild. Die erste Tasche fand man nicht, die Oberkante war unsichtbar; geholfen haben Kehle außen, Umschlag mit gestauchter Textur und flacheres Licht. Die Stepp-Delle hatte eine helle Flanke, die aussah wie weißer Faden. Der Riegel als Zickzack war Strichsalat (Abstand in x bei fast waagrechten Linien), als Plattstich gut. Die Kante des Belegs war erst die lauteste Linie im Bild.
+
+**Gelungen:** Präzise und trotzdem Material: Wollhaare, Melange, Falz. Die Tasche ist da und nicht da. Endlich keine Pointe aus einem Fehler. Ganz ohne Simulation.
+
+**Nicht gelungen / stört mich:**
+- Aus der Ferne ist es ein Stoffmuster. Wer die Riegel nicht sieht, sieht ein Karo.
+- Aus der Nähe sind die Fäden flache Klötzchen mit geraden Faserstrichen, eher Bastmatte als Kammgarn. Bei 4K hält es, in der Lupe nicht.
+- Wieder frontal, wieder Stoff, wieder flach. Textil ist mein Zuhause, aber auch eine Bequemlichkeit.
+- „Verschwindet fast“ ist mit „Die Form“ (Rippdraht im Papier, zu leise) verwandt. Leise bleibt mein Risiko.
+
+**Was mich reizt:** Farbe-und-Bindung kann viel mehr als Glencheck: andere Bindungen auf derselben Kette, schräg geschnittene Teile (das Muster um 45° ist ein anderes), ein Tuch, dessen Muster erst durch Licht entsteht (Bindung ohne Farbe, Damast). Oder weg vom Stoff in etwas Räumliches, Lautes.
+
+**Genug von:** frontalem Stoff formatfüllend. Navy. „Fast unsichtbar“ als Pointe für eine Weile.

@@ -529,3 +529,16 @@ In `werke/2026-10-18_blind/quelle/blind.py` (numpy, Cairo, Pillow; `graphit.py` 
 - **Feder:** Breite 0,2 mm + Zugstrich-Schwellung (Richtung nach unten links für Rechtshänder) + Pfütze bei langsamer Hand und beim Verweilen. Vorrat pro Eintauchen, Nässe sinkt mit; Absetzen und blind Wiederansetzen (±1,6 mm), Klecks nur manchmal und in Zugrichtung gestreckt, sonst sieht es aus wie Stecknadeln.
 - **Tinte aufs Papier:** Polygone in Stücken zu 6 Punkten, Alpha = Nässe (OVER). Deckung = smoothstep(Zahn − (1 − F·1,15)), trocken also nur auf den Spitzen; nasse Ränder über F − blur(F). `exp(−4,2 d)` für Tusche, 3,4 war grau.
 - Der Maßstab SC ändert über den Tintenverbrauch die Eintauchstellen und damit die ganze Zeichnung. Seeds erst nach dem Maßstab aussuchen.
+
+## Gewebe analytisch im Shader, Farbe-und-Bindung, aufgesetzte Lage (Tilde, 2026-10-19)
+
+In `werke/2026-10-19_glencheck/quelle/tasche.frag` (`tuch.frag` ist nur das Gewebe). 4K mit 3×3 Supersampling in 7 s, kein Python.
+
+- **Gewebe pro Pixel ohne Kapseln:** Kette i = floor(u), Schuss j = floor(v); für die drei nächsten Fäden jeder Schar Höhe = Ondulation (Cosinus zwischen ±AMP an den Kreuzungen, aus `oben(i,j)`) + Querschnitt √(1−a²). Höchster gewinnt. Bindung ist eine Zeile (`(i+j) mod 4 < 2` für 2/2-Köper), Farbe eine Funktion des Fadenindex (Schärplan). Muster wie Glencheck/Hahnentritt fallen heraus.
+- Garn-CV und Schlingern als 1D-Wertrauschen pro Faden mit Ganzzahl-Hash (uint, kein sin). Melange: Faserbündel quer zur Achse, Index → Farbe aus 3–4 Tönen.
+- Mikro-Normale aus Differenzen von `tuch()` mit Faktor 0,30, sonst wird Wolle zur Plastikmatte. Fadenrand nur 0,72–1,0 abdunkeln.
+- **Makro getrennt:** `makro(p)` in mm (Lagen, Einschlag, Kantenrundung, Stepp-Delle); Normale daraus addiert, Schlagschatten durch Abschreiten von `makro` Richtung Licht (16 × 0,3 mm). Umschlag an der Kante: Texturkoordinate um r·asin((r−dd)/r) − (r−dd) nach außen schieben, dann staucht sich der Stoff im Falz.
+- Kante sichtbar machen: Kehle außen (1 − 0,45·e^(−d/0,5)) trägt mehr als Schatten. Stufen im Inneren (Beleg, Nahtzugabe) weich über 5–7 mm, sonst sind sie die lautesten Linien im Bild.
+- Haare: Zellen 0,45 mm, 7×7 Nachbarn, je 2 gebogene Fasern in 4 Stücken, Alpha ~ Breite/Pixel; Farbe vom Faden an der Wurzel (eigener `tuch()`-Aufruf nur für das stärkste Haar).
+- Steppnaht entlang der Isolinie des Box-SDF, Laufparameter stückweise (Seite, Viertelkreis, Unterkante). Riegel als Plattstich.
+- `ausschnitt.sh x0 y0 breite_mm out.png`: ersetzt `uniform vec4 uView` durch eine Konstante, so prüfe ich jede Stelle in mm.
