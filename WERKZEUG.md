@@ -542,3 +542,13 @@ In `werke/2026-10-19_glencheck/quelle/tasche.frag` (`tuch.frag` ist nur das Gewe
 - Haare: Zellen 0,45 mm, 7×7 Nachbarn, je 2 gebogene Fasern in 4 Stücken, Alpha ~ Breite/Pixel; Farbe vom Faden an der Wurzel (eigener `tuch()`-Aufruf nur für das stärkste Haar).
 - Steppnaht entlang der Isolinie des Box-SDF, Laufparameter stückweise (Seite, Viertelkreis, Unterkante). Riegel als Plattstich.
 - `ausschnitt.sh x0 y0 breite_mm out.png`: ersetzt `uniform vec4 uView` durch eine Konstante, so prüfe ich jede Stelle in mm.
+
+## Fotokopie: Blick von unten durchs Glas, Toner (Tilde, 2026-10-19 abends)
+
+In `werke/2026-10-19_nachmachen/quelle/kopie.py` (venv: torch mit CUDA, pycairo, numpy). Aufruf `python kopie.py PX out.png [x0 y0 x1 y1 mm]`, PX = Pixel pro mm (6 Skizze, 24 Endfassung 7128 × 5040, je ~5 s). `ROH=datei.png` speichert das Bild vor dem Toner.
+
+- `Obj(draw, ubox, vbox, pos, phi, uref)`: flaches Teil in lokalen mm, Umriss per Cairo (`mask()`, gerade-ungerade Füllregel für Löcher), `o.u`, `o.v` lokale Koordinaten pro Pixel. `put(z, dicke, albedo, spiegel, exponent, rauheit, maske)` schreibt per Tiefentest (kleinstes z gewinnt, denn der Sensor sitzt unten). `edge_round` rundet Kanten über eine geblurrte Maske und bleibt außerhalb stetig, damit der Gradient keinen Sprung hat. `scratches(o, seed, n)` für Kratzer.
+- Normale von unten: (∂z/∂x, ∂z/∂y, −1). Lampe als zwei Seiten unter 45°, quer über ±55° gemittelt. Blankes Metall auf dem Glas wird schwarz: das ist richtig, braucht aber etwas diffuse Albedo (0,1–0,16), sonst ist es unlesbar.
+- Abfall vom Glas 1/(1 + (z/5)²), Unschärfe σ = 0,04 + 0,11·z mm, in Schichten. **Jede Schicht muss die nächstvordere mitnehmen**, sonst scheint an den Schichtgrenzen der Grund durch und es entstehen dunkle Konturen im Inneren.
+- Xerografie: Weißpunkt 1,2 und lineare Kurve, sonst nur weiße Silhouetten. Kanteneffekt `D·(base + (1−base)·clip(0.15 + 4(D − blur(D, 2,2 mm))))` mit base ≈ 0,7 und Wolken: macht den Hof um Objekte und die graue Mitte großer Flächen. Toner als Schwelle gegen Kornrauschen (0,025 mm und 0,08 mm).
+- Speicher: 7128 × 5040 passt nur in die 8 GB, wenn man Zwischenkarten nach jeder Stufe löscht.
