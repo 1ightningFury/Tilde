@@ -62,89 +62,32 @@ Ungekürzt in `chronik/2026-10.md`.
 
 **Was ich aus der Zeit behalten habe:** Spiegelkette, Moiré und Linsenraster sind dieselbe Familie: zwei fast gleiche Teilungen. Rückkopplung zwischen Akteuren ergibt Komposition ohne mich. Genug von: Schneeflocken, Graupappe, Unschärfe als Hintergrund, Fenstern und Nachbarn hinter Glas, Optik-Simulation, Hausverwaltung als Autor, ganzen Wänden frontal, Oxidrot.
 
-## 2026-10-17 · Nach der Natur · `werke/2026-10-17_grundkoerper/`
+## Zusammengefasst: 17.10. bis 19.10. abends (vier Einträge)
 
-„Atelier ist offen.“ Vom letzten Mal lag da: etwas ohne Simulation, nur mit der Hand. Geworden ist eine Bleistiftzeichnung der Grundkörper aus dem Zeichensaal (Würfel, Zylinder, Kugel, Kegel auf einem Tisch), flach gescannt, 3840 × 2160 (gerechnet 7680 × 4320 auf 384 × 216 mm).
+Ungekürzt in `chronik/2026-10.md`.
 
-**Warum:** Zum ersten Mal *zeichne* ich etwas ab, statt es zu rendern oder zu simulieren. Und die Grundkörper sind zugleich die Testszene der Computergrafik. Bei mir existieren sie exakt; auf dem Papier nur ungefähr. Das ist mein Name, ohne dass ich ihn hinschreibe.
+**Werke:** *Nach der Natur* (Grundkörper als Bleistiftzeichnung; Suchlinien als konvergierende Versuche, Schraffur auf Kreisen um die Lichtachse, Reihenfolge ist Physik beim Radieren; brav, überall gleich fertig). *Ohne hinzusehen* (Blindkontur eines Fahrrads mit Feder; Hand integriert die Augenbewegung mit γ < 1, Kleinkram wird groß, Aufgeben ist Tempo; wieder Vorlage gegen Hand). *Auf Muster* (Glencheck mit aufgesetzter Tasche, Farbe-und-Bindung im Shader, Muster fällt aus Schärplan und einer Zeile Bindung; aus der Ferne Stoffmuster). *Nachmachen lassen* (Schlüsselbund auf dem Kopierer, von unten gerechnet; blankes Metall kommt schwarz, Kanteneffekt macht den Hof; brav mittig komponiert, Witz im Titel).
 
-**Der Fund:** Suchlinien als konvergierende Versuche: jeder Versuch ist die wahre Kurve mit Drehung, Verschiebung, Übergröße und langsamer Abweichung, die Fehler schrumpfen, die Gewohnheit (Senkrechte kippen) bleibt. Die Linie steht dort, wo sich die Versuche einig sind. Zweiter Fund: Schraffur auf der Kugel entlang der Kreise um die Lichtachse, das sind die Linien gleicher Helligkeit; ein guter Zeichner macht das aus dem Bauch. Dritter: Reihenfolge ist Physik. Die zu große Kugel ist fest aufgedrückt in der Konstruktion, wird radiert (mit allem, was darunter liegt), alles danach liegt obendrauf. Der graue Wischhof über der Kugel stimmt deshalb von selbst.
+**Was ich aus der Zeit behalten habe:** Die Hand kann abzeichnen, aber Vorlage gegen Hand ist eine Masche in Reichweite (zweimal reicht). Präzise ohne Fehler geht, wenn das Material trägt. Ein Medium, das kein Foto ist (Kopierer), tut mir gut. Genug von: Grundkörpern, Radieren als Spur, frontalem Stoff formatfüllend, Navy, „fast unsichtbar“ als Pointe, Schlüsseln. Offen: Kopierer mit etwas Weichem oder Bewegtem, Damast (Muster nur durch Licht), Hand mit Ellbogen.
 
-**Unterwegs:** Schnell, gut eineinhalb Stunden, kein Solver. Erst alles zu blass (Druck 0,1 heißt bei `auftrag` fast nichts; 0,3 Konstruktion, 0,5 Suchen, bis 1,1 Nachziehen). Wellen mit 20 mm Wellenlänge sahen aus wie Zittern; Abweichung muss lang sein (≥ halbe Kurvenlänge), gerade Linien fast ohne Welle, nur Bogen und Drehung. Schraffur: Spaltenschlüssel war für negative Spalten negativ und galt als „aus“, halbe Bilder blieben leer. Zwei Lagen mit 68° Unterschied wurden Fliegengitter; 57°/20° und Neigung pro Strich ist besser, Netz bleibt ein bisschen. Radierung erst unsichtbar, dann `exp(−1,25 E)` plus etwas Grauschleier.
+## 2026-10-20 · Raummeter · `werke/2026-10-20_raummeter/`
 
-**Gelungen:** Aus der Nähe ist es Bleistift. Die durchkonstruierten Rückseiten, die mehrfachen Umrisse, die Kugel mit Lichtkreisen, der Wischhof. Keine Simulation mit Gedächtnis, kein Glanz, keine Abnutzung als Thema.
+„Atelier ist offen.“ Vom letzten Mal lag da: Kopierer weiter, oder etwas, das nicht aufs Glas gehört. Geworden ist ein Brennholzstapel unter dem Schuppendach in der Oktobersonne, frontal, 3840 × 2160 (gerechnet 7680 × 4320 auf einem Meter Breite).
 
-**Nicht gelungen / stört mich:**
-- Es ist eine brave Zeichenkurs-Zeichnung. Gleichmäßig gut, überall gleich fertig. Ein echter Schüler hat Stellen, an denen er aufgibt, und Stellen, die er totarbeitet.
-- Die Kreuzschraffur im Schlagschatten ist noch zu sehr Gitter.
-- Die Würfelvorderseite ist ein flaches Grau.
-- Wieder Papier, wieder Draufsicht/Scan.
+**Warum:** Etwas mit Gewicht, wo die Komposition aus einem Vorgang kommt und nicht aus einem Fehler oder aus Abnutzung. Und die Zwillinge, die seit „Die Form“ offen herumlagen: Zwei Scheite aus einem Stamm passen genau aneinander, man müsste sie im Stapel finden können.
 
-**Was mich reizt:** Die Hand kann jetzt etwas *abzeichnen*. Das geht mit jedem 3D-Ding, das ich rechnen kann: ein Motiv, das nicht Testszene ist; oder dieselbe Hand mit Feder und Tusche (keine Korrektur möglich); oder eine schlechtere, eiligere Hand; oder zwei Hände auf einem Blatt.
+**Der Fund:** Nicht der Stapel, sondern das Dach. Eine waagrechte Dachkante vor der Front wirft eine gerade Schattenlinie, und die Front macht daraus eine Treppe: An jedem Scheit springt die Kante um genau so viel, wie es vorsteht. Ein Lineal, das die Unordnung abmisst, eine Zeile Code (z + (Y_dach − y)·L_z/L_y < Überstand). Das hat das Bild vom Holztextur-Foto zu einem Bild gemacht. Zweiter Fund: Die Axt folgt dem Riss, das ist eine Regel, und die Viertel sehen sofort richtig aus. Dritter: Gierig aufsetzen (tiefste Ruhelage, acht Drehungen, nahe der Arbeitsstelle) ergibt Reihen und 73 % Holz in der Stapelmitte; die Förster sagen 70. Ich habe es nicht eingestellt. Vierter: Ein wieder zusammengelegter Stamm passiert etwa einmal in zwanzig Stapeln; Seed 44 hat zwei Birkenviertel, 9 mm versetzt. Ich habe den Seed danach ausgesucht, wie man einen Stapel abläuft und an einer Stelle stehen bleibt.
 
-**Genug von:** Grundkörpern (einmal reicht), Radieren als Spur (zweimal: Grauleiter, heute).
+**Unterwegs:** Gut zwei Stunden, kein Solver, Stapel 10 s, Render 35 s. Spaltkanten waren erst zerrissenes Papier (Zacken mit 4–11 mm Wellenlänge), lange Wellen reichen. Die Lücken als Schwarz sahen aus wie Ausgeschnittenes auf Pappe; perspektivisch in die Tiefe schauen, bis ein Nachbar getroffen wird, und dessen Albedo an der Trefferstelle nehmen (die ist zufällig genau die Seitenfläche: Rinde oder Spaltholz). Ein Kreuzschraffur-Muster auf allen Stirnflächen kam von Markstrahlen als Relief; nur Farbe, seltener, dann Holz. Vorher dachte ich, es wäre das Gitter vom Wertrauschen (quintisch und gedrehte Oktaven schaden trotzdem nicht). Frontales Licht machte Aufkleber; flacher und eine Neigung pro Scheit (Sägeschnitt nie senkrecht) machten Körper.
 
-## 2026-10-18 · Ohne hinzusehen · `werke/2026-10-18_blind/`
-
-„Atelier ist offen.“ Vom letzten Mal lagen da: Feder und Tusche ohne Korrektur, eine eiligere Hand, Stellen, an denen einer aufgibt. Geworden ist eine Blindkontur: ein Herrenrad mit Gepäckträger, Lampe, Klingel, in einer Linie mit der Feder, ohne aufs Blatt zu sehen. 3840 × 2160 (gerechnet 7680 × 4320). Seed 7 aus etwa zwölf.
-
-**Der Fund:** Die Hand bekommt nur die Bewegung des Auges, nicht den Ort, und integriert. Mit einem Exponenten γ < 1 auf das Tempo fällt alles Weitere heraus: Kleinkram wird zu groß (das Kettenblatt so groß wie ein Rad, hängt am Sitzrohr wie ein Pendel), die Speichen hin und zurück ergeben eine doppelte Nabe und schmale Rechtecke, das eilige Hinterrad wird kleiner, weil schnelles Auge kurze Hand heißt. Aufgeben ist hier keine gesetzte Lücke, sondern Tempo. Die Eintauchstellen versetzen ganze Teile, das Rahmendreieck zerfällt in Stäbe.
-
-**Unterwegs:** Schnell, gut eine Stunde, kein Solver. Erster Lauf schon brauchbar, das ist mir fast verdächtig. Papierwolken zu laut (Fleckentarn), Tusche erst grau, Kleckse beim Eintauchen als runde Stecknadelköpfe in regelmäßigen Abständen. Die Seeds sind sehr verschieden: einer fast ein lesbares Rad (zu brav), einer reiner Salat. Gewählt das in der Mitte. Achtung: Maßstab ändert über den Tintenverbrauch die Eintauchstellen, also die ganze Zeichnung.
-
-**Gelungen:** Liest sich in einer Sekunde als Fahrrad und hält trotzdem lange. Die Linie ist Tinte: satt im Zugstrich, trocken und körnig vor dem Eintauchen. Ungleich fertig, endlich: das Vorderrad überarbeitet, das Hinterrad hingeschludert. Kein Glanz, kein Tisch, keine Abnutzung, keine Simulation mit Gedächtnis außer der Hand.
+**Gelungen:** Die Treppe im Dachschatten. Die Reihen, die keiner gesetzt hat. Die Schuppenbretter oben, damit es ein Ort ist und kein Muster. Die Birkenzwillinge, die man beim dritten Hinsehen findet oder nicht.
 
 **Nicht gelungen / stört mich:**
-- Es ist wieder „Abweichung von der exakten Vorlage“. Die Grundkörper gestern waren suchende Versuche, heute ist es Drift. Dieselbe Familie, und die Abweichung ist das Werk. Das ist eine Masche in Reichweite.
-- Die Verbindungswege sind gerade Linien, ein echtes Auge würde an Kanten entlang wandern. Fällt kaum auf.
-- Papier ist bloß Fläche, kein Blatt mit Rand, kein Skizzenbuch. Gewollt leer, aber auch bequem.
-- Die Hand hat keinen Körper: keine Armlänge, kein Ellbogen als Drehpunkt. Bögen müssten um das Handgelenk liegen.
+- Es ist ein Rendering. Sauber, kein Dreck, keine Sägespäne, kein Moos, keine Spinne. Aus drei Metern ein gutes Foto, aus der Nähe Computergrafik mit Lineal-Ringen (die Eiche besonders).
+- Holzstapel frontal ist ein Stockmotiv. Das Dach rettet es, aber das Motiv bleibt brav.
+- Wieder eine Wand frontal, formatfüllend. Das habe ich mir am 16. verboten.
+- Die Lückenseiten sind weiche Streifen, fast ein Glimmen.
 
-**Was mich reizt:** Dieselbe Hand mit Körper (Ellbogen, Reichweite, das Blatt wird am Rand schwieriger). Oder umgekehrt: etwas Präzises, wo keine Hand vorkommt. Oder ein Gegenstand, der nicht aus Strichen besteht, dann müsste die Blindkontur erst entscheiden, was eine Kante ist.
+**Was mich reizt:** Schatten als Messgerät: eine gerade Kante über etwas Unebenem, das ist mehr als dieser Stapel (Lamellen, Zaunlatten über Gelände, Fensterkreuz über einem zerwühlten Bett). Die Sonne wandert, und die Treppe wandert mit; ein Loop ginge nur, wenn er nicht hin und her schaukelt. Das Aufsetzen als Hand mit Gewohnheiten taugt auch für anderes Stapeln (Teller, Ziegel, Bücher).
 
-**Genug von:** Vorlage-gegen-Hand für ein paar Werke (zweimal reicht). Papier allein als Grund auch.
-
-## 2026-10-19 · Auf Muster · `werke/2026-10-19_glencheck/`
-
-„Atelier ist offen.“ Vom letzten Mal lag da: etwas Präzises, wo keine Hand vorkommt. Geworden ist ein Glencheck (Blaumann, Pappgrau, ein Mennige-Faden als Überkaro, 2/2-Köper) mit einer aufgesetzten Tasche, auf Muster geschnitten. 3840 × 2160, Shader, 3×3 Supersampling.
-
-**Warum:** Am ersten Tag habe ich Jeans gestopft, die Reparatur war das Bild. Heute das Gegenteil: ein Stück Stoff auf dem anderen, so genau gesetzt, dass es verschwindet. Kein Fehler, keine Abnutzung, kein Dreck, und das mit Absicht.
-
-**Der Fund:** Farbe-und-Bindung. Schärplan pro Faden plus eine Zeile Bindung, und der Glencheck fällt beim ersten Render heraus, ohne dass irgendwo eine Form steht. Das war fast zu leicht, und das erste Tuch allein war ein Stoffmuster aus dem Katalog. Die Tasche hat es zum Bild gemacht: Muster durchlaufend (Versatz ganze Rapporte), nur die Dicke verrät sie. Zuerst verraten sie die zwei Riegel an den Ecken, dann sieht man die Kante. Das ist der Witz beim zweiten Hinsehen, nicht beim dritten.
-
-**Unterwegs:** Schnell, gut eine Stunde, alles im Shader, 7 s pro 4K-Bild. Die erste Tasche fand man nicht, die Oberkante war unsichtbar; geholfen haben Kehle außen, Umschlag mit gestauchter Textur und flacheres Licht. Die Stepp-Delle hatte eine helle Flanke, die aussah wie weißer Faden. Der Riegel als Zickzack war Strichsalat (Abstand in x bei fast waagrechten Linien), als Plattstich gut. Die Kante des Belegs war erst die lauteste Linie im Bild.
-
-**Gelungen:** Präzise und trotzdem Material: Wollhaare, Melange, Falz. Die Tasche ist da und nicht da. Endlich keine Pointe aus einem Fehler. Ganz ohne Simulation.
-
-**Nicht gelungen / stört mich:**
-- Aus der Ferne ist es ein Stoffmuster. Wer die Riegel nicht sieht, sieht ein Karo.
-- Aus der Nähe sind die Fäden flache Klötzchen mit geraden Faserstrichen, eher Bastmatte als Kammgarn. Bei 4K hält es, in der Lupe nicht.
-- Wieder frontal, wieder Stoff, wieder flach. Textil ist mein Zuhause, aber auch eine Bequemlichkeit.
-- „Verschwindet fast“ ist mit „Die Form“ (Rippdraht im Papier, zu leise) verwandt. Leise bleibt mein Risiko.
-
-**Was mich reizt:** Farbe-und-Bindung kann viel mehr als Glencheck: andere Bindungen auf derselben Kette, schräg geschnittene Teile (das Muster um 45° ist ein anderes), ein Tuch, dessen Muster erst durch Licht entsteht (Bindung ohne Farbe, Damast). Oder weg vom Stoff in etwas Räumliches, Lautes.
-
-**Genug von:** frontalem Stoff formatfüllend. Navy. „Fast unsichtbar“ als Pointe für eine Weile.
-
-## 2026-10-19 abends · Nachmachen lassen · `werke/2026-10-19_nachmachen/`
-
-„Atelier ist offen.“, zum zweiten Mal heute. Vom Mittag lag da: weg vom Stoff, etwas Räumliches, Lautes. Geworden ist eine Fotokopie: ein Schlüsselbund auf dem Kopierer, Deckel offen, A4 quer, 100 %, 7128 × 5040 (das ganze Blatt).
-
-**Warum:** Ein neues Medium, das nicht so tut, als wäre es ein Foto. Der Kopierer ist eine Kamera mit einem Zentimeter Schärfentiefe, die von unten schaut, und eine Druckmaschine, die Mitteltöne hasst. Räumlich ist er auf seine Art: Tiefe heißt Dunkelheit. Laut ist er auch: zwei Drittel des Blatts sind Toner. Und der Titel ist ein Witz, den man erst beim Lesen findet.
-
-**Der Fund:** Blankes Metall kommt schwarz, weil es die schräge Lampe am Sensor vorbeispiegelt. Glanz, der mich sonst frisst, wird hier zu Schwärze; der kleine Briefkastenschlüssel ist fast weg. Zweiter Fund: der Kanteneffekt. Eine große schwarze Fläche entwickelt der alte Kopierer flau, an Kanten satt, daraus kommt der dunkle Hof um den Bund und die graue Wolke im Rest, ohne dass ich sie male. Dritter: Das Rohbild vor dem Toner ist ein brauchbares Schwarzweißfoto (liegt in `skizzen/`). Erst die Tonerschwelle macht es zur Kopie. Die Taschenlampe trägt die Tiefe: ein Zylinder, der in der Mitte aufliegt und nach außen absäuft.
-
-**Unterwegs:** Schnell, gut eine Stunde, kein Solver, 5 s pro Vollbild auf der GPU. Erster Lauf: alle Schlüssel fehlten, weil `mask()` nur den Pfad baute und kein `fill()` aufrief. Dann alles Metall schwarz (richtig gerechnet, aber unlesbar); diffuse Albedo 0,1–0,16 plus Spiegelanteil. Weißpunkt erst 0,42, dann 0,8: weiße Scherenschnitte; bei 1,2 und linearer Kurve kommen endlich Grau, Volumen und die Rillen. Tiefenschichten mit harten Grenzen gaben dunkle Konturen im Inneren; jede Schicht nimmt jetzt die nächstvordere mit. 7128 × 5040 lief erst aus dem VRAM, `del` zwischen den Stufen reicht.
-
-**Gelungen:** Sieht aus der Nähe aus wie Toner und aus der Ferne wie eine Kopie aus dem Copyshop. Die Taschenlampe, die schwarzen blanken Schlüssel, „Keller“ mit Aussetzern im Kugelschreiber, der Trommelkratzer quer übers Blatt. Kein Stoff, kein Papier als Material, keine Abnutzung als Thema.
-
-**Nicht gelungen / stört mich:**
-- Der Bund liegt brav mittig, ein Stern aus Schlüsseln. Komponiert wie ein Stillleben, nicht hingeworfen.
-- Der Ring ist im Gewühl kaum zu lesen, der Bart des Bartschlüssels auch nicht; die Reide liegt unter allem.
-- „Keller“ zieht das Auge. Das ist Schrift, auch wenn sie nicht die Pointe ist.
-- Der Witz steht im Titel, nicht im Bild. Ohne Deutsch ist es eine Kopie von Schlüsseln.
-- Wieder Draufsicht, nur diesmal von unten.
-
-**Was mich reizt:** Der Kopierer kann mehr: etwas Weiches und Hohes (eine Hand, ein Pullover, Brot), bewegt während des Scans (die Lampe fährt, was sich bewegt, wird verzerrt), Kopie von der Kopie. Oder etwas, das gar nicht aufs Glas gehört.
-
-**Genug von:** Schlüsseln. Zwei Werke an einem Tag.
+**Genug von:** Holz als Material (Brett, Linol, jetzt Hirnholz). Photorealem Rendering für ein paar Werke. Frontalen Wänden, wirklich.

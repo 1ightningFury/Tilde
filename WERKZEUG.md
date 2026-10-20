@@ -552,3 +552,15 @@ In `werke/2026-10-19_nachmachen/quelle/kopie.py` (venv: torch mit CUDA, pycairo,
 - Abfall vom Glas 1/(1 + (z/5)²), Unschärfe σ = 0,04 + 0,11·z mm, in Schichten. **Jede Schicht muss die nächstvordere mitnehmen**, sonst scheint an den Schichtgrenzen der Grund durch und es entstehen dunkle Konturen im Inneren.
 - Xerografie: Weißpunkt 1,2 und lineare Kurve, sonst nur weiße Silhouetten. Kanteneffekt `D·(base + (1−base)·clip(0.15 + 4(D − blur(D, 2,2 mm))))` mit base ≈ 0,7 und Wolken: macht den Hof um Objekte und die graue Mitte großer Flächen. Toner als Schwelle gegen Kornrauschen (0,025 mm und 0,08 mm).
 - Speicher: 7128 × 5040 passt nur in die 8 GB, wenn man Zwischenkarten nach jeder Stufe löscht.
+
+## Spalten und Aufsetzen, Hirnholz, Dachschatten (Tilde, 2026-10-20)
+
+In `werke/2026-10-20_raummeter/quelle/` (`stapel.py` System-Python/numpy, 10 s; `render.py` venv/torch, 7680 × 4320 in 35 s, Skizze `PX 1.6` in 5 s; `finde.py` sucht Zwillinge).
+
+- **Scheit = Rundling ∩ Halbebenen** in Koordinaten um die Markröhre. Umriss R(θ) aus 5 Harmonischen (k = 1 macht die Markröhre exzentrisch). Spaltlinie: (x − p)·n + jag(t) mit Sinussumme, Zwilling = gleiche Linie, anderes Vorzeichen. Zacken nur lang (120/45 mm); 4–11 mm sieht aus wie zerrissenes Papier.
+- **Axt folgt dem Riss:** erste Spaltung am breitesten Schwundriss, dann Winkelmitte durch die Markröhre, zu einem Riss in ±18° gezogen; unter 62° Öffnung Sehne (Schwarte). Spalten, solange Ausdehnung > 125–175 mm.
+- **Aufsetzen gegen die Silhouette** (Raster 5 mm, `sky` pro Spalte): pro Scheit 8 Drehungen × 25 Stellen um die Arbeitsstelle, Ruhehöhe aus max(sky − Unterkante), Punkte = Höhe + 7·|Drehung| + 0,35·Weg. Umdrehen (anderes Ende zeigt nach vorn) = x spiegeln. Ergibt Reihen und ~73 % Holz.
+- **Hirnholz:** ρ = r/R(θ) aus glattem R (Borkenfurchen nur am Rand, sonst treppen die Ringe). Ringe kumuliert mit Rauschen, Spätholz als Relief, Markstrahlen **nur als Farbe** (als Relief gibt das eine Kreuzschraffur). Rotkern mit Saum, Stocken als |fbm| < ε, feine Risse viele und kurz. Sägekette: Sinus über u + κv², fleckig moduliert, plus Ausrisse. Unebenheit der Schnittfläche (1,6 mm auf 70 mm) und eine Neigung pro Scheit (±0,07) machen erst Körper.
+- **Lücken perspektivisch:** vom Lückenpixel aus q(t) = p + (p − Kamera)·t/D in die Tiefe laufen, erster Treffer im Front-ID-Puffer mit Z > −t; dessen Albedo ist die Seitenfläche. Dunkel halten (0,14·e^(−t/9)), sonst glimmt es. Kein Treffer: Bretterwand bei t = 460.
+- **Dachschatten:** Punkt (y, z) im Schatten, wenn z + (Y_dach − y)·L_z/L_y < Überstand. Eine Zeile, macht aus der geraden Kante eine Treppe, die jeden Vorstand abmisst. Halbschatten ~4 mm passt zur Sonnenscheibe.
+- Schatten durch Marschieren im auf ~1,4 px/mm verkleinerten Z-Feld. Wertrauschen jetzt quintisch, Oktaven gedreht.
