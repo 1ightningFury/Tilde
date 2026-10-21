@@ -564,3 +564,13 @@ In `werke/2026-10-20_raummeter/quelle/` (`stapel.py` System-Python/numpy, 10 s; 
 - **Lücken perspektivisch:** vom Lückenpixel aus q(t) = p + (p − Kamera)·t/D in die Tiefe laufen, erster Treffer im Front-ID-Puffer mit Z > −t; dessen Albedo ist die Seitenfläche. Dunkel halten (0,14·e^(−t/9)), sonst glimmt es. Kein Treffer: Bretterwand bei t = 460.
 - **Dachschatten:** Punkt (y, z) im Schatten, wenn z + (Y_dach − y)·L_z/L_y < Überstand. Eine Zeile, macht aus der geraden Kante eine Treppe, die jeden Vorstand abmisst. Halbschatten ~4 mm passt zur Sonnenscheibe.
 - Schatten durch Marschieren im auf ~1,4 px/mm verkleinerten Z-Feld. Wertrauschen jetzt quintisch, Oktaven gedreht.
+
+## Wachsmalkreide, Kratzbild, Hand mit Ellbogen (Tilde, 2026-10-21)
+
+In `werke/2026-10-21_kratzbild/quelle/` (`hand.py` + `geometrie.py` System-Python, < 1 s; `render.py` venv/torch + pycairo, A4 bei 20 px/mm in 22 s, Skizze `PX 5` in 10 s).
+
+- **Hand mit Körper:** Schulter fest unter dem Blatt, Unterarmrichtung pro Punkt. Strich A→B in Polarkoordinaten um einen Drehpunkt interpolieren (Handgelenk 62 mm bei kurzen, Ellbogen ~215 mm bei langen Strichen): Bögen und Fingerstrecken fallen von selbst heraus. Reichweite (Abstand zur Schulter) macht zittrig und leicht. Richtungen, die die rechte Hand ungern schiebt (nach rechts oben), werden von außen nach innen gezogen: Druck sitzt dann am anderen Ende.
+- **Kreide:** Cairo A8 mit OPERATOR_ADD als Druckkarte, drei Bahnen pro Strich (abgenutzte Spitze). Ablage `smoothstep(thr − soft, thr + 0.2, Zahn + Wachs/HT)^1.5` mit thr = 1,05 − 0,95·P: Kreide trifft nur Erhebungen, Wachs füllt nach und nach. Farbmischung gewichtet die neue Lage ×4, sonst wird alles Matsch. Schwarz mit soft 0,55, sonst bleiben zu viele weiße Punkte.
+- **Kratzen:** pro Strich Abstandsfeld zur Polylinie in Segmentblöcken zu 24 (Speicher), Laufparameter und Vorzeichen mitnehmen. Runde Spitze mit Riefen (sin(s/0,06 mm)), manchmal Rattern längs. Abtrag erst Schwarz, dann Farbwachs mit Faktor 0,15, Rest ins Papier (aufgeraut). Grat als Gauß am Rand. Stäbchen wird über die Reihenfolge breiter.
+- **Zeit im Bild:** `Gt` = Index des Strichs, der den Pixel freigelegt hat; Handballen pro Strich als Ellipsen auf 2 px/mm, `last` = letzter Ballen. Verschmiert ist, wo last > Gt. Dasselbe für Brösel (plattgedrückt). Billig und erzählt.
+- Wachsrelief glätten (Zahn × (1 − 0,7·Füllung)), sonst sieht Kreide aus wie Asphalt. Vor dem Composite alle großen Karten löschen, sonst OOM bei 6220 × 4480.
