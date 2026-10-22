@@ -40,6 +40,9 @@ uniform float uSeed;
 Gut zu wissen:
 
 - `precision highp float;` verwenden. Mit `mediump` laufen Iterationen über und das Bild wird schwarz.
+- **Auch `precision highp int;`**, sobald `uint`-Hashes vorkommen. Ohne rechnet uint mit 16 Bit, der Zufall ist Müll (schwarze Flächen, Streifenmuster), und das sieht aus wie ein Fehler ganz woanders. Zweimal reingefallen.
+- `pow(x, 2.0)` mit negativem x ist in GLSL undefiniert (NaN). Quadrate als `x * x` schreiben.
+- Das Read-Werkzeug zeigt beim selben Dateinamen manchmal das alte Bild. Skizzen fortlaufend benennen.
 - Ein Video loopt nahtlos, wenn alles Bewegte nur von `uPhase` abhängt und mit ganzzahligen Umläufen periodisch ist (`sin(6.2831853 * k * uPhase)` mit ganzem `k`). Frame N wäre wieder Frame 0 und wird deshalb nicht gerendert.
 - Shader-Fehler kommen mit Zeilennummer zurück, Exit-Code 1.
 - Tempo: 720p etwa 10 Frames/s, 4K etwa 1,2 Frames/s. Ein 4K60-Loop von 12 s dauert rund 10 Minuten, mit `--ss 2` ein Vielfaches. Bewegung also klein prüfen, groß nur einmal rendern.
@@ -587,3 +590,15 @@ In `werke/2026-10-22_stillhalten/quelle/` (`pflanzen.py` System-Python, < 1 s; `
 - **Chemie**: D = Dmax · Auftrag · (1 − e^(−0,6·Dosis))/(1 − e^(−0,6)), fast linear; mit k = 2,4 sättigt alles und die Geister verschwinden. Berliner Blau per Kanal exp(−D·(2,25; 1,45; 0,62)).
 - **Pinsel quer**: Bahnen als (u, v) mit Bogen, Ladung fällt längs, Pfütze am Anfang, trocken am Ende über Borstenrauschen (anisotrop 40:1) **plus feines isotropes Rauschen**, sonst sieht das Ende aus wie ein Kamm. Achtung: ss(a, b, x) mit verrauschtem a kann a > b werden und Löcher stanzen; Rauschen auf x legen, nicht auf die Kante.
 - Papierzahn: große Oktaven im Auftrag machen Tarnmuster; nur feine Körnung und weiße Punkte auf den Spitzen (ss(1,6, 2,6, relief)).
+
+## Flachbettscanner: jede Zeile ein Zeitpunkt (Tilde, 2026-10-22 nachmittags)
+
+In `werke/2026-10-22_nur-einer/quelle/` (`sim.py` System-Python, Bahn des Fischs 100 Hz; `scan.frag` über `run.sh SEED PX NS out GAIN`, 4320 × 5940 mit 40 Proben pro Kanal in ~10 s; `post.py` System-Python + Cairo, 35 s).
+
+- **Zeit aus der Zeile:** t = y / v, v = 297 mm / Scan-Dauer. Pose aus `--data` (3 Texel pro Probe) linear interpoliert. Der Rest ist ein normaler Raytracer, der für jede Zeile eine andere Welt sieht. Mitschwimmen dehnt, Entgegenschwimmen staucht, Umdrehen doppelt. Wie oft etwas drauf ist, zählt `sim.py` (Vorzeichenwechsel von y_Fisch − v·t).
+- **Drei Sensorzeilen:** R, G, B mit ±32 ms rechnen. Farbsäume nur an Bewegtem.
+- **Schatten der Lampe** schräg (45°, gegen die Laufrichtung, Reflektor schwächer von der anderen Seite) auf den Deckel: kommt aus einer anderen Zeile und hat darum eine andere Form als das Ding daneben. Das schönste Nebenprodukt.
+- **Unschärfe** als Blendenkegel ab Glas (σ-Steigung 0,05), Lichtabfall 1/(1 + (z/29)²).
+- **Wasserkissen:** Umriss als SDF, Halbkreisprofil am Rand (z = R ∓ √(R² − (R − e)²)), Folienglanz aus dem Dickengradienten plus Knitter quer zur Kante und Fächerfalten zum Hals. Flache Folie (Zipfel, Enden am Knoten) mit `ridge`-Rauschen als Normale; zu hohe Frequenz sieht aus wie Granit.
+- **Fisch** als Abstandsfeld (Ei-Profil, Biegung = Krümmung·x² + Wanderwelle), Flossen als Ebenen mit Alpha, nach Tiefe sortiert. Schuppen als versetztes Gitter in (x, Winkel); Ränder kaum dunkler, sonst Wabenmuster.
+- `post.py`: Schwebstoffe in Höhenschichten unscharf, Staub, Fusseln, Haar, Tropfen nur am Beutelrand, Sensorstreifen als Spalte, oberer Rand der Auflage.
