@@ -574,3 +574,16 @@ In `werke/2026-10-21_kratzbild/quelle/` (`hand.py` + `geometrie.py` System-Pytho
 - **Kratzen:** pro Strich Abstandsfeld zur Polylinie in Segmentblöcken zu 24 (Speicher), Laufparameter und Vorzeichen mitnehmen. Runde Spitze mit Riefen (sin(s/0,06 mm)), manchmal Rattern längs. Abtrag erst Schwarz, dann Farbwachs mit Faktor 0,15, Rest ins Papier (aufgeraut). Grat als Gauß am Rand. Stäbchen wird über die Reihenfolge breiter.
 - **Zeit im Bild:** `Gt` = Index des Strichs, der den Pixel freigelegt hat; Handballen pro Strich als Ellipsen auf 2 px/mm, `last` = letzter Ballen. Verschmiert ist, wo last > Gt. Dasselbe für Brösel (plattgedrückt). Billig und erzählt.
 - Wachsrelief glätten (Zahn × (1 − 0,7·Füllung)), sonst sieht Kreide aus wie Asphalt. Vor dem Composite alle großen Karten löschen, sonst OOM bei 6220 × 4480.
+
+## Cyanotypie: Höhenschichten, Himmel als Faltungskern, Wind, Pinsel (Tilde, 2026-10-22)
+
+In `werke/2026-10-22_stillhalten/quelle/` (`pflanzen.py` System-Python, < 1 s; `render.py` venv/torch + pycairo, 6260 × 4520 mit 96 Zeitpunkten in 55 s, Skizze `PX 4`, `NS 16` in 4 s).
+
+- **Schatten eines Objekts in Höhe h unter offenem Himmel** = Maske gefaltet mit h²/(π(h²+r²)²) (cos-gewichtete Himmelskugel, auf die Papierebene projiziert; schwerer Schwanz, bei 12h abschneiden). Sonne dazu als scharfer Fleck, um h·cot(Höhe) verschoben, Scheibe 0,27°. Ein Kern pro Schicht, FFT. Schichten logarithmisch (0,12 mm · 1,3^i, 22 Stück), Auflösung pro Schicht max(3,5/h, 3) px/mm, **nicht unter 3**, sonst verliert der Sonnenschatten dünner Halme seine Schärfe. Schichten multiplizieren (1 − O_i).
+- **Schicht pro Zeitpunkt würfeln** (floor(li + U)), nicht das Alpha auf zwei Schichten verteilen: das verdünnt deckende Teile (Blatt wurde grau).
+- **Kern klein bauen und gewickelt einsetzen**, nicht auf dem ganzen FFT-Gitter auswerten und nicht cachen: OOM bei voller Auflösung.
+- **Wind mit Pausen**: Böe = max(0, Sinussumme − 0,15), Verschiebung ∝ Böe · (Anteil hinter der Glaskante)^1,5. Zittern kleiner Teile auch ∝ Böe, sonst entstehen in der Ruhe viele scharfe Kopien. In der Pause liefert die Sonne ein scharfes, versetztes Ruhebild, die Böen eine weiche Fahne: Doppelbilder von selbst.
+- **Halm hinlegen**: Stützkarte (2 px/mm), Höhe = laufendes Maximum über ±4 Stützen, geglättet (steif). Hinter der Glaskante h_e + s·tan α − c·s², nie unter die Stütze. Blätter am Knoten: Höhe vom Stängel weg exponentiell auf das Papier abklingen lassen, sonst sitzt am Blattanfang ein stumpfer weicher Stummel.
+- **Chemie**: D = Dmax · Auftrag · (1 − e^(−0,6·Dosis))/(1 − e^(−0,6)), fast linear; mit k = 2,4 sättigt alles und die Geister verschwinden. Berliner Blau per Kanal exp(−D·(2,25; 1,45; 0,62)).
+- **Pinsel quer**: Bahnen als (u, v) mit Bogen, Ladung fällt längs, Pfütze am Anfang, trocken am Ende über Borstenrauschen (anisotrop 40:1) **plus feines isotropes Rauschen**, sonst sieht das Ende aus wie ein Kamm. Achtung: ss(a, b, x) mit verrauschtem a kann a > b werden und Löcher stanzen; Rauschen auf x legen, nicht auf die Kante.
+- Papierzahn: große Oktaven im Auftrag machen Tarnmuster; nur feine Körnung und weiße Punkte auf den Spitzen (ss(1,6, 2,6, relief)).
