@@ -602,3 +602,17 @@ In `werke/2026-10-22_nur-einer/quelle/` (`sim.py` System-Python, Bahn des Fischs
 - **Wasserkissen:** Umriss als SDF, Halbkreisprofil am Rand (z = R ∓ √(R² − (R − e)²)), Folienglanz aus dem Dickengradienten plus Knitter quer zur Kante und Fächerfalten zum Hals. Flache Folie (Zipfel, Enden am Knoten) mit `ridge`-Rauschen als Normale; zu hohe Frequenz sieht aus wie Granit.
 - **Fisch** als Abstandsfeld (Ei-Profil, Biegung = Krümmung·x² + Wanderwelle), Flossen als Ebenen mit Alpha, nach Tiefe sortiert. Schuppen als versetztes Gitter in (x, Winkel); Ränder kaum dunkler, sonst Wabenmuster.
 - `post.py`: Schwebstoffe in Höhenschichten unscharf, Staub, Fusseln, Haar, Tropfen nur am Beutelrand, Sensorstreifen als Spalte, oberer Rand der Auflage.
+
+## Löschblatt: Schreibschrift als Schwingung, Nässe über die Zeit, Auslaufen im Karton (Tilde, 2026-10-23)
+
+In `werke/2026-10-23_loeschblatt/quelle/`. `schreibschrift.py` (Hand), `blatt.py` (Briefe, Seiten, Andrücken → `*_felder.npz`), `render.py` (Auslaufen, Papier, Tinte, Kuli). venv wegen scipy. 6300 × 4200: Simulation 30 s, Render 2 min.
+
+- **Schreibschrift nach Hollerbach:** pro Schwingung Oberhöhe H, Unterhöhe B, Pendelweite a, Phase; weich überblenden. y = B + (H − B)(½ − ½ cos 2πs), x = Vorschub·s + a·sin(2πs + φ) + Neigung·y. Schleifen entstehen, wo 2πa > Vorschub. Ober-/Unterlängen per Zufall pro Schwingung, i-Punkte und t-Striche nach dem Wort. Sieht aus drei Metern wie Handschrift aus, ist nicht lesbar. Erster Versuch saß.
+- Jeder Punkt trägt Zeit (Phase gleichmäßig, Tempo also aus der Geometrie) und Tinte pro mm: 0,7 + Abstrich + 1,6/(1 + v/6) + Klecks beim Ansetzen.
+- **Was ankommt:** Nässe = Tinte · exp(−Alter/τ), τ ∝ Tinte^0,9. Von alten Zeilen kommen nur die dicken Stellen. Andruck pro Seite: Gaußbuckel um den nassen Schwerpunkt plus glattes Wellenfeld, hoch 1,3.
+- **Auslaufen im Löschkarton:** drei Gaußunschärfen (0,16 / 0,5 / 1,4 mm), Anteil der weiten wächst mit n1/(n1 + 0,9). Schmaler Anteil × Kontakt-Rauschen (0,09 mm), weiter × Saum-Rauschen (0,35 mm). Faserbild aus Cairo nur schwach dazu, stark sieht es aus wie Wachsmalkreide/Wolle. Dichte sättigen: 2,6·(1 − e^(−C/2,6)).
+- Alter als zweites Feld mitsplatten (Tinte × Alterung), nach dem Unschärfen teilen. Gibt Farbe pro Pixel ohne Schichten.
+- Splatten: bilinear mit `np.bincount` in ein flaches Feld, Striche vorher auf 0,6 px nachabtasten.
+- Probekringel: Telefonschnur-Schleifen sehen zu regelmäßig aus, Amplitude und Phase mit Zufallsweg verbiegen. Ein Tropfen als gleichmäßig gefüllte Scheibe (√-verteilter Radius), nicht als Ringe, sonst Pusteblume.
+- Lederecken: Farbsprung reicht nicht, erst ein feiner dunkler Strich 0,35 mm außerhalb der Kante macht das Leder glaubhaft.
+- **Keine echten Telefonnummern, Adressen, Kennzeichen ins Bild**, auch nicht als Nebensache. Eine Nummer mit echter Vorwahl gehört womöglich jemandem (erste Fassung vom Löschblatt, von Tommy zurückgegeben). Lesbares lieber ohne Zahlen, die auf Menschen zeigen.

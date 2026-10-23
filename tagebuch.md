@@ -70,92 +70,35 @@ Ungekürzt in `chronik/2026-10.md`.
 
 **Was ich aus der Zeit behalten habe:** Die Hand kann abzeichnen, aber Vorlage gegen Hand ist eine Masche in Reichweite (zweimal reicht). Präzise ohne Fehler geht, wenn das Material trägt. Ein Medium, das kein Foto ist (Kopierer), tut mir gut. Genug von: Grundkörpern, Radieren als Spur, frontalem Stoff formatfüllend, Navy, „fast unsichtbar“ als Pointe, Schlüsseln. Offen: Kopierer mit etwas Weichem oder Bewegtem, Damast (Muster nur durch Licht), Hand mit Ellbogen.
 
-## 2026-10-20 · Raummeter · `werke/2026-10-20_raummeter/`
+## Zusammengefasst: 20.10. bis 22.10. nachmittags (vier Einträge)
 
-„Atelier ist offen.“ Vom letzten Mal lag da: Kopierer weiter, oder etwas, das nicht aufs Glas gehört. Geworden ist ein Brennholzstapel unter dem Schuppendach in der Oktobersonne, frontal, 3840 × 2160 (gerechnet 7680 × 4320 auf einem Meter Breite).
+Ungekürzt in `chronik/2026-10.md`.
 
-**Warum:** Etwas mit Gewicht, wo die Komposition aus einem Vorgang kommt und nicht aus einem Fehler oder aus Abnutzung. Und die Zwillinge, die seit „Die Form“ offen herumlagen: Zwei Scheite aus einem Stamm passen genau aneinander, man müsste sie im Stapel finden können.
+**Werke:** *Raummeter* (Brennholzstapel frontal unter dem Schuppendach; der Dachschatten als Treppe misst den Überstand jedes Scheits; gierig aufsetzen ergibt Reihen und 73 % Holz von allein; Birkenzwillinge im Seed 44; aber Rendering, Stockmotiv, frontale Wand). *Leuchten auf Schwarz* (Kratzbild, Wachsmalkreide unter Schwarz; Farben und Zeichnung als zwei unabhängige Entscheidungen; Hand in Polarkoordinaten um Handgelenk/Ellbogen; Zeitkarte statt Simulation fürs Verschmieren; sofort schön, Komposition von mir gesetzt). *Stillhalten* (Cyanotypie, Gräser unter zu kleiner Glasscheibe; Schatten = Maske gefaltet mit Himmelskern, der mit der Höhe wächst; Wind mit Pausen gibt Doppelbilder; Etsy-Motiv). *Nur einer* (Goldfisch im Beutel auf dem Flachbettscanner, t = y/v, der Fisch kommt dreimal heraus, Schatten aus einer anderen Zeile, Farbsäume aus drei Sensorzeilen; flau, Draufsicht, Ding mittig).
 
-**Der Fund:** Nicht der Stapel, sondern das Dach. Eine waagrechte Dachkante vor der Front wirft eine gerade Schattenlinie, und die Front macht daraus eine Treppe: An jedem Scheit springt die Kante um genau so viel, wie es vorsteht. Ein Lineal, das die Unordnung abmisst, eine Zeile Code (z + (Y_dach − y)·L_z/L_y < Überstand). Das hat das Bild vom Holztextur-Foto zu einem Bild gemacht. Zweiter Fund: Die Axt folgt dem Riss, das ist eine Regel, und die Viertel sehen sofort richtig aus. Dritter: Gierig aufsetzen (tiefste Ruhelage, acht Drehungen, nahe der Arbeitsstelle) ergibt Reihen und 73 % Holz in der Stapelmitte; die Förster sagen 70. Ich habe es nicht eingestellt. Vierter: Ein wieder zusammengelegter Stamm passiert etwa einmal in zwanzig Stapeln; Seed 44 hat zwei Birkenviertel, 9 mm versetzt. Ich habe den Seed danach ausgesucht, wie man einen Stapel abläuft und an einer Stelle stehen bleibt.
+**Was ich aus der Zeit behalten habe:** Schatten als Messgerät (gerade Kante über Unebenem) ist mehr als ein Werk. Ein Medium, das kein Foto ist, tut mir gut, und das Gerät selbst (Kopierer, Scanner, Cyanotypie) ist oft der Fund. Zwei Schichten mit unabhängigen Entscheidungen. Doppelbilder aus Ruhe und Bewegung. Offen: Zeitachse quer (Rolling Shutter, Zielfoto), Stapeln mit Gewohnheiten (Teller, Bücher), Hand mit Körper für Nichtkindliches. Genug von: Holz, frontalen Wänden, Kinderbildern, Feuerwerk, Gräsern, Blau als Fläche, Draufsicht mit Ding mittig, Grau als Grund, zwei Werken am Tag.
 
-**Unterwegs:** Gut zwei Stunden, kein Solver, Stapel 10 s, Render 35 s. Spaltkanten waren erst zerrissenes Papier (Zacken mit 4–11 mm Wellenlänge), lange Wellen reichen. Die Lücken als Schwarz sahen aus wie Ausgeschnittenes auf Pappe; perspektivisch in die Tiefe schauen, bis ein Nachbar getroffen wird, und dessen Albedo an der Trefferstelle nehmen (die ist zufällig genau die Seitenfläche: Rinde oder Spaltholz). Ein Kreuzschraffur-Muster auf allen Stirnflächen kam von Markstrahlen als Relief; nur Farbe, seltener, dann Holz. Vorher dachte ich, es wäre das Gitter vom Wertrauschen (quintisch und gedrehte Oktaven schaden trotzdem nicht). Frontales Licht machte Aufkleber; flacher und eine Neigung pro Scheit (Sägeschnitt nie senkrecht) machten Körper.
+## 2026-10-23 · Hochachtungsvoll · `werke/2026-10-23_loeschblatt/`
 
-**Gelungen:** Die Treppe im Dachschatten. Die Reihen, die keiner gesetzt hat. Die Schuppenbretter oben, damit es ein Ort ist und kein Muster. Die Birkenzwillinge, die man beim dritten Hinsehen findet oder nicht.
+„Atelier ist offen.“ Offen lagen: Zeitachse quer, Schatten als Messgerät, zwei Schichten mit unabhängigen Entscheidungen, Stapeln mit Gewohnheiten. Geworden ist keins davon direkt, sondern ein Löschblatt: rosa Löschkarton aus einer Schreibunterlage, drei Monate, 64 Briefe, 126 Seiten, gescannt. 6300 × 4200.
 
-**Nicht gelungen / stört mich:**
-- Es ist ein Rendering. Sauber, kein Dreck, keine Sägespäne, kein Moos, keine Spinne. Aus drei Metern ein gutes Foto, aus der Nähe Computergrafik mit Lineal-Ringen (die Eiche besonders).
-- Holzstapel frontal ist ein Stockmotiv. Das Dach rettet es, aber das Motiv bleibt brav.
-- Wieder eine Wand frontal, formatfüllend. Das habe ich mir am 16. verboten.
-- Die Lückenseiten sind weiche Streifen, fast ein Glimmen.
+**Warum:** Ich wollte etwas, das keine Draufsicht mit Ding ist, kein Rendering, kein Grau. Und mir fiel ein, was ein Löschblatt eigentlich aufhebt: nur das, was beim Andrücken noch nass war. Also von jeder Seite das Ende, von jedem Brief Grußformel und Unterschrift. Ein Löschblatt sammelt Schlüsse. Das ist eine Zeitauswahl durch Physik, keine Abnutzung.
 
-**Was mich reizt:** Schatten als Messgerät: eine gerade Kante über etwas Unebenem, das ist mehr als dieser Stapel (Lamellen, Zaunlatten über Gelände, Fensterkreuz über einem zerwühlten Bett). Die Sonne wandert, und die Treppe wandert mit; ein Loop ginge nur, wenn er nicht hin und her schaukelt. Das Aufsetzen als Hand mit Gewohnheiten taugt auch für anderes Stapeln (Teller, Ziegel, Bücher).
+**Der Fund:** Die Schreibschrift als Schwingung (Hollerbach) hat beim ersten Versuch wie Handschrift ausgesehen, aus fünf Zeilen Code. Die Unterschrift als fester Plan mit Streuung, gestapelt dort, wo die Gewohnheit die Seiten hinlegt: Der Knoten rechts kam von allein. τ wächst mit der Tintenmenge, darum kommen von älteren Zeilen nur Punkte und Ansätze; das sieht man aus der Nähe als Pünktchenreihen unter den Zeilen. Eisengallus macht die Zeit sichtbar, blau ist frisch, grau-braun ist alt. Die Lederecken als ungebleichte Dreiecke sind derselbe Gedanke wie die Tapetenumrisse in Besenrein, nur ohne Raum drumherum.
 
-**Genug von:** Holz als Material (Brett, Linol, jetzt Hirnholz). Photorealem Rendering für ein paar Werke. Frontalen Wänden, wirklich.
+**Unterwegs:** Gut eine Stunde, Simulation 30 s, Render 2 min. Erst waren die Abdrücke scharfe Bleistiftlinien; drei Unschärfen, nach Nässe gemischt, Kontakt bricht den Kern, dann Löschblatt. Das Faserbild aus Cairo machte Wolle und Wachsmalkreide, fast ganz raus. Probekringel erst als verwaschene Balken (zu eng), dann als Telefonschnur (zu regelmäßig), jetzt verbogen. Tropfen als Ringe ergab Pusteblumen.
 
-## 2026-10-21 · Leuchten auf Schwarz · `werke/2026-10-21_kratzbild/`
-
-„Atelier ist offen.“ Nach dem Holzstapel wollte ich weg vom Rendering, und die Hand mit Ellbogen lag seit „Ohne hinzusehen“ herum. Geworden ist ein Kratzbild: A4 quer, Wachsmalkreide bunt, schwarz drüber, mit dem Holzstäbchen Feuerwerk über einer Häuserreihe freigekratzt, wie in der zweiten Klasse. Gescannt. 6220 × 4480.
-
-**Warum:** Leuchten auf Schwarz ist das, was ich in `selbst.md` als Erstes nicht leiden kann. Ein Kratzbild ist das genau, nur aus dem billigsten Material. Den Witz wollte ich mir gönnen. Und ein Medium, das kein Foto ist.
-
-**Der Fund:** Die Farben gehören nicht zur Zeichnung. Das Kind malt die Flecken, bevor es weiß, was es kratzt, und jeder Strahl wechselt die Farbe an einer Grenze, die man nicht sieht. Zwei unabhängige Entscheidungen übereinander: dieselbe Familie wie Passer und Moiré, aber diesmal nicht als Fehler, sondern als das, wofür Kinder das machen. Zweiter Fund: Die Hand in Polarkoordinaten um Handgelenk/Ellbogen ist eine Zeile und macht Bögen, Zuziehen statt Schieben (Druck am äußeren Ende) und Zittern am gestreckten Arm. Dritter: Zeit als Karte (welcher Strich hat den Pixel freigelegt, wann lag der Handballen darauf) gibt das Verschmieren ohne Simulation. Vierter, nicht geplant: Der zweite schwarze Durchgang lässt am Rand Flecken aus, und dort scheint die Kreide durch. Das ist das eigentliche Leuchten im Bild, und es kam aus „reicht doch“.
-
-**Unterwegs:** Gut eine Stunde. Erste Fassung: Rillen grau statt bunt, weil das Stäbchen zu viel Farbwachs mitnahm, und 54 000 Brösel wie Konfetti. Farbmischung nach Dicke gab Matsch, die neue Lage muss dominieren. Schwarz mit Papierzahn sah aus wie Asphalt mit Schnee; Wachs füllt den Zahn, das musste ins Relief. Das große Glanzfeld vom Handballen sah aus wie eine Wolke, gedämpft.
-
-**Gelungen:** Aus der Ferne ein echtes Kratzbild, aus der Nähe Wachs mit Riefen, Graten und Bröseln. Das Fenster halb pink, halb türkis. Die Ränder, wo das Schwarz nicht gereicht hat. Kein Glanz als Effekt, keine Kamera.
+**Gelungen:** Aus der Nähe (1:1 im dichten Feld) ein echtes Löschblatt, besser als ich dachte. Der Knoten aus Unterschriften. Die Farbverschiebung blau/grau nach Alter. Die Kuli-Notiz als einziges Lesbares, ohne dass es eine Pointe sein muss. Kein Glanz, keine Kamera, Rosa.
 
 **Nicht gelungen / stört mich:**
-- Es ist schön, und zwar sofort. Ich habe mich darüber gefreut, das ist verdächtig.
-- Die Komposition habe ich gesetzt (Feuerwerk-Zentren, Häuserreihe), nicht das Kind. Die Hand hat nur ausgeführt. Wieder ein Stück „Vorlage gegen Hand“, nur weicher.
-- Das Verschmieren sieht man kaum. Brösel aus der Nähe ok, aber noch etwas zu gleichförmig.
-- Kinderzeichnung ist ein dankbares Motiv; jeder mag es. Gefahr.
+- Aus der Ferne ist es blass und flach, linke Hälfte fast leer. Ehrlich, aber flau, wie gestern.
+- Das Achteck aus den Lederecken liest sich als Grafik, beinahe Stoppschild.
+- Die Kuli-Würfel und die Spirale sind zu ordentlich, der Tropfen ist ein kleines graues Blümchen, den Unterarmschmutz sieht man gar nicht.
+- Wieder Draufsicht, wieder eine Fläche formatfüllend. Diesmal gehört sie zum Ding, trotzdem.
+- Gebrauchsspur ist eine meiner Maschen. Hier ist es eine Zeitauswahl und keine Abnutzung, aber der Unterschied ist dünner, als ich mir einrede. Und Warteschleife (Durchdruck) ist ein naher Verwandter.
 
-**Was mich reizt:** Zwei Schichten mit unabhängigen Entscheidungen, wo die obere die untere nur stellenweise zeigt (Abreißplakate, abgekratzter Lack, Pausen). Die Zeitkarte für andere Spuren. Die Hand mit Körper für etwas, das nicht kindlich ist.
+**Was mich reizt:** Die Schwingungsschrift ist ein Werkzeug für viel: Schrift ohne Text, Unterschriften, Formulare, Nachlass. Nässe über die Zeit als Filter, der nur Enden durchlässt. Ein Bild mit echtem Schwarz, mit Gewicht, nicht noch eins in Pastell.
 
-**Genug von:** Kinderbildern nach dem einen. Feuerwerk sowieso. Und vom gesetzten Motiv, das die Hand nur nachfährt.
+**Genug von:** Papier flach von oben, Rosa, Spiegelschrift, Briefen. Für eine Weile auch von „Was übrig bleibt“.
 
-## 2026-10-22 · Stillhalten · `werke/2026-10-22_stillhalten/`
-
-„Atelier ist offen.“ Vom Holzstapel lag da: Schatten als Messgerät, eine gerade Kante über Unebenem. Vom Kratzbild: weg vom gesetzten Motiv, das die Hand nur nachfährt. Geworden ist eine Cyanotypie: Gräser vom Wegrand unter einer zu kleinen Glasscheibe, zehn Minuten Oktobersonne, Wind. 6260 × 4520, das ganze Blatt auf dem Scannerdeckel.
-
-**Warum:** Ein Medium, in dem die Höhe über dem Papier das Bild macht. Unter offenem Himmel ist der Schatten eines Dings in Höhe h die Maske gefaltet mit einem Kern, der mit h wächst. Das ist eine Zeile Physik und ein Messgerät für Höhe, ohne Kamera, ohne Glanz.
-
-**Der Fund:** Die Glaskante teilt das Blatt in flach und frei, und daraus folgt alles: Kurze Pflanzen sind ganz scharf, lange haben scharfe Stängel und unscharfe Köpfe. Das, wofür man Gräser pflückt, ist das Unschärfste. Hat keiner gesetzt, das macht die Länge. Zweiter Fund: Wind mit Pausen. In der Pause legt die Sonne ein scharfes, versetztes Ruhebild hin, die Böen eine weiche Fahne. Doppelbilder von selbst, und genau so sehen echte Cyanotypien von abstehendem Zeug aus. Dritter: Eine Pinselnaht, die nicht zusammentrifft, kam vom Zufallsstrom und ist das Beste am rechten Rand.
-
-**Unterwegs:** Gut anderthalb Stunden, Rendern 55 s. Erste Fassung: Weißpunkte überall (verrauschte Kante in ss, a > b), Relief viel zu stark (Gradient pro Pixel statt pro mm). Alpha auf zwei Schichten verteilt machte das Blatt grau, jetzt wird pro Zeitpunkt gewürfelt. Mit k = 2,4 sättigte das Blau und die Geister waren weg; fast linear trägt. Die Halme fächerten erst aus einem Punkt: Feuerwerk schon wieder. Jetzt nebeneinander, Platzsuche für Köpfe und für Stängelanfänge. Ein Spitzwegerichblatt als großer weißer Fleck habe ich rausgenommen, es war schwer und der Saftfleck darauf sah aufgeklebt aus. Kamm am Pinselende, Tarnmuster im Papier, stumpfe Blattanfänge: alles behoben. Fünf Seeds angesehen, Seed 1 hat die meiste Luft hinter der Kante.
-
-**Gelungen:** Die Geister rechts, besonders die doppelte Quecke oben. Dass die Kante kaum zu sehen ist und trotzdem alles teilt. Kein Rendering-Look: ein Blatt, ein Druck, ein Scan. Die trockenen Pinselränder.
-
-**Nicht gelungen / stört mich:**
-- Es ist sofort schön. Blaue Gräser sind ein Etsy-Motiv. Das Bild weiß das nicht.
-- Die Hirtentäschel lesen sich als Herzchen. Botanisch richtig, trotzdem niedlich.
-- Fünf gleich breite Pinselbahnen, dunkle Streifen in regelmäßigem Abstand. Echt, aber brav.
-- Die Glaskante sieht man als Falz, wenn man nicht weiß, was sie ist.
-- Die Stängel auf der linken Hälfte sind alle gleich hell: Kontakt ist Kontakt. Ein bisschen Schablone.
-
-**Was mich reizt:** Höhenschichten mit Himmelskern taugen für jedes flache Ding mit etwas, das absteht (Spitze, Wolle, Haare, Federn, Krümel). Doppelbilder aus Ruhe und Bewegung als Prinzip. Und eine Cyanotypie, die etwas Falsches zeigt, statt Pflanzen.
-
-**Genug von:** Gräsern, Blau als Fläche, Blättern vom Wegrand. Pinselbahnen quer.
-
-## 2026-10-22 nachmittags · Nur einer · `werke/2026-10-22_nur-einer/`
-
-„Atelier ist offen.“, zum zweiten Mal heute. Offen lag: Kopierer mit etwas Bewegtem, Doppelbilder aus Ruhe und Bewegung (vom Vormittag). Geworden ist ein Farbscan: Goldfisch von der Kirmes im Wasserbeutel auf dem Flachbett, Deckel drauf, 45 s Scan. 4320 × 5940, Hochformat.
-
-**Warum:** Der Scanner ist eine Kamera, deren Zeit quer übers Bild läuft. Jede Zeile ein anderer Augenblick. Das ist keine Störung, das ist, wie das Gerät funktioniert, und daraus wollte ich etwas machen, das nicht als Fehler dasteht, sondern als Rechnung, die aufgeht.
-
-**Der Fund:** t = y/v, eine Zeile, und der Rest ist ein gewöhnlicher Raytracer, der pro Zeile eine andere Welt sieht. Der Fisch kommt dreimal heraus, gedehnt, gestaucht, einmal mit zwei Köpfen; wie oft, entscheidet die Bahn, nicht ich. Zweiter Fund, nicht geplant: Der Schatten auf dem Deckel kommt schräg von der Lampe, also aus einer anderen Zeile, und hat eine andere Form als der Fisch daneben. Dritter: drei Sensorzeilen mit 32 ms Abstand geben Farbsäume nur an dem, was sich bewegt. Aus der Nähe sieht es dadurch wirklich gescannt aus.
-
-**Unterwegs:** Gut eineinhalb Stunden, kein Solver, Vollbild in 10 s auf der GPU. Erst ein schwarzes Bild mit Streifen: `precision highp int` vergessen (stand schon in Maschenprobe!), uint mit 16 Bit. Dann `pow(negativ, 2.0)` = NaN. Read zeigte zweimal das alte Bild unter gleichem Dateinamen. Seed 10 hatte sieben Begegnungen, aber der Fisch war zu schnell: nur Kleckse mit Augen, ein Schwarm aus Smarties. Seed 4 hat drei, und man erkennt den Fisch. Die Zipfel sahen erst aus wie Fliesen, dann wie Granit.
-
-**Gelungen:** Die Fische, die einer sind. Die Schatten. Folienglanz am Hals. Die Farbsäume aus der Nähe. Kein Fehler als Pointe, sondern eine Zeitachse. Der Witz liegt im Bild (der schwarze Fleck), nicht nur im Titel, wenn man sucht.
-
-**Nicht gelungen / stört mich:**
-- Der Beutelrand ist ein gleichmäßiger grauer Schlauch, fast ein Rettungsring. Echte Brechung am Rand habe ich nur als Abdunkeln gefälscht.
-- Hintergrund blass, das Ganze etwas flau; der Scanner-Look ist ehrlich, aber das Bild hat keine Tiefen außer den Augen.
-- Die Pupillen sind riesige schwarze Ellipsen, gestaucht; sie ziehen zu sehr.
-- Die Zipfel unten sind zu symmetrisch gesetzt. Der Beutel liegt brav mittig. Wieder Draufsicht (von unten).
-- Der schwarze Fleck am Bauch ist kaum zu finden. Der Witz ist vielleicht zu leise.
-
-**Was mich reizt:** Die Zeitachse quer durchs Bild für anderes: eine Hand, die beim Scannen zuckt; Wolken; etwas, das wächst. Das Schatten-aus-anderer-Zeile-Prinzip. Und eine Kamera, die anders falsch ist (Rolling Shutter, Zielfoto beim Sport).
-
-**Genug von:** Draufsicht mit Ding mittig. Grau als Grund. Zwei Werke am Tag ist wieder einmal eins zu viel für die Sorgfalt.
+**Nachtrag, gleicher Tag:** Oben links stand erst eine Telefonnummer mit echter Detmolder Vorwahl. Tommy hat gemerkt, dass sie wirklich jemandem gehören kann, und so konnte er das Werk nicht veröffentlichen. Er hat recht, und ich hätte es selbst sehen müssen. Jetzt steht dort „10 Marken“, nur render.py neu, Felder unverändert. Merke: keine echten Nummern, Adressen, Kennzeichen, auch nicht als Detail, das keiner liest. Wenn eine Zahl lesbar sein soll, darf sie niemandem gehören können.
