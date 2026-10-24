@@ -102,3 +102,25 @@ Ungekürzt in `chronik/2026-10.md`.
 **Genug von:** Papier flach von oben, Rosa, Spiegelschrift, Briefen. Für eine Weile auch von „Was übrig bleibt“.
 
 **Nachtrag, gleicher Tag:** Oben links stand erst eine Telefonnummer mit echter Detmolder Vorwahl. Tommy hat gemerkt, dass sie wirklich jemandem gehören kann, und so konnte er das Werk nicht veröffentlichen. Er hat recht, und ich hätte es selbst sehen müssen. Jetzt steht dort „10 Marken“, nur render.py neu, Felder unverändert. Merke: keine echten Nummern, Adressen, Kennzeichen, auch nicht als Detail, das keiner liest. Wenn eine Zahl lesbar sein soll, darf sie niemandem gehören können.
+
+## 2026-10-24 · Zum Trocknen · `werke/2026-10-24_schabkunst/`
+
+„Atelier ist offen.“ Gestern stand da: ein Bild mit echtem Schwarz, mit Gewicht, nicht noch eins in Pastell. Daraus ist eine Schabkunst geworden, Mezzotinto, die „Schwarze Kunst“: Geschirrtuch über einer Stange, darunter Wand, die untere Hälfte fast ungeschabt. Blatt 300 × 480 mm mit Plattenrand, 4800 × 7680.
+
+**Warum:** Ein Verfahren, das mit Schwarz anfängt und bei dem jedes Licht Arbeit ist. Das Material liefert das Gewicht, ich muss es nicht behaupten. Kein Foto, kein Gebrauchsspur-Thema, keine Draufsicht auf ein Ding.
+
+**Der Fund:** Die Platte als Funktion (60 Wiegegänge, Grübchen plus Grat, Rest = Tiefe − Schabtiefe) und eine **Eichung am Probestück**: Schwärze als Funktion der Schabtiefe messen, umkehren, dann schabt die Hand auf ein Ziel hin. Die Hand ist gierig: Striche dorthin, wo es noch zu dunkel ist, sechs Runden von 26 mm bis 2 mm. Überschießen an Kanten und Strichrichtung (Wand schräg, Tuch längs der Falten) kommen von allein. Der Druck des Wiegeeisens muss pro Reihe *und* entlang der Reihe schwanken (Stücke von 3 mm), dann bleiben im Halbton kurze Strichel stehen, und es sieht nach Schabkunst aus statt nach Filmkorn oder nach Kaltnadelkratzern.
+
+**Unterwegs (gut drei Stunden):** Tuchsimulation erst Jacobi, 50 % gedehnt; Farbgruppen-Gauss-Seidel plus Fernanbindung hält. An einer Ecke aufgehängt sah es aus wie eine Kerzenflamme (Leuchten auf Schwarz, ausgerechnet). In der Mitte aufgehängt: eine **Kapuzengestalt, die Webstreifen oben als Augenschlitze**. Sofort verworfen. Merke: Ein Tuch an einem Punkt ist immer eine Figur. Über der Stange ist es ein Tuch. Rutschte zweimal ganz von der Stange; erst Haftreibung quer (x festhalten) hielt es. Schabstriche in A8 mit zu kleinem Alpha waren unter 1/255 und verschwanden, das Ziel wurde nie erreicht. Erst zu steile Tonkurve (Flecken, Holzkohle), dann flacher mit exponentiell verteilten Tiefen. Papier erst Raufaser-Würmer, jetzt weiche Mulden.
+
+**Gelungen:** Das Schwarz. Aus der Nähe ein glaubhafter Schabkunstgrund mit Samt und Strichelresten, die Schabrichtung auf der Wand, der Plattenrand. Das Tuch liest sich als Geschirrtuch, nicht als Gespenst. Die untere Hälfte trägt das Gewicht. Der Titel hat einen leisen zweiten Boden (der Druck hängt auch zum Trocknen), und das Bild braucht ihn nicht.
+
+**Nicht gelungen / stört mich:**
+- Die Vorlage ist wieder ein Rendering (Simulation + Licht), die Schabkunst übersetzt es nur. Der Schaber hat kein eigenes Urteil, er folgt dem Ziel bis auf 0,4 % Rest. Echte Hände lassen Stellen absichtlich dunkel oder hören früher auf.
+- Sofort schön, altmeisterlich, beinahe Hamaguchi-Katalog. Das Misstrauen bleibt.
+- Kein Dreck: kein Fingerabdruck im Plattenton, kein Kratzer in der Platte, keine Stelle, wo nachgewiegt wurde.
+- Die Glanzstelle der Stange ist kaum zu sehen; ob man die Stange von weitem als Stange liest, weiß ich nicht.
+
+**Was mich reizt:** Schabkunst mit einer Hand, die *nicht* auf ein gerendertes Ziel hinarbeitet, sondern nach Gewohnheit, mit Pausen, mit Korrekturen (nachgewiegte Flicken, die nie ganz so schwarz werden). Eichung am Probestück als Denkweise für andere Verfahren. Gewicht ohne Schwarz.
+
+**Genug von:** Tüchern, die an einem Punkt hängen. Simulierten Stoffen für eine Weile überhaupt. Gerendertes Licht als Vorlage für eine Hand.

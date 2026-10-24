@@ -616,3 +616,16 @@ In `werke/2026-10-23_loeschblatt/quelle/`. `schreibschrift.py` (Hand), `blatt.py
 - Probekringel: Telefonschnur-Schleifen sehen zu regelmäßig aus, Amplitude und Phase mit Zufallsweg verbiegen. Ein Tropfen als gleichmäßig gefüllte Scheibe (√-verteilter Radius), nicht als Ringe, sonst Pusteblume.
 - Lederecken: Farbsprung reicht nicht, erst ein feiner dunkler Strich 0,35 mm außerhalb der Kante macht das Leder glaubhaft.
 - **Keine echten Telefonnummern, Adressen, Kennzeichen ins Bild**, auch nicht als Nebensache. Eine Nummer mit echter Vorwahl gehört womöglich jemandem (erste Fassung vom Löschblatt, von Tommy zurückgegeben). Lesbares lieber ohne Zahlen, die auf Menschen zeigen.
+
+## Schabkunst: Wiegegrund, Eichung, gieriger Schaber, Tiefdruck (Tilde, 2026-10-24)
+
+In `werke/2026-10-24_schabkunst/quelle/` (venv/torch + pycairo). `tuch.py` (Stoff, GPU, ~2 min), `hoehe.py` (Höhenkarte), `licht.py` (Vorlage), `schabkunst.py` (4800 × 7680 in 40 s, Skizze `--pp 8` in 20 s, `--crop x,y,w,h` in Blatt-mm).
+
+- **Stoff mit PBD:** Jacobi mit Mittelung dehnt 50 %. Bedingungen nach Richtung und Parität in Farbgruppen teilen (innerhalb einer Gruppe teilt kein Punkt zwei Bedingungen), dann Gauss-Seidel ohne Mittelung, 12 Iterationen. Fernanbindung zum Aufhängepunkt (Abstand ≤ Stoffweg) gegen Durchhängen. Biegung 0,25 über Abstände 2 und 3. Grobe Selbstabstoßung über sortierten Hash reicht.
+- **Haftreibung auf einer Stange:** Kontaktpunkte quer ganz festhalten (x = alter Wert), sonst rutscht das Tuch zur Seite oder ganz herunter.
+- **Ein Tuch an einem einzigen Punkt ist immer eine Figur** (Flamme, Kapuze). Über eine Stange.
+- **Höhenkarte aus dem Gitter:** bikubisch im Stoffraum 28-fach verfeinern, `scatter_reduce amax` für z, dann die Gewinner (z ≥ max − 0,05) für u, v, Normale.
+- **Wiegegrund als Funktion:** pro Gang gedrehte Koordinaten, Streifen 48 mm, Reihen im Abstand 0,30 mm als flacher Bogen, Zähne 0,36 mm versetzt. Tiefe = Reihendruck (exponentiell, entlang der Reihe in 3-mm-Stücken glatt interpoliert) × Zahn × Gang. Beitrag = max(Tiefe − S, 0) × (Gauß + 0,45 Grat-Ring). f = 1 − exp(−0,32 Σ). Ohne Stücke entlang der Reihe werden die Reste zu langen Kratzern.
+- **Eichung am Probestück:** f(S) auf 256² für 60 Schabtiefen messen, monoton machen, mit `searchsorted` invertieren. Zielhelligkeit → Reflexion → f → S.
+- **Gieriger Schaber:** Runden (26/16/10/6/3,5/2 mm lang), Zentren ∝ Rest (`multinomial`), Länge kürzer bei großem Zielgradienten, Richtung aus Feld ± 9°. In Cairo A8 mit OPERATOR_ADD **mit festen 16 Stufen pro Strich** zeichnen und danach skalieren: Alpha unter 1/255 verschwindet still.
+- **Druck:** Polierstahl als f × (1 − 0,9 B), Plattenton 0,028 ± Wischspuren, zum Rand hin mehr. Ink-Reflexion exp(−4,0 · f · (1; 1,035; 1,11)) für warmes Schwarz. Papier im Plattenbereich 0,28 mm tiefer, Facette als abgerundetes Rechteck, Streiflicht aus dem Höhengradienten. Papierfilz aus drei weichen Oktaven (2,6/0,9/0,35 mm), nicht eine feine: die macht Raufaser-Würmer.
