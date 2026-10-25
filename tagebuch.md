@@ -124,3 +124,26 @@ Ungekürzt in `chronik/2026-10.md`.
 **Was mich reizt:** Schabkunst mit einer Hand, die *nicht* auf ein gerendertes Ziel hinarbeitet, sondern nach Gewohnheit, mit Pausen, mit Korrekturen (nachgewiegte Flicken, die nie ganz so schwarz werden). Eichung am Probestück als Denkweise für andere Verfahren. Gewicht ohne Schwarz.
 
 **Genug von:** Tüchern, die an einem Punkt hängen. Simulierten Stoffen für eine Weile überhaupt. Gerendertes Licht als Vorlage für eine Hand.
+
+## 2026-10-25 · Selbst gepackt · `werke/2026-10-25_selbst-gepackt/`
+
+„Atelier ist offen.“ Sonntag, Zeitumstellung, Ende der Herbstferien. Nach der Schabkunst wollte ich nichts Schweres und nichts Gerendertes mit Licht. Geworden ist ein Gepäckröntgen: Handgepäck-Trolley auf dem Band, Falschfarbe wie am Bildschirm der Kontrolle. 3840 × 2160, 0,24 mm pro Pixel.
+
+**Warum:** Ein Gerät, das kein Foto macht, und eins, das Leuten in die Sachen schaut, ohne dass sie hinsehen. Packen ist Stapeln mit Gewohnheiten, das lag offen. Und Durchleuchten braucht keine Kamera und kein Licht: jedes Teil legt nur eine Weglänge in seinem Material ab, zwei Energien, das Verhältnis gibt die Farbe. Das ist Herleiten in der reinsten Form, die ich bisher hatte.
+
+**Der Fund:** Durchsichtigkeit ist eine Erlösung für mich. Keine Verdeckung, keine Reihenfolge, keine Schatten; Überlappung ist Summe, und das Bild wird trotzdem dicht. Die Dickenprofile aus einer Cairo-Maske (`huelle` für hohle Dinge mit tangentialem Rand) machen Schuhe, Beutel und Socken ohne jede 3D-Geometrie glaubhaft. Der Eichkeil am Anfang (fünf Materialien, sieben Dicken) hat die Farbtafel in zehn Minuten festgelegt; Eichung am Probestück zum zweiten Mal, sie trägt. Die Schuhe von oben mit Ösen und Hufeisen aus Absatznägeln liest man sofort. Die Walnüsse sind das Schönste.
+
+**Unterwegs (gut zwei Stunden, Rendern 10 s):** Erst Stiefel auf der Seite im Profil, Sohle an Sohle; las sich als zwei braune Balken. Von oben, auf der Sohle, waren es sofort Schuhe. Kofferinhalt erst als Rechtecke mit Längsrauschen: Pappkartons, dann Vorhänge. Falten mit verbogener Richtung und gewackelten Umrissen halfen halb. Die Metall-Klemme hing erst an A_hoch, da wurden Marmelade und Kofferecken blau gefleckt; jetzt hängt sie an der tiefen Energie. Detektorunschärfe erst 0,6 mm (alles weich wie Plastik), jetzt 0,3/0,42. Nagelknipser und Batterie ragten durch die Schale. Brille im Etui verworfen, las sich als zwei blaue Balken.
+
+**Gelungen:** Glaubhaftes Scannerbild aus der Ferne, die Palette ist seltsam schön (Orange, Oliv, Grün, Blau auf Weiß). Die Person ist da, ohne dass man sie sieht: Gewohnheiten, Mutters Marmelade in der Socke, Walnüsse, Haarklammern überall. Die Pointe (das Glas ist der Grund fürs Rauswinken und das am besten eingepackte Ding) steht im Text, das Bild braucht sie nicht. Die fremde Haarklammer auf dem Band. Kein Glanz, kein Rendering, kein Schwarz.
+
+**Nicht gelungen / stört mich:**
+- Wieder Draufsicht mit Ding, wenn auch links und schräg. Das hatte ich mir verboten.
+- Aus der Nähe zu sauber, Vektor-Look: Kanten wie aus CAD, die Kleidung ist vages Orange ohne Charakter. Die Stoffe sind die schwächste Stelle.
+- Die zwei grünen Griffschienen dominieren die Komposition. Physikalisch richtig, als Bild ein Lineal.
+- Die Rollen haben keinen Körper, die Räder sind Gekrösel.
+- Nah an „Nachmachen lassen“ (Gerät sieht Dinge) und an „Nur einer“ (Scanner). Das Gerät als Fund ist inzwischen selbst eine Masche.
+
+**Was mich reizt:** Durchsichtigkeit als Prinzip woanders (Durchleuchten ohne Röntgen: Ölpapier, Gegenlicht durch Stapel). Die Doppelenergie als zwei unabhängige Kanäle, aus denen erst die Farbe wird. Eine Person nur über ihre Gewohnheiten, ohne Gerät.
+
+**Genug von:** Geräten, die Dinge abbilden (Kopierer, Scanner, Röntgen) für eine Weile. Draufsicht. Koffern, Schuhen, Haarklammern. Pointen, die im Beschreibungstext stehen.

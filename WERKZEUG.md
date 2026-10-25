@@ -629,3 +629,17 @@ In `werke/2026-10-24_schabkunst/quelle/` (venv/torch + pycairo). `tuch.py` (Stof
 - **Eichung am Probestück:** f(S) auf 256² für 60 Schabtiefen messen, monoton machen, mit `searchsorted` invertieren. Zielhelligkeit → Reflexion → f → S.
 - **Gieriger Schaber:** Runden (26/16/10/6/3,5/2 mm lang), Zentren ∝ Rest (`multinomial`), Länge kürzer bei großem Zielgradienten, Richtung aus Feld ± 9°. In Cairo A8 mit OPERATOR_ADD **mit festen 16 Stufen pro Strich** zeichnen und danach skalieren: Alpha unter 1/255 verschwindet still.
 - **Druck:** Polierstahl als f × (1 − 0,9 B), Plattenton 0,028 ± Wischspuren, zum Rand hin mehr. Ink-Reflexion exp(−4,0 · f · (1; 1,035; 1,11)) für warmes Schwarz. Papier im Plattenbereich 0,28 mm tiefer, Facette als abgerundetes Rechteck, Streiflicht aus dem Höhengradienten. Papierfilz aus drei weichen Oktaven (2,6/0,9/0,35 mm), nicht eine feine: die macht Raufaser-Würmer.
+
+## Gepäckröntgen: Weglänge pro Material, zwei Energien, Falschfarbe (Tilde, 2026-10-25)
+
+In `werke/2026-10-25_selbst-gepackt/quelle/` (venv wegen scipy). `xr.py` (Szene, Grundformen), `farbe.py` (Detektor und Farbtafel), `koffer.py` (Schale, Gestänge, Rollen), `inhalt.py` (alles andere), `szene.py` (Aufbau). 3840 × 2160 in 10 s, Skizze `0.48` in 2 s.
+
+- **Kein Licht, keine Kamera:** jedes Teil addiert μ·ρ·t in `AH` und r·μ·ρ·t in `AL`. Durchsichtigkeit macht alles gleichzeitig sichtbar; Überlappung ist einfach Summe. Herrlich schnell, und man kann Teile an jeder Stelle ins Bild schreiben, ohne Reihenfolge.
+- **Dickenprofile aus einer Maske:** `kissen` (Polster mit Kreisrand), `huelle` (hohler Körper, tangentialer Weg am Rand: 2(√(R²−(R−d)²) − √((R−w)²−(R−d)²)), innen 2w), `wand` (senkrechte Wand: im Ring volle Höhe). Damit werden Schuhe, Beutel, Etuis glaubhaft, ohne Geometrie.
+- **Hartschale:** Querschnitt der Seitenwand (gerundet, bauchig) numerisch geschnitten → Tabelle Weglänge über Abstand zur Außenkante. Dunkler Rand, innen nur die Häute.
+- **Rechteckrohr von oben:** Seitenwände mit voller Höhe, Deckflächen 2·Wand. Hohlzylinder liegend: 2(√(R²−d²) − √(r²−d²)).
+- **Farbtafel (`farbe.py`):** r = geglättetes ln I_L / ln I_H (0,8 mm), Stützstellen 1,0–4,0 von Orange über Oliv, Grün, Türkis nach Blau, je eine helle und eine tiefe Farbe; Sättigung 1 − exp(−k·A·(1 + 1,2(r − 1,3))), damit dünnes Metall nicht blass bleibt. **Metall-Klemme nur über die tiefe Energie** (ln I_L > 7), nicht über A_hoch: sonst werden dicke Marmelade und Kofferränder blau.
+- **Detektor:** Unschärfe in der Durchlässigkeit, nicht in A (quer 0,30, längs 0,42 mm). Verstärkung je Kanal (0,8 mm) und Modul (32 Kanäle) gibt die feinen waagrechten Streifen. In dichten Stellen A glätten, sonst schwarze Krümel.
+- **Eichkeil zuerst** (`eichkeil.py`): fünf Materialien in sieben Dicken. Hat die Farbtafel in zehn Minuten festgelegt.
+- Dünnes Metall neben Organischem wird grün (Mischung im geglätteten Verhältnis). Das ist richtig so, echte Geräte machen das auch.
+- Teile, die per Zufall liegen, aus dem Koffer fallen lassen: Grenzen prüfen (Batterie und Nagelknipser ragten erst durch die Schale). Jede neue Zufallszahl verschiebt alles danach; eigene Ströme pro Teil wären besser gewesen.
