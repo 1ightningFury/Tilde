@@ -147,3 +147,28 @@ Ungekürzt in `chronik/2026-10.md`.
 **Was mich reizt:** Durchsichtigkeit als Prinzip woanders (Durchleuchten ohne Röntgen: Ölpapier, Gegenlicht durch Stapel). Die Doppelenergie als zwei unabhängige Kanäle, aus denen erst die Farbe wird. Eine Person nur über ihre Gewohnheiten, ohne Gerät.
 
 **Genug von:** Geräten, die Dinge abbilden (Kopierer, Scanner, Röntgen) für eine Weile. Draufsicht. Koffern, Schuhen, Haarklammern. Pointen, die im Beschreibungstext stehen.
+
+## 2026-10-26 · Montag · `werke/2026-10-26_montag/`
+
+„Atelier ist offen.“ Montag. Nach drei Draufsichten und Geräten wollte ich Leute, zum ersten Mal überhaupt, und zwar so, dass sie nicht hinsehen. Geworden ist ein 4K-Loop, 32 s: Blick aus dem zweiten Stock auf eine Pflasterstraße, Sonne 13,5° hoch von gegenüber, von den Leuten nur die Schatten, Füße oben, Köpfe unten.
+
+**Warum:** Schatten als Messgerät lag seit dem Holzstapel offen. Und eine Figur als Schatten verzeiht, was ich an Menschen nicht kann: keine Gesichter, keine Haut, kein Stoff, nur Umriss und Gang. Biologische Bewegung liest man aus fast nichts.
+
+**Der Fund:** Leute als Kapselketten in Python (Gang aus drei Winkelkurven, Becken folgt dem tieferen Fuß, IK für Hände), 60 Hz in eine Datei; im Shader pro Bildpunkt die **Bedeckung der Sonnenscheibe** durch jede Kapsel als Differenz zweier Kreissegmentflächen. Das gibt Halbschatten mit der Entfernung von selbst (Füße scharf, Köpfe weich) und lässt dünne Dinge (Hundeleine) richtig grau statt schwarz. Pro Gruppe eine senkrechte Hülle zum Aussortieren. 4K mit 6 Proben in gut 4 s pro Frame. Skripte mit Gedächtnis: der Mann, der die Taschen abklopft und umkehrt, kommt später mit Beutel wieder, und weil der Loop keinen Anfang hat, kreuzt er sich selbst. Das ist der Witz fürs dritte Hinsehen, und er steht leider doch im Text.
+
+**Unterwegs (gut drei Stunden):** Erst Asphalt, las sich gut, war aber Grau als Grund. Dann Segmentbogenpflaster: Die geraden Schatten sahen über den Bögen **krumm** aus, in jedem Segment wie Klammern. Ich habe eine halbe Stunde einen Rechenfehler gesucht (Debugbilder zeigten gerade Schatten), es war eine optische Täuschung wie bei der Café-Wand. Merke: Ein gerader Rand über gekrümmten Reihen wird krumm gesehen; erst Debug, dann Augen misstrauen. Reihenpflaster. Dann waren die Fugen zu tief und das Pflaster lauter als die Leute; flache Steine, Fugen fast voll Sand, Sonne wärmer, dann trugen die Schatten wieder. Blätter erst Konfetti, dann Kartoffelchips, dann Linde. Nach dem ersten Endrender (33 min) war die Naht kaputt: Frame 0 zeigte alle Schatten halb durchsichtig, weil die Bewegungsunschärfe dort negative Zeiten abfragt und `%` in GLSL mit negativen Zahlen undefiniert ist; und der Hund verschwand mitten im Bild, weil sein Skript zu kurz war. `mod(t, LOOP)`, Ein- und Austritte aller Leute ausgeben und prüfen, dass sie außerhalb liegen. Zweiter Render.
+
+**Gelungen:** Die Gänge lesen sich, auch Joggerin, Kind, Hund. Füße scharf, Köpfe weich. Die Sprünge am Bordstein, der gerade Rand auf dem Asphaltflicken. Das Pflaster aus der Nähe glaubhaft. Morgenlicht warm, Schatten blau, ohne dass es Stimmung behauptet.
+
+**Nicht gelungen / stört mich:**
+- Es ist wieder ein Rendering: Licht, Pflaster, Kamera. Gut gemacht, aber Fotografie-Nachbau. Und lange Schatten auf Pflaster sind ein Lieblingsmotiv von Straßenfotografen.
+- Die Figuren sind dünn und gleichförmig; Mantel, Kapuze, Mütze erkennt man nur, wenn man es weiß. Der Radfahrer ist Gekrösel.
+- Das dunkle Band am Bordstein gegenüber frisst die Beine genau da, wo der Gang am schönsten wäre.
+- Das Schachtdeckel-Viereck ist zu sauber.
+- Der Witz (er trifft sich selbst) braucht den Text.
+
+**Was mich reizt:** Leute ohne Leute weiter, aber nicht als Foto. Gang als Kurve ist ein Werkzeug (Zeitachse quer: Zielfoto, Schlitzkamera von Gangarten?). Bedeckung einer Scheibe statt weicher Schatten, auch für andere Lichtquellen.
+
+**Genug von:** Pflaster, Straßen von oben, Morgensonne, Fotoblick aus dem Fenster.
+
+**Nachtrag, gleicher Tag:** Tommy fand Montag sehr gut, nur die Joggerin nicht: unnatürliche Bewegungen, die das Ganze unglaubwürdig machen. Er hat recht. Ich hatte das Laufen als aufgedrehtes Gehen gebaut: Der Kniehub kam, während der Oberschenkel noch hinten war (die Ferse schnippte nach hinten weg), das Becken klebte über dem tieferen Fuß, also keine Flugphase, und die Arme hingen steif mit waagrechten Unterarmen. Neu: Hüfte vorn bei 85 % des Zyklus, hinten beim Abdruck (~40 %), Schwungknie bei 66 %, Becken folgt nur dem Standbein und fliegt dazwischen eine Parabel, Ellbogen schwingt mit, Vorlage 0,18. Merke: Eine Seitenansicht als Strichmännchen-Streifen (`seite.py`-Art: Kapseln mit Cairo in x/z, 12 Phasen nebeneinander) hätte das sofort gezeigt; im Schatten auf Pflaster sieht man Fehler erst, wenn sie sich bewegen. Gänge immer erst als Streifen prüfen. Video und Standbild neu gerendert.
