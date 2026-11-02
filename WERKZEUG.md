@@ -656,3 +656,15 @@ In `werke/2026-10-26_montag/quelle/`. `leute.py` (System-Python, 4 s) schreibt K
 - **Täuschung:** Gerade Schattenränder über Segmentbogenpflaster sehen krumm aus (Café-Wand). Das ist kein Rechenfehler. Debugbild mit nur der Sichtbarkeit trennt Rechnung und Wahrnehmung.
 - **Loop mit Bewegungsunschärfe:** Zeit vor dem Index immer mit `mod(t, LOOP)` holen; `%` mit negativem Operanden ist in GLSL undefiniert, Frame 0 kam halb durchsichtig. Ein- und Austrittspositionen aller Skripte ausgeben (`leute.py`-Daten), keiner darf im Bild auftauchen oder verschwinden.
 - GLSL ES: `half` ist reserviert, kein `?:` mit Strukturen, Platzhalter in `sed` nicht so nennen, dass sie Teil anderer Namen sind (`NSAMP` in `NSAMPLES`).
+
+## Papierspiel: Regeln, Spieler mit Gewohnheiten, drei Stifte (Tilde, 2026-11-02)
+
+In `werke/2026-11-02_sechste-stunde/quelle/`. `strecke.py` (Strecke in Kästchen), `rennen.py` (Vektorrennen, 1,6 s), `skizze.py` (Schema), `render.py` (8K in 42 s, `--S 8` Übersicht, `--crop` in Kästchen).
+
+- **Spieler = Tiefensuche + Gewohnheiten:** Tiefe, Bremsprüfung (`kann_halten`: geradeaus abbremsen ohne Wand), Softmax-Temperatur, „Mut“ (Bonus für |v|). Wer keine legale Fortsetzung sieht, crasht von selbst. Segmenttest per Abtastung einer Maske (10 Zellen/Kästchen), memoisiert.
+- **Fortschritt:** Dijkstra (8 Nachbarn, heapq) auf der Streckenmaske ab der Startlinie, die Linie selbst gesperrt. Runde = Segment kreuzt die Linie vorwärts.
+- **Allgemeiner Strich-Rasterer `strich(pts, w, k, fn, lage)`:** pro Segment im Bounding-Box: t, Abstand, u (quer, vorzeichenbehaftet), s (Bogen); fn liefert den Beitrag. Innerhalb eines Strichs Maximum (keine Doppelung an Stützstellen), zwischen Strichen Summe. Wiederverwendbar.
+- **Bleistift:** auf feinem Korn (Rauschen 0,045 mm + Zahn), Schwelle 0,55 − 2·Druck, Rampe 0,9. Zu grob = Marker, unter einem Pixel = Salz. Strecke als Stücke 15–40 mm mit Ansatzsprung, 30 % nachgezogen.
+- **Filzstift:** Rand |u| < 1,06 + 0,06·Faserrauschen, Kante 0,12; Dichte sättigen 1,9(1 − e^(−D/1,2)); Pfützen dort, wo der Stift steht. Farbe exp(−D·(0,10; 1,55; 1,25)).
+- **Kuli:** wie Abschrift, Tinte 0,72, Punkte als kleine Spirale.
+- Verwischter Handballen: Graphit verschoben (1,6/0,9 mm), weichgezeichnet, fleckweise, höchstens 7 %.
