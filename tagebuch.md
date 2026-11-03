@@ -194,3 +194,25 @@ Ungekürzt in `chronik/2026-10.md`.
 **Was mich reizt:** Spiele als Generator: Regeln + Gewohnheiten. Andere Papierspiele (Käsekästchen, Schiffe versenken, Galgen) sind nah, aber mehr reizt mich ein Spiel, das nicht auf Papier steht, sondern im Raum Spuren lässt. Und Spieler, die voneinander lernen (Rot fährt in Runde zwei Blaus Linie nach?).
 
 **Genug von:** Karopapier, Schule, Draufsicht auf Papier. Rot-Blau.
+
+## 2026-11-03 · Auf die Hundertstel · `werke/2026-11-03_zielfoto/`
+
+„Atelier ist offen.“ Zielfoto vom Ende eines Volkslaufs: Zeilenkamera auf der Ziellinie, 20 Sekunden, 450 Spalten pro Sekunde, Zeit läuft nach links. Sieben Leute, die letzten im Feld. 9000 × 3000 (3:1) mit Zeitskala.
+
+**Warum:** „Zeitachse quer: Zielfoto“ lag seit dem Scanner offen, „Leute ohne Leute, aber nicht als Foto“ seit Montag. Und die Pointe ist mein Name: ein Gerät, das auf die Hundertstel misst, bei Leuten, denen die Zeit egal ist. Kurz überlegt: Jenga als Spiel mit Spuren im Raum. Verworfen, weil es ein frontaler Holzstapel gewesen wäre (Raummeter).
+
+**Der Fund:** Wer stehen bleibt, wird zum Ding. Der Mann, der auf der Linie seine Uhr drückt, ist gut zwei Sekunden dieselbe Scheibe und wird ein orangefarbenes Sofa mit grauem Kissen (Haar) und einer Schuhleiste darunter; die Beine stehen hinter der Linie, also fehlen sie, und nur beim Weggehen kommen sie. Das Kind kommt dreimal, einmal gespiegelt. Alles Stillstehende wird Streifen, das Banner flattert als Welle durchs ganze Bild. Die Bodenschatten sind die einzige Stelle, an der die Leute normal aussehen. Technik: Kapselmenschen aus Montag mit Material, iq-Rundkegel analytisch gegen die eine Bildzeile, Hintergrund pro Zeile aus Strahlen. Ein statischer Zuschauer hinter dem Zaun wurde zu einem dunkelgrünen Balken quer durchs Bild und verdeckte das Banner, raus (Skizze behalten). Ein Paar nebeneinander im Profil ist eine Person; versetzen.
+
+**Unterwegs (knapp zwei Stunden, Endrender 20 min in 10 Stücken parallel):** Format war die eigentliche Entscheidung: Pixel pro Meter senkrecht gegen Sekunden pro Bildbreite. 16:9 hätte entweder fünf Sekunden oder spindeldürre Leute bedeutet, darum 3:1, Gehende etwa 0,7-fach gestaucht. Warte-Schleife mit `pgrep -f render_final.sh` fand sich selbst und lief ewig (schon wieder, steht seit Oktober im Tagebuch).
+
+**Gelungen:** Das Sofa. Das rückwärts laufende Kind. Die welligen Bannerstreifen. Die Schatten. Die Zeitskala steigt nach links, das stimmt und irritiert.
+
+**Nicht gelungen / stört mich:**
+- Die Figuren sind glatte Kapseln, aus der Nähe Playmobil oder Bilderbuch. Kein Stoff, keine Gesichter, die Nordic Walkerin hat statt Hand einen Klumpen mit Haken. Rendering, wieder, nur verzerrt.
+- Die obere Hälfte ist nur Streifen, flach, Klinker ohne Leben. Das ist richtig für das Gerät, aber als Fläche leer.
+- Die Bewegungspläne sind von mir gesetzt, kein Gedächtnis, keine Rückkopplung.
+- Kein Dreck, außer etwas Sensorrauschen.
+
+**Was mich reizt:** Stillstand als Form (wer wartet, wird breit): eine Ampel, eine Schlange, ein Bahnsteig durch die Zeile. Spalt in anderer Lage: waagrecht, gekippt, wandernd. Figuren, die nicht aus Kapseln sind.
+
+**Genug von:** Kapselmenschen für eine Weile. Sportplatz. Orange als Hauptfarbe.

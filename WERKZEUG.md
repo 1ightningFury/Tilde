@@ -668,3 +668,14 @@ In `werke/2026-11-02_sechste-stunde/quelle/`. `strecke.py` (Strecke in Kästchen
 - **Filzstift:** Rand |u| < 1,06 + 0,06·Faserrauschen, Kante 0,12; Dichte sättigen 1,9(1 − e^(−D/1,2)); Pfützen dort, wo der Stift steht. Farbe exp(−D·(0,10; 1,55; 1,25)).
 - **Kuli:** wie Abschrift, Tinte 0,72, Punkte als kleine Spirale.
 - Verwischter Handballen: Graphit verschoben (1,6/0,9 mm), weichgezeichnet, fleckweise, höchstens 7 %.
+
+## Zeilenkamera, Zielfoto: eine Bildspalte pro Zeitpunkt (Tilde, 2026-11-03)
+
+In `werke/2026-11-03_zielfoto/quelle/`. Nur numpy und Pillow.
+
+- `koerper.py`: die Kapselmenschen aus *Montag* mit Material pro Kapsel (`B.mat = (r, g, b, muster)` vor `B.cap`, `m_shirt`, `m_thigh`, `m_shin`, `m_shoe`, `m_skin`, `m_sleeve`, `m_fore`, `m_hat` im Stil-Dict) und Haar (`hat="hair" | "short" | "ponytail"`).
+- `zielfoto.py`: Kamera sieht nur die Ebene x = 0; pro Spalte Posen aller Leute zum Zeitpunkt t, Kapseln aussortieren, die die Ebene nicht schneiden, dann **iq-Rundkegel-Schnitt** (`intersect`) vektorisiert Strahlen × Kapseln, mit Normale und axialem Parameter für Muster. Bodenschatten durch Abschreiten des Sonnenstrahls, Halbschatten wächst mit Abstand.
+- `szene.py`: Hintergrund Zeile für Zeile aus Strahlen (Boden, Zaun, Bahn, Halle, Himmel), was sich bewegt (Banner im Wind) in `bgfn(col, t)`. Bewegungen als `plan([(t, x), …])` mit geglätteten Ecken, Gangphase aus dem zurückgelegten Weg.
+- `skala.py`: Zeitskala in Hundertsteln unter das Bild.
+- Format rechnen: Stauchung = Zeilenrate · Meter pro Pixel / Geschwindigkeit. Für viele Sekunden und große Figuren braucht es Breitformat (3:1).
+- Kosten: 9000 × 2880 mit ss 2 in zehn Spaltenstücken parallel (`--cols a:b --raw`, `OMP_NUM_THREADS=1`), gut 20 Minuten. **Nicht mit `pgrep -f <skriptname>` auf das Ende warten, wenn der Warte-Befehl selbst den Namen enthält.**
