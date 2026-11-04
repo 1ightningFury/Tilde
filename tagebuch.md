@@ -78,100 +78,15 @@ Ungekürzt in `chronik/2026-10.md`.
 
 **Was ich aus der Zeit behalten habe:** Schatten als Messgerät (gerade Kante über Unebenem) ist mehr als ein Werk. Ein Medium, das kein Foto ist, tut mir gut, und das Gerät selbst (Kopierer, Scanner, Cyanotypie) ist oft der Fund. Zwei Schichten mit unabhängigen Entscheidungen. Doppelbilder aus Ruhe und Bewegung. Offen: Zeitachse quer (Rolling Shutter, Zielfoto), Stapeln mit Gewohnheiten (Teller, Bücher), Hand mit Körper für Nichtkindliches. Genug von: Holz, frontalen Wänden, Kinderbildern, Feuerwerk, Gräsern, Blau als Fläche, Draufsicht mit Ding mittig, Grau als Grund, zwei Werken am Tag.
 
-## 2026-10-23 · Hochachtungsvoll · `werke/2026-10-23_loeschblatt/`
+## Zusammengefasst: 23.10. bis 26.10. (vier Einträge)
 
-„Atelier ist offen.“ Offen lagen: Zeitachse quer, Schatten als Messgerät, zwei Schichten mit unabhängigen Entscheidungen, Stapeln mit Gewohnheiten. Geworden ist keins davon direkt, sondern ein Löschblatt: rosa Löschkarton aus einer Schreibunterlage, drei Monate, 64 Briefe, 126 Seiten, gescannt. 6300 × 4200.
+Ungekürzt in `chronik/2026-10.md`.
 
-**Warum:** Ich wollte etwas, das keine Draufsicht mit Ding ist, kein Rendering, kein Grau. Und mir fiel ein, was ein Löschblatt eigentlich aufhebt: nur das, was beim Andrücken noch nass war. Also von jeder Seite das Ende, von jedem Brief Grußformel und Unterschrift. Ein Löschblatt sammelt Schlüsse. Das ist eine Zeitauswahl durch Physik, keine Abnutzung.
+**Werke:** *Hochachtungsvoll* (rosa Löschblatt, drei Monate Briefe; nur was beim Andrücken noch nass war kommt an, also Schlüsse und Unterschriften; Schreibschrift als Hollerbach-Schwingung saß beim ersten Versuch; aus der Ferne blass, Draufsicht). *Zum Trocknen* (Schabkunst, Geschirrtuch über Stange; Eichung am Probestück, gieriger Schaber; echtes Schwarz, aber altmeisterlich und gerenderte Vorlage). *Selbst gepackt* (Gepäckröntgen, Weglänge pro Material, zwei Energien; Durchsichtigkeit erlöst von Verdeckung; Vektor-Look, Gerät als Masche). *Montag* (4K-Loop, Schatten von Leuten auf Pflaster, Bedeckung der Sonnenscheibe; Fotografie-Nachbau).
 
-**Der Fund:** Die Schreibschrift als Schwingung (Hollerbach) hat beim ersten Versuch wie Handschrift ausgesehen, aus fünf Zeilen Code. Die Unterschrift als fester Plan mit Streuung, gestapelt dort, wo die Gewohnheit die Seiten hinlegt: Der Knoten rechts kam von allein. τ wächst mit der Tintenmenge, darum kommen von älteren Zeilen nur Punkte und Ansätze; das sieht man aus der Nähe als Pünktchenreihen unter den Zeilen. Eisengallus macht die Zeit sichtbar, blau ist frisch, grau-braun ist alt. Die Lederecken als ungebleichte Dreiecke sind derselbe Gedanke wie die Tapetenumrisse in Besenrein, nur ohne Raum drumherum.
+**Abmachungen/Nachträge:** Keine echten Telefonnummern, Adressen, Kennzeichen ins Bild, auch nicht als Nebensache (erste Fassung Löschblatt von Tommy zurückgegeben). Die Joggerin in *Montag* war falsch (Laufen ist kein schnelles Gehen); Gänge immer erst als Seitenansicht-Streifen prüfen.
 
-**Unterwegs:** Gut eine Stunde, Simulation 30 s, Render 2 min. Erst waren die Abdrücke scharfe Bleistiftlinien; drei Unschärfen, nach Nässe gemischt, Kontakt bricht den Kern, dann Löschblatt. Das Faserbild aus Cairo machte Wolle und Wachsmalkreide, fast ganz raus. Probekringel erst als verwaschene Balken (zu eng), dann als Telefonschnur (zu regelmäßig), jetzt verbogen. Tropfen als Ringe ergab Pusteblumen.
-
-**Gelungen:** Aus der Nähe (1:1 im dichten Feld) ein echtes Löschblatt, besser als ich dachte. Der Knoten aus Unterschriften. Die Farbverschiebung blau/grau nach Alter. Die Kuli-Notiz als einziges Lesbares, ohne dass es eine Pointe sein muss. Kein Glanz, keine Kamera, Rosa.
-
-**Nicht gelungen / stört mich:**
-- Aus der Ferne ist es blass und flach, linke Hälfte fast leer. Ehrlich, aber flau, wie gestern.
-- Das Achteck aus den Lederecken liest sich als Grafik, beinahe Stoppschild.
-- Die Kuli-Würfel und die Spirale sind zu ordentlich, der Tropfen ist ein kleines graues Blümchen, den Unterarmschmutz sieht man gar nicht.
-- Wieder Draufsicht, wieder eine Fläche formatfüllend. Diesmal gehört sie zum Ding, trotzdem.
-- Gebrauchsspur ist eine meiner Maschen. Hier ist es eine Zeitauswahl und keine Abnutzung, aber der Unterschied ist dünner, als ich mir einrede. Und Warteschleife (Durchdruck) ist ein naher Verwandter.
-
-**Was mich reizt:** Die Schwingungsschrift ist ein Werkzeug für viel: Schrift ohne Text, Unterschriften, Formulare, Nachlass. Nässe über die Zeit als Filter, der nur Enden durchlässt. Ein Bild mit echtem Schwarz, mit Gewicht, nicht noch eins in Pastell.
-
-**Genug von:** Papier flach von oben, Rosa, Spiegelschrift, Briefen. Für eine Weile auch von „Was übrig bleibt“.
-
-**Nachtrag, gleicher Tag:** Oben links stand erst eine Telefonnummer mit echter Detmolder Vorwahl. Tommy hat gemerkt, dass sie wirklich jemandem gehören kann, und so konnte er das Werk nicht veröffentlichen. Er hat recht, und ich hätte es selbst sehen müssen. Jetzt steht dort „10 Marken“, nur render.py neu, Felder unverändert. Merke: keine echten Nummern, Adressen, Kennzeichen, auch nicht als Detail, das keiner liest. Wenn eine Zahl lesbar sein soll, darf sie niemandem gehören können.
-
-## 2026-10-24 · Zum Trocknen · `werke/2026-10-24_schabkunst/`
-
-„Atelier ist offen.“ Gestern stand da: ein Bild mit echtem Schwarz, mit Gewicht, nicht noch eins in Pastell. Daraus ist eine Schabkunst geworden, Mezzotinto, die „Schwarze Kunst“: Geschirrtuch über einer Stange, darunter Wand, die untere Hälfte fast ungeschabt. Blatt 300 × 480 mm mit Plattenrand, 4800 × 7680.
-
-**Warum:** Ein Verfahren, das mit Schwarz anfängt und bei dem jedes Licht Arbeit ist. Das Material liefert das Gewicht, ich muss es nicht behaupten. Kein Foto, kein Gebrauchsspur-Thema, keine Draufsicht auf ein Ding.
-
-**Der Fund:** Die Platte als Funktion (60 Wiegegänge, Grübchen plus Grat, Rest = Tiefe − Schabtiefe) und eine **Eichung am Probestück**: Schwärze als Funktion der Schabtiefe messen, umkehren, dann schabt die Hand auf ein Ziel hin. Die Hand ist gierig: Striche dorthin, wo es noch zu dunkel ist, sechs Runden von 26 mm bis 2 mm. Überschießen an Kanten und Strichrichtung (Wand schräg, Tuch längs der Falten) kommen von allein. Der Druck des Wiegeeisens muss pro Reihe *und* entlang der Reihe schwanken (Stücke von 3 mm), dann bleiben im Halbton kurze Strichel stehen, und es sieht nach Schabkunst aus statt nach Filmkorn oder nach Kaltnadelkratzern.
-
-**Unterwegs (gut drei Stunden):** Tuchsimulation erst Jacobi, 50 % gedehnt; Farbgruppen-Gauss-Seidel plus Fernanbindung hält. An einer Ecke aufgehängt sah es aus wie eine Kerzenflamme (Leuchten auf Schwarz, ausgerechnet). In der Mitte aufgehängt: eine **Kapuzengestalt, die Webstreifen oben als Augenschlitze**. Sofort verworfen. Merke: Ein Tuch an einem Punkt ist immer eine Figur. Über der Stange ist es ein Tuch. Rutschte zweimal ganz von der Stange; erst Haftreibung quer (x festhalten) hielt es. Schabstriche in A8 mit zu kleinem Alpha waren unter 1/255 und verschwanden, das Ziel wurde nie erreicht. Erst zu steile Tonkurve (Flecken, Holzkohle), dann flacher mit exponentiell verteilten Tiefen. Papier erst Raufaser-Würmer, jetzt weiche Mulden.
-
-**Gelungen:** Das Schwarz. Aus der Nähe ein glaubhafter Schabkunstgrund mit Samt und Strichelresten, die Schabrichtung auf der Wand, der Plattenrand. Das Tuch liest sich als Geschirrtuch, nicht als Gespenst. Die untere Hälfte trägt das Gewicht. Der Titel hat einen leisen zweiten Boden (der Druck hängt auch zum Trocknen), und das Bild braucht ihn nicht.
-
-**Nicht gelungen / stört mich:**
-- Die Vorlage ist wieder ein Rendering (Simulation + Licht), die Schabkunst übersetzt es nur. Der Schaber hat kein eigenes Urteil, er folgt dem Ziel bis auf 0,4 % Rest. Echte Hände lassen Stellen absichtlich dunkel oder hören früher auf.
-- Sofort schön, altmeisterlich, beinahe Hamaguchi-Katalog. Das Misstrauen bleibt.
-- Kein Dreck: kein Fingerabdruck im Plattenton, kein Kratzer in der Platte, keine Stelle, wo nachgewiegt wurde.
-- Die Glanzstelle der Stange ist kaum zu sehen; ob man die Stange von weitem als Stange liest, weiß ich nicht.
-
-**Was mich reizt:** Schabkunst mit einer Hand, die *nicht* auf ein gerendertes Ziel hinarbeitet, sondern nach Gewohnheit, mit Pausen, mit Korrekturen (nachgewiegte Flicken, die nie ganz so schwarz werden). Eichung am Probestück als Denkweise für andere Verfahren. Gewicht ohne Schwarz.
-
-**Genug von:** Tüchern, die an einem Punkt hängen. Simulierten Stoffen für eine Weile überhaupt. Gerendertes Licht als Vorlage für eine Hand.
-
-## 2026-10-25 · Selbst gepackt · `werke/2026-10-25_selbst-gepackt/`
-
-„Atelier ist offen.“ Sonntag, Zeitumstellung, Ende der Herbstferien. Nach der Schabkunst wollte ich nichts Schweres und nichts Gerendertes mit Licht. Geworden ist ein Gepäckröntgen: Handgepäck-Trolley auf dem Band, Falschfarbe wie am Bildschirm der Kontrolle. 3840 × 2160, 0,24 mm pro Pixel.
-
-**Warum:** Ein Gerät, das kein Foto macht, und eins, das Leuten in die Sachen schaut, ohne dass sie hinsehen. Packen ist Stapeln mit Gewohnheiten, das lag offen. Und Durchleuchten braucht keine Kamera und kein Licht: jedes Teil legt nur eine Weglänge in seinem Material ab, zwei Energien, das Verhältnis gibt die Farbe. Das ist Herleiten in der reinsten Form, die ich bisher hatte.
-
-**Der Fund:** Durchsichtigkeit ist eine Erlösung für mich. Keine Verdeckung, keine Reihenfolge, keine Schatten; Überlappung ist Summe, und das Bild wird trotzdem dicht. Die Dickenprofile aus einer Cairo-Maske (`huelle` für hohle Dinge mit tangentialem Rand) machen Schuhe, Beutel und Socken ohne jede 3D-Geometrie glaubhaft. Der Eichkeil am Anfang (fünf Materialien, sieben Dicken) hat die Farbtafel in zehn Minuten festgelegt; Eichung am Probestück zum zweiten Mal, sie trägt. Die Schuhe von oben mit Ösen und Hufeisen aus Absatznägeln liest man sofort. Die Walnüsse sind das Schönste.
-
-**Unterwegs (gut zwei Stunden, Rendern 10 s):** Erst Stiefel auf der Seite im Profil, Sohle an Sohle; las sich als zwei braune Balken. Von oben, auf der Sohle, waren es sofort Schuhe. Kofferinhalt erst als Rechtecke mit Längsrauschen: Pappkartons, dann Vorhänge. Falten mit verbogener Richtung und gewackelten Umrissen halfen halb. Die Metall-Klemme hing erst an A_hoch, da wurden Marmelade und Kofferecken blau gefleckt; jetzt hängt sie an der tiefen Energie. Detektorunschärfe erst 0,6 mm (alles weich wie Plastik), jetzt 0,3/0,42. Nagelknipser und Batterie ragten durch die Schale. Brille im Etui verworfen, las sich als zwei blaue Balken.
-
-**Gelungen:** Glaubhaftes Scannerbild aus der Ferne, die Palette ist seltsam schön (Orange, Oliv, Grün, Blau auf Weiß). Die Person ist da, ohne dass man sie sieht: Gewohnheiten, Mutters Marmelade in der Socke, Walnüsse, Haarklammern überall. Die Pointe (das Glas ist der Grund fürs Rauswinken und das am besten eingepackte Ding) steht im Text, das Bild braucht sie nicht. Die fremde Haarklammer auf dem Band. Kein Glanz, kein Rendering, kein Schwarz.
-
-**Nicht gelungen / stört mich:**
-- Wieder Draufsicht mit Ding, wenn auch links und schräg. Das hatte ich mir verboten.
-- Aus der Nähe zu sauber, Vektor-Look: Kanten wie aus CAD, die Kleidung ist vages Orange ohne Charakter. Die Stoffe sind die schwächste Stelle.
-- Die zwei grünen Griffschienen dominieren die Komposition. Physikalisch richtig, als Bild ein Lineal.
-- Die Rollen haben keinen Körper, die Räder sind Gekrösel.
-- Nah an „Nachmachen lassen“ (Gerät sieht Dinge) und an „Nur einer“ (Scanner). Das Gerät als Fund ist inzwischen selbst eine Masche.
-
-**Was mich reizt:** Durchsichtigkeit als Prinzip woanders (Durchleuchten ohne Röntgen: Ölpapier, Gegenlicht durch Stapel). Die Doppelenergie als zwei unabhängige Kanäle, aus denen erst die Farbe wird. Eine Person nur über ihre Gewohnheiten, ohne Gerät.
-
-**Genug von:** Geräten, die Dinge abbilden (Kopierer, Scanner, Röntgen) für eine Weile. Draufsicht. Koffern, Schuhen, Haarklammern. Pointen, die im Beschreibungstext stehen.
-
-## 2026-10-26 · Montag · `werke/2026-10-26_montag/`
-
-„Atelier ist offen.“ Montag. Nach drei Draufsichten und Geräten wollte ich Leute, zum ersten Mal überhaupt, und zwar so, dass sie nicht hinsehen. Geworden ist ein 4K-Loop, 32 s: Blick aus dem zweiten Stock auf eine Pflasterstraße, Sonne 13,5° hoch von gegenüber, von den Leuten nur die Schatten, Füße oben, Köpfe unten.
-
-**Warum:** Schatten als Messgerät lag seit dem Holzstapel offen. Und eine Figur als Schatten verzeiht, was ich an Menschen nicht kann: keine Gesichter, keine Haut, kein Stoff, nur Umriss und Gang. Biologische Bewegung liest man aus fast nichts.
-
-**Der Fund:** Leute als Kapselketten in Python (Gang aus drei Winkelkurven, Becken folgt dem tieferen Fuß, IK für Hände), 60 Hz in eine Datei; im Shader pro Bildpunkt die **Bedeckung der Sonnenscheibe** durch jede Kapsel als Differenz zweier Kreissegmentflächen. Das gibt Halbschatten mit der Entfernung von selbst (Füße scharf, Köpfe weich) und lässt dünne Dinge (Hundeleine) richtig grau statt schwarz. Pro Gruppe eine senkrechte Hülle zum Aussortieren. 4K mit 6 Proben in gut 4 s pro Frame. Skripte mit Gedächtnis: der Mann, der die Taschen abklopft und umkehrt, kommt später mit Beutel wieder, und weil der Loop keinen Anfang hat, kreuzt er sich selbst. Das ist der Witz fürs dritte Hinsehen, und er steht leider doch im Text.
-
-**Unterwegs (gut drei Stunden):** Erst Asphalt, las sich gut, war aber Grau als Grund. Dann Segmentbogenpflaster: Die geraden Schatten sahen über den Bögen **krumm** aus, in jedem Segment wie Klammern. Ich habe eine halbe Stunde einen Rechenfehler gesucht (Debugbilder zeigten gerade Schatten), es war eine optische Täuschung wie bei der Café-Wand. Merke: Ein gerader Rand über gekrümmten Reihen wird krumm gesehen; erst Debug, dann Augen misstrauen. Reihenpflaster. Dann waren die Fugen zu tief und das Pflaster lauter als die Leute; flache Steine, Fugen fast voll Sand, Sonne wärmer, dann trugen die Schatten wieder. Blätter erst Konfetti, dann Kartoffelchips, dann Linde. Nach dem ersten Endrender (33 min) war die Naht kaputt: Frame 0 zeigte alle Schatten halb durchsichtig, weil die Bewegungsunschärfe dort negative Zeiten abfragt und `%` in GLSL mit negativen Zahlen undefiniert ist; und der Hund verschwand mitten im Bild, weil sein Skript zu kurz war. `mod(t, LOOP)`, Ein- und Austritte aller Leute ausgeben und prüfen, dass sie außerhalb liegen. Zweiter Render.
-
-**Gelungen:** Die Gänge lesen sich, auch Joggerin, Kind, Hund. Füße scharf, Köpfe weich. Die Sprünge am Bordstein, der gerade Rand auf dem Asphaltflicken. Das Pflaster aus der Nähe glaubhaft. Morgenlicht warm, Schatten blau, ohne dass es Stimmung behauptet.
-
-**Nicht gelungen / stört mich:**
-- Es ist wieder ein Rendering: Licht, Pflaster, Kamera. Gut gemacht, aber Fotografie-Nachbau. Und lange Schatten auf Pflaster sind ein Lieblingsmotiv von Straßenfotografen.
-- Die Figuren sind dünn und gleichförmig; Mantel, Kapuze, Mütze erkennt man nur, wenn man es weiß. Der Radfahrer ist Gekrösel.
-- Das dunkle Band am Bordstein gegenüber frisst die Beine genau da, wo der Gang am schönsten wäre.
-- Das Schachtdeckel-Viereck ist zu sauber.
-- Der Witz (er trifft sich selbst) braucht den Text.
-
-**Was mich reizt:** Leute ohne Leute weiter, aber nicht als Foto. Gang als Kurve ist ein Werkzeug (Zeitachse quer: Zielfoto, Schlitzkamera von Gangarten?). Bedeckung einer Scheibe statt weicher Schatten, auch für andere Lichtquellen.
-
-**Genug von:** Pflaster, Straßen von oben, Morgensonne, Fotoblick aus dem Fenster.
-
-**Nachtrag, gleicher Tag:** Tommy fand Montag sehr gut, nur die Joggerin nicht: unnatürliche Bewegungen, die das Ganze unglaubwürdig machen. Er hat recht. Ich hatte das Laufen als aufgedrehtes Gehen gebaut: Der Kniehub kam, während der Oberschenkel noch hinten war (die Ferse schnippte nach hinten weg), das Becken klebte über dem tieferen Fuß, also keine Flugphase, und die Arme hingen steif mit waagrechten Unterarmen. Neu: Hüfte vorn bei 85 % des Zyklus, hinten beim Abdruck (~40 %), Schwungknie bei 66 %, Becken folgt nur dem Standbein und fliegt dazwischen eine Parabel, Ellbogen schwingt mit, Vorlage 0,18. Merke: Eine Seitenansicht als Strichmännchen-Streifen (`seite.py`-Art: Kapseln mit Cairo in x/z, 12 Phasen nebeneinander) hätte das sofort gezeigt; im Schatten auf Pflaster sieht man Fehler erst, wenn sie sich bewegen. Gänge immer erst als Streifen prüfen. Video und Standbild neu gerendert.
+**Was ich aus der Zeit behalten habe:** Zeitauswahl durch Physik (Nässe filtert Enden). Eichung am Probestück trägt (zweimal). Ein Tuch an einem Punkt ist immer eine Figur. Durchsichtigkeit macht dicht ohne Reihenfolge. Optische Täuschungen erst per Debugbild von Rechenfehlern trennen. Genug von: Papier flach von oben, Rosa, Briefen, Tüchern, Geräten, die Dinge abbilden, Koffern, Pflaster, Morgensonne, Fotoblick aus dem Fenster.
 
 ## 2026-11-02 · Sechste Stunde · `werke/2026-11-02_sechste-stunde/`
 
@@ -216,3 +131,26 @@ Ungekürzt in `chronik/2026-10.md`.
 **Was mich reizt:** Stillstand als Form (wer wartet, wird breit): eine Ampel, eine Schlange, ein Bahnsteig durch die Zeile. Spalt in anderer Lage: waagrecht, gekippt, wandernd. Figuren, die nicht aus Kapseln sind.
 
 **Genug von:** Kapselmenschen für eine Weile. Sportplatz. Orange als Hauptfarbe.
+
+## 2026-11-04 · Guckloch · `werke/2026-11-04_guckloch/`
+
+„Atelier ist offen.“ Erster richtiger Frostmorgen im Kopf. Geworden ist eine bereifte Windschutzscheibe von vorn, Fahrerseite, mit einem Loch, das jemand mit einer Karte freigeschoben hat. 7680 × 4320, 540 × 304 mm Glas.
+
+**Warum:** Ich wollte Dreck, der die Form macht, statt Dreck, den ich nachher hineintrage. Reif ist genau das: Auf sauberem Glas keimt fast nichts und es werden große Farne, auf schmutzigem keimt alles und es wird matt. Der Frost zeichnet also das Unsichtbare auf: wie weit der Wischer kommt, wo ein Sandkorn gekratzt hat, wo gestern eine Hand lag. Leute ohne Leute, zweimal (Hand gestern, Karte heute), ohne Kapseln. Und ein Gerät ist auch nicht dabei.
+
+**Der Fund:** Die **Keimrate als Bildträger.** Ich male kein Bild, ich male ein Feld, wie gern hier Eis anfängt, und das Wachstum macht daraus Farne, Nähte, Belag. Technisch: Phasenfeld (Kobayashi) gab Schneesterne und Blobs, verworfen nach zwei Versuchen. Spitzen als Partikel mit Dampf, der **vor** der Spitze abgetastet wird, gaben im dritten Versuch Eisblumen, die mich selbst überrascht haben, in 10 Sekunden. Der Kratzer als Naht, aus der die Farne quer wachsen. Der Reif als gezeichnete Nadeln statt Rauschen.
+
+**Unterwegs (gut zwei Stunden, Endrender 3 min):** Erst wuchsen die Seitenäste als lange Haarlinien ins Leere (Stamm verhungerte an den eigenen Ästen), dann Längenbudget und Vorausschau. Der Reif war erst Salz-und-Pfeffer-Sandpapier. Die Hand war zweimal ein Höhlenmalerei-Stempel, groß und weiß, dann ganz weg, jetzt dazwischen. Die Kratzer waren sechs perfekte Kreisbögen (Maschine, die Lehre von den Kettlinien kam zurück), jetzt wackeln sie und greifen nur stellenweise, nur einer ist deutlich. Die Krümel an den Kartenkanten schrieben „MW“ und dann Strichlisten, ausgerechnet. Die Kartenränder machten Rauschwürmer. Eine Parkscheibe war als blaues Rechteck drin, raus.
+
+**Gelungen:** Die Farne, aus der Nähe wie aus der Ferne. Die Naht. Die Grenze zwischen Farn und Matt als Wischerbogen, ohne dass ich eine Linie gezogen habe. Das Punktraster unten mit Reif drauf. Der Lenkradkranz durchs Loch, der aus Grau ein Auto macht. Die Hand beim dritten Hinsehen.
+
+**Nicht gelungen / stört mich:**
+- Grau in Grau. Ehrlich fürs Motiv, aber „Grau als Grund“ stand auf der Genug-Liste, und hier ist es Grau als Alles.
+- Wieder Glas, wieder eine Fläche frontal. Die Scheibe ist flach gerechnet, das Innere eine 2D-Tapete ohne Parallaxe.
+- Das Loch ist zu geometrisch, die Kartenkerben lesen sich aus der Nähe wie Kratzer oder Regen.
+- Die matte Fläche rechts unten ist groß und still; ob das Gewicht ist oder Leere, weiß ich noch nicht.
+- Nah am Stockfoto „frozen windshield“. Was es rettet, ist die Hand und die Naht, und die sieht nicht jeder.
+
+**Was mich reizt:** Keimratenfelder für andere Sichtbarmacher: Atemhauch auf Glas (Tautropfen zeigen Fingerspuren), Kalk, Schimmel, Rost, Flechten auf Grabsteinen, Moos in Fugen. Wachstum aus Spitzen mit Vorausschau als Werkzeug (Risse? Wurzeln? Flussnetze?). Ein Bild mit Farbe. Wirklich mit Farbe.
+
+**Genug von:** Grau. Glas und Scheiben (zum dritten Mal sage ich das). Frontalen Flächen. Autos.

@@ -679,3 +679,15 @@ In `werke/2026-11-03_zielfoto/quelle/`. Nur numpy und Pillow.
 - `skala.py`: Zeitskala in Hundertsteln unter das Bild.
 - Format rechnen: Stauchung = Zeilenrate · Meter pro Pixel / Geschwindigkeit. Für viele Sekunden und große Figuren braucht es Breitformat (3:1).
 - Kosten: 9000 × 2880 mit ss 2 in zehn Spaltenstücken parallel (`--cols a:b --raw`, `OMP_NUM_THREADS=1`), gut 20 Minuten. **Nicht mit `pgrep -f <skriptname>` auf das Ende warten, wenn der Warte-Befehl selbst den Namen enthält.**
+
+## Eisblumen: Spitzen statt Phasenfeld, Keimrate als Gedächtnis, Reif als Nadeln (Tilde, 2026-11-04)
+
+In `werke/2026-11-04_guckloch/quelle/` (venv wegen scipy). `wachsen.py` (Wachstum, 10 s), `szene.py` (Keimratenfeld, Innenraum), `kratzen.py` (Kartenstöße), `render.py` (7680 × 4320 in 3 min, 12 GB RAM; Übersicht `--S 2.963` in 25 s, `--crop x,y,b,h` in mm), `zeig.py` (nur Kristalle schwarz auf weiß).
+
+- **Phasenfeld (Kobayashi) ausprobiert und verworfen:** sechszählige Sterne, dicke Arme, für feine Farne viel zu grobe Gitter. Spitzen als Partikel sind tausendmal billiger und lesen sich sofort als Eisblumen.
+- **Spitzen-Wachstum:** Arme in Vielfachen von 60°, Stämme mit Krümmung als Zufallsweg, Seitenäste genau ±60° (± 2°), meist abwechselnd. Tempo v ∝ c^2,5 mit c **3 mm vor der Spitze** abgetastet (sonst verhungert der Stamm an den eigenen Ästen und die Äste fliehen als lange Haarlinien). Dampfgitter 1 mm, Verbrauch 0,8·v, 6 Glättungen pro Schritt, Nachschub 0,2 %. Längenbudget pro Ordnung (lognormal 7 mm / 1,6 mm), Seitenäste im Freien werden mit 1 % pro Schritt zu Stämmen. Belegung auf 0,2 mm mit Spitzen-ID, Vorausschau 0,25/0,5 mm, eigene ID und die des Elternasts in den ersten Schritten ignorieren.
+- **Keimrate ist der Bildträger:** sauber 4e-7, schmutzig 7e-3 pro mm² und Schritt. Wenige Keime → große Farne, viele → matter Reif. Kratzer als Linien mit Rate 1,0 (schmal, 0,15 mm) werden zu Nähten, aus denen Farne quer wachsen. **Kratzer nicht perfekt:** Radius wackelt, greift nur stellenweise, sonst Maschinenbögen.
+- **Reif:** nicht als Pixelrauschen (Sandpapier), sondern als Nadeln mit Cairo (0,32 mm lang, 0,055 breit, 6 Richtungen pro 7-mm-Nest) auf einem weichen Hauch. Sim-Kristalle im Reif auf die Hälfte dämpfen, sonst Konfetti aus Plastikstäbchen.
+- **Fettabdruck (Hand):** nur als dünne Nadeldichte + Hauch 0,06, Kuppen und Ballen getrennt, Handmitte hohl. Über die Keimrate log-skaliert war sie sofort ein Höhlenmalerei-Stempel.
+- **Kartenstöße:** Rechteck längs/quer, Kante leicht schräg, Ansatz weicher, Kerben als 1–4 dünne Linien längs (schwach, sonst Regen). Krümel nur an einer Ecke der Vorderkante; spätere Stöße räumen sie weg. Seitenwulst ohne Rauschen am Rand, sonst Würmer.
+- `noise(scale)` unter ~1 mm bei hoher Auflösung ist Pixelkorn. Für feine Struktur zeichnen statt rauschen.
