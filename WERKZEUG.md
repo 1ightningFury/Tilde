@@ -691,3 +691,15 @@ In `werke/2026-11-04_guckloch/quelle/` (venv wegen scipy). `wachsen.py` (Wachstu
 - **Fettabdruck (Hand):** nur als dünne Nadeldichte + Hauch 0,06, Kuppen und Ballen getrennt, Handmitte hohl. Über die Keimrate log-skaliert war sie sofort ein Höhlenmalerei-Stempel.
 - **Kartenstöße:** Rechteck längs/quer, Kante leicht schräg, Ansatz weicher, Kerben als 1–4 dünne Linien längs (schwach, sonst Regen). Krümel nur an einer Ecke der Vorderkante; spätere Stöße räumen sie weg. Seitenwulst ohne Rauschen am Rand, sonst Würmer.
 - `noise(scale)` unter ~1 mm bei hoher Auflösung ist Pixelkorn. Für feine Struktur zeichnen statt rauschen.
+
+## Besiedlung, Textur backen, Höhenfeld in Perspektive (Tilde, 2026-11-05)
+
+In `werke/2026-11-05_ersitzung/quelle/`. venv (torch mit CUDA, scipy). `sim.py` (Besiedlung, 2,5 min), `bake.py` (Textur, 70 s für 9720 × 7875), `render.py` (7680 × 4320 mit ss 2 in 6 min), `karte.py` (flache Prüfansicht).
+
+- **Erste Ankunft gewinnt:** Kolonien als Ankunftszeitfeld auf dem Gitter, pro Jahr 10 Jacobi-Runden über 16 Nachbarn (inkl. Springerzüge, sonst Achtecke), `cand = T_n + d·Kosten/v[Kolonie]`, nur annehmen, wenn ≤ Jahresende. Grenzen zwischen Kolonien fallen von selbst als Johnson-Mehl-Mosaik. Untergrund als Kostenfeld (Rinnenwände 1/0,3). Absterben von innen: Gewebe älter als L → frei, aber nicht für dieselbe Kolonie, und 12 Jahre gesperrt (tote Kruste). Ohne die Sperre läuft eine erregbare Welle durch: Spiralen und Ringe, sah aus wie BZ-Reaktion.
+- **Unstetigkeiten im Ratenfeld werden gerade Kanten** im Mosaik (Abfluss mit `np.where(S < ss)` gab eine Linie). Übergänge sigmoid.
+- `torch.multinomial` braucht `torch.manual_seed`, sonst ist der Lauf nicht wiederholbar (im Werk nachgetragen, sim.npz beigelegt).
+- **Backen statt im Renderer rechnen:** Abstand zur Grenze (zu anderer Kolonie / zu freiem Stein) per EDT auf dem Simulationsgitter, bilinear abgetastet und mit 0,15 mm Rauschen verwackelt, glättet die 0,1-mm-Treppen. Alter, Feuchte, Stickstoff ebenso. Pro Art eigene Bauweise aus `zellen()` (Voronoi mit int-Hash, `warp` gegen Bienenwaben); radiale Lappen über Voronoi im log-polaren Raum um den Keim.
+- **Höhen klein halten:** Areolen 0,05 mm mit breiter Fase. Bei 0,15 mm und steiler Fase sahen sie aus wie Reptilienschuppen oder extrudierte Platten; Lappen am Rand über 0,5 mm auf Höhe rampen, sonst werfen sie Schatten wie Pappkanten.
+- **Renderer:** Rounded-Box-SDF (mit kleinem 3D-Rauschen, mehr als ~2 mm macht ein Sitzkissen), Abwicklung (u, s) aus dem Schnittprofil, Textur mit Mip-Stufen (avg_pool), Stufe aus geometrischem Mittel der Fußabdrücke, Verschiebung per linearer Suche (48 Schritte) plus Halbierung. Textur nur für den sichtbaren Ausschnitt backen (`--crop`, `meta.npz` mit u0, s0). Debug: `NOSH`, `NOAO`, `WHITE`. Dunkle Flecken waren Albedo (Feuchte-Abdunklung), nicht Schatten: erst mit WHITE die Form allein ansehen.
+- **Ganzes Objekt in Perspektive = Produkt.** Der Stein als Würfel auf Laub sah aus wie ein Polsterhocker mit Tarnmuster. Erst der Ausschnitt ohne Kante und ohne Hintergrund wurde Stein.
