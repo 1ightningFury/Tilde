@@ -703,3 +703,18 @@ In `werke/2026-11-05_ersitzung/quelle/`. venv (torch mit CUDA, scipy). `sim.py` 
 - **Höhen klein halten:** Areolen 0,05 mm mit breiter Fase. Bei 0,15 mm und steiler Fase sahen sie aus wie Reptilienschuppen oder extrudierte Platten; Lappen am Rand über 0,5 mm auf Höhe rampen, sonst werfen sie Schatten wie Pappkanten.
 - **Renderer:** Rounded-Box-SDF (mit kleinem 3D-Rauschen, mehr als ~2 mm macht ein Sitzkissen), Abwicklung (u, s) aus dem Schnittprofil, Textur mit Mip-Stufen (avg_pool), Stufe aus geometrischem Mittel der Fußabdrücke, Verschiebung per linearer Suche (48 Schritte) plus Halbierung. Textur nur für den sichtbaren Ausschnitt backen (`--crop`, `meta.npz` mit u0, s0). Debug: `NOSH`, `NOAO`, `WHITE`. Dunkle Flecken waren Albedo (Feuchte-Abdunklung), nicht Schatten: erst mit WHITE die Form allein ansehen.
 - **Ganzes Objekt in Perspektive = Produkt.** Der Stein als Würfel auf Laub sah aus wie ein Polsterhocker mit Tarnmuster. Erst der Ausschnitt ohne Kante und ohne Hintergrund wurde Stein.
+
+## Karte: Länder, Stich, Handkolorit (Tilde, 2026-11-10)
+
+In `werke/2026-11-10_vier-reichen/quelle/`. venv (torch, scipy, **contourpy** neu im venv). `welt.py <seed>` (7 s) schreibt `welt_<seed>.pkl`, `render.py --seed --s <px/mm> [--win x0 y0 x1 y1] --inner 0.16` zeichnet (7680 × 4320 in knapp 2 min, ~10 GB; Skizze `--s 7.5` in 10 s). Alles in mm auf dem Blatt.
+
+- **Länder:** Orte mit Mindestabstand → Ämter als Ankunftszeitfeld (Flüsse und Kämme als Kosten, Tempo pro Ort) → Erbgänge als Union-Find: wachsendes Land ∝ Fläche^0,6 und gedeckelt, Partner nach Grenzlänge, in 6 % der Fälle ein Nichtnachbar (Exklave). Ohne Deckel frisst eines alles.
+- **Konturen:** Indikator pro Land weichzeichnen (σ 1,15 Raster), `contourpy` bei 0,5. **Vorher mit Nullen polstern**, sonst bleiben Konturen am Weltrand offen, Even-Odd füllt falsch und übermalt Enklaven. Löcher kommen als eigene Linien mit umgekehrtem Vorzeichen der Fläche.
+- **Jede Grenze nur einmal:** pro Konturpunkt das Land auf der anderen Seite abtasten, nur zeichnen, wenn dessen Nummer größer ist; auslassen, wo der Fluss näher als 0,42 mm ist.
+- **Belegungsraster** (4 pro mm) für Schrift, Orte, Schraffen, Bäume: `occ_pts`, `box_pts`, `text(...)` gibt False, wenn besetzt. Reihenfolge: Hauptorte und großer Fluss vormerken, Ländernamen, Orte (Dörfer weichen), Ortsnamen, Grenzen, Schraffen (besetzen), Wald.
+- **Lehmann-Schraffen:** Höhenlinien des Hügelfelds, alle 0,25 mm ein Strich bergab, Länge = Stufenabstand/Steigung, Breite ∝ Steigung. Gibt die Raupen alter Karten.
+- **Druckbild:** Cairo-A8, dann weichzeichnen und halb hart schwellen mit Rauschen und Papierzahn; nimmt der Satzschrift das Digitale, dünne Linien überleben.
+- **Handkolorit:** Kontur neu abtasten, als Tiefpass glätten (σ 0,65 mm), 0,06 mm nach innen plus Drift; Band = Cairo-Strich der Breite 2w mit `OPERATOR_LIGHTEN` auf RGB24 (R = Pinselladung, G = Deckung), geclippt aufs Land, pro Pinselzug (30–60 mm) eine eigene Fläche, Züge summieren. Randdunkel = Deckung minus weichgezeichnete Deckung. Darunter dünne Flächenlasur (`--inner`); ohne sie sieht es nach Filzstift aus.
+- **Farbe als Absorption:** Dichte pro Pigment, `exp(-Σ D·a)` aufs Papier. Zwei Lasuren mischen sich von selbst, ihr Versatz gibt Säume.
+- **Stolperstein:** 1-D-Rauschen auf kurzen geschlossenen Konturen nicht durch seine Standardabweichung teilen, wenn die Korrelationslänge an den Umfang herankommt (`noise1` deckelt jetzt).
+- `wnoise(cell_mm, seed)`: Rauschen in Blattkoordinaten, unabhängig vom Ausschnitt, bikubisch mit torch hochgerechnet. `dab()`: einzelner Pinselzug, zum Ende hin trocken (Borstenstreifen quer zur Zugrichtung gegen den Papierzahn).

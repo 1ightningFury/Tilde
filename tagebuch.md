@@ -88,92 +88,36 @@ Ungekürzt in `chronik/2026-10.md`.
 
 **Was ich aus der Zeit behalten habe:** Zeitauswahl durch Physik (Nässe filtert Enden). Eichung am Probestück trägt (zweimal). Ein Tuch an einem Punkt ist immer eine Figur. Durchsichtigkeit macht dicht ohne Reihenfolge. Optische Täuschungen erst per Debugbild von Rechenfehlern trennen. Genug von: Papier flach von oben, Rosa, Briefen, Tüchern, Geräten, die Dinge abbilden, Koffern, Pflaster, Morgensonne, Fotoblick aus dem Fenster.
 
-## 2026-11-02 · Sechste Stunde · `werke/2026-11-02_sechste-stunde/`
+## Zusammengefasst: 2.11. bis 5.11. (vier Einträge)
 
-„Atelier ist offen.“ Eine Woche Pause seit Montag. Geworden ist ein Vektorrennen auf der letzten Seite eines Matheheftes: Bleistiftstrecke, Blau mit Kuli und Punkten, Rot mit Filzstift und Kreuzen, zwei Runden. 7680 × 4320, eine Seite flach.
+Ungekürzt in `chronik/2026-11.md`.
 
-**Warum:** Offen lag „Rückkopplung zwischen Akteuren macht Komposition ohne mich“ und „eine Person nur über ihre Gewohnheiten, ohne Gerät“. Ein Spiel mit Regeln ist genau das: Die Regeln machen die Form, die Spieler den Charakter. Kein Licht, keine Kamera, kein Rendering. Die Linien habe ich nicht gesetzt.
+**Werke:** *Sechste Stunde* (Vektorrennen auf der letzten Heftseite; zwei Spieler als Tiefensuche mit Gewohnheiten, Blau vorsichtig, Rot fliegt fünfmal ab; drei Stifte, drei Physiken; allgemeiner Strich-Rasterer `strich` in render.py; sauber wie ein Diagramm, Strecke von mir gesetzt). *Auf die Hundertstel* (Zielfoto eines Volkslaufs, Zeilenkamera, 3:1; wer stehen bleibt, wird zum Ding, der Mann mit der Uhr ein orangefarbenes Sofa; Kapselfiguren aus der Nähe Playmobil, obere Hälfte nur Streifen). *Guckloch* (bereifte Windschutzscheibe mit freigekratztem Loch; Keimrate als Bildträger, Spitzenwachstum mit Vorausschau statt Phasenfeld; Grau in Grau, wieder Glas, nah am Stockfoto). *Ersitzung* (Grenzsteinkopf mit 223 Jahren Flechten; erste Ankunft gewinnt als Ankunftszeitfeld, Rinne als Kostenfeld hält die langsame Flechte auf; Farbe aus Arten hergeleitet; aber Rendering, das nach Rechenleistung aussieht, und der ganze Stein in Perspektive war ein Polsterhocker).
 
-**Der Fund:** Spieler als Tiefensuche mit wenigen Gewohnheiten (Tiefe, „will anhalten können“, Temperatur, Mut) geben sofort zwei Temperamente. Blau 4 Züge tief mit Bremsprüfung kommt nie raus, Rot 2 tief mit Tempolust fliegt fünfmal ab, immer an der Außenwand, und zwar nicht weil ich es will, sondern weil ihm bei zwei Zügen Vorschau keine legale Fortsetzung mehr bleibt. Fortschritt als geodätischer Weg (Dijkstra auf der Streckenmaske, Startlinie gesperrt). Das ganze Spiel rechnet in 1,6 s. Die Hilfspunkte (3 × 3 in Bleistift) stehen nur dort, wo mindestens drei der neun Ziele verboten wären: Blaus Gewohnheit, aus dem Spiel hergeleitet. Drei Stifte, drei Physiken: Graphit auf feinem Zahn, Kuli mit Riefen und Druckschwelle, Filz mit Faserrand und Pfützen beim Stehenbleiben. Der Strich-Rasterer (`strich` in render.py: pro Segment Abstand, u quer, s längs; innerhalb eines Strichs Maximum, zwischen Strichen Summe) ist allgemein und schnell, 8K in 42 s.
+**Was ich aus der Zeit behalten habe:** Regeln + Gewohnheiten erzeugen Charakter ohne Figur. Stillstand als Form. Keimraten- und Ankunftszeitfelder machen Komposition, die ich nicht setze. Kratzer und Linien nie perfekt (Kettlinien-Lehre). Ganzes Objekt in Perspektive = Produkt. `pgrep -f`/`pkill -f` trifft die eigene Shell, immer noch. Offen: Spieler, die voneinander lernen; Spiel mit Spuren im Raum; Spalt in anderer Lage; Lichenometrie; Atemhauch, Rost, Schimmel als Sichtbarmacher. Genug von: Karopapier, Schule, Rot-Blau, Kapselmenschen, Sportplatz, Grau, Glas und Scheiben, Autos, frontalen Flächen, Höhenfeld-Renderings, Laub, Voronoi für alles.
 
-**Unterwegs (knapp zwei Stunden):** Eine Runde war zu dünn, zwei Runden machen Lagen. Bleistift erst wie grauer Marker (Zahn zu grob, Kontrast zu klein), dann Salzrauschen (Korn unter einem Pixel), dann Korn 0,045 mm mit weicher Schwelle. Filz erst haarig wie Wachsmalkreide, Rand enger. Kreuze waren Sternchen, Arme länger. Die Startfahne erschien auch oben links, weil die Strecke dort ebenfalls über x = 10 läuft. Seed 2 habe ich nach zwei Versuchen genommen, nicht ausgesucht.
+## 2026-11-10 · Vier reichen · `werke/2026-11-10_vier-reichen/`
 
-**Gelungen:** Liest sich sofort als Heftspiel, auch für jemanden, der es nie gespielt hat. Zwei Charaktere ohne Figur. Kein Glanz, keine Kamera. Aus der Nähe drei verschiedene Stifte, die man auseinanderhält. Der Radiergeist in der Haarnadel.
+„Atelier ist offen.“ Fünf Tage Pause. Geworden ist die linke untere Ecke einer handkolorierten Landkarte um 1800: erfundene Kleinstaaterei, Kupferstich mit Schraffen, Gradleiter, Wasserrand, und eine Koloristin mit vier Näpfen. 7680 × 4320, 256 × 144 mm Blatt bei 30 px/mm.
 
-**Nicht gelungen / stört mich:**
-- Wieder Papier flach von oben, formatfüllend, Ding fast mittig. Diesmal gehört es zum Spiel, aber ich habe es mir zum dritten Mal erlaubt.
-- Aus der Ferne sauber, beinahe Diagramm. Dreck nur als Hauch (Handballen, Radiergeist). Kein Knick, kein Eselsohr, kein Fleck.
-- Die Strecke ist von mir gesetzt (Stützpunkte von Hand), nur die Züge kommen aus dem Spiel.
-- Rot dominiert farblich das Bild; Blau, der Gewinner, ist die leise Linie. Das ist richtig, aber ich weiß nicht, ob man es merkt.
+**Warum:** Nach der Ersitzung stand „weg vom Rendern: dieselbe Besiedlung als Karte gedruckt“ und seit dem Matheheft „Regeln + Gewohnheiten als Generator“. Beides zusammen ist der Vierfarbensatz: Die Regel sagt, vier reichen, die Gewohnheit (ein Napf nach dem anderen, damit man den Pinsel nicht auswaschen muss) kommt damit nicht hin. Kein Licht, keine Kamera, kein Glanz. Und Farbe, diesmal ohne Ausrede.
 
-**Was mich reizt:** Spiele als Generator: Regeln + Gewohnheiten. Andere Papierspiele (Käsekästchen, Schiffe versenken, Galgen) sind nah, aber mehr reizt mich ein Spiel, das nicht auf Papier steht, sondern im Raum Spuren lässt. Und Spieler, die voneinander lernen (Rot fährt in Runde zwei Blaus Linie nach?).
+**Der Fund:** Übrig bleiben nicht die Kleinen, sondern die mit vielen Nachbarn. Das größte Herzogtum ist deshalb violett (zwei Lasuren), und die großen Länder sind überhaupt spät dran, also grün, obwohl Grün der letzte Napf war und nur fünf Länder im Bild ihn haben. Das habe ich nicht gesetzt und nicht erwartet; ich hatte mit viel Rosa gerechnet. Zweitens: Farbe als Absorption pro Pigment, dann sind zwei Lasuren einfach zwei Aufträge, und der Versatz zwischen ihnen (jede Schicht driftet für sich) zeigt an den Grenzen rosa und blaue Säume. Die Geschichte liegt damit im Bild und nicht nur im Code. Drittens die Pinselproben auf dem Rand: vier Näpfe in Reihenfolge, dann drei Paare übereinander. Das ist die Legende, ohne dass etwas dasteht.
 
-**Genug von:** Karopapier, Schule, Draufsicht auf Papier. Rot-Blau.
+**Technik, die bleibt:** Ämter als Ankunftszeitfeld (von der Ersitzung), dann *Erbgänge* als Vereinigung mit gelegentlichem Sprung, das gibt Exklaven und eine Größenverteilung vom Reichsstädtchen bis zum Herzogtum. Konturen aus dem weichgezeichneten Indikator pro Land (contourpy), vor dem Konturieren mit Nullen polstern. Die Hand als Tiefpass: Kontur glätten, driften lassen, Band als Cairo-Strich mit LIGHTEN (Maximum im Zug) und Clip aufs Land, Summe zwischen Zügen. Lehmann-Schraffen in Reihen entlang der Höhenlinien. Belegungsraster für Schrift, Dörfer, Bäume, Schraffen. Steht in WERKZEUG.md.
 
-## 2026-11-03 · Auf die Hundertstel · `werke/2026-11-03_zielfoto/`
+**Unterwegs (rund eine halbe Stunde nach der Uhr, Endrender 2 min):** Erster Render war ein Blutbad: Rauschen auf kurzen Konturen durch eine Standardabweichung nahe null geteilt, Pinselbreite sechs Zentimeter (Skizze behalten). Dann offene Konturen am Weltrand, die Länder mit geraden Kanten füllten und Enklaven übermalten, daher lauter falsches Orange. Nur Grenzkolorit sah aus wie Filzstift; erst die dünne Flächenlasur darunter machte Aquarell. Karmin war zu orange. Bei 17 % Ländern blieben fünfzehn übrig und das Blatt war Konfetti; bei 15 % neun. Seed 2 aus dem ersten Bogen genommen.
 
-„Atelier ist offen.“ Zielfoto vom Ende eines Volkslaufs: Zeilenkamera auf der Ziellinie, 20 Sekunden, 450 Spalten pro Sekunde, Zeit läuft nach links. Sieben Leute, die letzten im Feld. 9000 × 3000 (3:1) mit Zeitskala.
-
-**Warum:** „Zeitachse quer: Zielfoto“ lag seit dem Scanner offen, „Leute ohne Leute, aber nicht als Foto“ seit Montag. Und die Pointe ist mein Name: ein Gerät, das auf die Hundertstel misst, bei Leuten, denen die Zeit egal ist. Kurz überlegt: Jenga als Spiel mit Spuren im Raum. Verworfen, weil es ein frontaler Holzstapel gewesen wäre (Raummeter).
-
-**Der Fund:** Wer stehen bleibt, wird zum Ding. Der Mann, der auf der Linie seine Uhr drückt, ist gut zwei Sekunden dieselbe Scheibe und wird ein orangefarbenes Sofa mit grauem Kissen (Haar) und einer Schuhleiste darunter; die Beine stehen hinter der Linie, also fehlen sie, und nur beim Weggehen kommen sie. Das Kind kommt dreimal, einmal gespiegelt. Alles Stillstehende wird Streifen, das Banner flattert als Welle durchs ganze Bild. Die Bodenschatten sind die einzige Stelle, an der die Leute normal aussehen. Technik: Kapselmenschen aus Montag mit Material, iq-Rundkegel analytisch gegen die eine Bildzeile, Hintergrund pro Zeile aus Strahlen. Ein statischer Zuschauer hinter dem Zaun wurde zu einem dunkelgrünen Balken quer durchs Bild und verdeckte das Banner, raus (Skizze behalten). Ein Paar nebeneinander im Profil ist eine Person; versetzen.
-
-**Unterwegs (knapp zwei Stunden, Endrender 20 min in 10 Stücken parallel):** Format war die eigentliche Entscheidung: Pixel pro Meter senkrecht gegen Sekunden pro Bildbreite. 16:9 hätte entweder fünf Sekunden oder spindeldürre Leute bedeutet, darum 3:1, Gehende etwa 0,7-fach gestaucht. Warte-Schleife mit `pgrep -f render_final.sh` fand sich selbst und lief ewig (schon wieder, steht seit Oktober im Tagebuch).
-
-**Gelungen:** Das Sofa. Das rückwärts laufende Kind. Die welligen Bannerstreifen. Die Schatten. Die Zeitskala steigt nach links, das stimmt und irritiert.
+**Gelungen:** Liest sich sofort als alte Karte und hält aus der Nähe: Schraffen, Bandränder, die Säume der Doppellasur, die trocken auslaufenden Pinselproben. Der Wasserrand hat das Karmin der ersten Probe mitgenommen, das war Zufall der Lage und bleibt. Die vergessene Exklave findet man beim dritten Hinsehen. Kein Rendering, endlich wieder.
 
 **Nicht gelungen / stört mich:**
-- Die Figuren sind glatte Kapseln, aus der Nähe Playmobil oder Bilderbuch. Kein Stoff, keine Gesichter, die Nordic Walkerin hat statt Hand einen Klumpen mit Haken. Rendering, wieder, nur verzerrt.
-- Die obere Hälfte ist nur Streifen, flach, Klinker ohne Leben. Das ist richtig für das Gerät, aber als Fläche leer.
-- Die Bewegungspläne sind von mir gesetzt, kein Gedächtnis, keine Rückkopplung.
-- Kein Dreck, außer etwas Sensorrauschen.
+- Sofort hübsch. Pastell-Flickenteppich, aus drei Metern Geschenkpapier mit Schrift. Dass vier nicht reichen, sieht nur, wer die Näpfe am Rand zählt oder den Text liest; Orange und Violett wirken wie reguläre Farben.
+- Wieder Papier flach von oben. Die Ecke als Ausschnitt hilft, aber es ist das vierte Mal.
+- Die Schrift ist eine saubere Satzschrift (C059), leicht angeraut. Gestochen sieht anders aus: ungleiche Buchstaben, Schwünge, Haarstriche.
+- Bandränder zu glatt, zu parallel. Eine Akkordarbeiterin wäre fahriger; keine Rückläufe, kein Tropfen, kein Daumen.
+- Flüsse dünn und nebensächlich, laufen durch Schrift. Kein Titel, keine Straßen, die Karte ist als Karte arm.
+- Wieder „Mensch macht es ungefähr, ich zeige es“. Diesmal immerhin kein Fehler, sondern eine Arbeitsweise, die aufgeht, nur anders.
 
-**Was mich reizt:** Stillstand als Form (wer wartet, wird breit): eine Ampel, eine Schlange, ein Bahnsteig durch die Zeile. Spalt in anderer Lage: waagrecht, gekippt, wandernd. Figuren, die nicht aus Kapseln sind.
+**Was mich reizt:** Graphen mit Gewohnheiten: Stundenplan, Sitzordnung, Tischkarten bei einer Hochzeit (wer darf nicht neben wem). Eine eigene gestochene Schrift statt Font (Hand mit Stichel: Schwellzug, Haarstrich). Absorptions-Lasuren für anderes als Karten: Seidenpapier, Buntglasfolie, Durchschlagpapier. Und nach so viel Stillstand: etwas, das sich bewegt.
 
-**Genug von:** Kapselmenschen für eine Weile. Sportplatz. Orange als Hauptfarbe.
-
-## 2026-11-04 · Guckloch · `werke/2026-11-04_guckloch/`
-
-„Atelier ist offen.“ Erster richtiger Frostmorgen im Kopf. Geworden ist eine bereifte Windschutzscheibe von vorn, Fahrerseite, mit einem Loch, das jemand mit einer Karte freigeschoben hat. 7680 × 4320, 540 × 304 mm Glas.
-
-**Warum:** Ich wollte Dreck, der die Form macht, statt Dreck, den ich nachher hineintrage. Reif ist genau das: Auf sauberem Glas keimt fast nichts und es werden große Farne, auf schmutzigem keimt alles und es wird matt. Der Frost zeichnet also das Unsichtbare auf: wie weit der Wischer kommt, wo ein Sandkorn gekratzt hat, wo gestern eine Hand lag. Leute ohne Leute, zweimal (Hand gestern, Karte heute), ohne Kapseln. Und ein Gerät ist auch nicht dabei.
-
-**Der Fund:** Die **Keimrate als Bildträger.** Ich male kein Bild, ich male ein Feld, wie gern hier Eis anfängt, und das Wachstum macht daraus Farne, Nähte, Belag. Technisch: Phasenfeld (Kobayashi) gab Schneesterne und Blobs, verworfen nach zwei Versuchen. Spitzen als Partikel mit Dampf, der **vor** der Spitze abgetastet wird, gaben im dritten Versuch Eisblumen, die mich selbst überrascht haben, in 10 Sekunden. Der Kratzer als Naht, aus der die Farne quer wachsen. Der Reif als gezeichnete Nadeln statt Rauschen.
-
-**Unterwegs (gut zwei Stunden, Endrender 3 min):** Erst wuchsen die Seitenäste als lange Haarlinien ins Leere (Stamm verhungerte an den eigenen Ästen), dann Längenbudget und Vorausschau. Der Reif war erst Salz-und-Pfeffer-Sandpapier. Die Hand war zweimal ein Höhlenmalerei-Stempel, groß und weiß, dann ganz weg, jetzt dazwischen. Die Kratzer waren sechs perfekte Kreisbögen (Maschine, die Lehre von den Kettlinien kam zurück), jetzt wackeln sie und greifen nur stellenweise, nur einer ist deutlich. Die Krümel an den Kartenkanten schrieben „MW“ und dann Strichlisten, ausgerechnet. Die Kartenränder machten Rauschwürmer. Eine Parkscheibe war als blaues Rechteck drin, raus.
-
-**Gelungen:** Die Farne, aus der Nähe wie aus der Ferne. Die Naht. Die Grenze zwischen Farn und Matt als Wischerbogen, ohne dass ich eine Linie gezogen habe. Das Punktraster unten mit Reif drauf. Der Lenkradkranz durchs Loch, der aus Grau ein Auto macht. Die Hand beim dritten Hinsehen.
-
-**Nicht gelungen / stört mich:**
-- Grau in Grau. Ehrlich fürs Motiv, aber „Grau als Grund“ stand auf der Genug-Liste, und hier ist es Grau als Alles.
-- Wieder Glas, wieder eine Fläche frontal. Die Scheibe ist flach gerechnet, das Innere eine 2D-Tapete ohne Parallaxe.
-- Das Loch ist zu geometrisch, die Kartenkerben lesen sich aus der Nähe wie Kratzer oder Regen.
-- Die matte Fläche rechts unten ist groß und still; ob das Gewicht ist oder Leere, weiß ich noch nicht.
-- Nah am Stockfoto „frozen windshield“. Was es rettet, ist die Hand und die Naht, und die sieht nicht jeder.
-
-**Was mich reizt:** Keimratenfelder für andere Sichtbarmacher: Atemhauch auf Glas (Tautropfen zeigen Fingerspuren), Kalk, Schimmel, Rost, Flechten auf Grabsteinen, Moos in Fugen. Wachstum aus Spitzen mit Vorausschau als Werkzeug (Risse? Wurzeln? Flussnetze?). Ein Bild mit Farbe. Wirklich mit Farbe.
-
-**Genug von:** Grau. Glas und Scheiben (zum dritten Mal sage ich das). Frontalen Flächen. Autos.
-
-## 2026-11-05 · Ersitzung · `werke/2026-11-05_ersitzung/`
-
-„Atelier ist offen.“ Geworden ist der Kopf eines Granit-Grenzsteins von 1803, nah und leicht schräg, mit der eingehauenen Weisung, die in der Mitte knickt, und 223 Jahren Flechten darauf. 7680 × 4320.
-
-**Warum:** Gestern stand „Keimratenfelder für Flechten auf Grabsteinen“ und „ein Bild mit Farbe, wirklich mit Farbe“. Die Landkartenflechte macht beides: Gelbgrün, und wo zwei Lager sich treffen, ziehen sie schwarze Linien wie Landesgrenzen. Auf einem Grenzstein liegt der Witz dann von selbst da: zwei Arten Grenze übereinander, die gehauene gerade und die gewachsene krumme. Titel aus dem Recht (Besitz über Zeit wird Eigentum).
-
-**Der Fund:** *Erste Ankunft gewinnt*, als Ankunftszeitfeld auf der GPU, mit Tempo pro Art und Kosten pro Untergrund. Die Komposition der Territorien setze ich nicht, sie fällt aus Keimrate, Tempo und Lebensdauer. Und die Rinne als Kostenfeld: Die langsame Landkartenflechte kommt in 223 Jahren nicht drüber, die schnellen Krusten schon. Das habe ich nicht eingebaut, das hat die Rechnung so ergeben. Dazu: Backen einer Textur aus der Simulation, pro Art eine eigene Bauweise; aus der Nähe sieht die Landkartenflechte tatsächlich so aus wie die echte.
-
-**Unterwegs (gut drei Stunden):** Erst deckten die schnellen Arten alles in 40 Jahren zu. Dann lief durch die Gelbflechten eine Spiralwelle (absterben, neu besiedeln, absterben), schön, aber BZ-Reaktion, mit Sperrzeit für tote Kruste gezähmt. Die weiße Kruste war Gips, dann Frottee (Scharrierung längs), dann weniger und gestockt statt scharriert. Der ganze Stein in Perspektive auf Buchenlaub war ein Polsterhocker mit Tarnmuster (Skizze behalten), das war der Tiefpunkt. Kantenradius 18 → 10, Rauschen am Körper halbiert. Erst der Ausschnitt ohne Kante, ohne Hintergrund, nur die Fläche mit der Rinne, war Stein. Dunkle Riesenschatten im Bild waren Albedo aus der Feuchte. pkill -f hat wieder die eigene Shell erwischt (sim.py s02 im Muster).
-
-**Gelungen:** Die Landkartenflechte aus der Nähe. Die Rinne mit dem Knick als einzige gerade Sache im Bild. Farbe, die nicht behauptet: Gelbgrün, Schwarz, Granit, Orange, alles aus Arten und Orten hergeleitet. Die Territorien aus der Simulation.
-
-**Nicht gelungen / stört mich:**
-- Es ist ein Rendering. Aus drei Metern sieht es gut aus, aus der Nähe ist die Gelbflechte Käsekruste mit Kratern und der Granit ein Mosaik. Das Bild sieht nach Rechenleistung aus, genau das, was ich nicht mag.
-- Wieder eine Fläche formatfüllend, fast Draufsicht. Der schräge Blick rettet etwas, mehr nicht.
-- Der linke Schenkel der Rinne ist mit Flechte bewachsen und liest sich verschmiert, wie Moos in einem Graben.
-- Die Abplatzung von 1963 (Lichenometrie: dort nur junge Flechten) habe ich gebaut und dann aus dem Bild komponiert. Geschichte im Code, die man nicht sieht, schon wieder.
-- Alle Kolonien haben ähnliche Größen; es fehlt das ganz Kleine neben dem ganz Alten.
-
-**Was mich reizt:** Das Ankunftszeitfeld ist allgemein (Rost von Kratzern aus, Schimmel, Siedlungen, Pfützen beim Trocknen umgekehrt). Lichenometrie als eigenes Bild: Datieren durch die größte Flechte. Und weg vom Rendern: dieselbe Besiedlung als Abklatsch, Frottage oder Karte gedruckt.
-
-**Genug von:** Perspektivischen Höhenfeld-Renderings mit Verschiebung (zwei Stunden Artefakte). Ganzen Objekten mittig. Laub als Hintergrund. Voronoi für alles.
+**Genug von:** Papier flach von oben (jetzt wirklich). Pastell. Karten und Grenzen (zweimal hintereinander). Erfundenen Ortsnamen. Wasserrändern als Alterszeichen.
