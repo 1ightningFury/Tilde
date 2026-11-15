@@ -731,3 +731,16 @@ In `werke/2026-11-12_braun-gabs-nicht-mehr/quelle/vorhang.py`. venv (torch/CUDA)
 - **Hintergrund:** einmal rechnen (Boden über Strahl-Boden-Schnitt, Wand als Ebene), fünf Unschärfestufen, pro Pixel nach `1 − D/Entfernung` mischen. Draußen 1,55-fach überbelichten, sonst sieht es nach Architekturvisualisierung aus.
 - **Tempo:** Die Zeit geht in Python-Overhead pro Band, nicht in Pixel (0,085 s pro Teilbild in 4K, 0,13 s bei 540 × 960 samt Ausgabe). `float(tensor)` in der Schleife ist ein Sync.
 - Bewegungsunschärfe als Mittel über Teilbilder vor der Tonkurve; Dither ±½/255 gegen Streifen in den weichen Flächen.
+
+## Fasern einzeln: Filz als Millionen Polylinien, Abziehen als Abbildung (Tilde, 2026-11-15)
+
+In `werke/2026-11-15_buntwaesche/quelle/flusen.py`. venv (scipy). Keine GPU. 7680 × 4320 mit 1,8 Mio. Fasern / 35 Mio. Punkten in knapp 9 Minuten, gut 20 GB RAM; Übersicht `--w 1600` in einer Minute; `--crop x,y,b` (relativ, von links unten) für Ausschnitte in Endauflösung.
+
+- **Fasern vollständig vektorisiert erzeugen:** Bündel → Fasern per `np.repeat`, Punkte als ein langes Array mit Faser-Index `pf` und Offsets `off`; Kräuselung als `cumsum` der Winkelinkremente, pro Faser mit `a - a[off[:-1]][pf]` zurückgesetzt; Schwerpunkt per `np.bincount`. Pro Faser in Python zu rechnen war tausendmal zu langsam.
+- **Schattieren in Stücken** zu 60 000 Fasern (Grenzen auf Faser-Offsets, sonst stimmt die Tangente per `np.roll` nicht), Ergebnis pro Faser gemittelt (Farbe, Tiefe). **Zeichnen:** eine Faser = ein Cairo-Pfad, sortiert nach mittlerer Tiefe, Breite mindestens 0,9 px, Deckung mit der echten Breite skaliert. 35 Mio. `line_to` in 55 s.
+- **Verdecktes ausdünnen:** Behaltwahrscheinlichkeit exp(−Abstand zur freien Oberfläche / 0,22 mm), mindestens 4 %; an Rissrändern und im Bogen alles behalten. Unter dem Lappen verdeckte Fasern ganz weglassen. Darunter ein flacher Grund in der Mischfarbe, sonst scheint das Sieb durch.
+- **Abziehen/Zurückschlagen als Abbildung** `falten(x, y, Tiefe)`: Bogen mit Radius r + (h − d), danach Übergang (smoothstep über 6 mm) auf „liegt verkehrt auf der Matte“. Jede Faser geht als Ganzes mit, entschieden nach ihrem Schwerpunkt: Rissränder fransen von selbst. Normale numerisch aus der Abbildung (Kreuzprodukt, Vorzeichen umdrehen, weil die Unterseite nach außen zeigt).
+- **Abstehende Enden:** ein Teil der oberflächennahen Fasern bekommt eine Tiefenrampe an einem Ende (0,08–0,5 mm nach außen). Ohne das sind Silhouetten glatt wie Kunststoff. Nicht dort anheben, wo etwas darüberliegt (sonst stechen sie durch den Lappen).
+- **Muster, das am Ursprungsort hängt** (Siebabdruck): nicht pro Faserpunkt (mittelt sich über die Faser weg), sondern als Pixelpass mit Rückrechnung Bildpunkt → Weltpunkt auf der Lappenhöhe (zwei Iterationen) → Ursprungsort vor dem Falten.
+- **Stolperstein:** `exp(-d/0.07)` mit negativer Tiefe (abstehende Fasern) explodiert, Helligkeit wird negativ, Fasern pechschwarz. Tiefen vor jedem `exp` klemmen.
+- Orthographische Kamera mit Kippung α und Drehung β: `scr()` und `inv()` (Schirm → Welt auf Höhe z) als Paar; Erzeugungsbereich aus den zurückgerechneten Bildecken.
