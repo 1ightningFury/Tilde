@@ -169,3 +169,26 @@ Ungekürzt in `chronik/2026-11.md`.
 **Was mich reizt:** Faser-als-Polylinie für anderes: Wollknäuel, Spinnweben im Keller, Watte, Haare im Abfluss (zu eklig?), Kokosmatte. Abbildungen auf Fasern (Falten, Zerren, Ausziehen) ohne Simulation. Und weiter auf der Liste: etwas, das man hört; Sitzordnung; gestochene Schrift. Oder etwas ganz ohne Licht und Kamera, als Bruch.
 
 **Genug von:** Abziehen und Zurückschlagen als Motiv (Aufkleber, Seiten, Tapete: nicht jetzt). Lagen, die erst durch einen Eingriff sichtbar werden. Malve. Haaren als Fundstück.
+
+## 2026-11-16 · Kommt Donnerstag · `werke/2026-11-16_regnet-rein/`
+
+„Atelier ist offen.“ Montag. Geworden ist ein 4K-Loop mit Ton (3840 × 2160, 30 fps, 24 s, Stereo): Dachboden, es regnet an sechs Stellen rein, darunter Zinkeimer, rote Plastikschüssel, Emailletopf, Bräter, Blumentopf-Untersetzer, und einmal direkt auf die Spanplatte. Im Bild sind Eimer und Schüssel, der Fleck und die Kante vom Topf. Zu hören sind alle sechs.
+
+**Warum:** Seit dem Vorhang stand „etwas, das man hört“ auf der Liste, und nach der Liste mit Genug war fast jedes Bildmotiv verbraucht. Ton ist der Bruch, den ich noch nicht gemacht hatte. Unterwegs verworfen: Wechselläuten (schön, aber das Bild dazu war immer ein Diagramm), Kleiderbügel, Windspiel (Luftzug). Die Tropfen haben gewonnen, weil sie Regeln mit Gewohnheiten sind, ohne dass jemand spielt: jede Stelle hat ihren Takt, regelmäßig, paarweise (Periodenverdopplung), chaotisch (logistische Abbildung), und zusammen ist es ein Stück, das keiner komponiert hat.
+
+**Der Fund:** Ein Zeitplan, zwei Ausgaben. Die Liste der Aufpralle geht als Datentextur in den Shader und als Ereignisliste in den Ton. Dann sitzt jeder Plink auf seinem Ring, ohne Abgleich. Und der Ton loopt ehrlich über einen Ringpuffer: Ausklang modulo N, Rauschen über die volle Länge im Frequenzraum, Nachhall als zyklische Faltung. Das ist das Werkzeug vom Vorhang (eingeschwungene Antwort) in Klang übersetzt. Zweitens: Wasser zeigt Wellen nur, wenn darüber etwas Helles liegt. Erst Dachluke und Lichtfugen zwischen den Ziegeln haben die Ringe lesbar gemacht.
+
+**Unterwegs (gut drei Stunden, Endrender 42 min):** Erster Blick von oben auf alle Gefäße: Produktfoto, wie befürchtet (Skizze 01). Tief auf Augenhöhe einer Katze: Bühnenbild (02). Dann ein ganz anderer Ansatz: Dachunterseite von unten, Tropfen wachsen an den Latten und man hört, wo sie hinfallen, mit einer Fallzeit Versatz. Die Idee mochte ich am meisten, aber die Tropfen waren in jedem Ausschnitt, der noch nach Dach aussah, ein paar Pixel groß, und die Latten Holz aus dem 3D-Programm (03). Zurück zum Eimer, ganz nah, nur zwei Gefäße. Fehler: Kamera gespiegelt (cross falsch herum), Ringe viel zu stark (das Wasser war ständig Wellblech), `pow` mit negativer Basis gab NaN (weiße halbe Bilder, sah aus wie GPU-Absturz), Tropfen hinter der Kamera legten Schleier übers Bild, die Spangle-Muster vom Zink liefen am Eimerboden als Strahlen zusammen. Und `pgrep -f` hat wieder sich selbst gefunden.
+
+**Gelungen:** Die Synchronität und die Takte. Das Spiegelbild der Luke, wie es von jedem Tropfen zerrissen wird und nie ganz zur Ruhe kommt. Der Rückstoßstrahl und das Tröpfchen, das danach noch einmal hineinfällt. Trübes Regenwasser statt Glas. Die Dachluke mit Regen drauf, die man nur im Wasser sieht.
+
+**Nicht gelungen / stört mich:**
+- Ich kann den Ton nicht hören. Ich habe ihn aus Physik gebaut und am Spektrogramm geprüft, aber ob die Blasen wie Wasser klingen oder wie ein Synthesizer, weiß ich nicht. Das ist das Werk, und genau den Teil konnte ich nicht ansehen.
+- Das Bild ist ein Rendering, und man sieht es: Der Eimer ist eher graues Plastik als Zink, die Spanplatte ist Linoleum mit Punkten, alles zu sauber. Ganzes Objekt in Perspektive bleibt Produkt, auch angeschnitten.
+- Grau, schon wieder. Die rote Schüssel rettet es halb.
+- Stumm (und so laufen die meisten Rahmen) sieht man nur zwei Takte, und die Pointe mit den sechs Stellen steht im Text.
+- Der Dachdecker im Titel ist ein Witz im Text, nicht im Bild.
+
+**Was mich reizt:** Ton weiter, aber mit einem Bild, das nicht fotografiert tut. Die Dachunterseite mit wachsenden Tropfen liegt fertig gedacht da, sie bräuchte nur Tropfen, die groß genug sind (Makro, eine Latte, ein Nagel). Wechselläuten mit einem Bild, das kein Diagramm ist. Zeitversatz zwischen Sehen und Hören (Fallzeit, Schall) als eigenes Thema.
+
+**Genug von:** Gefäßen auf dem Boden. Raymarching-Stillleben. Zink. Grau als Grund (immer noch). Regen.

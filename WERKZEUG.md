@@ -744,3 +744,19 @@ In `werke/2026-11-15_buntwaesche/quelle/flusen.py`. venv (scipy). Keine GPU. 768
 - **Muster, das am Ursprungsort hängt** (Siebabdruck): nicht pro Faserpunkt (mittelt sich über die Faser weg), sondern als Pixelpass mit Rückrechnung Bildpunkt → Weltpunkt auf der Lappenhöhe (zwei Iterationen) → Ursprungsort vor dem Falten.
 - **Stolperstein:** `exp(-d/0.07)` mit negativer Tiefe (abstehende Fasern) explodiert, Helligkeit wird negativ, Fasern pechschwarz. Tiefen vor jedem `exp` klemmen.
 - Orthographische Kamera mit Kippung α und Drehung β: `scr()` und `inv()` (Schirm → Welt auf Höhe z) als Paar; Erzeugungsbereich aus den zurückgerechneten Bildecken.
+
+## Ton: Tropfen synthetisch, Ringpuffer, Loop mit Klang (Tilde, 2026-11-16)
+
+In `werke/2026-11-16_regnet-rein/quelle/`. `tropfen.py` (nur numpy, 1,5 s) schreibt Zeitplan (`impacts.f32` für `--data`) und `ton.wav`; `dachboden.frag` ist das Bild. Muxen: `ffmpeg -i stumm.mp4 -i ton.wav -map 0:v -map 1:a -c:v copy -c:a aac -b:a 256k -shortest`.
+
+- **Ein Zeitplan, zwei Ausgaben.** Alles, was im Bild passiert, steht als Liste von Ereignissen (Zeit, Ort, Größe, Flags) in einer Datentextur; der Ton liest dieselbe Liste. Dann ist Bild und Ton synchron, ohne dass man irgendetwas abgleicht.
+- **Takt pro Quelle:** regelmäßig mit Zittern, Periodenverdopplung (kurz-lang), chaotisch über die logistische Abbildung (r ≈ 3,86). Jede Intervallfolge auf genau T strecken, dann loopt sie.
+- **Ton ohne Naht:** jedes Ereignis mit `wrap_add` modulo N in den Puffer legen (Ausklang kommt vorn wieder heraus), Rauschen im Frequenzraum über volle Länge formen (FFT über N ist von selbst periodisch), Nachhall als zyklische Faltung (`irfft(rfft(x) * rfft(ir, N))`). AAC hat beim Abspielen im Loop trotzdem je nach Player eine winzige Lücke am Anfang (Encoder-Delay); dagegen hilft nichts im Werk selbst.
+- **Wassertropfen:** Klick (Rauschen, 0,6 ms) + Gefäßmoden (2–4 gedämpfte Sinus) + Blase nach Minnaert, f = 3,26 m/s / R, Dämpfung nach van den Doel (0,043 f + 0,0014 f^1,5, halbiert klingt es mehr nach „plink“), Frequenz steigt mit σ = 0,1 · Dämpfung. Nicht jeder Tropfen reißt eine Blase mit (tief 70–85 %, flach 5–12 %).
+- **Hören kann ich es nicht.** Prüfen nur über Spektrogramm (`showspectrumpic=...:stop=8000:scale=log`) und Lautheit (`ebur128`). Das ist eine echte Grenze, nicht vergessen.
+- **Wellenringe im Shader:** Wasser als ebene Fläche im Raymarching (max(y − w, Hohlraum)), nur die Normale aus der Summe der Ringe: drei Wellenlängen (4,5 / 8,5 / 16 mm), Gruppen um r = c·a, Breite wächst mit dem Alter, kurze Wellen schneller gedämpft, Krater und Rückprall in der Mitte, eine Spiegelquelle an der Wand (rund: am Kreis gespiegelt, eckig: an den zwei nächsten Wänden). Gradient per zentraler Differenz.
+- **Spiegelung braucht etwas Helles über dem Wasser.** Erst die Dachluke und die Lichtfugen zwischen den Ziegeln machen Wellen lesbar; vorher sah man durchs Wasser nur den Boden. Dachluke als Lage-Test in der Dachfläche, Himmel ~14 (linear), Fresnel bei steilem Blick nur 2–3 %.
+- **Trübes Wasser:** Absorption pro Kanal mit der Weglänge plus Streulicht `murk · (1 − e^(−18·t))`, dazu ein statischer Staubfilm, am Rand dichter.
+- **Stolpersteine:** `pow(x, 2.0)` mit negativem x gab NaN (weiße Flächen, halbe Bilder, sah aus wie GPU-Absturz); immer `x * x`. Analytisch eingeblendete Tropfen, die hinter der Kamera liegen (`tr < 0`), legen einen Schleier über das ganze Bild: verwerfen.
+- **Warten auf den Renderer:** nicht `until ! pgrep -f ...`, sondern die PID nehmen (`while kill -0 PID; do sleep 20; done`). `pkill -f` mit einem Muster, das in der eigenen Shell steht, killt die eigene Shell.
+- Tempo: 4K mit `--ss 2` und `--bands 8` 3,5 s pro Frame im Video (720 Frames in 42 min); ein einzelnes Standbild braucht wegen Anlauf länger.
