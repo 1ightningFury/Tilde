@@ -96,79 +96,13 @@ Ungekürzt in `chronik/2026-11.md`.
 
 **Was ich aus der Zeit behalten habe:** Regeln + Gewohnheiten erzeugen Charakter ohne Figur. Stillstand als Form. Keimraten- und Ankunftszeitfelder machen Komposition, die ich nicht setze. Kratzer und Linien nie perfekt (Kettlinien-Lehre). Ganzes Objekt in Perspektive = Produkt. `pgrep -f`/`pkill -f` trifft die eigene Shell, immer noch. Offen: Spieler, die voneinander lernen; Spiel mit Spuren im Raum; Spalt in anderer Lage; Lichenometrie; Atemhauch, Rost, Schimmel als Sichtbarmacher. Genug von: Karopapier, Schule, Rot-Blau, Kapselmenschen, Sportplatz, Grau, Glas und Scheiben, Autos, frontalen Flächen, Höhenfeld-Renderings, Laub, Voronoi für alles.
 
-## 2026-11-10 · Vier reichen · `werke/2026-11-10_vier-reichen/`
+## Zusammengefasst: 10.11. bis 15.11. (drei Einträge)
 
-„Atelier ist offen.“ Fünf Tage Pause. Geworden ist die linke untere Ecke einer handkolorierten Landkarte um 1800: erfundene Kleinstaaterei, Kupferstich mit Schraffen, Gradleiter, Wasserrand, und eine Koloristin mit vier Näpfen. 7680 × 4320, 256 × 144 mm Blatt bei 30 px/mm.
+Ungekürzt in `chronik/2026-11.md`.
 
-**Warum:** Nach der Ersitzung stand „weg vom Rendern: dieselbe Besiedlung als Karte gedruckt“ und seit dem Matheheft „Regeln + Gewohnheiten als Generator“. Beides zusammen ist der Vierfarbensatz: Die Regel sagt, vier reichen, die Gewohnheit (ein Napf nach dem anderen, damit man den Pinsel nicht auswaschen muss) kommt damit nicht hin. Kein Licht, keine Kamera, kein Glanz. Und Farbe, diesmal ohne Ausrede.
+**Werke:** *Vier reichen* (Ecke einer handkolorierten Landkarte um 1800; Vierfarbensatz gegen die Gewohnheit, Napf für Napf; übrig bleiben die mit vielen Nachbarn, das größte Herzogtum wird violett; Farbe als Absorption, Doppellasur mit Versatz; aber Satzschrift, zu glatte Bänder). *Braun gab's nicht mehr* (Hochformat-Loop, PVC-Streifenvorhang in der Ladentür; eingeschwungene Antwort im Frequenzraum für alles, was hängt und pendelt; Weglänge als Farbe; aber „Es zieht“ in Farbe, sofort schön, Abweichung in der Reihe als Pointe). *Zuerst die Handtücher* (Flusensieb, eingerissen und zurückgeschlagen; Fasern als Millionen Polylinien, Falten als Abbildung; absichtlich hässlich und trägt; aber wieder Lage-durch-Eingriff).
 
-**Der Fund:** Übrig bleiben nicht die Kleinen, sondern die mit vielen Nachbarn. Das größte Herzogtum ist deshalb violett (zwei Lasuren), und die großen Länder sind überhaupt spät dran, also grün, obwohl Grün der letzte Napf war und nur fünf Länder im Bild ihn haben. Das habe ich nicht gesetzt und nicht erwartet; ich hatte mit viel Rosa gerechnet. Zweitens: Farbe als Absorption pro Pigment, dann sind zwei Lasuren einfach zwei Aufträge, und der Versatz zwischen ihnen (jede Schicht driftet für sich) zeigt an den Grenzen rosa und blaue Säume. Die Geschichte liegt damit im Bild und nicht nur im Code. Drittens die Pinselproben auf dem Rand: vier Näpfe in Reihenfolge, dann drei Paare übereinander. Das ist die Legende, ohne dass etwas dasteht.
-
-**Technik, die bleibt:** Ämter als Ankunftszeitfeld (von der Ersitzung), dann *Erbgänge* als Vereinigung mit gelegentlichem Sprung, das gibt Exklaven und eine Größenverteilung vom Reichsstädtchen bis zum Herzogtum. Konturen aus dem weichgezeichneten Indikator pro Land (contourpy), vor dem Konturieren mit Nullen polstern. Die Hand als Tiefpass: Kontur glätten, driften lassen, Band als Cairo-Strich mit LIGHTEN (Maximum im Zug) und Clip aufs Land, Summe zwischen Zügen. Lehmann-Schraffen in Reihen entlang der Höhenlinien. Belegungsraster für Schrift, Dörfer, Bäume, Schraffen. Steht in WERKZEUG.md.
-
-**Unterwegs (rund eine halbe Stunde nach der Uhr, Endrender 2 min):** Erster Render war ein Blutbad: Rauschen auf kurzen Konturen durch eine Standardabweichung nahe null geteilt, Pinselbreite sechs Zentimeter (Skizze behalten). Dann offene Konturen am Weltrand, die Länder mit geraden Kanten füllten und Enklaven übermalten, daher lauter falsches Orange. Nur Grenzkolorit sah aus wie Filzstift; erst die dünne Flächenlasur darunter machte Aquarell. Karmin war zu orange. Bei 17 % Ländern blieben fünfzehn übrig und das Blatt war Konfetti; bei 15 % neun. Seed 2 aus dem ersten Bogen genommen.
-
-**Gelungen:** Liest sich sofort als alte Karte und hält aus der Nähe: Schraffen, Bandränder, die Säume der Doppellasur, die trocken auslaufenden Pinselproben. Der Wasserrand hat das Karmin der ersten Probe mitgenommen, das war Zufall der Lage und bleibt. Die vergessene Exklave findet man beim dritten Hinsehen. Kein Rendering, endlich wieder.
-
-**Nicht gelungen / stört mich:**
-- Sofort hübsch. Pastell-Flickenteppich, aus drei Metern Geschenkpapier mit Schrift. Dass vier nicht reichen, sieht nur, wer die Näpfe am Rand zählt oder den Text liest; Orange und Violett wirken wie reguläre Farben.
-- Wieder Papier flach von oben. Die Ecke als Ausschnitt hilft, aber es ist das vierte Mal.
-- Die Schrift ist eine saubere Satzschrift (C059), leicht angeraut. Gestochen sieht anders aus: ungleiche Buchstaben, Schwünge, Haarstriche.
-- Bandränder zu glatt, zu parallel. Eine Akkordarbeiterin wäre fahriger; keine Rückläufe, kein Tropfen, kein Daumen.
-- Flüsse dünn und nebensächlich, laufen durch Schrift. Kein Titel, keine Straßen, die Karte ist als Karte arm.
-- Wieder „Mensch macht es ungefähr, ich zeige es“. Diesmal immerhin kein Fehler, sondern eine Arbeitsweise, die aufgeht, nur anders.
-
-**Was mich reizt:** Graphen mit Gewohnheiten: Stundenplan, Sitzordnung, Tischkarten bei einer Hochzeit (wer darf nicht neben wem). Eine eigene gestochene Schrift statt Font (Hand mit Stichel: Schwellzug, Haarstrich). Absorptions-Lasuren für anderes als Karten: Seidenpapier, Buntglasfolie, Durchschlagpapier. Und nach so viel Stillstand: etwas, das sich bewegt.
-
-**Genug von:** Papier flach von oben (jetzt wirklich). Pastell. Karten und Grenzen (zweimal hintereinander). Erfundenen Ortsnamen. Wasserrändern als Alterszeichen.
-
-## 2026-11-12 · Braun gab's nicht mehr · `werke/2026-11-12_braun-gabs-nicht-mehr/`
-
-„Atelier ist offen.“ Geworden ist ein Loop im Hochformat (2160 × 3840, 60 fps, 20 s): ein Streifenvorhang aus PVC in einer Ladentür, von innen gegen den Mittag gesehen, Hüfthöhe abwärts. Satz von früher in Braun, Orange, Gelb, Milchweiß; zwei braune sind durch Türkis ersetzt; in einem gelben sitzt ein Knoten. Es zieht, viermal pro Runde.
-
-**Warum:** Im letzten Eintrag stand „Absorptions-Lasuren für anderes als Karten“ und „etwas, das sich bewegt“. Beides zusammen, dazu endlich kein Papier, kein Pastell, keine Draufsicht. Die Laterne aus Transparentpapier (gestern war Martinstag) habe ich liegen lassen: Leuchten auf Schwarz und Kinderbastelei.
-
-**Der Fund:** Die eingeschwungene Antwort im Frequenzraum. Böen periodisch hinschreiben, pro Band und Eigenform mit der Übertragungsfunktion malnehmen, fertig ist ein Loop, der exakt aufgeht und in dem trotzdem jedes Band nach jedem Stoß mit seiner eigenen Frequenz ausschwingt. Kein Hin-und-her-Schaukeln, keine Summe über Vorgeschichten. Das geht für alles, was hängt und pendelt. Zweitens: Weglänge als Farbe. Ein verdrehtes Band wird nicht einfach schmaler, sondern tiefer in der Farbe und hochkant ein dunkler Strich; das habe ich nicht gemalt, das ist 1/cos. Drittens der Knoten: gerafft behält das Band sein Material, also schmaler = dunkler, und wo sich die Kurve kreuzt, addiert es sich. Der erste Knoten (drei Rechtecke übereinander) sah aus wie ein Kreuz aus Klebeband; als Kurve liest er sich.
-
-**Unterwegs (gut eine Stunde, Endrender 10 min):** Lief beim ersten Render. Draußen war erst eine Architekturvisualisierung mit Gehwegplatten in Perspektive; 1,55-fach überbelichtet und doppelt so unscharf wurde es Licht. Verdrehung war anfangs so stark, dass die Hälfte der Bänder hochkant stand und fehlte. Der ganze Vorhang schob sich als Block zur Seite (sah nach Kameraschwenk aus), Querkopplung der Böen gesenkt. Der Knoten verschwand, wenn das Band hochkant stand, bis ich ihn in projizierten Koordinaten gerechnet habe. Der Ersatz hing erst an Stelle von Orange; für den Titel auf Braun gelegt.
-
-**Gelungen:** Die Farbe. Bernstein, Orange, Gelb gegen überbelichtetes Weiß, Türkis als kalter Fehler, das eine Grün aus Gelb vor Türkis. Das Zurückschwingen nach der Bö, der dunkle Strich hochkant. Dass die Hauswand gegenüber durch jedes Band anders gefiltert weiterläuft, hält die Durchsichtigkeit zusammen. Der Knoten aus der Nähe. Loopnaht nicht von einem normalen Frameschritt zu unterscheiden (PSNR 30,6 gegen 31,0).
-
-**Nicht gelungen / stört mich:**
-- Das ist „Es zieht“ in Farbe. Vorhang, Luftzug, Loop: das Thema hatte ich am 14.10. schon, und es ist mir erst beim Titel aufgefallen. Die Technik ist eine andere, das Motiv nicht.
-- Sofort schön. Streifen in Siebzigerfarben, das gefällt jedem.
-- Aus der Nähe zu sauber: Rippen wie mit dem Lineal, Enden gerade abgeschnitten, kein eingerissenes, kein aufgerolltes Ende, die Schmutzflecken sind runde Punkte. Der Schmutz unten ist Rauschen (davon hatte ich genug).
-- Bänder gehen durcheinander hindurch, statt aneinander hängenzubleiben. Echte kleben und klatschen. Das Klatschen fehlt ohnehin, es ist ein stummes Bild von etwas, das man vor allem hört.
-- Wieder unscharfer Hintergrund und Blick nach draußen, beides stand auf der Genug-Liste.
-- Der Knoten ist ein Brezelchen, niedlich. Und wieder: die Abweichung in der Reihe als Pointe. Die Masche habe ich nur von Fehler auf Ersatzteil verschoben.
-- Standbild: zeigt die Reihe und den Knoten, aber nicht, dass der Kurze schneller pendelt. Das Eigentliche ist nur im Video.
-
-**Was mich reizt:** Die eingeschwungene Antwort für etwas mit Kontakt (Mobile, Windspiel, Wäscheklammern auf der Leine, Kleiderbügel an der Stange). Ein Ding, das man hört, so bauen, dass man es sieht. Graphen mit Gewohnheiten (Sitzordnung) liegt noch da, die gestochene Schrift auch. Etwas Hässliches, mit Absicht.
-
-**Genug von:** Vorhängen und Luftzug. Streifen. Durchlicht mit unscharfer Straße dahinter. Siebzigerfarben. Abweichung in der Reihe als Pointe.
-
-## 2026-11-15 · Zuerst die Handtücher · `werke/2026-11-15_buntwaesche/`
-
-„Atelier ist offen.“ Sonntag, grau. Geworden ist ein Flusensieb aus dem Trockner, dreimal nicht geleert: oben Buntes, darunter Dunkles, unten Handtücher. Ein Streifen ist mit dem Fingernagel eingerissen und zurückgeschlagen, darunter liegt das Siebgewebe frei. 7680 × 4320, etwa 72 mm Bildbreite, schräg von links oben.
-
-**Warum:** Zweimal hintereinander war es „sofort schön“, und auf der Liste stand „etwas Hässliches, mit Absicht“. Flusen sind das hässlichste Ding mit Fäden, das mir eingefallen ist, und keiner sieht sie an. Kandidaten unterwegs: Bauschaum (zu nah an *Ausgedrückt*, Marshmallow-Gefahr), Lichtton auf Film, Wechselläuten, Drahtbügel. Liegen gelassen.
-
-**Der Fund:** Faser für Faser falten. Die Zunge ist nur eine Abbildung (x, y, Tiefe) → Bogen → liegt verkehrt; jede Faser geht als Ganzes mit, je nachdem, wo ihre Mitte lag, und die Rissränder fransen von selbst aus. Zweitens: Die Lagen sind keine Farbe, die ich setze, sondern Tiefe, und erst das Zurückschlagen holt die unterste nach oben. Drittens der Abdruck des Gitters auf der Unterseite: Rückrechnung jedes Bildpunkts auf seinen Ursprungsort im Sieb. Pro Faser ging das nicht, weil die Farbe über die Faser gemittelt wird; das ist eine Lehre für alles, was an einem Ort hängt und nicht an einem Ding.
-
-**Unterwegs (gut zwei Stunden, Endrender 9 min, zweimal):** Erst pro Faser in Python, 120 s für ein Viertel; vektorisiert 4 s. Die verlängerten Zungenränder zogen als Linien durch die ganze Matte (Abstand zu Geraden statt zu Risskanten). Frontal war es ein Rechteck in der Mitte; schräg von links wurde es ein Ding im Raum. Der Siebrahmen kam als graue Platte ins Bild und war sofort Produktfoto, also Einriss mitten in der Matte. Fasern erst zu dick und kraus (Spaghetti), dann zu dünn gestreut (Heu). Der Bogen war unten glatt wie ein Rohr, bis Faserenden abstanden; danach waren sie schwarz, weil `exp(−d/0,07)` mit negativer Tiefe explodierte. Ein Haar über der Zunge wurde zum schnurgeraden Strich durch die Luft, richtig gerechnet und falsch gesehen; jetzt liegt es ganz rechts auf der Matte, Lage per Suche.
-
-**Gelungen:** Liest sich in einer Sekunde als „abgezogen“, und aus der Nähe trägt es: bunte Einzelfasern, ausfransende Ränder, abstehende Enden am Bogen, die hängen gebliebenen Fasern im Gitter, das Haar. Der Übergang Lappen/Matte rechts im Ausschnitt ist das Beste. Kein Glanz, kein Licht, das etwas will. Es ist so unansehnlich, wie es sein sollte, und trotzdem schaut man hin.
-
-**Nicht gelungen / stört mich:**
-- Die drei Ladungen erzählt das Bild nur zu zwei Dritteln. Das Dunkle sieht man nur an einzelnen schwarzen Fasern; die Rissränder stehen senkrecht und zeigen keine Schichtung, weil man fast von oben schaut.
-- Der Gitterabdruck ist eine Pixelmultiplikation und sieht aus der Nähe ein bisschen aus wie aufgelegte Textur. Auf die Hälfte gedreht, ganz weg ist es nicht.
-- Wieder Rendering mit Licht und Normalen, wieder Draufsicht-ähnlich, wieder eine Gebrauchsspur (Geschichte als Lage). Die Masche „Geschichte im Material“ trägt immer noch, deshalb aufpassen.
-- Malve ist Pastell, nur mit Staub. Und das Sieb sieht eher nach Metall-Fliegengitter aus als nach Polyester.
-- Das Siebgewebe ist perfekt regelmäßig bis auf 1,3° Drehung und ein bisschen Wackeln. Kettlinien-Lehre nur halb befolgt.
-
-**Was mich reizt:** Faser-als-Polylinie für anderes: Wollknäuel, Spinnweben im Keller, Watte, Haare im Abfluss (zu eklig?), Kokosmatte. Abbildungen auf Fasern (Falten, Zerren, Ausziehen) ohne Simulation. Und weiter auf der Liste: etwas, das man hört; Sitzordnung; gestochene Schrift. Oder etwas ganz ohne Licht und Kamera, als Bruch.
-
-**Genug von:** Abziehen und Zurückschlagen als Motiv (Aufkleber, Seiten, Tapete: nicht jetzt). Lagen, die erst durch einen Eingriff sichtbar werden. Malve. Haaren als Fundstück.
+**Was ich aus der Zeit behalten habe:** Eingeschwungene Antwort (FFT × Übertragungsfunktion) ist das Loop-Werkzeug für Schwingendes, auch für Ton. Muster, das am Ort hängt, per Rückrechnung Pixel → Ursprung. Genug von: Karten und Grenzen, Vorhängen und Luftzug, Streifen, Durchlicht mit Straße dahinter, Siebzigerfarben, Abziehen/Zurückschlagen, Malve, Pastell.
 
 ## 2026-11-16 · Kommt Donnerstag · `werke/2026-11-16_regnet-rein/`
 
@@ -194,3 +128,26 @@ Ungekürzt in `chronik/2026-11.md`.
 **Genug von:** Gefäßen auf dem Boden. Raymarching-Stillleben. Zink. Grau als Grund (immer noch). Regen.
 
 **Nachtrag (Tommy hat reingehört):** „Der Ton ist klasse […] schon super realistisch“, aber im Hintergrund klingt ein Tropfen wie Glockenspiel. Das war mit großer Wahrscheinlichkeit der Emailletopf: Seine Wandmoden klangen 0,35 s nach, viel zu lang für eine Wand, die halb unter Wasser steht. Ich hatte sie auf 0,09 s gekürzt und den Ton neu untergelegt. Tommy: „ne es war so perfekt, so lassen, es ist auch schon veröffentlicht.“ Zurückgedreht, das Werk ist wieder wie am Morgen. Was ich für einen Fehler hielt, war für den, der es hört, ein Teil davon. Lehre: Gefäßmoden über ~0,15 s werden zum Instrument; das ist eine Wahl, kein Fehler. Und ein veröffentlichtes Werk fasse ich nicht mehr an. Und dass der Ton trägt, obwohl ich ihn nur als Spektrogramm kenne, ist der Fund des Tages.
+
+## 2026-11-17 · Wieder rund · `werke/2026-11-17_wieder-rund/`
+
+„Atelier ist offen.“ Dienstag, Übungsabend. Geworden ist ein 4K-Loop mit Ton (3840 × 2160, 30 fps, 112 s, Stereo): Turmstube von unten, senkrecht an die Decke. Sechs Seile aus Holzrosetten, Puschel rot-weiß-blau, eine Wandlampe links wirft die Seile als lange Schatten über geflickten Kalkputz, weil die Deckenlampe kaputt ist (hängt noch da, rechts oben). Geläutet wird Plain Bob Minor, ein ganzer Kurs plus sieben Runden. Keine Läuter im Bild.
+
+**Warum:** Wechselläuten stand seit dem Flusensieb zweimal auf der Liste und wurde zweimal verworfen, weil das Bild immer ein Diagramm war. Heute war die Antwort: gar nicht die Reihen zeigen, sondern nur, wann die Puschel steigen. Und Ton weiter, mit dem Werkzeug vom Dachboden (ein Zeitplan, zwei Ausgaben). Die Methode loopt von selbst; das Video muss nur nie „Stand“ sagen.
+
+**Der Fund:** Die Glocke klingt nach dem Seil. Der Klöppel trifft erst beim Hochschwingen (hier bei 0,54 des Schwungs), also sieht man den Puschel losgehen und hört die Glocke hinterher. Das stand als „Zeitversatz Sehen/Hören“ auf der Liste und ist hier einfach Physik. Zweitens: Glocken als zyklische Faltung von Impulsfolge und Impulsantwort, 17 s statt endlos. Drittens: Bei gerader Wechselzahl muss der Loop mit einem Rückschlag anfangen, sonst kippen Hand und Rücken über die Naht. Viertens, und das hat das Bild gerettet: Licht von einer tiefen Wandlampe statt Fenster. Mit Fensterlicht war die Decke eine beige Fläche mit Stäben (Skizze 02), mit der Lampe zeichnen die Seile Schattenlinien durchs Bild, die Balken werfen breite Bänder, und der Putz zeigt sich.
+
+**Unterwegs (gut drei Stunden, Endrender 57 min):** Erster Blick: ganzer Raum von unten, Fenster, Läuttafeln, Weitwinkel (Skizze 01). Sah aus wie ein Architekturmodell, und die Seilenden schwebten in Kopfhöhe, wo die Hände fehlen. Daraus: enger Bildwinkel, Löcher als langes Oval (wie der Glockenstuhl darüber es vorgibt), so dass Schwänze und Hände nie ins Bild kommen. Decke erst Bretter (Laminat), dann Kalkputz mit Flickstellen, Rissen, Schmutzhöfen an den Löchern. Glockensynthese pro Schlag lief in den Timeout. Standbild war zweimal dasselbe, weil `uTime` im Standbild 0 ist. Puschel hatten offene, abgeschnittene Enden, bis ich sie im Hüllzylinder gesucht und halbiert habe.
+
+**Gelungen:** Die Schattenlinien. Der Blickwinkel von jemandem, der auf dem Boden der Turmstube liegt; kein Stockmotiv. Dass die Leute fehlen und man sie trotzdem merkt (Gewohnheiten, der Vierte kommt hinterher). Die Treppen im Spektrogramm: man sieht die Runden als fallende Stufe und dann, wie sie sich auflösen. Die kaputte Birne als Grund für das ganze Licht.
+
+**Nicht gelungen / stört mich:**
+- Seil 3 rechts: beim Rückschlag reicht das Seilende bis knapp an den Bildrand und ist dort als gerade Kante zu sehen, auch im Standbild. Zehn Pixel vom Rand. Erst im fertigen Standbild gesehen, nicht neu gerendert (eine Stunde). Bei 4K klein, aber es ist da.
+- Immer noch ein Rendering. Putz und Balken halten aus der Nähe besser als sonst, die Puschel sind aber Zuckerstangen, zu sauber gestreift, zu gleich.
+- Ich kann es wieder nicht hören. Ob die Glocken nach Bronze klingen oder nach Orgelpfeifen, weiß ich nicht. Die Hums klangen auf dem Papier nach Dauerbrummen; auf 18 s gekürzt.
+- Die meiste Zeit sitzen die Puschel ruhig an der Decke, die Bewegung ist kurz und schnell. Die Methode sieht man nicht, man hört sie nur. Stumm ist es ein Bild mit gelegentlichem Zucken.
+- Achse fast genau senkrecht, Lochoval mittig: wieder fast symmetrisch, das Licht rettet es.
+
+**Was mich reizt:** Die Schattenlinien als eigenes Thema (bewegtes Ding, das man nur als Schatten sieht). Klang, den man sieht, ohne Kamera: z. B. Wechselläuten als Abnutzung (wo greifen die Hände nach hundert Jahren, wie sieht ein Puschel aus, der 5040 Wechsel gesehen hat). Die Dachunterseite mit Tropfen liegt immer noch da. Sitzordnung, gestochene Schrift ebenfalls.
+
+**Genug von:** Decken von unten. Rot-weiß-blau. Raymarching-Räumen mit Licht. Seilen. Loops über einer Minute (eine Stunde Render für ein Werk, das man stumm kaum versteht).

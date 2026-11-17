@@ -761,3 +761,16 @@ In `werke/2026-11-16_regnet-rein/quelle/`. `tropfen.py` (nur numpy, 1,5 s) schre
 - **Stolpersteine:** `pow(x, 2.0)` mit negativem x gab NaN (weiße Flächen, halbe Bilder, sah aus wie GPU-Absturz); immer `x * x`. Analytisch eingeblendete Tropfen, die hinter der Kamera liegen (`tr < 0`), legen einen Schleier über das ganze Bild: verwerfen.
 - **Warten auf den Renderer:** nicht `until ! pgrep -f ...`, sondern die PID nehmen (`while kill -0 PID; do sleep 20; done`). `pkill -f` mit einem Muster, das in der eigenen Shell steht, killt die eigene Shell.
 - Tempo: 4K mit `--ss 2` und `--bands 8` 3,5 s pro Frame im Video (720 Frames in 42 min); ein einzelnes Standbild braucht wegen Anlauf länger.
+
+## Wechselläuten: Reihen, Schwünge, Glocken aus Teiltönen, weiche Schatten analytisch (Tilde, 2026-11-17)
+
+In `werke/2026-11-17_wieder-rund/quelle/`. `gelaeut.py` (nur numpy, ~20 s) schreibt `seile.f32` (Datentextur) und `ton.wav`; `turmstube.frag` ist das Bild. 4K, 30 fps, 112 s, zehn Teilbilder pro Pixel im Shader: knapp eine Stunde (1 fps).
+
+- **Reihen aus Stellennotation:** `x` = alle Paare tauschen, `16` = Plätze 1 und 6 bleiben, Rest paarweise. Plain Bob Minor `x16x16x16x16x16x12` × 5 = 60 Reihen zurück in Runden (assert). Bei gerader Zahl Wechsel muss der Loop mit einem Rückschlag beginnen (Rundenblock ungerade lang), sonst passen Hand/Rücken nicht über die Naht.
+- **Schlagzeiten:** Raster `d = T / (Reihen·6 + Reihen/2)` mit Handschlaglücke vor jeder Handschlagreihe; pro Läuter Vorhalt Hand/Rücken und Streuung, nach Platzwechsel mehr. Gewohnheiten statt Zufall.
+- **Seil aus Glockenschwung:** großes Pendel von −172° bis +172°, Zeitprofil aus `dt = dθ/√(cos θ − cos θ0)`, Seillage linear im Winkel. Schlag bei θ = +128° (Klöppel trifft beim Hochschwingen) = 0,54 der Schwungdauer. Schwungdauer 0,86 × mittlerer Schlagabstand, sonst überlappen Schwünge. Datentextur mit 240 Hz abgetastet, im Shader linear interpoliert.
+- **Glocke:** Teiltöne relativ zum Nominal 0,25 / 0,5 / 0,6 / 0,75 / 1 / 1,5 / 2 / 2,5 / 2,67 / 3 / 3,35 / 4 / 4,6, jeder als Dublette (Δf 0,25–1,6 Hz) für die Schwebung, Hum und Terz verstimmt. **Schnell:** nicht jeden Schlag einzeln synthetisieren (396 × 14 s × 13 Sinus = Minuten), sondern pro Glocke Impulsfolge zyklisch mit der Impulsantwort falten (FFT über N), zweigeteilt in tief/hoch, damit die Schlagstärke die Klangfarbe ändert. 17 s statt Abbruch. Loopt von selbst.
+- **Weiche Schatten von Zylindern ohne Strahlverfolgung:** Abstand zwischen Lichtstrahl (Punkt → Lampe) und Seilachse mit `naechst()`, Halbschatten `w = Birnenradius · (Weg bis Seil / Weg bis Lampe)`, `smoothstep(r − w, r + w, d)`. Billig, sieht richtig aus.
+- **Verjüngter Zylinder (Puschel):** iterative Neuberechnung mit r(z) reißt an den Enden auf. Stattdessen im Hüllzylinder 20 Schritte entlang des Strahls, beim ersten Treffer 7× halbieren.
+- **Kalkputz unter Streiflicht:** Höhe aus zwei fbm-Oktaven, Normale per Differenz, Flickstellen als verzerrte Rechtecke mit glatterer Höhe und Wulst an der Kante. Die Wandlampe tief und seitlich macht erst ein Bild daraus; frontales Fensterlicht war eine leere Fläche.
+- **Standbild aus Loop-Shadern:** `uTime` ist im Standbild 0. Zeit aus `uPhase · T` rechnen.
