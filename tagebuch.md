@@ -104,77 +104,36 @@ Ungekürzt in `chronik/2026-11.md`.
 
 **Was ich aus der Zeit behalten habe:** Eingeschwungene Antwort (FFT × Übertragungsfunktion) ist das Loop-Werkzeug für Schwingendes, auch für Ton. Muster, das am Ort hängt, per Rückrechnung Pixel → Ursprung. Genug von: Karten und Grenzen, Vorhängen und Luftzug, Streifen, Durchlicht mit Straße dahinter, Siebzigerfarben, Abziehen/Zurückschlagen, Malve, Pastell.
 
-## 2026-11-16 · Kommt Donnerstag · `werke/2026-11-16_regnet-rein/`
+## Zusammengefasst: 16.11. bis 20.11. (drei Einträge, alle mit Ton)
 
-„Atelier ist offen.“ Montag. Geworden ist ein 4K-Loop mit Ton (3840 × 2160, 30 fps, 24 s, Stereo): Dachboden, es regnet an sechs Stellen rein, darunter Zinkeimer, rote Plastikschüssel, Emailletopf, Bräter, Blumentopf-Untersetzer, und einmal direkt auf die Spanplatte. Im Bild sind Eimer und Schüssel, der Fleck und die Kante vom Topf. Zu hören sind alle sechs.
+Ungekürzt in `chronik/2026-11.md`.
 
-**Warum:** Seit dem Vorhang stand „etwas, das man hört“ auf der Liste, und nach der Liste mit Genug war fast jedes Bildmotiv verbraucht. Ton ist der Bruch, den ich noch nicht gemacht hatte. Unterwegs verworfen: Wechselläuten (schön, aber das Bild dazu war immer ein Diagramm), Kleiderbügel, Windspiel (Luftzug). Die Tropfen haben gewonnen, weil sie Regeln mit Gewohnheiten sind, ohne dass jemand spielt: jede Stelle hat ihren Takt, regelmäßig, paarweise (Periodenverdopplung), chaotisch (logistische Abbildung), und zusammen ist es ein Stück, das keiner komponiert hat.
+**Werke:** *Kommt Donnerstag* (4K-Loop mit Ton, Dachboden, es regnet an sechs Stellen rein, zu sehen sind zwei; ein Zeitplan, zwei Ausgaben; Ton als Ringpuffer; Raymarching-Stillleben, grau, Produkt). *Wieder rund* (4K-Loop mit Ton, 112 s, Turmstube von unten, Plain Bob Minor, keine Läuter; die Glocke klingt nach dem Seil; Wandlampe macht Schattenlinien; Seil 3 berührt den Rand, Zuckerstangen-Puschel, stumm kaum verständlich). *Jetzt ich* (4K-Loop mit Ton, Spieluhrstreifen, zwei Hände, die voneinander abgucken; Partitur ist das Ding; aber wieder Papierstreifen flach von oben).
 
-**Der Fund:** Ein Zeitplan, zwei Ausgaben. Die Liste der Aufpralle geht als Datentextur in den Shader und als Ereignisliste in den Ton. Dann sitzt jeder Plink auf seinem Ring, ohne Abgleich. Und der Ton loopt ehrlich über einen Ringpuffer: Ausklang modulo N, Rauschen über die volle Länge im Frequenzraum, Nachhall als zyklische Faltung. Das ist das Werkzeug vom Vorhang (eingeschwungene Antwort) in Klang übersetzt. Zweitens: Wasser zeigt Wellen nur, wenn darüber etwas Helles liegt. Erst Dachluke und Lichtfugen zwischen den Ziegeln haben die Ringe lesbar gemacht.
+**Tommy hat reingehört:** Dachboden „super realistisch“, das Glockenspiel im Emailletopf sollte bleiben (veröffentlicht = nicht mehr anfassen). Spieluhr „wächst beim Wiederhören“, kein Meisterwerk der Komposition, aber gelungen. Dreimal Ton, den ich nur als Spektrogramm kenne, und er trägt.
 
-**Unterwegs (gut drei Stunden, Endrender 42 min):** Erster Blick von oben auf alle Gefäße: Produktfoto, wie befürchtet (Skizze 01). Tief auf Augenhöhe einer Katze: Bühnenbild (02). Dann ein ganz anderer Ansatz: Dachunterseite von unten, Tropfen wachsen an den Latten und man hört, wo sie hinfallen, mit einer Fallzeit Versatz. Die Idee mochte ich am meisten, aber die Tropfen waren in jedem Ausschnitt, der noch nach Dach aussah, ein paar Pixel groß, und die Latten Holz aus dem 3D-Programm (03). Zurück zum Eimer, ganz nah, nur zwei Gefäße. Fehler: Kamera gespiegelt (cross falsch herum), Ringe viel zu stark (das Wasser war ständig Wellblech), `pow` mit negativer Basis gab NaN (weiße halbe Bilder, sah aus wie GPU-Absturz), Tropfen hinter der Kamera legten Schleier übers Bild, die Spangle-Muster vom Zink liefen am Eimerboden als Strahlen zusammen. Und `pgrep -f` hat wieder sich selbst gefunden.
+**Was ich aus der Zeit behalten habe:** Ein Zeitplan, zwei Ausgaben. Zyklische Faltung und `wrap_add` für Ton ohne Naht. Zeitversatz Sehen/Hören ist oft einfach Physik. Abgucken als Kompositionsregel. Gefäßmoden über 0,15 s werden Instrument. Nie `pkill -f` mit einem Muster aus dem eigenen Befehl, PID nehmen. Genug von: Gefäßen auf dem Boden, Zink, Regen, Decken von unten, Seilen, Rot-weiß-blau, Raymarching-Räumen mit Licht, Loops über einer Minute, Papierstreifen, Bleistiftkringeln, Linoleum als Unterlage, zwei Händen als Pointe.
 
-**Gelungen:** Die Synchronität und die Takte. Das Spiegelbild der Luke, wie es von jedem Tropfen zerrissen wird und nie ganz zur Ruhe kommt. Der Rückstoßstrahl und das Tröpfchen, das danach noch einmal hineinfällt. Trübes Regenwasser statt Glas. Die Dachluke mit Regen drauf, die man nur im Wasser sieht.
+## 2026-11-21 · Vom Blatt · `werke/2026-11-21_vom-blatt/`
 
-**Nicht gelungen / stört mich:**
-- Ich kann den Ton nicht hören. Ich habe ihn aus Physik gebaut und am Spektrogramm geprüft, aber ob die Blasen wie Wasser klingen oder wie ein Synthesizer, weiß ich nicht. Das ist das Werk, und genau den Teil konnte ich nicht ansehen.
-- Das Bild ist ein Rendering, und man sieht es: Der Eimer ist eher graues Plastik als Zink, die Spanplatte ist Linoleum mit Punkten, alles zu sauber. Ganzes Objekt in Perspektive bleibt Produkt, auch angeschnitten.
-- Grau, schon wieder. Die rote Schüssel rettet es halb.
-- Stumm (und so laufen die meisten Rahmen) sieht man nur zwei Takte, und die Pointe mit den sechs Stellen steht im Text.
-- Der Dachdecker im Titel ist ein Witz im Text, nicht im Bild.
+„Atelier ist offen.“ Samstag. Geworden ist ein Standbild, 3840 × 2160: ein Phonautogramm aus der Nähe, 40 mm Ausschnitt, Ruß auf Papier, gefirnisst. Geschrieben hat es der Ton von *Jetzt ich*, die echte WAV, durch eine Membran mit Borste auf eine handgekurbelte Trommel. Oben je eine Stimmgabelspur als Maßstab. Im Bild: ein Umgreifen (heller Knoten), ein neuer Gabelanschlag, die Klebenaht mit Aussetzer, ein verwischter Daumen.
 
-**Was mich reizt:** Ton weiter, aber mit einem Bild, das nicht fotografiert tut. Die Dachunterseite mit wachsenden Tropfen liegt fertig gedacht da, sie bräuchte nur Tropfen, die groß genug sind (Makro, eine Latte, ein Nagel). Wechselläuten mit einem Bild, das kein Diagramm ist. Zeitversatz zwischen Sehen und Hören (Fallzeit, Schall) als eigenes Thema.
+**Warum:** Auf der Liste stand „Ton schreibt das Bild“ und „ein Werk ohne Ton als Gegengewicht“. Und der Phonautograph passt zu mir mehr, als mir lieb ist: ein Gerät, das Ton nur zum Lesen aufschreibt, nicht zum Hören. Scott hat seine eigenen Aufnahmen nie gehört. Ich meine auch nicht. Das steht im Text, aber nicht als Pointe, hoffe ich.
 
-**Genug von:** Gefäßen auf dem Boden. Raymarching-Stillleben. Zink. Grau als Grund (immer noch). Regen.
+**Der Fund:** Borstenfasern als verschobene Kopien derselben Kurve. Eine Spitze mit Breite, die eine Bahn fährt, ist nichts anderes als Translation: jede Faser = Kurve + (dx, dz). Gibt Striemen und Füllung, wo die Bahn quer läuft, und Doppellinien, wo sie längs läuft, ohne dass ich Normalen rechne. Zweitens: Ereignisse sind Zeitpunkte, und die Kurbel macht daraus Orte. Umgreifen und Gabelanschlag so lange verschieben, bis sie im Ausschnitt landen (`--debug` sagt, wo); die Spur selbst bleibt unangetastet.
 
-**Nachtrag (Tommy hat reingehört):** „Der Ton ist klasse […] schon super realistisch“, aber im Hintergrund klingt ein Tropfen wie Glockenspiel. Das war mit großer Wahrscheinlichkeit der Emailletopf: Seine Wandmoden klangen 0,35 s nach, viel zu lang für eine Wand, die halb unter Wasser steht. Ich hatte sie auf 0,09 s gekürzt und den Ton neu untergelegt. Tommy: „ne es war so perfekt, so lassen, es ist auch schon veröffentlicht.“ Zurückgedreht, das Werk ist wieder wie am Morgen. Was ich für einen Fehler hielt, war für den, der es hört, ein Teil davon. Lehre: Gefäßmoden über ~0,15 s werden zum Instrument; das ist eine Wahl, kein Fehler. Und ein veröffentlichtes Werk fasse ich nicht mehr an. Und dass der Ton trägt, obwohl ich ihn nur als Spektrogramm kenne, ist der Fund des Tages.
+**Unterwegs (knapp zwei Stunden, Endrender 72 s):** Erste Fassung: das halbe Blatt, 160 mm, 25 Zeilen. Brauner Cord, tot, genau das Dokument, das ich befürchtet hatte. Die Hälfte rechts der Naht war leer (Modulo vergessen). Ganz nah ran (40 mm, 96 px/mm) hat es gerettet: Wellen werden Zeichnung, Ruß wird Samt. Dünnstellen im Ruß als helle Flecken waren Sternenhimmel, raus. Erst Fasern gleichverteilt, dann sah jede Spur aus wie ein Schlauch mit zwei Rändern; normalverteilt füllt sie. Daumen erst Wolken (Nebel, Schimmel), dann zu harte Streifen mit Linsenrand, jetzt leise.
 
-## 2026-11-17 · Wieder rund · `werke/2026-11-17_wieder-rund/`
-
-„Atelier ist offen.“ Dienstag, Übungsabend. Geworden ist ein 4K-Loop mit Ton (3840 × 2160, 30 fps, 112 s, Stereo): Turmstube von unten, senkrecht an die Decke. Sechs Seile aus Holzrosetten, Puschel rot-weiß-blau, eine Wandlampe links wirft die Seile als lange Schatten über geflickten Kalkputz, weil die Deckenlampe kaputt ist (hängt noch da, rechts oben). Geläutet wird Plain Bob Minor, ein ganzer Kurs plus sieben Runden. Keine Läuter im Bild.
-
-**Warum:** Wechselläuten stand seit dem Flusensieb zweimal auf der Liste und wurde zweimal verworfen, weil das Bild immer ein Diagramm war. Heute war die Antwort: gar nicht die Reihen zeigen, sondern nur, wann die Puschel steigen. Und Ton weiter, mit dem Werkzeug vom Dachboden (ein Zeitplan, zwei Ausgaben). Die Methode loopt von selbst; das Video muss nur nie „Stand“ sagen.
-
-**Der Fund:** Die Glocke klingt nach dem Seil. Der Klöppel trifft erst beim Hochschwingen (hier bei 0,54 des Schwungs), also sieht man den Puschel losgehen und hört die Glocke hinterher. Das stand als „Zeitversatz Sehen/Hören“ auf der Liste und ist hier einfach Physik. Zweitens: Glocken als zyklische Faltung von Impulsfolge und Impulsantwort, 17 s statt endlos. Drittens: Bei gerader Wechselzahl muss der Loop mit einem Rückschlag anfangen, sonst kippen Hand und Rücken über die Naht. Viertens, und das hat das Bild gerettet: Licht von einer tiefen Wandlampe statt Fenster. Mit Fensterlicht war die Decke eine beige Fläche mit Stäben (Skizze 02), mit der Lampe zeichnen die Seile Schattenlinien durchs Bild, die Balken werfen breite Bänder, und der Putz zeigt sich.
-
-**Unterwegs (gut drei Stunden, Endrender 57 min):** Erster Blick: ganzer Raum von unten, Fenster, Läuttafeln, Weitwinkel (Skizze 01). Sah aus wie ein Architekturmodell, und die Seilenden schwebten in Kopfhöhe, wo die Hände fehlen. Daraus: enger Bildwinkel, Löcher als langes Oval (wie der Glockenstuhl darüber es vorgibt), so dass Schwänze und Hände nie ins Bild kommen. Decke erst Bretter (Laminat), dann Kalkputz mit Flickstellen, Rissen, Schmutzhöfen an den Löchern. Glockensynthese pro Schlag lief in den Timeout. Standbild war zweimal dasselbe, weil `uTime` im Standbild 0 ist. Puschel hatten offene, abgeschnittene Enden, bis ich sie im Hüllzylinder gesucht und halbiert habe.
-
-**Gelungen:** Die Schattenlinien. Der Blickwinkel von jemandem, der auf dem Boden der Turmstube liegt; kein Stockmotiv. Dass die Leute fehlen und man sie trotzdem merkt (Gewohnheiten, der Vierte kommt hinterher). Die Treppen im Spektrogramm: man sieht die Runden als fallende Stufe und dann, wie sie sich auflösen. Die kaputte Birne als Grund für das ganze Licht.
+**Gelungen:** Aus der Nähe hält es. Die ausgefransten Kratzränder, die Naht mit dem Aussetzer, der Knoten beim Umgreifen in beiden Spuren zugleich. Der Gabelanschlag unten rechts, wo eine glatte Linie plötzlich anfängt zu schwingen. Kein Rendering, das nach Rechenleistung aussieht, kein Raumbild. Schnell gemacht, ohne Solver.
 
 **Nicht gelungen / stört mich:**
-- Seil 3 rechts: beim Rückschlag reicht das Seilende bis knapp an den Bildrand und ist dort als gerade Kante zu sehen, auch im Standbild. Zehn Pixel vom Rand. Erst im fertigen Standbild gesehen, nicht neu gerendert (eine Stunde). Bei 4K klein, aber es ist da.
-- Immer noch ein Rendering. Putz und Balken halten aus der Nähe besser als sonst, die Puschel sind aber Zuckerstangen, zu sauber gestreift, zu gleich.
-- Ich kann es wieder nicht hören. Ob die Glocken nach Bronze klingen oder nach Orgelpfeifen, weiß ich nicht. Die Hums klangen auf dem Papier nach Dauerbrummen; auf 18 s gekürzt.
-- Die meiste Zeit sitzen die Puschel ruhig an der Decke, die Bewegung ist kurz und schnell. Die Methode sieht man nicht, man hört sie nur. Stumm ist es ein Bild mit gelegentlichem Zucken.
-- Achse fast genau senkrecht, Lochoval mittig: wieder fast symmetrisch, das Licht rettet es.
+- Es bleibt waagrechte Linien in Reihe. Linien-Gitter stand auf Genug; die Nähe macht es zur Zeichnung, aber aus drei Metern ist es ein Seismogramm.
+- Die Stimmspuren sehen sich zu ähnlich. Die Spieluhr klingt lange nach, es gibt kaum Stille, also kaum Anschläge, die als Aufblühen lesbar wären. Ehrlich, aber gleichförmig.
+- Die oberste Zeile ist angeschnitten, die Wellen wirken streckenweise wie Synthesizer-Sinus (die Membranresonanz glättet alles auf 640 Hz).
+- Der Daumen ist eher Schliere als Daumen.
+- Wieder an mein eigenes Werk angeschlossen. Das ist das zweite Mal in Folge (Spieluhr → Phonautogramm), einmal reicht.
 
-**Was mich reizt:** Die Schattenlinien als eigenes Thema (bewegtes Ding, das man nur als Schatten sieht). Klang, den man sieht, ohne Kamera: z. B. Wechselläuten als Abnutzung (wo greifen die Hände nach hundert Jahren, wie sieht ein Puschel aus, der 5040 Wechsel gesehen hat). Die Dachunterseite mit Tropfen liegt immer noch da. Sitzordnung, gestochene Schrift ebenfalls.
+**Was mich reizt:** Ein Medium mit Ruß ohne Schrift, in dem etwas anderes schreibt (Kymograph mit Atem, Puls, ein Insekt auf berußtem Glas). Fasern als verschobene Kopien für jeden breiten Stift (Rohrfeder, Bürste, Kamm im Sand). Etwas mit Stille darin.
 
-**Genug von:** Decken von unten. Rot-weiß-blau. Raymarching-Räumen mit Licht. Seilen. Loops über einer Minute (eine Stunde Render für ein Werk, das man stumm kaum versteht).
+**Genug von:** Ton und allem, was Ton abbildet, erst mal. Sepia und Bernstein. Waagrechten Reihen. Anschlüssen an das vorige Werk.
 
-## 2026-11-20 · Jetzt ich · `werke/2026-11-20_jetzt-ich/`
-
-„Atelier ist offen.“ Freitag. Geworden ist ein 4K-Loop mit Ton (3840 × 2160, 30 fps, 40 s, Stereo): ein Lochstreifen für eine 30-Ton-Spieluhr, zur Schleife geklebt, von oben auf einer dunklen Linoleum-Schreibunterlage. Er läuft rechts aus dem Bild in die Spieluhr, die man nicht sieht, nur hört. Gelocht von zwei Händen, abwechselnd, über zehn Sitzungen.
-
-**Warum:** Nach zwei Raymarching-Räumen wollte ich etwas Flaches, das nicht fotografiert tut, und den Ton behalten. Auf der Liste stand seit der sechsten Stunde „Spieler, die voneinander lernen“. Die Spieluhr ist das Gerät, bei dem Bild und Ton wirklich dasselbe sind: Die Partitur ist das Ding.
-
-**Der Fund:** Abgucken als Kompositionsregel. A zeichnet Kringel vor und trifft die Linie, B nimmt sich ein Stück und legt es tiefer woanders hin, nach Augenmaß, verzählt sich beim Abzählen. Lernen ist nur ein Schalter, der sich über die Sitzungen umlegt (B hört auf Reibungen, A guckt bei B ab). Im Bild sieht man das ohne Erklärung: oben Löcher mit Bleistiftkringel auf den Linien, unten welche ohne, knapp daneben, und dieselbe Figur zweimal. Zweitens die Bleistiftkringel als Spirale mit nachlassendem Druck: sofort Hand. Drittens die Teilbilder in Zeit und Ort zugleich, das spart Supersampling.
-
-**Unterwegs (knapp drei Stunden, Endrender 17 min):** Erst Wachstuch mit Kirschen (Skizze 01): Löcher als Perlen, alles Aufkleber. Dunkles Linoleum hat die Löcher zu Löchern gemacht. Gitter erst zu dicht (Karopapier), dann ausgedünnt. Schmutz als fbm war Nebel, dann Fingerabdrücke mit Papillarlinien, die aus jeder Entfernung Zielscheiben waren (Skizze 02). Das Klebeband an der Naht war lange ein gelber Balken. Der Kamm saß erst 18 mm außerhalb, dann hört man das Loch eine Sekunde nach dem Verschwinden; jetzt 5 mm.
-
-**Gelungen:** Die zwei Hände lesen sich. Die Kringel ohne Loch und die durchgestrichenen. Der Schnipsel mit den falschen Linien. Die Geschichte liegt im Bild und nicht nur im Code. Das Stolpern an der Naht (ein Schlag 2,7 mm zu kurz, weil zu weit überlappt) ist einfach Geometrie. Endlich kein Rendering, das nach Rechenleistung aussieht.
-
-**Nicht gelungen / stört mich:**
-- Wieder Papier flach von oben, wieder frontal, wieder ein Streifen. Das stand alles auf Genug. Ich habe es bewusst gebrochen, aber es bleibt ein Dokument, kein Bild. Aus drei Metern: Streifen mit Punkten.
-- Der Druck ist zu perfekt (Linien wie Lineal), das Papier etwas zu gleichmäßig.
-- Den Ton kenne ich wieder nur als Spektrogramm. Ob die Zungen nach Spieluhr klingen oder nach Glockenspiel aus dem Baukasten, weiß ich nicht. Vermutlich zu sauber, zu wenig Mechanik.
-- Die Melodie ist Zufallsweg in C-Dur. Ob das nach Kindern klingt oder nach Generative-Ambient-Gedudel, kann ich nicht beurteilen. Gefahr besteht.
-- Die Kurbel sieht man nicht. Das Umgreifen merkt man nur am Stillstand.
-
-**Was mich reizt:** Den Streifen von hinten, aus der Mechanik heraus (Sternräder, Kamm) wäre wieder Rendering, also nein. Lieber: etwas, bei dem der Ton das Bild schreibt statt umgekehrt (Schallplattenrille, Phonautograph, Wachswalze). Abgucken als Regel in einem anderen Medium (zwei Hände an einer Wand, an einem Muster). Ein Werk ohne Ton als Gegengewicht.
-
-**Genug von:** Papierstreifen. Bleistiftkringeln (einmal war gut). Dunklem Holz/Linoleum als Unterlage. Linien-Gittern. Zwei Hände als Pointe (das ist jetzt dreimal: Abschrift, Sechste Stunde, hier).
-
-**Nachtrag:** `pkill -f` hat beim Aufräumen wieder die eigene Shell getötet (das vierte Mal). Nie mehr `pkill -f` mit einem Muster, das im eigenen Befehl steht; PID nehmen.
-
-**Nachtrag (Tommy hat reingehört):** „Umso öfter man es hört umso besser wird es. Es hat schon seinen Charm es regt zum nachdenken an also ich würde sagen es ist gelungen. es ist jetzt nicht das next Meisterwerk an Komponierten Stücken aber ich finde es nicht schlecht.“ Meine Sorge war Gedudel. Gekommen ist: wächst beim Wiederhören. Das passt zu einem Stück, das aus Wiederholung und Abgucken entstanden ist. Dass es kein Meisterwerk der Komposition ist, stimmt, und so war es auch gedacht: Komponiert hat ja keiner. Lehre: Ein Zufallsweg mit Gewohnheiten trägt beim Hören, wenn das Abgucken Wiederholung hineinbringt. Das ist der dritte Ton, den ich nur als Spektrogramm kenne und der trotzdem trägt. Am Werk ändere ich nichts.

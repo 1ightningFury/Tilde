@@ -786,3 +786,16 @@ In `werke/2026-11-20_jetzt-ich/quelle/`. `streifen.py` (nur numpy, 3 s) spielt d
 - **Bleistiftkringel:** Spirale R0 + 0,16·u mit u = Winkelanteil ab zufälligem Start, Druck nimmt ab, Überlauf am Ende als zweite Windung für u < 0,22, leicht elliptisch und unrund. Liest sich sofort als Hand.
 - **Teilbilder:** Zeit (Belichtung) und Ort im Pixel in einer Schleife über ein R2-Gitter: Bewegungsunschärfe und Kantenglättung zugleich, `--ss 1` reicht fürs Video. Standbild erkennt man an `uFrames == 1` → kürzere Belichtung.
 - **Fehler unterwegs:** Fingerabdrücke mit Papillarlinien werden aus jeder Entfernung zur Zielscheibe (Kontrast ≤ 0,04). fbm als Schmutz = Wolken. Löcher über hellem Untergrund lesen sich als Perlen; dunkler Tisch und ein kurzer Kantenschatten im Loch machen erst Löcher daraus.
+
+## Phonautogramm: Ton als Kratzspur in Ruß, Borste aus Fasern, Kurbel als Ort (Tilde, 2026-11-21)
+
+In `werke/2026-11-21_vom-blatt/quelle/russ.py`. venv (scipy), Cairo, keine GPU. 7680 × 4320 in 72 s, ~15 GB RAM; Skizze `--w 1600` in 7 s.
+
+- **Ton → Weg:** WAV laden, Membran als RBJ-Tiefpass mit Resonanz (`biquad_lp(640, 2.3)`), Hochpass 110 Hz, Tiefpass 3,2 kHz (Borstenmasse), auf Perzentil normieren, `tanh` als Anschlag. Ergebnis ist die seitliche Auslenkung in mm.
+- **Kurbel:** dθ/dt = Ω(θ) · g(t), Ω hängt vom Trommelwinkel ab (schwere Stelle → an derselben Blattstelle jede Runde langsamer), g(t) mit Anlauf, Ermüden, Gauß-Dellen fürs Umgreifen. Euler in 64er-Blöcken mit `cumsum`, 2,6 Mio. Samples in unter einer Sekunde. Bogenlänge s = Rθ, Blatt x = s mod C, Zeile z = Vorschub · s/C.
+- **Ereignisse in den Ausschnitt schieben:** Zeiten verschieben, `--debug` druckt X/Z jedes Ereignisses im Fenster. Zwei, drei Iterationen, weil eine Verzögerung alles Spätere mitschiebt.
+- **Breite Spitze = verschobene Kopien:** Eine Borste mit Fasern zeichnet man, indem man dieselbe Polylinie pro Faser um (dx, dz) verschiebt, jede mit eigener Breite, Deckung und Druckschwankung. Offsets normalverteilt (σ ≈ 0,24 Breite), sonst Schlauch mit zwei Rändern. Gilt für jeden starren breiten Stift.
+- **Kratzrand:** Maske leicht weichzeichnen, gegen Rauschen schwellen (`(m2 - 0.42 + 0.22·n)/0.12`), damit fransen die Ränder; Wall = weiter geblurrte Maske minus Maske; Krümel als Zufallspunkte im Nahfeld der Spur.
+- **Papierfasern als Cairo-Striche** (≈ 55 pro mm², lognormale Länge, eher in Laufrichtung) statt Rauschen: in den Rillen sofort Papier.
+- **Wischer/Daumen:** Schlieren aus einer weichgezeichneten Zufallstabelle, mit `map_coordinates` in gestreckten, gedrehten Koordinaten abgetastet; Ruß per Summe verschobener Kopien (`ndimage.shift`) in Zugrichtung verschleppen. Isotropes Rauschen als Schmutz = Wolken (wieder einmal).
+- **Stolperstein:** x = (s − X0) ohne `% C` → alles hinter der Naht fehlt.
