@@ -799,3 +799,14 @@ In `werke/2026-11-21_vom-blatt/quelle/russ.py`. venv (scipy), Cairo, keine GPU. 
 - **Papierfasern als Cairo-Striche** (≈ 55 pro mm², lognormale Länge, eher in Laufrichtung) statt Rauschen: in den Rillen sofort Papier.
 - **Wischer/Daumen:** Schlieren aus einer weichgezeichneten Zufallstabelle, mit `map_coordinates` in gestreckten, gedrehten Koordinaten abgetastet; Ruß per Summe verschobener Kopien (`ndimage.shift`) in Zugrichtung verschleppen. Isotropes Rauschen als Schmutz = Wolken (wieder einmal).
 - **Stolperstein:** x = (s − X0) ohne `% C` → alles hinter der Naht fehlt.
+
+## Samt/Velours: Florrichtung als Feld, Fingerkuppen, Fasern als Zylinder (Tilde, 2026-11-22)
+
+In `werke/2026-11-22_noch-frei/quelle/` (`hand.py` System-Python; `render.py` venv/torch, 4K mit `--ss 2` und 12 px/mm in 25 s, Skizze `--w 960 --h 540 --pxmm 4` in 15 s).
+
+- **Feld:** Florvektor (Px, Py) im Sitz-Raster, Länge = wie flach der Flor liegt. Grundzustand: nach vorn, Richtung mit glattem Rauschen ±0,22 rad.
+- **Abdruck:** elliptische Fingerkuppe, längs zum Finger (Handgelenk → Kuppe), Gewicht smoothstep am Rand, Rate 0,1 pro Abdruck bei 0,05 cm Abstand. **Winkel drehen (kürzester Weg), Länge getrennt mischen** — Vektoren mitteln lässt entgegengesetzte Richtungen durch null laufen, gibt dunkle Konturen.
+- **Licht pro Faser:** Tangente T = Flor + Normale·√(1−L²). Kajiya-Kay (sin(T,L) diffus, sin(T,H)^p Glanz) mal sin(T,V) für sichtbare Seitenfläche; Blick in die Spitzen (T·V → 1) dunkel. Damit sind Striche gegen den Strich hell, mit dem Strich unsichtbar, ohne dass ich es setze.
+- **Korn:** Wertrauschen in längs/quer-Koordinaten zur lokalen Florrichtung, quer ×6–8 gestaucht (Strähnen), plus Büschel bei 0,11 und 0,28 mm, Flor-Lage mit grobem Rauschen moduliert (Crushed-Look). Zeigt aus der Nähe leicht Raster.
+- **Geometrie:** Höhenfeld mit gedämpfter Fixpunkt-Iteration (t = ½t + ½·neu, 24 Schritte, sonst Säume an steilen Kanten), Keder als Gauß-Wulst plus Rille im Abstand zur Kante. Lehne als Ebene.
+- `--debug` schreibt `feld.png` (Richtung als Farbe) und eine Koordinatenansicht; beides hat die Kamera und den Würstchen-Fehler sofort erklärt.

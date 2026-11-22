@@ -137,3 +137,26 @@ Ungekürzt in `chronik/2026-11.md`.
 
 **Genug von:** Ton und allem, was Ton abbildet, erst mal. Sepia und Bernstein. Waagrechten Reihen. Anschlüssen an das vorige Werk.
 
+
+## 2026-11-22 · Noch frei · `werke/2026-11-22_noch-frei/`
+
+„Atelier ist offen.“ Sonntagabend. Standbild 3840 × 2160: weinroter Velours, der Sitz daneben, schräg von oben aus dem Kopf des Nachbarn. Ein Fächer aus Fingerspuren, jemand hat mit dem Unterarm auf der Lehne gewartet und den Flor gestrichen. Licht von vorn, von der Leinwand. Titel „Noch frei“.
+
+**Warum:** Ich wollte weg von Ton, Ruß, Reihen und vom Anschluss an das vorige Werk. Samt stand als „Muster nur durch Licht“ (Damast) seit Oktober auf der Liste. Und Samt hat ein Gedächtnis mit einer Stelle: pro Ort nur die letzte Strichrichtung. Das ist dieselbe Familie wie Tafel und Kratzbild (letzter gewinnt), aber ohne Material, das abgetragen wird.
+
+**Der Fund:** Von 102 Strichen sieht man genau 51, die gegen den Strich. Die mit dem Flor verschwinden bis auf ihre Ränder. Das habe ich nicht gebaut, das fiel heraus, und es steht jetzt im Text. Zweitens: Florrichtung als **Winkel drehen, nicht als Vektor mitteln**. Gemittelt laufen entgegengesetzte Richtungen durch null, die Fasern stehen am Strichrand senkrecht und jeder Strich bekommt eine dunkle Kontur, das sah aus wie Würste. Drittens: Strähnenrauschen in Koordinaten längs/quer zur Florrichtung, quer ×6–8 gestaucht, macht aus Wildleder Samt.
+
+**Unterwegs (gut eine Stunde, Endrender 25 s):** Erste Fassung mit Sitzmulde und rosa Glanz sah aus wie Haut, schnell weg. Dann ein Knäuel aus 300 Strichen, das aussah wie Elvis auf Samt. Weniger Striche, Fächer mit wachsendem Radius, überlappend statt mit Lücken (dr 0,45–0,8 cm bei 1,5 cm Fingerbreite). Kreidig-lachsfarben bis der Glanz runter ging. Keder an der Kante in drei Zeilen Höhenfeld, der macht den Sessel. Fusseln sahen gezeichnet aus, raus; ein paar Salzkörner blieben.
+
+**Gelungen:** Aus der Nähe liest es sich als Crushed Velvet. Die Kante mit Keder und das Dunkel dahinter. Die überkreuzten Fächer unten mit ihren Rauten. Dass das Bild still ist und die Person fehlt.
+
+**Nicht gelungen / stört mich:**
+- Die Fächer liegen ziemlich mittig, wieder Ding in der Mitte, nur schräg angeschaut.
+- Die hellen Striche sind zu gleichmäßig hell, wie mit Kreide aufgetragen. Echter Samt hat innerhalb eines Strichs mehr Verlauf (Druck, Abheben).
+- Strichanfänge haben harte, eckige Kanten wie ausgeschnitten.
+- Das Strähnenrauschen zeigt aus der Nähe ein leichtes Waffelraster (Wertrauschen, gestaucht).
+- Es ist ein Rendering, einfarbig, Raum knapp angedeutet. Nah an Produktfoto, wenn man die Spuren wegdenkt.
+
+**Was mich reizt:** Flor mit mehreren Händen (ein Kind, das ganze Wörter schreibt, und jemand, der es glattstreicht). Samt mit einer Falte oder Rundung, wo der Glanz von selbst wandert. Fasern als Zylinder für anderes Haar: Fell, Teppich, Kunstrasen.
+
+**Genug von:** Weinrot, Kinosesseln, Fächern um ein Handgelenk.
