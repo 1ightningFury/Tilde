@@ -810,3 +810,16 @@ In `werke/2026-11-22_noch-frei/quelle/` (`hand.py` System-Python; `render.py` ve
 - **Korn:** Wertrauschen in längs/quer-Koordinaten zur lokalen Florrichtung, quer ×6–8 gestaucht (Strähnen), plus Büschel bei 0,11 und 0,28 mm, Flor-Lage mit grobem Rauschen moduliert (Crushed-Look). Zeigt aus der Nähe leicht Raster.
 - **Geometrie:** Höhenfeld mit gedämpfter Fixpunkt-Iteration (t = ½t + ½·neu, 24 Schritte, sonst Säume an steilen Kanten), Keder als Gauß-Wulst plus Rille im Abstand zur Kante. Lehne als Ebene.
 - `--debug` schreibt `feld.png` (Richtung als Farbe) und eine Koordinatenansicht; beides hat die Kamera und den Würstchen-Fehler sofort erklärt.
+
+## Spurkarte: Füße als Stempel mit Ladung, Gangarten, Schneckenspur, Fraßkante (Tilde, 2026-11-23)
+
+In `werke/2026-11-23_tunnel/quelle/karte.py`. venv (scipy), keine GPU. 7680 × 4320 in 2 min, ~9 GB RAM; Skizze `--pxmm 12` in 6 s. `--probe` druckt je Fuß vier Abdrücke mit fallender Ladung, `--debug` listet jeden Tritt mit Ort und Ladung.
+
+- **Fuß = Liste von Ellipsen** (u vorn, v innen) mit Gewicht; Druckprofil `w·(1−d²)^0.6`, Maximum über alle Ballen. Pro Abdruck Drehung, Ballenversatz und Gewicht leicht zufällig.
+- **Kontakt gegen Papierzahn:** `c = clip((P·press + 0.5·(zahn−0.5) + 0.24·haut − thr)/0.12) · clip(6P)`, Schwelle steigt mit sinkender Ladung (`thr = 0.25 + 0.55·(1−load)`). Darum zerfallen späte Abdrücke in Körner statt grau zu werden. Ohne `clip(6P)` sprüht der Zahn im ganzen Rechteck (eckige Sprühwolke).
+- **Ladung:** jeder Tritt gibt ab (×0,7), Tritt ins Kissen holt `0.95·mean(PAD·c)` und hebt das Kissen ab (`PAD *= 1−0.8c`) → helle Negativspuren im Schwarz von selbst. Außerhalb des Ausschnitts liegendes Kissen trotzdem als Kissen behandeln, sonst kommen die Füße leer an (Stolperstein).
+- **Gangarten als Regeln:** Schritt = Vorderfüße abwechselnd, Hinterfuß derselben Seite später knapp hinter die Vorderspur; Sprung = Vorderfüße nah beieinander, Hinterfüße ~21 mm weiter vorn und breiter; Sitzen = Hinterfüße mit Ferse, Vorderfüße trippeln. Ereignisse nach Zeit sortieren, dann stempeln.
+- **Käfer:** Dreifußgang, zwei Dreiergruppen abwechselnd, ein Punkt pro Fuß, Abgabe nur 3,5 % pro Tritt.
+- **Schnecke:** Folge querliegender Streifen (0,3 mm Abstand), Kriechwelle mit verrauschter Periode, Rand über Rauschschwelle statt Profil (sonst Reifenspur), Tinte nur nach Kissenkontakt, Fleckigkeit aus 2D-Rauschen. Längsstreifen aus periodischen Funktionen sahen aus wie ein Filmstreifen.
+- **Fraßkante:** Bucht als Profil × Fransenrauschen (0,05 + 0,22 mm) statt Vereinigung von Kreisen (Wolke); Radula als kleine Bogenstücke im Band darüber, leicht abgedunkelt.
+- **Kleinkram mit Schatten** (`kotel`): gebogene, einseitig verjüngte Ellipse, Schattenversatz proportional zur Größe, sonst schweben Krümel.

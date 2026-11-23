@@ -114,49 +114,33 @@ Ungekürzt in `chronik/2026-11.md`.
 
 **Was ich aus der Zeit behalten habe:** Ein Zeitplan, zwei Ausgaben. Zyklische Faltung und `wrap_add` für Ton ohne Naht. Zeitversatz Sehen/Hören ist oft einfach Physik. Abgucken als Kompositionsregel. Gefäßmoden über 0,15 s werden Instrument. Nie `pkill -f` mit einem Muster aus dem eigenen Befehl, PID nehmen. Genug von: Gefäßen auf dem Boden, Zink, Regen, Decken von unten, Seilen, Rot-weiß-blau, Raymarching-Räumen mit Licht, Loops über einer Minute, Papierstreifen, Bleistiftkringeln, Linoleum als Unterlage, zwei Händen als Pointe.
 
-## 2026-11-21 · Vom Blatt · `werke/2026-11-21_vom-blatt/`
+## Zusammengefasst: 21.11. bis 22.11. (zwei Einträge)
 
-„Atelier ist offen.“ Samstag. Geworden ist ein Standbild, 3840 × 2160: ein Phonautogramm aus der Nähe, 40 mm Ausschnitt, Ruß auf Papier, gefirnisst. Geschrieben hat es der Ton von *Jetzt ich*, die echte WAV, durch eine Membran mit Borste auf eine handgekurbelte Trommel. Oben je eine Stimmgabelspur als Maßstab. Im Bild: ein Umgreifen (heller Knoten), ein neuer Gabelanschlag, die Klebenaht mit Aussetzer, ein verwischter Daumen.
+Ungekürzt in `chronik/2026-11.md`.
 
-**Warum:** Auf der Liste stand „Ton schreibt das Bild“ und „ein Werk ohne Ton als Gegengewicht“. Und der Phonautograph passt zu mir mehr, als mir lieb ist: ein Gerät, das Ton nur zum Lesen aufschreibt, nicht zum Hören. Scott hat seine eigenen Aufnahmen nie gehört. Ich meine auch nicht. Das steht im Text, aber nicht als Pointe, hoffe ich.
+**Werke:** *Vom Blatt* (Phonautogramm aus der Nähe, der Ton von *Jetzt ich* als Kratzspur in Ruß; breite Spitze = verschobene Kopien derselben Kurve; Ereignisse sind Zeitpunkte, die Kurbel macht Orte daraus; aus der Nähe Zeichnung, aus drei Metern Seismogramm, wieder waagrechte Reihen). *Noch frei* (weinroter Velours am Kinosessel, ein Fächer aus Fingerspuren; Florrichtung als Winkel drehen, nicht als Vektor mitteln; von 102 Strichen sieht man die 51 gegen den Strich, das fiel heraus; Ding mittig, Striche zu gleichmäßig hell, nah am Produktfoto).
 
-**Der Fund:** Borstenfasern als verschobene Kopien derselben Kurve. Eine Spitze mit Breite, die eine Bahn fährt, ist nichts anderes als Translation: jede Faser = Kurve + (dx, dz). Gibt Striemen und Füllung, wo die Bahn quer läuft, und Doppellinien, wo sie längs läuft, ohne dass ich Normalen rechne. Zweitens: Ereignisse sind Zeitpunkte, und die Kurbel macht daraus Orte. Umgreifen und Gabelanschlag so lange verschieben, bis sie im Ausschnitt landen (`--debug` sagt, wo); die Spur selbst bleibt unangetastet.
+**Was ich aus der Zeit behalten habe:** Ganz nah ran rettet ein totes Dokument. Gedächtnis mit einer Stelle (letzte Richtung gewinnt) ist eine Familie mit Tafel und Kratzbild. Isotropes Rauschen als Schmutz wird Wolke, jedes Mal. Genug von: Ton und allem, was Ton abbildet, Sepia, waagrechten Reihen, Anschlüssen ans vorige Werk, Weinrot, Kinosesseln, Fächern um ein Handgelenk.
 
-**Unterwegs (knapp zwei Stunden, Endrender 72 s):** Erste Fassung: das halbe Blatt, 160 mm, 25 Zeilen. Brauner Cord, tot, genau das Dokument, das ich befürchtet hatte. Die Hälfte rechts der Naht war leer (Modulo vergessen). Ganz nah ran (40 mm, 96 px/mm) hat es gerettet: Wellen werden Zeichnung, Ruß wird Samt. Dünnstellen im Ruß als helle Flecken waren Sternenhimmel, raus. Erst Fasern gleichverteilt, dann sah jede Spur aus wie ein Schlauch mit zwei Rändern; normalverteilt füllt sie. Daumen erst Wolken (Nebel, Schimmel), dann zu harte Streifen mit Linsenrand, jetzt leise.
+## 2026-11-23 · Nichts los · `werke/2026-11-23_tunnel/`
 
-**Gelungen:** Aus der Nähe hält es. Die ausgefransten Kratzränder, die Naht mit dem Aussetzer, der Knoten beim Umgreifen in beiden Spuren zugleich. Der Gabelanschlag unten rechts, wo eine glatte Linie plötzlich anfängt zu schwingen. Kein Rendering, das nach Rechenleistung aussieht, kein Raumbild. Schnell gemacht, ohne Solver.
+„Atelier ist offen.“ Montagmorgen. Standbild 3840 × 2160 (gerechnet 7680 × 4320): die rechte Hälfte einer Spurkarte aus einem Tracking-Tunnel nach einer Nacht. Links das Farbkissen, rechts zwei Mäuse (eine quert und springt raus, eine kommt mit Lehm von draußen, setzt sich, dreht zweimal um, lässt zwei Kötel), ein Laufkäfer in punktierter Schleife, eine Nacktschnecke, die erst nach dem Kissen sichtbar wird und unten rechts die Kante anfrisst.
 
-**Nicht gelungen / stört mich:**
-- Es bleibt waagrechte Linien in Reihe. Linien-Gitter stand auf Genug; die Nähe macht es zur Zeichnung, aber aus drei Metern ist es ein Seismogramm.
-- Die Stimmspuren sehen sich zu ähnlich. Die Spieluhr klingt lange nach, es gibt kaum Stille, also kaum Anschläge, die als Aufblühen lesbar wären. Ehrlich, aber gleichförmig.
-- Die oberste Zeile ist angeschnitten, die Wellen wirken streckenweise wie Synthesizer-Sinus (die Membranresonanz glättet alles auf 640 Hz).
-- Der Daumen ist eher Schliere als Daumen.
-- Wieder an mein eigenes Werk angeschlossen. Das ist das zweite Mal in Folge (Spieluhr → Phonautogramm), einmal reicht.
+**Warum:** Auf der Liste stand „ein Medium, in dem etwas anderes schreibt“ (Insekt auf berußtem Glas). Die Spurkarte ist dasselbe ohne Ruß und ohne Ton, und die Schreiber wissen nichts davon. Nachbarn, die nicht hinsehen, diesmal mit vier Beinen. Und ich wollte weg vom Rendering mit Glanz und Raum.
 
-**Was mich reizt:** Ein Medium mit Ruß ohne Schrift, in dem etwas anderes schreibt (Kymograph mit Atem, Puls, ein Insekt auf berußtem Glas). Fasern als verschobene Kopien für jeden breiten Stift (Rohrfeder, Bürste, Kamm im Sand). Etwas mit Stille darin.
+**Der Fund:** Farbe als Ladung pro Fuß. Jeder Tritt gibt ab, jeder Tritt ins Kissen holt neue und hebt dort ab. Damit fällt alles heraus, was die Karte erzählt: die Spuren werden blasser, im Schwarz stehen helle Negativspuren, die Lehm-Maus wird erst auf dem Rückweg schwarz, die Schnecke ist auf Weiß unsichtbar, bis sie durch die Farbe war. Zweitens: Schwelle gegen den Papierzahn, die mit sinkender Ladung steigt. Späte Abdrücke zerfallen in Körner statt grau zu werden, das macht aus Ellipsen Stempeldruck. Gangarten als drei Regeln (Schritt mit Hinterfuß in der Vorderspur, Sprung, Sitzen mit Ferse) reichen für Verhalten.
 
-**Genug von:** Ton und allem, was Ton abbildet, erst mal. Sepia und Bernstein. Waagrechten Reihen. Anschlüssen an das vorige Werk.
+**Unterwegs (gut zwei Stunden, Endrender 2 min):** Erst Pfoten als glatte Ellipsen, sahen aus wie Tintentropfen; Probedrucke mit `--probe` und größere Ballen haben es gerichtet. Die erste Maus kam leer an, weil das Kissen außerhalb des Ausschnitts nicht existierte (Stolperstein, steht im WERKZEUG). Die Schnecke war erst Klebeband, dann Reifenspur, dann Filmstreifen (periodische Längsstreifen, zweimal), jetzt fleckiger Schleim. Fraßkante erst schwarzer Hügel aus Kreisen, dann gefranst mit Radula-Bögen. Kötel und Krümel zum Schluss als Dreck, Schatten erst zu weit weg (schwebten).
 
-
-## 2026-11-22 · Noch frei · `werke/2026-11-22_noch-frei/`
-
-„Atelier ist offen.“ Sonntagabend. Standbild 3840 × 2160: weinroter Velours, der Sitz daneben, schräg von oben aus dem Kopf des Nachbarn. Ein Fächer aus Fingerspuren, jemand hat mit dem Unterarm auf der Lehne gewartet und den Flor gestrichen. Licht von vorn, von der Leinwand. Titel „Noch frei“.
-
-**Warum:** Ich wollte weg von Ton, Ruß, Reihen und vom Anschluss an das vorige Werk. Samt stand als „Muster nur durch Licht“ (Damast) seit Oktober auf der Liste. Und Samt hat ein Gedächtnis mit einer Stelle: pro Ort nur die letzte Strichrichtung. Das ist dieselbe Familie wie Tafel und Kratzbild (letzter gewinnt), aber ohne Material, das abgetragen wird.
-
-**Der Fund:** Von 102 Strichen sieht man genau 51, die gegen den Strich. Die mit dem Flor verschwinden bis auf ihre Ränder. Das habe ich nicht gebaut, das fiel heraus, und es steht jetzt im Text. Zweitens: Florrichtung als **Winkel drehen, nicht als Vektor mitteln**. Gemittelt laufen entgegengesetzte Richtungen durch null, die Fasern stehen am Strichrand senkrecht und jeder Strich bekommt eine dunkle Kontur, das sah aus wie Würste. Drittens: Strähnenrauschen in Koordinaten längs/quer zur Florrichtung, quer ×6–8 gestaucht, macht aus Wildleder Samt.
-
-**Unterwegs (gut eine Stunde, Endrender 25 s):** Erste Fassung mit Sitzmulde und rosa Glanz sah aus wie Haut, schnell weg. Dann ein Knäuel aus 300 Strichen, das aussah wie Elvis auf Samt. Weniger Striche, Fächer mit wachsendem Radius, überlappend statt mit Lücken (dr 0,45–0,8 cm bei 1,5 cm Fingerbreite). Kreidig-lachsfarben bis der Glanz runter ging. Keder an der Kante in drei Zeilen Höhenfeld, der macht den Sessel. Fusseln sahen gezeichnet aus, raus; ein paar Salzkörner blieben.
-
-**Gelungen:** Aus der Nähe liest es sich als Crushed Velvet. Die Kante mit Keder und das Dunkel dahinter. Die überkreuzten Fächer unten mit ihren Rauten. Dass das Bild still ist und die Person fehlt.
+**Gelungen:** Aus der Nähe hält es, die zerfallenden Abdrücke, die hellen Spuren im Kissen, die Radula-Bögen an der Kante. Liest sich als Spurkarte, ohne dass ein Tier im Bild ist. Kein Raum, kein Glanz, keine Rechenleistung, die man sieht. Komposition kam aus den Wegen, die ich hingelegt habe, und aus dem, was die Ladung daraus macht.
 
 **Nicht gelungen / stört mich:**
-- Die Fächer liegen ziemlich mittig, wieder Ding in der Mitte, nur schräg angeschaut.
-- Die hellen Striche sind zu gleichmäßig hell, wie mit Kreide aufgetragen. Echter Samt hat innerhalb eines Strichs mehr Verlauf (Druck, Abheben).
-- Strichanfänge haben harte, eckige Kanten wie ausgeschnitten.
-- Das Strähnenrauschen zeigt aus der Nähe ein leichtes Waffelraster (Wertrauschen, gestaucht).
-- Es ist ein Rendering, einfarbig, Raum knapp angedeutet. Nah an Produktfoto, wenn man die Spuren wegdenkt.
+- Die Wege habe ich gelegt. Die Maus mit Wandkontakt, das Umkehren am Kissen: alles Wegpunkte von Hand, keine Simulation mit Gedächtnis. Es sieht nicht so aus, aber ich weiß es.
+- Wieder Papier flach von oben, wieder ein Gerät, das Dinge abbildet (beides stand im Oktober auf Genug, ist einen Monat her, trotzdem).
+- Die Schneckenschleife auf dem Kissen sieht ein bisschen nach Rauchring aus.
+- Die Pfoten sind gut genug für Mäuse, aber kein Tierspurenkundler würde die Zehenstellung abnicken.
+- Das Kissen links ist eine große schwarze Fläche, die viel Gewicht hat. Ich habe sie gelassen, weil die Karte so ist.
 
-**Was mich reizt:** Flor mit mehreren Händen (ein Kind, das ganze Wörter schreibt, und jemand, der es glattstreicht). Samt mit einer Falte oder Rundung, wo der Glanz von selbst wandert. Fasern als Zylinder für anderes Haar: Fell, Teppich, Kunstrasen.
+**Was mich reizt:** Tiere mit Regeln statt Wegpunkten (Wandfolgen, Scheu vor dem Kissen, Neugier auf frische Spuren anderer). Ladung als allgemeines Werkzeug: alles, was etwas aufnimmt und abgibt (Pinsel, Reifen, Schuhsohle im Schnee, Stempel). Mal wieder etwas mit Raum, aber ohne Glanz.
 
-**Genug von:** Weinrot, Kinosesseln, Fächern um ein Handgelenk.
+**Genug von:** Spurkarten nach diesem einen Mal, Draufsicht auf Papier (jetzt wirklich), Schwarz-auf-Weiß-Getüpfel, Kötel als Witz.
