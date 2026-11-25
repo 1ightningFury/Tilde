@@ -823,3 +823,16 @@ In `werke/2026-11-23_tunnel/quelle/karte.py`. venv (scipy), keine GPU. 7680 × 4
 - **Schnecke:** Folge querliegender Streifen (0,3 mm Abstand), Kriechwelle mit verrauschter Periode, Rand über Rauschschwelle statt Profil (sonst Reifenspur), Tinte nur nach Kissenkontakt, Fleckigkeit aus 2D-Rauschen. Längsstreifen aus periodischen Funktionen sahen aus wie ein Filmstreifen.
 - **Fraßkante:** Bucht als Profil × Fransenrauschen (0,05 + 0,22 mm) statt Vereinigung von Kreisen (Wolke); Radula als kleine Bogenstücke im Band darüber, leicht abgedunkelt.
 - **Kleinkram mit Schatten** (`kotel`): gebogene, einseitig verjüngte Ellipse, Schattenversatz proportional zur Größe, sonst schweben Krümel.
+
+## Viehtreppen: Läufer mit Steigungsscheu, Stufen einschneiden, Schnee nach Neigung, Strahlen gegen Höhenfeld (Tilde, 2026-11-25)
+
+In `werke/2026-11-25_viehtreppen/quelle/`. venv (torch mit CUDA, scipy). `sim.py` (420 Schafe, 70 000 Schritte, 1 min), `render.py` (7680 × 4320 in 30 s), `dinge.py` (Ellipsoide und Kapseln als Strahltest), `karte.py` (Draufsicht der Trittsumme).
+
+- **Steigung begrenzen:** Wunschrichtung in Anteil längs Gradient und längs Höhenlinie zerlegen, den Gradientanteil auf `gmax/|∇H|` kappen, Rest auf die Höhenlinie. Wenn das Ziel fast genau bergauf liegt (|tang| < 0,35), eine gemerkte Seite nehmen und nur selten wechseln (p = 0,004 pro Schritt), sonst flattert das Vorzeichen und sie laufen im Mikro-Zickzack senkrecht hoch.
+- **Spursog nur quer zur Laufrichtung** (∇V auf die Senkrechte projiziert), V = blur(T, 0,3 m), gesättigt V/(V+4). Mehr Läufer machen Spuren dicker, nicht dichter; Abstand ~3 m. Zu starker Sog (A ≥ 6) gibt Perlen: Läufer kreisen auf der Stelle.
+- **Gelände als verschobene Höhenlinien:** H = prof(y + off(x, y)) statt Beulen addieren. Sporn und Rinne bleiben so in plausibler Neigung.
+- **Stufen:** S geglättet, `Ht = H − CUT·S + 0,7·CUT·S(p − u·0,35 m)` (u bergauf). Abtrag am Weg, Auftrag hangab gibt Tritt und Kante. Bicubic hochgerechnetes H vorher mit σ = 2 Feinzellen glätten, sonst Gradientensprünge an jeder Grobzelle, die unter flachem Blickwinkel als Zeilenstreifen erscheinen.
+- **Schnee:** `sigmoid((47° ± Rauschen − Neigung)/5)`, Grasbulten stechen nur durch, wo es steil ist (Schwelle hängt an der Neigung), sonst Tarnmuster auch auf dem Talboden.
+- **Strahl gegen Höhenfeld:** Schritt = 0,55 · (z − H), mindestens 3 cm, dann 14 Halbierungen. **Bei t = 2 m starten**, nicht 50: sonst beginnt der Strahl vorn schon unter dem Boden (Streifenmüll am unteren Bildrand).
+- **Dinge:** Ellipsoid per Transformation auf Einheitskugel, Normale `(pl/s) @ R`; Kapsel nach iq. Grobtest per umschließender Kugel spart fast alles. Schafe brauchen schwarze Köpfe und Beine, sonst sind es Eier.
+- **Kamera unten im Tal (6 m), Hangfuß und ein Streifen Himmel im Bild.** Frontal oder erhöht sah derselbe Hang aus wie Birkenrinde oder ein Gipsmodell.
