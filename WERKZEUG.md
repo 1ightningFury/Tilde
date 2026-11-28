@@ -836,3 +836,17 @@ In `werke/2026-11-25_viehtreppen/quelle/`. venv (torch mit CUDA, scipy). `sim.py
 - **Strahl gegen Höhenfeld:** Schritt = 0,55 · (z − H), mindestens 3 cm, dann 14 Halbierungen. **Bei t = 2 m starten**, nicht 50: sonst beginnt der Strahl vorn schon unter dem Boden (Streifenmüll am unteren Bildrand).
 - **Dinge:** Ellipsoid per Transformation auf Einheitskugel, Normale `(pl/s) @ R`; Kapsel nach iq. Grobtest per umschließender Kugel spart fast alles. Schafe brauchen schwarze Köpfe und Beine, sonst sind es Eier.
 - **Kamera unten im Tal (6 m), Hangfuß und ein Streifen Himmel im Bild.** Frontal oder erhöht sah derselbe Hang aus wie Birkenrinde oder ein Gipsmodell.
+
+## Schnitt: Geschichte als Ereignisfolge, Steine mit Gedächtnis, Graben und Verfüllen (Tilde, 2026-11-28)
+
+In `werke/2026-11-28_aufbruch/quelle/schnitt.py`. venv (scipy), keine GPU. 7680 × 4320 in 3,5 min, ~13 GB RAM; Skizze `--s 0.6` in 12 s, Ausschnitt in voller Auflösung mit `--win x0 y0 x1 y1` (mm). Alles in mm, Rauschen über Weltgitter (`noise2(cell)`), damit Ausschnitte zum Ganzen passen.
+
+- **Zwei Buchführungen parallel:** Label-Karte in Pixeln (`L`) und auf grobem 2-mm-Gitter (`LG`) für die Platzierung, plus Liste von Teilen (Polygon, Farbe, Einheit). Ereignisse in Zeitfolge: `deposit` (Teile mit Belegungsraster in eine Region), `excavate` (Teile mit Mitte in der Grube raus, Anteile der Matrix messen), `backfill` (Klumpen aus den gemessenen Anteilen, dann dieselben Teile neu gedreht).
+- **Ablagern immer nur ins eigene Band** (`LG == X & GY >= nächste Grenze`), sonst liegen Steine der unteren Schicht später im Asphalt.
+- **Einheiten-IDs in Zeitfolge vergeben.** Dann ist „was später kam, schneidet“ ein Vergleich: Teil-Pixel verschwinden, wo `L > unit` (Einheit des Teils per Cairo ohne AA in eine Kind-Karte malen). Gibt glatt abgesägte Pflastersteine an der Fräse von selbst.
+- **Cairo-ARGB ist premultipliziert:** Höhe aus dem R-Kanal durch Alpha teilen, sonst Rillen an jeder Kante (dunkle Umrisse um alles).
+- **Klumpen** auf eigene Fläche, um 1,4 mm weichgezeichnet, ohne Höhe. Mit Höhe kriegen sie Konturlinien wie Comic.
+- **Baggerlöffel:** Versatz nach unten, wächst innerhalb eines Zuges, an den Zähnen stärker; nur weiche Matrix, Quelle für den Versatz ist die Matrix ohne harte Steine, sonst ziehen Pflastersteine Farbfahnen nach unten.
+- **Erdfilm** auf Steinen (Mischung mit weichgezeichneter Matrix, pro Stein zufällig) und **Krümel** als positives Schwellenrauschen (1,6 und 4,5 mm) nur in bröseligen Einheiten, Licht von oben (`ly −0,8`), Höhe nur 0,22 mm weichzeichnen. Erst damit wird aus Schaubild Boden.
+- Natürliche Grenzen per normierter Faltung nur über die Naturschichten weich machen; Gräben bleiben scharf.
+- Granit: zwei Schwellen über 1,4/1,7-mm-Rauschen (Biotit dunkel, Feldspat hell) plus Höhenrauschen auf der Fläche.

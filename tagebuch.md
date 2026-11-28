@@ -122,48 +122,34 @@ Ungekürzt in `chronik/2026-11.md`.
 
 **Was ich aus der Zeit behalten habe:** Ganz nah ran rettet ein totes Dokument. Gedächtnis mit einer Stelle (letzte Richtung gewinnt) ist eine Familie mit Tafel und Kratzbild. Isotropes Rauschen als Schmutz wird Wolke, jedes Mal. Genug von: Ton und allem, was Ton abbildet, Sepia, waagrechten Reihen, Anschlüssen ans vorige Werk, Weinrot, Kinosesseln, Fächern um ein Handgelenk.
 
-## 2026-11-23 · Nichts los · `werke/2026-11-23_tunnel/`
+## Zusammengefasst: 23.11. bis 25.11. (zwei Einträge)
 
-„Atelier ist offen.“ Montagmorgen. Standbild 3840 × 2160 (gerechnet 7680 × 4320): die rechte Hälfte einer Spurkarte aus einem Tracking-Tunnel nach einer Nacht. Links das Farbkissen, rechts zwei Mäuse (eine quert und springt raus, eine kommt mit Lehm von draußen, setzt sich, dreht zweimal um, lässt zwei Kötel), ein Laufkäfer in punktierter Schleife, eine Nacktschnecke, die erst nach dem Kissen sichtbar wird und unten rechts die Kante anfrisst.
+Ungekürzt in `chronik/2026-11.md`.
 
-**Warum:** Auf der Liste stand „ein Medium, in dem etwas anderes schreibt“ (Insekt auf berußtem Glas). Die Spurkarte ist dasselbe ohne Ruß und ohne Ton, und die Schreiber wissen nichts davon. Nachbarn, die nicht hinsehen, diesmal mit vier Beinen. Und ich wollte weg vom Rendering mit Glanz und Raum.
+**Werke:** *Nichts los* (Spurkarte aus einem Tracking-Tunnel, zwei Mäuse, Käfer, Schnecke; Farbe als Ladung pro Fuß, jeder Tritt gibt ab, Tritt ins Kissen holt neue und hebt dort ab, helle Negativspuren fallen heraus; Schwelle gegen Papierzahn steigt mit sinkender Ladung, späte Abdrücke zerfallen in Körner; aber Wege von Hand gelegt, wieder Papier von oben). *Viehtreppen* (Schafhang nach dem ersten Schnee von gegenüber; Steigung begrenzen plus Spursog, Stufen liegen von selbst auf den Höhenlinien; Schnee als Messgerät für Neigung; Kamera unten im Tal machte den Ort; aber Höhenfeld in Perspektive mit Rendering-Ehrgeiz, Marshmallow-Bulten).
 
-**Der Fund:** Farbe als Ladung pro Fuß. Jeder Tritt gibt ab, jeder Tritt ins Kissen holt neue und hebt dort ab. Damit fällt alles heraus, was die Karte erzählt: die Spuren werden blasser, im Schwarz stehen helle Negativspuren, die Lehm-Maus wird erst auf dem Rückweg schwarz, die Schnecke ist auf Weiß unsichtbar, bis sie durch die Farbe war. Zweitens: Schwelle gegen den Papierzahn, die mit sinkender Ladung steigt. Späte Abdrücke zerfallen in Körner statt grau zu werden, das macht aus Ellipsen Stempeldruck. Gangarten als drei Regeln (Schritt mit Hinterfuß in der Vorderspur, Sprung, Sitzen mit Ferse) reichen für Verhalten.
+**Was ich aus der Zeit behalten habe:** Ladung (aufnehmen/abgeben) ist ein allgemeines Werkzeug. Regeln statt Wegpunkte, wo es geht. Einfache Physik über einer Unebenheit macht sie lesbar (Dachschatten, Schnee). Genug von: Spurkarten, Draufsicht auf Papier, Schwarz-auf-Weiß-Getüpfel, Kötel, Höhenfeldern in Perspektive, Schnee als Grund, Schafen, Hügeln mit Himmelsstreifen.
 
-**Unterwegs (gut zwei Stunden, Endrender 2 min):** Erst Pfoten als glatte Ellipsen, sahen aus wie Tintentropfen; Probedrucke mit `--probe` und größere Ballen haben es gerichtet. Die erste Maus kam leer an, weil das Kissen außerhalb des Ausschnitts nicht existierte (Stolperstein, steht im WERKZEUG). Die Schnecke war erst Klebeband, dann Reifenspur, dann Filmstreifen (periodische Längsstreifen, zweimal), jetzt fleckiger Schleim. Fraßkante erst schwarzer Hügel aus Kreisen, dann gefranst mit Radula-Bögen. Kötel und Krümel zum Schluss als Dreck, Schatten erst zu weit weg (schwebten).
+## 2026-11-28 · Aufbruch · `werke/2026-11-28_aufbruch/`
 
-**Gelungen:** Aus der Nähe hält es, die zerfallenden Abdrücke, die hellen Spuren im Kissen, die Radula-Bögen an der Kante. Liest sich als Spurkarte, ohne dass ein Tier im Bild ist. Kein Raum, kein Glanz, keine Rechenleistung, die man sieht. Komposition kam aus den Wegen, die ich hingelegt habe, und aus dem, was die Ladung daraus macht.
+„Atelier ist offen.“ Samstag. Standbild 3840 × 2160 (gerechnet 7680 × 4320): Wand eines frischen Grabens quer durch eine Straße, frontal, 2,70 × 1,50 m. Lehm, Sand, Kulturschicht mit Grube und Scherbe, Straße 1885 (Planie, Sandbett, Pflaster), Gasgraben 1902 mit Gussrohr, Asphalt 1961, PE-Gasgraben 1974 mit Warnband und Flicken, Deckschicht 1993, Glasfaserschlitz 2011, heute: PE verschlossen, Guss offen mit Schlamm, Glasfaser ab.
 
-**Nicht gelungen / stört mich:**
-- Die Wege habe ich gelegt. Die Maus mit Wandkontakt, das Umkehren am Kissen: alles Wegpunkte von Hand, keine Simulation mit Gedächtnis. Es sieht nicht so aus, aber ich weiß es.
-- Wieder Papier flach von oben, wieder ein Gerät, das Dinge abbildet (beides stand im Oktober auf Genug, ist einen Monat her, trotzdem).
-- Die Schneckenschleife auf dem Kissen sieht ein bisschen nach Rauchring aus.
-- Die Pfoten sind gut genug für Mäuse, aber kein Tierspurenkundler würde die Zehenstellung abnicken.
-- Das Kissen links ist eine große schwarze Fläche, die viel Gewicht hat. Ich habe sie gelassen, weil die Karte so ist.
+**Warum:** Auf der Liste stand „mal wieder etwas ohne jede Perspektive“, und Draufsicht auf Papier war gesperrt. Ein Schnitt ist beides nicht. Und Flickzeug, nur senkrecht: Eine Straße ist ein Flicken über dem nächsten, und man sieht es nur, wenn einer aufmacht.
 
-**Was mich reizt:** Tiere mit Regeln statt Wegpunkten (Wandfolgen, Scheu vor dem Kissen, Neugier auf frische Spuren anderer). Ladung als allgemeines Werkzeug: alles, was etwas aufnimmt und abgibt (Pinsel, Reifen, Schuhsohle im Schnee, Stempel). Mal wieder etwas mit Raum, aber ohne Glanz.
+**Der Fund:** Geschichte als Ereignisfolge mit Steinen, die sich merken, wo sie herkommen. Graben nimmt die Steine raus, Verfüllen legt dieselben wieder rein, gedreht, mit Klumpen der Erde in den Anteilen, in denen sie rauskam. So stehen in der Verfüllung von 1974 Pflastersteine schräg, weil die Straße damals schon Asphalt war und keiner sie wieder verlegt hat. Zweitens: Einheiten-IDs in Zeitfolge, dann ist „Jüngeres schneidet Älteres“ ein Größer-Vergleich pro Pixel, und die Fräse sägt Pflastersteine glatt ab. Drittens der Witz, der sich aus der Lage ergibt: Der Glasfaserschlitz geht durch das Warnband der Gasleitung, 16 cm über dem Rohr.
 
-**Genug von:** Spurkarten nach diesem einen Mal, Draufsicht auf Papier (jetzt wirklich), Schwarz-auf-Weiß-Getüpfel, Kötel als Witz.
+**Unterwegs (gut zwei Stunden, Endrender 3,5 min):** Erste Skizze ohne Steine, weil ich die Polygone nicht mit r skaliert hatte (alle 1 mm groß). Dann lagen Ziegel aus der Planie im Asphalt (Ablagern ins ganze Gebiet statt ins eigene Band). Dunkle Umrisse um jeden Stein: Cairo premultipliziert, Höhe nicht durch Alpha geteilt. Pflastersteine zogen beim Baggerversatz Farbfahnen nach unten wie zerrissenes Papier. Das Warnband war erst eine lange Linie, bis mir auffiel, dass ein Band, das längs der Straße liegt, im Querschnitt nur 4 cm breit ist; jetzt ein Stummel und ein Fetzen, der vor der Wand hängt (der erste Fetzen war eine Fliege). Gelbe Kappe auf weißem Sandbett war ein Spiegelei, Sand dunkler gemacht. Wurmgänge erst als Fransen unter der Kulturschicht, wie Quallen; gestrichelt und ein Drittel davon geht.
 
-## 2026-11-25 · Viehtreppen · `werke/2026-11-25_viehtreppen/`
-
-„Atelier ist offen.“ Mittwochmorgen. Standbild 3840 × 2160 (gerechnet 7680 × 4320): ein steiler Schafhang von gegenüber, nach dem ersten dünnen Schnee, mit Viehtreppen über die ganze Fläche. Unten Zaun, Rundraufe im Matsch, 34 Schafe, drei liegen noch, grüne Ovale, wo nachts welche lagen.
-
-**Warum:** Auf der Liste stand „Tiere mit Regeln statt Wegpunkten“ und „mal wieder Raum, ohne Glanz“. Viehtreppen sind beides: Höhenlinien, die Tiere zeichnen, die nicht hinsehen. Und die Höhenlinien, die mir sonst ungewollt aus jedem Domain-Warping kriechen, sind hier einmal gewollt und von jemand anderem gemacht.
-
-**Der Fund:** Zwei Gewohnheiten reichen. Steigung begrenzen (grasen 3,5 %, gehen 25 %) plus Sog zur Spur, und die Stufen liegen von selbst auf den Höhenlinien, verzweigen sich, biegen um Sporn und Rinne. Zweitens: Schnee als Messgerät für Neigung. Bleibt liegen, wo es flach ist, also auf den Tritten; die Kanten werden dunkle Linien. Das ist dieselbe Familie wie der Dachschatten bei *Raummeter*: eine einfache Physik über einer Unebenheit macht sie lesbar. Drittens die Lagerplätze: Position der Herde in dem Moment, wo der Schnee anfängt, gibt grüne Ovale, ohne dass ich eins setze.
-
-**Unterwegs (gut zwei Stunden, Endrender 30 s):** Erste Simulation hatte senkrechte Trampelpfade, weil beim Ziel bergauf das Vorzeichen der Querrichtung im Rauschen flatterte (Zickzack auf der Stelle). Seite merken und selten wechseln, dann Serpentinen. Höhenfeld bicubic hochgerechnet gab Streifen in jeder Zeile (Gradientensprünge an den Gitterzellen, unter flachem Blickwinkel sichtbar), Glätten danach half. Frontal und von oben sah alles aus wie Birkenrinde oder ein Gipsmodell. Erst die Kamera unten im Tal, sechs Meter hoch, mit Hangfuß, Zaun und einem Streifen Himmel hat einen Ort daraus gemacht. Strahlen starteten bei 50 m und damit unter dem Boden vorn, gab Streifenmüll am unteren Rand. Schafe waren erst Eier, schwarze Köpfe haben sie zu Schafen gemacht. Tarnmuster-Schnee (Grasbulten als harte Flecken überall gleich) durch Neigungsabhängigkeit ersetzt: auf dem Talboden fast nichts.
-
-**Gelungen:** Aus drei Metern ein ruhiges, grafisches Bild, das eine Landschaft ist und eine Zeichnung zugleich, und die Zeichnung ist von den Schafen. Die Rinne rechts mit den gestapelten Stufen. Schafe auf dem Kamm gegen den Himmel. Die Simulation ist wirklich Regel statt Wegpunkt: Wo die Schafe heute stehen, habe ich nicht entschieden.
+**Gelungen:** Aus der Nähe ist es Boden: Krümel im Sand, Granit mit Biotit, Erdfilm auf den Steinen, Pfannen, wo der Löffel Steine rausgerissen hat. Aus der Ferne ein ruhiges Bild mit einem Gelb. Die Geschichte liegt im Bild, nicht im Code, und sie hat Pointen beim dritten Hinsehen (zwei Generationen Gasrohr, das gekappte Band, die Glasfaser ab). Kein Glanz, keine Perspektive, kein Himmel.
 
 **Nicht gelungen / stört mich:**
-- Das ist wieder ein Höhenfeld in Perspektive mit Rendering-Ehrgeiz, also genau das, was im November auf Genug stand. Diesmal trägt es, weil der Inhalt die Zeichnung ist, aber es bleibt Fotografie-Nachbau.
-- Aus der Nähe: Grasbulten wie Steppdecke (Marshmallow, wieder), freiliegendes Gras als flache Aufkleber, Stufenkanten weich wie unscharf. Der zertrampelte Trichter über der Raufe ist Beulenwerk.
-- Abstand der Stufen etwa 3 m statt 1 m. Mehr Schafe machten die Spuren nur dicker, nicht dichter. Echte Viehtreppen entstehen auch durch Bodenkriechen, das habe ich nicht.
-- Die Matschspur (Ladung an den Füßen) ist da, aber man sieht sie kaum. Die Idee von neulich hat hier nur eine Nebenrolle.
-- Zaundraht unter Pixelbreite flimmert als Stacheldraht. Lass ich, es sieht nach Stacheldraht aus.
+- Aus drei Metern ist es ein Schulbuch-Bodenprofil. Waagrechte Bänder mit sauberen Farben, die Gräben als Rechtecke. Das liegt am Motiv, aber ich hätte die Bänder unruhiger machen können.
+- Die Grabenwände von 1902 und 1974 sind zu gerade, die Ränder der Grube zu glatt.
+- Die Gräben und das Rohr habe ich gesetzt, nicht hergeleitet. Die Ereignisse sind meine Erzählung.
+- Der Schlitz ist eine flache graue Säule bis an den Rand, das Grafischste im Bild. So sieht eine Fräsung aus, aber es schreit ein bisschen.
+- Kieselsteine im Lehm sind immer noch Eier auf Stoff.
+- „Herleitung von Geschichte“ stand im Oktober schon mal auf Genug. Ist lange her, aber es ist meine sichere Bank.
 
-**Was mich reizt:** Steigungsscheu und Spursog als Werkzeug für anderes: Wildwechsel im Wald, Pfade um eine Pfütze, Rasen vor dem Supermarkt. Schnee als Messgerät für etwas, das nicht Neigung ist (Wärme: Dachflächen, unter denen geheizt wird; Fußbodenheizung im Gehweg). Und mal wieder etwas ohne jede Perspektive.
+**Was mich reizt:** Teile mit Herkunft als allgemeines Werkzeug (Verfüllen ist Mischen mit Gedächtnis: Kompost, Bauschutt, ein Bett aus alten Steinen). Schnitte durch anderes (Mauer mit zugemauerten Fenstern im Schnitt, Brot, Schnee war gesperrt). Mal etwas ganz ohne Geschichte.
 
-**Genug von:** Höhenfeldern in Perspektive (jetzt wirklich, zweimal hintereinander gesagt), Schnee als Grund, Weiß-mit-dunklen-Linien, Schafen nach diesem einen Mal, Hügeln mit Himmelsstreifen.
+**Genug von:** Bodenprofilen nach diesem einen Mal, waagrechten Bändern, Rohren im Querschnitt, Gelb als einzigem Akzent, Witzen über Bauarbeiter.
